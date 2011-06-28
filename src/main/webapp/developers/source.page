@@ -2,82 +2,27 @@
 title: Source
 --- pipeline:conf
 
-{note}
-TODO: Update this page to reflect the multi-project subversion structure we have and to properly discriminate between ServiceMix 3.x, 4.x and 5.x subprojects and modules
-{note}
+At the Apache ServiceMix project, we are maintaining a few versions of ServiceMix, each of which has its own set of modules, components, ...
+The information on this page will show you where the source code lives for all these different bits and pieces, as well as provide you with instructions on how to build the projects.
 
+h2. ServiceMix 3.x
 
-h1. Apache ServiceMix Source Tree 
+//TODO: write something about this
 
-h2. Browsing the Source Tree 
+h2. ServiceMix 4.x
 
-h3. Web Browsing of SVN
+//TODO: write something about this
 
-To browse the raw SVN repo, use the following URL: 
+h2. ServiceMix 5.x
 
-{panel}
-http://svn.apache.org/repos/asf/servicemix/smx3/trunk/
-{panel}
+//TODO: write something about this
 
-To browse the SVN repo using [ViewVC|http://www.viewvc.org/], use the following URL: 
+h2. Documentation
 
-{panel}
-http://svn.apache.org/viewvc/servicemix/smx3/trunk/
-{panel}
+//TODO: write something about this
 
-h3. Web Browsing of FishEye 
+h2. [Website|website-source]
 
-!Fisheye_logo.png!
+We are also maintaining our website with Maven project, using [Scalate|http://scalate.fusesource.org/] to generate the pages from the source files.
 
-A hearty thanks to [Atlassian|http://atlassian.com/] for providing [FishEye|http://www.atlassian.com/software/fisheye/] hosting for ServiceMix. Below is the URL to browse the Subversion repo via FishEye:
-
-{panel} 	 
-http://fisheye6.cenqua.com/browse/servicemix/
-{panel}
-
-h2. Checking out the Source Tree 
-
-h3. Anonymous Checkout from the ServiceMix SVN Repo
-
-This project's SVN repository can be checked out anonymously using the following command: 
-
-{code}
-svn co http://svn.apache.org/repos/asf/servicemix/smx3/trunk/
-{code}
-
-h3. Committer Checkout from the ServiceMix SVN Repo
-
-ServiceMix committers can check out using the following command: 
-
-{code}
-svn co https://svn.apache.org/repos/asf/servicemix/smx3/trunk
-{code}
-
-*Only project developers can commit to the SVN tree via this method. SSH must be installed on your client machine. Enter your site password when prompted.*
-
-h2. Building the Source Code
-
-Once you have checked out the source code please read the [instructions on how to build ServiceMix|Building].
-
-h2. Working With the ServiceMix Extensions at the Codehaus
-
-Due to license issues, some extensions to ServiceMix are hosted at the CodeHaus. To browse that SVN repo via the web, use the following URL: 
-
-{panel}
-http://svn.codehaus.org/servicemix/trunk/
-{panel}
-
-This project's SVN repository can be checked out anonymously with the following command: 
-
-{code}
-svn co http://svn.codehaus.org/servicemix/trunk
-{code}
-
-If you are a committer, use the following URL: 
-
-{code}
-svn co https://svn.codehaus.org/servicemix/trunk
-{code}
-
-
-
+More information about the source code locations and how to build the website project, can be found [here|website-source].

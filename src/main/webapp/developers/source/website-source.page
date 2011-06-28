@@ -1,0 +1,76 @@
+---
+title: Website Source
+--- pipeline:conf
+
+h1. Website Project
+
+h2. Browsing the Source Tree
+
+h3. Web Browsing of SVN
+
+To browse the raw SVN repo, use the following URL:
+
+{panel}
+http://svn.apache.org/repos/asf/servicemix/website/trunk/
+{panel}
+
+To browse the SVN repo using [ViewVC|http://www.viewvc.org/], use the following URL:
+
+{panel}
+http://svn.apache.org/viewvc/servicemix/website/trunk/
+{panel}
+
+h3. Web Browsing of FishEye
+
+!/images/Fisheye_logo.png!
+
+A hearty thanks to [Atlassian|http://atlassian.com/] for providing [FishEye|http://www.atlassian.com/software/fisheye/] hosting for ServiceMix. Below is the URL to browse the Subversion repo via FishEye:
+
+{panel}
+http://fisheye6.cenqua.com/browse/servicemix/website/
+{panel}
+
+h2. Checking out the Source Tree
+
+h3. Anonymous Checkout from the ServiceMix SVN Repo
+
+This project's SVN repository can be checked out anonymously using the following command:
+
+{code}
+svn co http://svn.apache.org/repos/asf/servicemix/website/trunk/
+{code}
+
+h3. Committer Checkout from the ServiceMix SVN Repo
+
+ServiceMix committers can check out using the following command:
+
+{code}
+svn co https://svn.apache.org/repos/asf/servicemix/website/trunk
+{code}
+
+*Only project developers can commit to the SVN tree via this method. SSH must be installed on your client machine. Enter your site password when prompted.*
+
+h2. Building a new website
+
+h3. A few words about the project structure
+
+This project looks like a regular Maven war project.  The source for the website pages are living in the {{src/main/webapp}} directory.  We don't intend to release this project, the main goal is just to upload the result of the build to http://servicemix.apache.org/staging
+
+h3. Build and browse locally
+
+In the root of the website project, run a {{mvn clean install}} to create a new copy of the website.  You can find the generated website in the {{target/sitegen}} folder.
+You can also run {{mvn jetty:run}} to have a live, browsable copy of the website available on your machine at http://localhost:8080 - this is very conventient for editing the website pages.
+
+h3. Upload a new copy
+
+If you're a committer, you can upload a new copy of the website into the staging area at http://servicemix.apache.org/staging by running a {{mvn scalate:deploy}}.
+
+Before you run this command, ensure to configure the {{people.apache.org}} server credentials in your {{~/.m2/settings.xml}}.
+
+{pygmentize:lang=xml}
+<server>
+  <id>people.apache.org</id>
+  <username>your_apache_user_name</username>
+  <password/> or <privateKey/>
+</server>
+{pygmentize}
