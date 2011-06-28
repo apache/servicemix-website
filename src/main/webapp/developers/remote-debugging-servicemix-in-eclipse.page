@@ -1,0 +1,65 @@
+---
+title: Remote-debugging ServiceMix in Eclipse
+--- pipeline:conf
+This page explains how to set up remote-debugging of ServiceMix using Eclipse.
+
+Basically, you have to perform the following steps:
+# [Enable remote debugging in {{servicemix.bat}}|Remote-debugging ServiceMix in Eclipse#Enabling Remote Debugging in ServiceMix]
+# [Specify a remote-debugging launch configuration|Remote-debugging ServiceMix in Eclipse#Specifying a Remote Debugging Launch Configuration] 
+# [Start SM and switch to Debug-Perspective|Remote-debugging ServiceMix in Eclipse#Performing Debugging]
+
+h2. Enable remote debugging in ServiceMix
+The following section in {{servicemix.bat}} is the one that matters:
+{code}
+if "%SERVICEMIX_DEBUG%" == "" goto :SERVICEMIX_DEBUG_END
+    rem Use the defaults if JAVA_DEBUG_OPTS was not set
+    if "%JAVA_DEBUG_OPTS%" == "" set JAVA_DEBUG_OPTS=%DEFAULT_JAVA_DEBUG_OPTS%
+    
+    set "JAVA_OPTS=%JAVA_DEBUG_OPTS% %JAVA_OPTS%"
+    call :warn Enabling Java debug options: %JAVA_DEBUG_OPTS%
+:SERVICEMIX_DEBUG_END
+{code}
+
+In order to activate it, you need to set the environment variable {{SERVICEMIX_DEBUG}}.
+
+For instance in Windows:
+{code}
+SET SERVICEMIX_DEBUG=TRUE
+{code}
+
+Or in Linux:
+{code}
+export SERVICEMIX_DEBUG=TRUE
+{code}
+
+ServiceMix runs in debugging mode if you can see the following output when running it:
+{code}
+...
+servicemix.bat: Enabling Java debug options: -Xdebug -Xnoagent -Djava.compiler=NONE -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=5005
+...
+{code}
+
+The debugging options can be modified in {{servicemix.bat}} via the {{DEFAULT_JAVA_DEBUG_OPTS}}. The default values are:
+{code}
+set DEFAULT_JAVA_DEBUG_OPTS=-Xdebug -Xnoagent -Djava.compiler=NONE -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=5005
+{code}
+
+
+h2. Specifying a Remote Debugging Launch Configuration
+Specify an Eclipse Remote Java Application debug launch configuration on the project you want to monitor. 
+
+# Open {{Run - Debug}}
+# Mark {{Remote Java Application}}
+# Create a {{New Launch Configuration}}
+# Specify a name, the project you want to debug (e.g. {{servicemix-wsn2005}}) and the connection properties.
+# {{Apply}}.
+
+See [http://www.onjava.com/lpt/a/6174] for details.
+
+h2. Performing Debugging
+# Add breakpoints/debug information to the relevant code inside Eclipse. 
+# Start ServiceMix.
+# Start debugging with the previously created launch configuration.
+# Switch to debug perspective.
+# Exercise the error-causing behaviour.
+# Wait for Eclipse to be notified of the breakpoints.

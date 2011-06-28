@@ -1,0 +1,71 @@
+---
+title: ServiceMix 3.1.2
+page_version: 9
+page_creator: ffang
+page_modifier: ffang
+--- pipeline:conf
+h2. Download Here
+
+*Linux/Mac OS X/Unix Downloads*
+* [Apache ServiceMix 3.1.2 (.tar.gz)|http://people.apache.org/repo/m2-ibiblio-rsync-repository/org/apache/servicemix/apache-servicemix/3.1.2/apache-servicemix-3.1.2.tar.gz] [PGP|http://people.apache.org/repo/m2-ibiblio-rsync-repository/org/apache/servicemix/apache-servicemix/3.1.2/apache-servicemix-3.1.2.tar.gz.asc] [SHA|http://people.apache.org/repo/m2-ibiblio-rsync-repository/org/apache/servicemix/apache-servicemix/3.1.2/apache-servicemix-3.1.2.tar.gz.sha1] [MD5|http://people.apache.org/repo/m2-ibiblio-rsync-repository/org/apache/servicemix/apache-servicemix/3.1.2/apache-servicemix-3.1.2.tar.gz.md5]
+* [Apache ServiceMix 3.1.2 Sources (.tar.gz)|http://people.apache.org/repo/m2-ibiblio-rsync-repository/org/apache/servicemix/apache-servicemix/3.1.2/apache-servicemix-3.1.2-src.tar.gz] [PGP|http://people.apache.org/repo/m2-ibiblio-rsync-repository/org/apache/servicemix/apache-servicemix/3.1.2/apache-servicemix-3.1.2-src.tar.gz.asc] [SHA|http://people.apache.org/repo/m2-ibiblio-rsync-repository/org/apache/servicemix/apache-servicemix/3.1.2/apache-servicemix-3.1.2-src.tar.gz.sha1] [MD5|http://people.apache.org/repo/m2-ibiblio-rsync-repository/org/apache/servicemix/apache-servicemix/3.1.2/apache-servicemix-3.1.2-src.tar.gz.md5]
+
+*Windows  downloads*
+* [Apache ServiceMix 3.1.2 (.zip)|http://people.apache.org/repo/m2-ibiblio-rsync-repository/org/apache/servicemix/apache-servicemix/3.1.2/apache-servicemix-3.1.2.zip] [PGP|http://people.apache.org/repo/m2-ibiblio-rsync-repository/org/apache/servicemix/apache-servicemix/3.1.2/apache-servicemix-3.1.2.zip.asc] [SHA|http://people.apache.org/repo/m2-ibiblio-rsync-repository/org/apache/servicemix/apache-servicemix/3.1.2/apache-servicemix-3.1.2.zip.sha1] [MD5|http://people.apache.org/repo/m2-ibiblio-rsync-repository/org/apache/servicemix/apache-servicemix/3.1.2/apache-servicemix-3.1.2.zip.md5]
+* [Apache ServiceMix 3.1.2 Sources (.zip)|http://people.apache.org/repo/m2-ibiblio-rsync-repository/org/apache/servicemix/apache-servicemix/3.1.2/apache-servicemix-3.1.2-src.zip] [PGP|http://people.apache.org/repo/m2-ibiblio-rsync-repository/org/apache/servicemix/apache-servicemix/3.1.2/apache-servicemix-3.1.2-src.zip.asc] [SHA|http://people.apache.org/repo/m2-ibiblio-rsync-repository/org/apache/servicemix/apache-servicemix/3.1.2/apache-servicemix-3.1.2-src.zip.sha1] [MD5|http://people.apache.org/repo/m2-ibiblio-rsync-repository/org/apache/servicemix/apache-servicemix/3.1.2/apache-servicemix-3.1.2-src.zip.md5]
+
+*Web Application*
+* [Apache ServiceMix Web Application 3.1.2  (.war)|http://people.apache.org/repo/m2-ibiblio-rsync-repository/org/apache/servicemix/apache-servicemix-web/3.1.2/apache-servicemix-web-3.1.2.war] [PGP|http://people.apache.org/repo/m2-ibiblio-rsync-repository/org/apache/servicemix/apache-servicemix-web/3.1.2/apache-servicemix-web-3.1.2.war.asc] [SHA|http://people.apache.org/repo/m2-ibiblio-rsync-repository/org/apache/servicemix/apache-servicemix-web/3.1.2/apache-servicemix-web-3.1.2.war.sha1] [MD5|http://people.apache.org/repo/m2-ibiblio-rsync-repository/org/apache/servicemix/apache-servicemix-web/3.1.2/apache-servicemix-web-3.1.2.war.md5]
+
+
+h2. Release notes
+
+* *Bug*
+    ** [SM-854|https://issues.apache.org/activemq/browse/SM-854] - LogService uses hard-coded path to the log4j.xml file
+    ** [SM-937|https://issues.apache.org/activemq/browse/SM-937] - Poller polls subdirectory even though recursive is set to false
+    ** [SM-959|https://issues.apache.org/activemq/browse/SM-959] - ssl truststore is not set for unmanaged
+    ** [SM-960|https://issues.apache.org/activemq/browse/SM-960] - JSR181 Orchestration sample doesn't work (Current state not START_ELEMENT, END_ELEMENT or ENTITY_REFERENCE )
+    ** [SM-963|https://issues.apache.org/activemq/browse/SM-963] - NullPointerExceptions during JMS component initialization
+    ** [SM-969|https://issues.apache.org/activemq/browse/SM-969] - JBIMarshaler doesn't copy Subject from NormalizedMessage to SoapMessage
+    ** [SM-972|https://issues.apache.org/activemq/browse/SM-972] - authenticationService is null - Several SA deployed on the same instance of Smx
+    ** [SM-977|https://issues.apache.org/activemq/browse/SM-977] - wsdl-first example fails: XFireFault (could not unmarshal type)
+    ** [SM-982|https://issues.apache.org/activemq/browse/SM-982] - memory leak in org.apache.servicemix.bean.BeanEndpoint
+    ** [SM-991|https://issues.apache.org/activemq/browse/SM-991] - servicemix-saxon component lacks ServiceUnit analyzer which results in generating incomplete jbi.xml
+    ** [SM-1004|https://issues.apache.org/activemq/browse/SM-1004] - File poller deletes files, even if errors occur while processing
+    ** [SM-1006|https://issues.apache.org/activemq/browse/SM-1006] - 0 byte files written when message contains invalid content
+    ** [SM-1012|https://issues.apache.org/activemq/browse/SM-1012] - Possible resource leak in FilePoller
+    ** [SM-1014|https://issues.apache.org/activemq/browse/SM-1014] - WSDL-first example fails javax.jbi.messaging.MessagingException: Do not understand pattern: null
+    ** [SM-1016|https://issues.apache.org/activemq/browse/SM-1016] - Environment Context ComponentMBeanImpl Removal
+    ** [SM-1020|https://issues.apache.org/activemq/browse/SM-1020] - Invalid query.xq generated by servicemix-saxon-xquery-service-unit archetype
+    ** [SM-1023|https://issues.apache.org/activemq/browse/SM-1023] - correlationId and senderEndpoint properties are not set on jsr181 (using the proxy) and jms consumer endpoints
+    ** [SM-1024|https://issues.apache.org/activemq/browse/SM-1024] - Archetype generates invalid brokerURL
+    ** [SM-1026|https://issues.apache.org/activemq/browse/SM-1026] - CorrelationId and senderEndpoint properties are not setted on the lightweigth components using the TransformComponentSupport
+    ** [SM-1029|https://issues.apache.org/activemq/browse/SM-1029] - Bug in HTTP BC when configuring managed keystore for SSL
+    ** [SM-1043|https://issues.apache.org/activemq/browse/SM-1043] - Poller sends invalid MessageExchange when file has been deleted
+    ** [SM-1050|https://issues.apache.org/activemq/browse/SM-1050] - Memory Leak in http consumer processor when using SSL
+
+
+* *Improvement*
+    ** [SM-965|https://issues.apache.org/activemq/browse/SM-965] - Allow use of -Dhost, -Dport, -Dusername and -Dpassword on jbi:projectDeploy
+    ** [SM-986|https://issues.apache.org/activemq/browse/SM-986] - The maven jbi plugin should not fail it the SU jbi descriptor generation fails but only displays a warning
+    ** [SM-1049|https://issues.apache.org/activemq/browse/SM-1049] - Raise the number of http requests that can be send concurrently by servicemix-http
+
+
+* *New Feature*
+    ** [SM-958|https://issues.apache.org/activemq/browse/SM-958] - Allow the connections element of the JBI.xml for a Service Assembly to be provided
+    ** [SM-1045|https://issues.apache.org/activemq/browse/SM-1045] - Servicemix tooling changes to generate JBISharedLibraryDescriptor
+
+
+* *Task*
+    ** [SM-1028|https://issues.apache.org/activemq/browse/SM-1028] - Ease the release process by avoiding manual changes in the source files
+
+h2. SVN Tag Checkout
+
+{code}
+svn co http://svn.apache.org/repos/asf/incubator/servicemix/tags/servicemix-3.1.2/
+{code}
+
+h2. Changelog
+
+For a more detailed view of new features and bug fixes, see the [changelog|https://issues.apache.org/activemq/secure/IssueNavigator.jspa?reset=true&mode=hide&sorter/order=DESC&sorter/field=priority&pid=10950&fixfor=11824]
+

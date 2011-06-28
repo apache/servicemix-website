@@ -1,0 +1,12 @@
+---
+title: servicemix-smpp 2009.01
+page_version: 1
+page_creator: gertvanthienen
+page_modifier: gertvanthienen
+--- pipeline:conf
+
+{excerpt}Release Notes - ServiceMix Components - Version servicemix-smpp-2009.01{excerpt}
+
+
+*Bug*
+    * [SMXCOMP-478|http://issues.apache.org/active/browse/SMXCOMP-478] - OSGi bundles for components should not require the jaxp-ri bundle

@@ -1,0 +1,87 @@
+---
+title: Board Report 2011-06-15
+--- pipeline:conf
+h2. June 15th, 2011
+
+{code}
+Status report for the Apache ServiceMix project - June 2011
+
+Project Status
+--------------
+We continue to have an active community with high levels of participation from users on mailing lists, IRC, and issue reporting in Jira.
+
+No issues for the board to consider.
+
+Community
+---------
+No new committers or PMC members this quarter.
+
+Community Objectives
+--------------------
+Roadmap - The maintenance release of ServiceMix 3.4 is nearly ready pending some upstream dependency releases. Discussions on ServiceMix 4.4 and 5.0 releases have stabilized a feature roadmap and some work toward these releases is already underway.
+
+Web Site and Documentation - Work is underway to move the web site content from the Confluence export plugin to being static generated content with some community managed content remaining as wiki pages in Confluence.  As part of this effort we are updating our logo, branding and web site content to reflect the "Apache Project Branding Requirements".  The community is also creating new documentation that will be maintained with each release so that we can provide release specific docs that are self contained. A preview of the new documentation has been made available here: http://servicemix.apache.org/docs/4.3.0-SNAPSHOT/
+
+Branding Status
+---------------
+- Project Naming And Descriptions : Compliant
+- Website Navigation Links : Compliant
+- Trademark Attributions : Non-compliant, will be compliant in new web site.
+- Logos and Graphics : Current logo is not compliant, new logo will be compliant
+- Project Metadata : Compliant
+
+Releases
+--------
+ServiceMix Specs 1.8.0
+ServiceMix JBI Maven Plugin 4.5
+
+ServiceMix External OSGi Bundles
+--------------------------------
+antlr-runtime-3.2
+commons-dbcp-1.4
+javassist-3.12.GA
+perf4j-0.9.13
+rjc-0.6.3
+bcprov-jdk15 1.46_1
+bcprov-jdk16 1.46_1
+cometd-java-server 2.1.1_1
+derbynet 10.7.1.1_1
+derbynet 10.8.1.2_1
+ehcache 2.3.0_3
+freemarker 2.3.16_1
+freemarker 2.3.17_1
+java-apns 0.16_1
+java-xmlbuilder 0.3_1
+java-xmlbuilder 0.4_1
+javax-inject 1_1
+jetty 6.1.25_3
+jetty 6.1.26_3
+jetty-bundle 6.1.22_4
+jetty-bundle 6.1.24_4
+jruby 1.5.2_1
+jruby 1.5.6_1
+mybatis 3.0.4_1
+netty 3.2.4.Final_1
+oauth-commons 20100527_1
+scala-compiler 2.9.0_1
+scala-library 2.9.0_1
+struts-core 2.2.1.1_1
+struts-xwork 2.2.1.1_1
+wsdl4j 1.6.2_5
+freemarker 2.3.18
+xmlsec 1.4.5
+gae-1.4.3
+gdata-1.41.1
+guava-09
+fop-1.0
+batik-1.7
+xmlgraphics-commons-1.4
+dbunit-2.2
+japex-1.2.3
+hadoop-core-0.20.203.0
+velocity-1.7
+velocity-1.6.2
+velocity-1.6.4
+avalon-framework-4.3.1
+
+{code}

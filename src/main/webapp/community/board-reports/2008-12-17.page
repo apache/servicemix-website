@@ -1,0 +1,35 @@
+---
+title: Board Report 2008-12-17
+--- pipeline:conf
+h1. December 17th, 2008
+
+{noformat}
+Since September report, ServiceMix has released the following things:
+* ServiceMix Kernel 1.0.0
+* ServiceMix NMR 1.0.0-m2
+* ServiceMix NMR 1.0.0-m3
+* ServiceMix Specs 1.1.0
+* ServiceMix Specs 1.1.1
+* ServiceMix maven plugins (jbi-maven-plugin 4.0, res-maven-plugin 4.0, xfire-maven-plugin 4.0 ,features-maven-plugin 1.0 ,checksum-maven-plugin 1.0)
+* several osgi bundles for 3thd party dependencies
+* JBI components in version 2008.01
+* ServiceMix 3.2.3
+* ServiceMix 3.3
+* new JBI binding component for SNMP protocol (servicemix-snmp)
+
+A number of committers have been voted:
+* Gianfranco Boccalon
+* Andrea Zopello
+Their ICLAs have not been processed yet.
+
+We have voted one more committer but his employer seems to have concerns
+so the invitation will remain open.
+
+The PMC contains a new member:
+* Lars Heinemann
+
+SSHD, a Java based SSH server / client library originally developed 
+for ServiceMix Kernel / Geronimo GShell integration as the default 
+remoting protocol has been accepted as a new Apache Mina subproject.
+
+{noformat}

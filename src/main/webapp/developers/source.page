@@ -1,0 +1,83 @@
+---
+title: Source
+--- pipeline:conf
+
+{note}
+TODO: Update this page to reflect the multi-project subversion structure we have and to properly discriminate between ServiceMix 3.x, 4.x and 5.x subprojects and modules
+{note}
+
+
+h1. Apache ServiceMix Source Tree 
+
+h2. Browsing the Source Tree 
+
+h3. Web Browsing of SVN
+
+To browse the raw SVN repo, use the following URL: 
+
+{panel}
+http://svn.apache.org/repos/asf/servicemix/smx3/trunk/
+{panel}
+
+To browse the SVN repo using [ViewVC|http://www.viewvc.org/], use the following URL: 
+
+{panel}
+http://svn.apache.org/viewvc/servicemix/smx3/trunk/
+{panel}
+
+h3. Web Browsing of FishEye 
+
+!Fisheye_logo.png!
+
+A hearty thanks to [Atlassian|http://atlassian.com/] for providing [FishEye|http://www.atlassian.com/software/fisheye/] hosting for ServiceMix. Below is the URL to browse the Subversion repo via FishEye:
+
+{panel} 	 
+http://fisheye6.cenqua.com/browse/servicemix/
+{panel}
+
+h2. Checking out the Source Tree 
+
+h3. Anonymous Checkout from the ServiceMix SVN Repo
+
+This project's SVN repository can be checked out anonymously using the following command: 
+
+{code}
+svn co http://svn.apache.org/repos/asf/servicemix/smx3/trunk/
+{code}
+
+h3. Committer Checkout from the ServiceMix SVN Repo
+
+ServiceMix committers can check out using the following command: 
+
+{code}
+svn co https://svn.apache.org/repos/asf/servicemix/smx3/trunk
+{code}
+
+*Only project developers can commit to the SVN tree via this method. SSH must be installed on your client machine. Enter your site password when prompted.*
+
+h2. Building the Source Code
+
+Once you have checked out the source code please read the [instructions on how to build ServiceMix|Building].
+
+h2. Working With the ServiceMix Extensions at the Codehaus
+
+Due to license issues, some extensions to ServiceMix are hosted at the CodeHaus. To browse that SVN repo via the web, use the following URL: 
+
+{panel}
+http://svn.codehaus.org/servicemix/trunk/
+{panel}
+
+This project's SVN repository can be checked out anonymously with the following command: 
+
+{code}
+svn co http://svn.codehaus.org/servicemix/trunk
+{code}
+
+If you are a committer, use the following URL: 
+
+{code}
+svn co https://svn.codehaus.org/servicemix/trunk
+{code}
+
+
+

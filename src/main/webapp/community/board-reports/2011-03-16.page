@@ -1,0 +1,44 @@
+---
+title: Board Report 2011-03-16
+--- pipeline:conf
+h1. March 16th, 2011
+
+{code}
+Status report for the Apache ServiceMix project - March 2011
+
+Project Status
+--------------
+
+We continue to have an active community with high levels of participation from users on mailing lists, IRC, and issue reporting in Jira.
+
+No issues for the board to consider.
+
+Community
+---------
+
+* Voted and accepted Ioannis Canellos as Comitter
+
+Community Objectives
+--------------------
+Roadmap - The community has spent the last 3 months discussing the future roadmap for ServiceMix 4.4 and 5.0 with healthy participation by interested parties (both committers and users participating).  A maintenance release for ServiceMix 3.4 is also being discussed.
+
+Web Site and Documentation - Work is underway to move the web site content from the Confluence export plugin to being static generated content with some community managed content remaining as wiki pages in Confluence.  As part of this effort we are updating our logo, branding and web site content to reflect the "Apache Project Branding Requirements".  The community is also creating new documentation that will be maintained with each release so that we can provide release specific docs that are self contained.
+
+Branding Status
+---------------
+- Project Naming And Descriptions : Compliant
+- Website Navigation Links : Partial compliance (need to standardize link text) will achieve compliance in pending new web site.
+- Trademark Attributions : Non-compliant, will be compliant in new web site.
+- Logos and Graphics : Current logo is not compliant, new logo will be compliant
+- Project Metadata : Compliant
+
+Releases
+--------
+ServiceMix Features 4.3.0 (Main ESB Distribution)
+ServiceMix Components 2010.02
+ServiceMix Specs 1.7.0
+ServiceMix Utils 1.4.0
+ServiceMix NMR 1.3.0
+ServiceMix NMR 1.4.0
+
+{code}

@@ -1,0 +1,35 @@
+---
+title: Board Report 2008-09-17
+--- pipeline:conf
+h1. September 17th, 2008
+
+{code}
+Since the last report, ServiceMix has released the following things:
+ * First set of OSGi bundles
+ * ServiceMix Specs 1.0.1
+ * ServiceMix 3.2.2
+ * ServiceMix Kernel 1.0.0-rc2
+ * Second set of OSGi bundles
+ * ServiceMix Specs 1.1.0
+ * depends-maven-plugin (a maven plugin used in some of our projects)
+ * ServiceMix Kernel 1.0.0 is currently under vote
+
+The ServiceMix Specs project contains OSGi enhanced versions of some Java
+EE specifiations.  Those are mostly repackaged versions of ASL licensed
+specs, but it also contains full code of some specifications too (the JBI
+specification and the JAXB specifications that were needed to be able to
+enhance them for OSGi).  We've discussed moving at least those JAXB specs
+to Geronimo, but no work has been done on that so far.
+
+The ServiceMix Bundles project contains jars repackaged as OSGi bundles
+which are used in ServiceMix 4.x.
+
+The JBI components from ServiceMix 3.x have now been extracted into their 
+own svn subtree to be able to release them independently and share them 
+between ServiceMix 3.x and 4.x.  The short term goal is to release those
+as well as ServiceMix 3.3 and new milestones of ServiceMix 4.0 in the 
+coming weeks.
+
+The ServiceMix zone has been set up and we will work on putting live demos
+of ServiceMix when time permits.
+{code}

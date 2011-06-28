@@ -1,0 +1,44 @@
+---
+title: Board Report 2008-03-19
+--- pipeline:conf
+h1. 19 March 2008
+
+{code}
+Community
+=========
+Added the following committers:
+ * Chris Custine 
+ * Jeff Yu 
+ * Lars Heinemann
+
+Releases
+========
+ * Apache ServiceMix Kernel 1.0-m2
+
+Development
+===========
+  * ServiceMix 3.2 and 3.3 are actively 
+    maintained, with new components being
+    included in the 3.3 trunk (OSWorkflow 
+    and Mail)
+  * Work is being done to improve the 
+    documentation
+  * ServiceMix 4 is being developed with
+    a new milestone of the Kernel done, a
+    milestone of the NMR currently being
+    released
+
+Issues
+======
+ * we need to take care of the export policy,
+   as some JBI components include libraries
+   subject to such requirements
+ * we have requested a solaris zone to root
+ * discussions around importing a JBoss 
+   plugin seem to have reached an agreement 
+   that it should be doable
+ * we have also raised some questions about
+   repackaging some third party libraries 
+   not under ASL 2.0 license to add OSGi 
+   manifest entries and redistribute them
+{code}

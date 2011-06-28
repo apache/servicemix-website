@@ -1,0 +1,34 @@
+---
+title: servicemix-cxf-se 2009.02
+page_version: 1
+page_creator: gertvanthienen
+page_modifier: gertvanthienen
+--- pipeline:conf
+h3. {excerpt}Release notes - servicemix-cxf-se-2009.02{excerpt}
+
+h4. Bug
+* [SMXCOMP-32|http://issues.apache.org/activemq/browse/SMXCOMP-32] - CXF-SE client proxies should support MTOM/attachments
+* [SMXCOMP-504|http://issues.apache.org/activemq/browse/SMXCOMP-504] - ConcurrentModificationExceptions under heavy load in CXF BC
+* [SMXCOMP-509|http://issues.apache.org/activemq/browse/SMXCOMP-509] - cxfse:endpoint service and endpoint attributes do not influence nmr endpoint as expected
+* [SMXCOMP-607|http://issues.apache.org/activemq/browse/SMXCOMP-607] - Persistence-id of the component can&apos;t contain the minus char
+* [SMXCOMP-633|http://issues.apache.org/activemq/browse/SMXCOMP-633] - check if the NormalizedMessage is fault in org.apache.servicemix.cxfse.interceptors.AttachmentInInterceptor
+
+h4. Improvement
+* [SMX4KNL-243|http://issues.apache.org/activemq/browse/SMX4KNL-243] - Start using https://repository.apache.org for Apache snapshots
+* [SMXCOMP-490|http://issues.apache.org/activemq/browse/SMXCOMP-490] - ensure cxf bc and se endpoint check exchange status at very first place
+* [SMXCOMP-550|http://issues.apache.org/activemq/browse/SMXCOMP-550] - cxf se should be able to extract operationName based on payload and servicemodel if using doc/literal style in case that no operationName bound to the MessageExchange
+* [SMXCOMP-574|http://issues.apache.org/activemq/browse/SMXCOMP-574] - CXF-BC and CXF-SE should allow separate configuration for non-default busCfg at component level.
+* [SMXCOMP-601|http://issues.apache.org/activemq/browse/SMXCOMP-601] - cxf client proxy in smx should be able to use jaxws way to get/set properties from/to underlying JBI normalized message
+* [SMXCOMP-650|http://issues.apache.org/activemq/browse/SMXCOMP-650] - CXF-SE should populate the endpoint descriptor with  the WSDL in the validate() method in place of the start() method
+
+h4. New Feature
+* [SMXCOMP-482|http://issues.apache.org/activemq/browse/SMXCOMP-482] - Upgrade to CXF 2.2
+* [SMXCOMP-580|http://issues.apache.org/activemq/browse/SMXCOMP-580] - cxf se should support xmlbean databinding
+* [SMXCOMP-593|http://issues.apache.org/activemq/browse/SMXCOMP-593] - cxf se should be able to use the injected WebServiceContext to get/set in/out properties from/to JBI message
+
+h4. Task
+* [SMX4-296|http://issues.apache.org/activemq/browse/SMX4-296] - upgrade to cxf 2.2.2
+
+h4. Test
+* [SMXCOMP-523|http://issues.apache.org/activemq/browse/SMXCOMP-523] - Improve test coverage - ServiceMix :: CXF Service Engine
+* [SMXCOMP-669|http://issues.apache.org/activemq/browse/SMXCOMP-669] - add test to verify exception in code first way can be handled correctly by cxf bc/se

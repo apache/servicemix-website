@@ -1,0 +1,38 @@
+---
+title: servicemix-camel 2009.02
+page_version: 1
+page_creator: gertvanthienen
+page_modifier: gertvanthienen
+--- pipeline:conf
+h3. {excerpt}Release notes - servicemix-camel-2009.02{excerpt}
+
+h4. Bug
+* [SMXCOMP-18|http://issues.apache.org/activemq/browse/SMXCOMP-18] - Camel component crashes when using JMS flow
+* [SMXCOMP-483|http://issues.apache.org/activemq/browse/SMXCOMP-483] - Camel -&gt; JBI endpoint fails to find converters when deployed into SMX 4
+* [SMXCOMP-489|http://issues.apache.org/activemq/browse/SMXCOMP-489] - When send to JBI fails from an async Camel route, the Camel route will keep on waiting on the AsyncCallback
+* [SMXCOMP-494|http://issues.apache.org/activemq/browse/SMXCOMP-494] - Camel route should avoid returning null out message when receiving InOut exchange
+* [SMXCOMP-495|http://issues.apache.org/activemq/browse/SMXCOMP-495] - smx-camel errorHandler does not forward CamelCaughtException message property to target JBI endpoint
+* [SMXCOMP-567|http://issues.apache.org/activemq/browse/SMXCOMP-567] - ConcurrentModificationException when running servicemix-camel routes under high load
+* [SMXCOMP-569|http://issues.apache.org/activemq/browse/SMXCOMP-569] - Setting a Camel message header/attachment through the getHeaders() method does not propagate into the NormalizedMessage
+* [SMXCOMP-577|http://issues.apache.org/activemq/browse/SMXCOMP-577] - servicemix camel can&apos;t deal with the message have the security subject rightly
+* [SMXCOMP-587|http://issues.apache.org/activemq/browse/SMXCOMP-587] - smx-camel stream caching not working as expected
+* [SMXCOMP-638|http://issues.apache.org/activemq/browse/SMXCOMP-638] - NotSerializableException with JMSFlow when camel returns an exception.
+* [SMXCOMP-651|http://issues.apache.org/activemq/browse/SMXCOMP-651] - smx-camel errorHandler problem when in-only mep received, robust-in-only mep sent, fault returned, and handleFault=&quot;true&quot;
+* [SMXCOMP-663|http://issues.apache.org/activemq/browse/SMXCOMP-663] - Unable to load Camel JBI component in ServiceMix 4 when using plain xml deployment
+* [SMXCOMP-673|http://issues.apache.org/activemq/browse/SMXCOMP-673] - Camel CXF Consumer does not work when deployed in JBI
+
+h4. Improvement
+* [SMX4KNL-243|http://issues.apache.org/activemq/browse/SMX4KNL-243] - Start using https://repository.apache.org for Apache snapshots
+* [SMXCOMP-17|http://issues.apache.org/activemq/browse/SMXCOMP-17] - Retain NormalizedMessage&apos;s SecuritySubject in Camel message
+* [SMXCOMP-626|http://issues.apache.org/activemq/browse/SMXCOMP-626] - servicemix camel component should support copy the camel message back to NormalizedMessage
+* [SMXCOMP-629|http://issues.apache.org/activemq/browse/SMXCOMP-629] - Refactor component so the Camel route no longer directly accesses the JBI MessageExchange/NormalizedMessage
+* [SMXCOMP-639|http://issues.apache.org/activemq/browse/SMXCOMP-639] - Add support for header filter strategy to servicemix-camel jbi endpoints
+* [SMXCOMP-657|http://issues.apache.org/activemq/browse/SMXCOMP-657] - Set the camelprocessor&apos;s thread context classloader with application context classloader
+* [SMXCOMP-689|http://issues.apache.org/activemq/browse/SMXCOMP-689] - Upgrade servicemix-camel to use Camel 2.1.0
+
+h4. Task
+* [SMXCOMP-563|http://issues.apache.org/activemq/browse/SMXCOMP-563] - upgrade the camel version to camel 2.0
+* [SMXCOMP-680|http://issues.apache.org/activemq/browse/SMXCOMP-680] - Add an example unit test for using the Dynamic Recipient List in servicemix-camel
+
+h4. Test
+* [SMXCOMP-532|http://issues.apache.org/activemq/browse/SMXCOMP-532] - Improve test coverage - ServiceMix :: Camel

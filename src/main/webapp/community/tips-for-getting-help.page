@@ -1,0 +1,27 @@
+---
+title: Tips For Getting Help
+--- pipeline:conf
+h1. Tips For Getting Help 
+
+Apache ServiceMix is a community-based, open source project that is staffed by volunteers and we truly welcome and value your [Contributions|Contributing]. We have various methods for getting help with ServiceMix via the [Discussion Forums], [Mailing Lists] and [IRC]. 
+
+{tip:title=How To Ask Questions The Smart Way}
+In general, it's always a good idea to provide as much information as possible when asking your question(s) on the mailing lists. The well-known document by Eric Raymond titled [How To Ask Questions The Smart Way|http://catb.org/~esr/faqs/smart-questions.html] provides a very good list of tips for getting an expedient answer to your question(s). If you haven't read this document before we *highly* recommend it.  
+{tip}
+
+In addition, sending private emails to committers on the project is not advisable. To benefit the entire ServiceMix community, especially those who are searching the mailing list archives for an answer to their problem before posting to the mailing lists, it is always best to send requests for help to the project mailing lists. 
+
+h2. Help Us Help You
+
+Here are some additional tips to help us to help you: 
+
+* Which version of ServiceMix are you using? 
+** If you are using a SNAPSHOT but, what is the date of that build?
+* Any pertinent details of your environment such as:
+** Operating system type and version
+** JVM vendor and version (1.5 or 1.6)
+** Application server type and version 
+
+h2. Commercial Support 
+
+[Commerical support|Support#Support-CommericalSupport] is also available if you need a dedicated support team with a service level agreement for guaranteed response times 

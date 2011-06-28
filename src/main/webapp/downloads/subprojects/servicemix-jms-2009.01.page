@@ -1,0 +1,37 @@
+---
+title: servicemix-jms 2009.01
+page_version: 1
+page_creator: gertvanthienen
+page_modifier: gertvanthienen
+--- pipeline:conf
+
+{excerpt}Release Notes - ServiceMix Components - Version servicemix-jms-2009.01{excerpt}
+
+
+*Bug*
+    * [SMXCOMP-111|http://issues.apache.org/active/browse/SMXCOMP-111] - When deployed in Smx4, the JBI SUs do not have access to the whole JRE
+    * [SMXCOMP-113|http://issues.apache.org/active/browse/SMXCOMP-113] - Components jars should not include the jbi descriptor
+    * [SMXCOMP-126|http://issues.apache.org/active/browse/SMXCOMP-126] - JmsProviderEndpointTest hang
+    * [SMXCOMP-127|http://issues.apache.org/active/browse/SMXCOMP-127] - No rollback for failed InOnly exchange in JMS consumer endpoint
+    * [SMXCOMP-129|http://issues.apache.org/active/browse/SMXCOMP-129] - The "Content-Type" property is used in jms messages, but it is not compliant with the jms spec
+    * [SMXCOMP-131|http://issues.apache.org/active/browse/SMXCOMP-131] - Update servicemix-jms to use soap over jms spec property values
+    * [SMXCOMP-133|http://issues.apache.org/active/browse/SMXCOMP-133] - new smx-jms marshaler throws exception attempting to copy property "JbiConstants.DATESTAMP_PROPERTY_NAME" from NMR to JMS
+    * [SMXCOMP-138|http://issues.apache.org/active/browse/SMXCOMP-138] - smx-jms new, non-soap, in/out, provider/consumer endpoints do not pass JBI Faults correctly
+    * [SMXCOMP-140|http://issues.apache.org/active/browse/SMXCOMP-140] - smx-jms new, non-soap, in/out, provider/consumer endpoints do not pass JBI Errors correctly
+    * [SMXCOMP-141|http://issues.apache.org/active/browse/SMXCOMP-141] - smx-jms new, non-soap, in/out, provider/consumer endpoints do not pass JBI Attachments correctly
+    * [SMXCOMP-143|http://issues.apache.org/active/browse/SMXCOMP-143] - smx-jms old, non-soap, in/out, provider/consumer endpoints do not pass JBI Faults correctly
+    * [SMXCOMP-145|http://issues.apache.org/active/browse/SMXCOMP-145] - smx-jms provider should not create a temporary replyTo destination unless one is needed
+    * [SMXCOMP-458|http://issues.apache.org/active/browse/SMXCOMP-458] - Malformed manifest.mf  is generated for the servicemix-http bundle
+    * [SMXCOMP-478|http://issues.apache.org/active/browse/SMXCOMP-478] - OSGi bundles for components should not require the jaxp-ri bundle
+
+*Improvement*
+    * [SMXCOMP-115|http://issues.apache.org/active/browse/SMXCOMP-115] - Patch available for upgrading components to Spring 2.5.6
+    * [SMXCOMP-116|http://issues.apache.org/active/browse/SMXCOMP-116] - Upgrade to spring osgi 1.2.0-m2
+    * [SMXCOMP-136|http://issues.apache.org/active/browse/SMXCOMP-136] - smx-jms consumer endpoints should support maxConcurrentConsumers property from Spring JMS
+    * [SMXCOMP-148|http://issues.apache.org/active/browse/SMXCOMP-148] - Refactor JmsProviderEndpoint to not use reflection to call protected method on Spring JmsTemplate class
+    * [SMXCOMP-150|http://issues.apache.org/active/browse/SMXCOMP-150] - Added dependency to servicemix-jms POM to ensure that base endpoint properties are documented in the xbean generated XSD, Wiki, HTML
+
+
+
+
+

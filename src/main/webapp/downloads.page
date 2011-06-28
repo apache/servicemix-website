@@ -1,0 +1,18 @@
+---
+title: Download
+page_version: 43
+page_creator: jstrachan
+page_modifier: nanthrax
+--- pipeline:conf
+h1. Latest Releases
+
+The latest release is the [ServiceMix 4.3.0 Release|ServiceMix 4.3.0].
+We strongly encourage all users to use this Release.
+
+{excerpt-include:ServiceMix 4.3.0|nopanel=true}
+
+h2. Previous Releases
+
+An archive of previous releases can be found [here|http://archive.apache.org/dist/servicemix/].
+
+{children:sort=title}

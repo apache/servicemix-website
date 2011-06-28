@@ -1,0 +1,11 @@
+---
+title: Discussion Forums
+--- pipeline:conf
+h1. Discussion Forums
+
+Before posting you might want to read the [Tips For Getting Help].  Many users prefer to use online forums rather than joining a mail list which can lead to lots more email traffic so we use these forums which also work with our [Mailing Lists] so that both stay completely in sync.  Note that the forums have a delay (up to a few hours) before displaying new posts, so please don't send your post several times, and be patient.  If you prefer an immediate feedback, please use the mailing lists, as they do not have such delays.
+
+{html}
+<a id="nabblelink" href="http://servicemix.396122.n5.nabble.com/">ServiceMix</a>
+<script src="http://n5.nabble.com/embed/f396122"></script>
+{html}

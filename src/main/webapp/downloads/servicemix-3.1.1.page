@@ -1,0 +1,97 @@
+---
+title: ServiceMix 3.1.1
+page_version: 3
+page_creator: gnodet
+page_modifier: gnodet
+--- pipeline:conf
+
+h2. Download Here
+
+*Linux/Mac OS X/Unix Downloads*
+* [Apache ServiceMix 3.1.1-incubating (.tar.gz)|http://people.apache.org/repo/m2-incubating-repository/org/apache/servicemix/apache-servicemix/3.1.1-incubating/apache-servicemix-3.1.1-incubating.tar.gz] [PGP|http://people.apache.org/repo/m2-incubating-repository/org/apache/servicemix/apache-servicemix/3.1.1-incubating/apache-servicemix-3.1.1-incubating.tar.gz.asc] [SHA|http://people.apache.org/repo/m2-incubating-repository/org/apache/servicemix/apache-servicemix/3.1.1-incubating/apache-servicemix-3.1.1-incubating.tar.gz.sha1] [MD5|http://people.apache.org/repo/m2-incubating-repository/org/apache/servicemix/apache-servicemix/3.1.1-incubating/apache-servicemix-3.1.1-incubating.tar.gz.md5]
+* [Apache ServiceMix 3.1.1-incubating Sources (.tar.gz)|http://people.apache.org/repo/m2-incubating-repository/org/apache/servicemix/apache-servicemix/3.1.1-incubating/apache-servicemix-3.1.1-incubating-src.tar.gz] [PGP|http://people.apache.org/repo/m2-incubating-repository/org/apache/servicemix/apache-servicemix/3.1.1-incubating/apache-servicemix-3.1.1-incubating-src.tar.gz.asc] [SHA|http://people.apache.org/repo/m2-incubating-repository/org/apache/servicemix/apache-servicemix/3.1.1-incubating/apache-servicemix-3.1.1-incubating-src.tar.gz.sha1] [MD5|http://people.apache.org/repo/m2-incubating-repository/org/apache/servicemix/apache-servicemix/3.1.1-incubating/apache-servicemix-3.1.1-incubating-src.tar.gz.md5]
+
+*Windows Downloads*
+* [Apache ServiceMix 3.1.1-incubating (.zip)|http://people.apache.org/repo/m2-incubating-repository/org/apache/servicemix/apache-servicemix/3.1.1-incubating/apache-servicemix-3.1.1-incubating.zip] [PGP|http://people.apache.org/repo/m2-incubating-repository/org/apache/servicemix/apache-servicemix/3.1.1-incubating/apache-servicemix-3.1.1-incubating.zip.asc] [SHA|http://people.apache.org/repo/m2-incubating-repository/org/apache/servicemix/apache-servicemix/3.1.1-incubating/apache-servicemix-3.1.1-incubating.zip.sha1] [MD5|http://people.apache.org/repo/m2-incubating-repository/org/apache/servicemix/apache-servicemix/3.1.1-incubating/apache-servicemix-3.1.1-incubating.zip.md5]
+* [Apache ServiceMix 3.1.1-incubating Sources (.zip)|http://people.apache.org/repo/m2-incubating-repository/org/apache/servicemix/apache-servicemix/3.1.1-incubating/apache-servicemix-3.1.1-incubating-src.zip] [PGP|http://people.apache.org/repo/m2-incubating-repository/org/apache/servicemix/apache-servicemix/3.1.1-incubating/apache-servicemix-3.1.1-incubating-src.zip.asc] [SHA|http://people.apache.org/repo/m2-incubating-repository/org/apache/servicemix/apache-servicemix/3.1.1-incubating/apache-servicemix-3.1.1-incubating-src.zip.sha1] [MD5|http://people.apache.org/repo/m2-incubating-repository/org/apache/servicemix/apache-servicemix/3.1.1-incubating/apache-servicemix-3.1.1-incubating-src.zip.md5]
+
+*Web Application*
+* [Apache ServiceMix Web Application 3.1.1-incubating (.war)|http://people.apache.org/repo/m2-incubating-repository/org/apache/servicemix/apache-servicemix-web/3.1.1-incubating/apache-servicemix-web-3.1.1-incubating.war] [PGP|http://people.apache.org/repo/m2-incubating-repository/org/apache/servicemix/apache-servicemix-web/3.1.1-incubating/apache-servicemix-web-3.1.1-incubating.war.asc] [SHA|http://people.apache.org/repo/m2-incubating-repository/org/apache/servicemix/apache-servicemix-web/3.1.1-incubating/apache-servicemix-web-3.1.1-incubating.war.sha1] [MD5|http://people.apache.org/repo/m2-incubating-repository/org/apache/servicemix/apache-servicemix-web/3.1.1-incubating/apache-servicemix-web-3.1.1-incubating.war.md5]
+
+
+h2. Release notes
+
+* *Bug*
+    ** [SM-331|https://issues.apache.org/activemq/browse/SM-331] - JabberComponentSupport attempts to create a jabber account every time on start
+    ** [SM-828|https://issues.apache.org/activemq/browse/SM-828] - OutBinding doesn't allow for DeliveryChannel.accept()
+    ** [SM-829|https://issues.apache.org/activemq/browse/SM-829] - Incorrect file encoding of created jbi.xml
+    ** [SM-832|https://issues.apache.org/activemq/browse/SM-832] - Ws-Security signature does not work for outbound
+    ** [SM-835|https://issues.apache.org/activemq/browse/SM-835] - achetypes should not contain the <classpath/> tag inside the spring files
+    ** [SM-839|https://issues.apache.org/activemq/browse/SM-839] - java.lang.IllegalStateException: Could not find valid implementation for: 2.0
+    ** [SM-840|https://issues.apache.org/activemq/browse/SM-840] - JMS connections not close in servicemix-wsn2005
+    ** [SM-841|https://issues.apache.org/activemq/browse/SM-841] - The servicemix-http provider endpoint does not properly handle web services that return faults with multiple elements in the detail section.
+    ** [SM-842|https://issues.apache.org/activemq/browse/SM-842] - AuthenticationService set on the configuration is not used
+    ** [SM-843|https://issues.apache.org/activemq/browse/SM-843] - The defaultMep attribute is missing on the jms endpoint in loan-broker-bpel demo
+    ** [SM-845|https://issues.apache.org/activemq/browse/SM-845] - servicemix-quartz includes unneeded spring libraries
+    ** [SM-846|https://issues.apache.org/activemq/browse/SM-846] - Call to default constructor of JBIContainer changes log4j log level
+    ** [SM-847|https://issues.apache.org/activemq/browse/SM-847] - Old version of xml-apis in distribution
+    ** [SM-849|https://issues.apache.org/activemq/browse/SM-849] - The web console fails when displaying an error
+    ** [SM-850|https://issues.apache.org/activemq/browse/SM-850] - Error starting ServiceMix on AIX
+    ** [SM-853|https://issues.apache.org/activemq/browse/SM-853] - NPE in DotViewFlowListener
+    ** [SM-860|https://issues.apache.org/activemq/browse/SM-860] - EndpointReferenceBuilder.getReference() should cache its DocumentBuilderFactory instance
+    ** [SM-861|https://issues.apache.org/activemq/browse/SM-861] - servicemix-common does not properly set the correlationId for exchanges that are sent using sendSync
+    ** [SM-862|https://issues.apache.org/activemq/browse/SM-862] - Possible problem when @WebMethod returns an empty string for the operation name
+    ** [SM-863|https://issues.apache.org/activemq/browse/SM-863] - Generated ids are too long, it may cause problems when using them in databases as indexes
+    ** [SM-866|https://issues.apache.org/activemq/browse/SM-866] - wsn-http-binding fails to start 
+    ** [SM-867|https://issues.apache.org/activemq/browse/SM-867] - Cannot add soap header in JSR181 component
+    ** [SM-873|https://issues.apache.org/activemq/browse/SM-873] - servicemix-http does not return a valid fault when the xml is invalid
+    ** [SM-874|https://issues.apache.org/activemq/browse/SM-874] - servicemix-http does not honor the soap version for certain kinds of faults
+    ** [SM-878|https://issues.apache.org/activemq/browse/SM-878] - servicemix-bean is not include in the distribution
+    ** [SM-879|https://issues.apache.org/activemq/browse/SM-879] - EIP XPath Splitter and Drools3.1 used together cause problems in xpath evaluation
+    ** [SM-890|https://issues.apache.org/activemq/browse/SM-890] - Security Subject can not be propagated in servicemix-jsr181 when using the jsr181 proxies
+    ** [SM-891|https://issues.apache.org/activemq/browse/SM-891] - Maven plugin should use finalName
+    ** [SM-892|https://issues.apache.org/activemq/browse/SM-892] - ManagementContext.shutdown() calls wrong method to unregister MBeans
+    ** [SM-893|https://issues.apache.org/activemq/browse/SM-893] - Messages lost under heavy load using JMSFlow
+    ** [SM-900|https://issues.apache.org/activemq/browse/SM-900] - WSDLFlattenner does not handle schemas inclusions
+    ** [SM-902|https://issues.apache.org/activemq/browse/SM-902] -  File Binding example error with JaxenStringXPathExpression 
+    ** [SM-904|https://issues.apache.org/activemq/browse/SM-904] - The jmx url is wrong if there are spaces at the end of the properties
+    ** [SM-911|https://issues.apache.org/activemq/browse/SM-911] - JDBCComponent: The first column index is 1 in a result from sql query (non zero)
+    ** [SM-914|https://issues.apache.org/activemq/browse/SM-914] - Exception upon generating a dot file from the apache-servicemix-web distribution in Tomcat 
+    ** [SM-923|https://issues.apache.org/activemq/browse/SM-923] - NPE in the web console when viewing component with lightweight components deployed
+    ** [SM-928|https://issues.apache.org/activemq/browse/SM-928] - ProviderProcessor leaks memory for https endpoints
+    ** [SM-938|https://issues.apache.org/activemq/browse/SM-938] - Component updates (from the hot deployer) sometimes fail
+    ** [SM-940|https://issues.apache.org/activemq/browse/SM-940] - OneWay operation are not supported
+    ** [SM-941|https://issues.apache.org/activemq/browse/SM-941] - NPE in BeanComponent - checkEndOfRequest
+    ** [SM-951|https://issues.apache.org/activemq/browse/SM-951] - Remove servicemix-sca which is hosted in tuscany and which is completely outdated
+
+* *Improvement*
+    ** [SM-611|https://issues.apache.org/activemq/browse/SM-611] - Reduce non-optional core dependencies
+    ** [SM-795|https://issues.apache.org/activemq/browse/SM-795] - HTTP headers attached as properties may cause requests to fail
+    ** [SM-830|https://issues.apache.org/activemq/browse/SM-830] - Replace System.out printing with logger
+    ** [SM-865|https://issues.apache.org/activemq/browse/SM-865] - Remove jta and j2ee-connector from the mandatory dependencies when running an embedded ServiceMix instance
+    ** [SM-869|https://issues.apache.org/activemq/browse/SM-869] - Avoid creating xml factories in jsr181
+    ** [SM-870|https://issues.apache.org/activemq/browse/SM-870] - StaxSourceTransformer should reuse the XMLStreamReader when available
+    ** [SM-871|https://issues.apache.org/activemq/browse/SM-871] - Optimize wsdl-first example
+    ** [SM-876|https://issues.apache.org/activemq/browse/SM-876] - jmx.xml should use the jmx.url property
+    ** [SM-877|https://issues.apache.org/activemq/browse/SM-877] - Bottleneck in SoapReader.readSoapUsingDom()
+    ** [SM-889|https://issues.apache.org/activemq/browse/SM-889] - Add possibility to rename files after FTP upload
+    ** [SM-913|https://issues.apache.org/activemq/browse/SM-913] - Improve archetypes and add a batch file for ease of use
+    ** [SM-922|https://issues.apache.org/activemq/browse/SM-922] - When browsing for available services, existing urls should end with the needed '/' when displayed
+
+
+* *Task*
+    ** [SM-901|https://issues.apache.org/activemq/browse/SM-901] - Upgrade to xfire 1.2.5
+    ** [SM-916|https://issues.apache.org/activemq/browse/SM-916] - Upgrade to ActiveMQ 4.1.1
+    ** [SM-946|https://issues.apache.org/activemq/browse/SM-946] - Upgrade loan-broker-bpel example to use Apache Ode
+
+
+h2. SVN Tag Checkout
+
+{code}
+svn co http://svn.apache.org/repos/asf/incubator/servicemix/tags/servicemix-3.1.1/
+{code}
+
+h2. Changelog
+
+For a more detailed view of new features and bug fixes, see the [changelog|http://issues.apache.org/activemq/secure/IssueNavigator.jspa?pid=10950&fixfor=11811&sorter/field=issuekey&sorter/order=DESC&tempMax=999&reset=true]
+

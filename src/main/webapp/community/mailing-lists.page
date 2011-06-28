@@ -1,0 +1,20 @@
+---
+title: Mailing Lists
+--- pipeline:conf
+h1. Mailing Lists
+
+{tip:title=Tips For Getting Help}
+Before posting your questions to the mailing lists, we encourage you to read the [Tips For Getting Help]. 
+{tip}
+
+The following mailing lists are available for getting help with Apache ServiceMix: 
+
+|| List Name || Subscribe || Unsubscribe || Archive || Nabble (Online Forums) || MarkMail (Archive) ||
+| servicemix User List | [Subscribe|mailto:users-subscribe@servicemix.apache.org] | [Unsubscribe|mailto:users-unsubscribe@servicemix.apache.org] | [Archive|http://mail-archives.apache.org/mod_mbox/servicemix-users/] | [Nabble|http://servicemix.396122.n5.nabble.com/ServiceMix-User-f396123.html] | [MarkMail|http://markmail.org/search/list:servicemix-users] |
+| servicemix Developer List | [Subscribe|mailto:dev-subscribe@servicemix.apache.org] | [Unsubscribe|mailto:dev-unsubscribe@servicemix.apache.org] | [Archive|http://mail-archives.apache.org/mod_mbox/servicemix-dev/] | [Nabble|http://servicemix.396122.n5.nabble.com/ServiceMix-Dev-f421438.html] | [MarkMail|http://markmail.org/search/list:servicemix-dev] |
+| servicemix SCM List | [Subscribe|mailto:commits-subscribe@servicemix.apache.org] | [Unsubscribe|mailto:commits-unsubscribe@servicemix.apache.org] | [Archive|http://mail-archives.apache.org/mod_mbox/servicemix-commits/] | [Nabble|http://servicemix.396122.n5.nabble.com/ServiceMix-Commits-f449538.html] | [MarkMail|http://markmail.org/search/list:servicemix-commits] |
+
+
+h2. Discussion Forums
+
+If you prefer as web interface to the mailing lists instead of using a mail client, you could use the [Discussion Forums]. The discussion forums are provided by a third party and are sync'd with the mailing lists on a regular basis. 

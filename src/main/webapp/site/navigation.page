@@ -1,0 +1,51 @@
+---
+title: Navigation
+--- pipeline:conf
+h3. [Overview]
+
+- [Home|index]
+- [Downloads]
+- [License]
+
+h3. [Documentation]
+- TODO
+
+h3. Search
+
+{html}
+<DIV style="padding: 5px 5px 0px 25px;">
+<FORM action="http://www.google.com/search" method="get" style="font-size: 10px;">
+<INPUT name="ie" type="hidden" value="UTF-8"></INPUT>
+<INPUT name="oe" type="hidden" value="UTF-8"></INPUT>
+  <INPUT maxlength="255" name="q" size="15" type="text" value></INPUT>
+  <INPUT name="btnG" type="submit" value="Search"></INPUT>
+  <INPUT name="domains" type="hidden" value="servicemix.apache.org"></INPUT>
+  <INPUT name="sitesearch" type="hidden" value="servicemix.apache.org"></INPUT>
+</FORM>
+</DIV>
+{html}
+
+h3. [Community]
+
+- [Support]
+- [Discussion Forums]
+- [Mailing Lists]
+- [Issues|http://issues.apache.org/activemq/browse/SM]
+- [Contributing]
+- [Users]
+- [Team]
+
+h3. [Developers]
+
+- [Source]
+- [Building]
+- [Ideas]
+- [Becoming a committer]
+- [Committer's Guide]
+- [Release Guide]
+- [Related Projects]
+- [Tools]
+
+{include:Related Projects}
+
+{include:Apache Software Foundation}

@@ -1,0 +1,30 @@
+---
+title: ServiceMix 1.0 M2 Release
+page_version: 6
+page_creator: jstrachan
+page_modifier: gnodet
+--- pipeline:conf
+
+We are pleased to announce the 1.0-M2 release of ServiceMix!
+
+h2. Download Here
+||Download||Description||
+|[servicemix-1.0-M2.zip|http://dist.codehaus.org/servicemix/distributions/servicemix-1.0-M2.zip]|Binary Distribution in zip package|
+|[servicemix-1.0-M2-src.zip|http://dist.codehaus.org/servicemix/distributions/servicemix-1.0-M2-src.zip]|Source Distribution in zip package|
+|[servicemix-1.0-M2.tar.gz|http://dist.codehaus.org/servicemix/distributions/servicemix-1.0-M2.tar.gz]|Binary Distribution in gz package|
+|[servicemix-1.0-M2-src.tar.gz|http://dist.codehaus.org/servicemix/distributions/servicemix-1.0-M2-src.tar.gz]|Source Distribution in gz package|
+
+h2. Changelog
+For a more detailed view of new features and bug fixes, see the [release notes|http://jira.logicblaze.com/jira/secure/IssueNavigator.jspa?reset=true&pid=10950&fixfor=11671]
+
+h2. Summary
+This release includes support for 
+* Completed [BPEL integration|BPEL] using the PXE's full JBI deployment unit for the BPEL engine and JBI deployment units for the actual processes, together with a [working example|BPEL Example]
+* [High performance content based router and transformation engine using XPath|XPath Router]
+* Rules based routing and transformations using [Drools]
+* [JBoss Deployer] for easy deployment of ServiceMix inside JBoss in addition to the current Spring and Geronimo deployers
+* More [Examples] on how to use ServiceMix
+
+h3. Detail
+{jiraissues:url=http://jira.logicblaze.com/jira/secure/IssueNavigator.jspa?view=rss&pid=10950&fixfor=11671&sorter/field=issuekey&sorter/order=DESC&tempMax=25&reset=true&decorator=none}
+

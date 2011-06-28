@@ -1,0 +1,89 @@
+---
+title: Contributing
+page_version: 34
+page_creator: jstrachan
+page_modifier: ccustine
+--- pipeline:conf
+h1. Anyone Can Contribute! 
+
+There are many ways you can help make ServiceMix a better piece of software - please dive in and help\!
+
+Surf the documentation - if somethings confusing or not clear, let us know or even edit it yourself. All you need to do is [register for a wiki account|http://cwiki.apache.org/confluence/signup.action] and you can begin contributing your own docs, fixing docs, updating docs, etc. 
+
+Download the code, try it out, and see what you think. Browse the source code. Got an itch to scratch, want to tune some operation or add some feature? Anyone can dive right in. 
+
+Want to do some hacking on ServiceMix? Try surfing the our [issue tracker|http://issues.apache.org/activemq/browse/SM] for open issues or features that need to be implemented, take ownership of an issue and try to fix it.
+
+If you'd rather have a more gentle introduction to working on the ServiceMix project, look at the [unit tests cases|http://svn.apache.org/repos/asf/incubator/servicemix/trunk/servicemix-core/src/test/java/org/apache/servicemix/] and help us to improve our test coverage.
+
+h2. Apache Committers
+Apache committers are allowed write access to the [ServiceMix sandbox|https://svn.apache.org/repos/asf/servicemix/sandbox].  This makes it easy to collaborate with us on components or integration efforts with other Apache projects.  Simply create a directory with your Apache userid and branch the code you want to work on.  Create a Jira issue with a description of the work and use this Jira ID in the comments for your commits.  The work history will now appear in the Fisheye and Subversion Commits tabs of the Jira issue.
+
+h2. Getting In Touch
+
+There are various ways of communicating with the ServiceMix community.
+- visit the [Discussion Forum|http://www.nabble.com/ServiceMix---User-f12050.html]
+- subscribe to the [Mailing Lists] and take part in any conversations
+- pop by on [IRC|irc://irc.codehaus.org/servicemix] and say hi
+- add some comments to the [wiki|Navigation](requires a log in)
+- if you use ServiceMix please tell us about it on our [Users page|Users]
+
+h2. If You Find a Bug or Problem
+
+Please create a new issue in the [JIRA issue tracker|http://issues.apache.org/activemq/browse/SM]
+
+h3. Creating a JIRA Issue 
+
+# [Register for a JIRA account|https://issues.apache.org/activemq/secure/Signup!default.jspa] 
+# Log in to the JIRA issue tracking system 
+# Visit the [ServiceMix JIRA page|http://issues.apache.org/activemq/browse/SM] and click the link named [Create a new issue in project ServiceMix|https://issues.apache.org/activemq/secure/CreateIssue!default.jspa] 
+# Fill in as much detail as possible 
+# Add a JUnit test if possible
+
+If you can create a JUnit test case then your issue is more likely to be resolved quicker. The best way to start is to take a look at some of the [existing unit tests|http://svn.apache.org/repos/asf/incubator/servicemix/trunk/servicemix-core/src/test/java/org/apache/servicemix/] as examples. Then we can commit your test case along with your patch to Subversion so that we'll know that the issue its really fixed and we can ensure that it stays fixed in future releases.
+
+h2. Submitting Patches
+
+We gladly accept patches if you can find ways to improve, tune or fix ServiceMix in some way. To submit a patch, please use the following steps: 
+
+# Build against the trunk to ensure that your code compiles correctly and that your test runs 
+# Create a new [JIRA issue|http://issues.apache.org/activemq/browse/SM] that fully explains the situation, including the environments you've tested, the JVM version and vendor you're using and anything else that might be useful to know about the situation 
+# Attach the patch to the issue that you are creating and make sure to tick the 'Patch Attached' checkbox on the issue 
+# Send an email to the [Mailing Lists] or [Discussion Forums] to let people know you've filed an issue and contributed a patch for the issue 
+# Please try to also submit tests in the patch. Including tests makes applying the patch much easier and faster. Tests allow a patch to be applied and tested much quicker which results in your issue being fixed faster. 
+
+h3. Creating the Patch 
+
+Most IDEs can create nice patches now very easily. If you're a command line person try the following to create the patch:
+
+{code:none}
+diff -u Main.java.orig Main.java >> patchfile.txt
+{code}
+
+or, if you're working against the code base checked out from the Subversion repository (this is the best way to work), then just use the {{svn diff}} command in the Subversion client. 
+
+{code:none}
+svn diff Main.java >> patchfile.txt
+{code}
+
+{info:title=Make Sure to Include All New Files in Your Patch}
+If you're trying to include new files in your patch, make sure to do a {{svn add}} of those files before doing the diff. This will schedule the files for addition to the Subversion repository. Even if you don't have committer privileges you can do this. It will allow you to create a diff file that includes any new files you're contributing. 
+{info}
+
+{tip:title=A Tip For Creating Patches}
+When creating a patch, making sure the patch filename ends in .txt will allow it to be easily viewed in a browser when it is attached to a JIRA issue. 
+{tip}
+
+h2. Using the Issue Tracker
+
+Before you can create an issue in the JIRA issue tracker you need to register an account with it. This is quick and painless.
+
+If you want to have a go at fixing an issue you need to be in the list of servicemix-developers on the issue tracker. To join the group, please mail the dev@servicemix.apache.org mail list with the email address you used to register with the issue tracker and we'll add you to the group.
+
+Why not dive in and try tackle some of our outstanding issues?
+{jiraissues:url=https://issues.apache.org/activemq/sr/jira.issueviews:searchrequest-xml/temp/SearchRequest.xml?pid=10950&pid=11060&pid=11080&pid=11050&pid=11040&resolution=-1&sorter/field=issuekey&sorter/order=DESC&sorter/field=created&sorter/order=DESC&tempMax=20&anonymous=true&count=true&columns=type;key;summary;created;assignee;status;resolution}
+{jiraissues}
+
+h2. Becoming a Committer
+
+The first step is contributing to the project; if you want to take that a step forward and become a fellow committer on the project then see the page about [Becoming a committer]. 

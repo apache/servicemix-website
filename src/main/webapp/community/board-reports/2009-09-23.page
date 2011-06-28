@@ -1,0 +1,29 @@
+---
+title: Board Report 2009-09-23
+--- pipeline:conf
+h1. September 23, 2009
+
+{code}
+A new version of servicemix-exec component is ready to be release. A vote will be
+proposed soon. This new version supports WSDL publishing with JAXB data binding. 
+The WSDL support for most of components is on the road. Using WSDL, the component 
+can be "self documented" and support multi-action.
+
+A new component has begun: the RMI component. This binding component works in provider
+or consumer mode. In consumer mode, it binds a new entry in the ServiceMix registry
+and transforms the RMI invocation into a XML request (data binding). In provider mode,
+it get the RMI stub on the remote interface and call an external RMI endpoint. In the
+same way, it uses data binding to transform the RMI invocation request/response into 
+a XML compliant message (sent into the NMR).
+
+The LDAP component WSDL support has begun.
+
+Work started switching to Apache Felix Karaf as the OSGi container/runtime and will
+probably be part of 4.1.0 release which is scheduled for aprox. September/October 2009.
+
+A refactoring of the ServiceMix documentation has begun using DocBook to generate a
+manual page. For now, the documentation is in sandbox. The purpose is to provide a
+multi-format enterprise documentation and promote it with the new website.
+
+Eoghan Glynn has been voted in as a new ServiceMix committer.
+{code}

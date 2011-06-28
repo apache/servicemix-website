@@ -1,0 +1,16 @@
+---
+title: jbi-maven-plugin 4.2
+page_version: 5
+page_creator: gertvanthienen
+page_modifier: ffang
+--- pipeline:conf
+h3. {excerpt}JBI Maven Plugin version 4.2{excerpt}
+
+h4. Bug
+* [SM-1873|http://issues.apache.org/activemq/browse/SM-1873] - GenerateServiceAssemblyMojo doesn&apos;t include any files created by a build such as resources
+* [SM-1904|http://issues.apache.org/activemq/browse/SM-1904] - Invalid camel dependencies in servicemix-camel-service-unit and servicemix-osgi-camel-archetype
+* [SM-1906|http://issues.apache.org/activemq/browse/SM-1906] - JBI Maven plugin is unable to manage several SU based on the same component in the same SA
+* [SM-1918|http://issues.apache.org/activemq/browse/SM-1918] - SU dependency from active profile in SA pom should also be taken into account in jbi.xml
+
+h4. Improvement
+* [SM-1882|http://issues.apache.org/activemq/browse/SM-1882] - jbi-maven-plugin: Include other dependency types in the assembly (eg. ejb)

@@ -1,0 +1,23 @@
+---
+title: Board Report 2010-03-17
+--- pipeline:conf
+h1. March 17th, 2010
+
+{code}
+The following releases have been performed:
+* commons-pool 1.4_1 bundle
+* commons-pool 1.5.4_1 bundle
+* dozer 5.2.0 bundle
+* jetty 6.1.22 bundle
+* protobuf 2.2.0 bundle
+* JBI maven plugin 4.2 
+* JBI maven plugin 4.3
+
+On the road:
+* 2010.01 servicemix components release is under vote
+* ServiceMix 3.3.2, ServiceMix NMR 1.1 and ServiceMix 4.2 
+  releases will be started as soon as components are released
+* DocBook based documentation is progressing
+
+No change in the committers or pmc members list.
+{code}

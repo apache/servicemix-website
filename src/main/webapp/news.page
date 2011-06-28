@@ -1,0 +1,14 @@
+---
+title: Apache ServiceMix News
+--- pipeline:conf
+
+News from and for the Apache ServiceMix community!
+
+{include:recent}
+
+h2. Older news items
+
+* [ServiceMix 3.3.1 Release | servicemix-331-released]
+* [ServiceMix 3.2.3 Release | servicemix-323-released]
+* [ServiceMix 3.3 Release | servicemix-33-released]
+* [ServiceMix 3.2.2 Release | servicemix-322-released]

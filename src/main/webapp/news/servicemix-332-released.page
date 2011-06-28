@@ -1,0 +1,10 @@
+---
+title: ServiceMix 3.3.2 Released
+--- pipeline:conf
+
+h2. ServiceMix 3.3.2 released
+(by Jean-Baptiste Onofré on April 20, 2010)
+
+The ServiceMix team is pleased to announce the availability of ServiceMix 3.3.2.
+This releases fixes a number of bugs and ships with the latest 2010.01 version of all the JBI components.
+For more informations, please see the [release notes|ServiceMix 3.3.2]

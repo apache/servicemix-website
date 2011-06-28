@@ -1,0 +1,53 @@
+---
+title: ServiceMix 1.0 M1 Release
+page_version: 7
+page_creator: jstrachan
+page_modifier: gnodet
+--- pipeline:conf
+
+We are pleased to announce the 1.0-M1 release of ServiceMix!
+
+h2. Download Here
+||Download||Description||
+|[servicemix-1.0-M1.zip|http://dist.codehaus.org/servicemix/distributions/servicemix-1.0-M1.zip]|Binary Distribution in zip package|
+|[servicemix-1.0-M1-src.zip|http://dist.codehaus.org/servicemix/distributions/servicemix-1.0-M1-src.zip]|Source Distribution in zip package|
+|[servicemix-1.0-M1.tar.gz|http://dist.codehaus.org/servicemix/distributions/servicemix-1.0-M1.tar.gz]|Binary Distribution in gz package|
+|[servicemix-1.0-M1-src.tar.gz|http://dist.codehaus.org/servicemix/distributions/servicemix-1.0-M1-src.tar.gz]|Source Distribution in gz package|
+
+h2. Changelog
+For a more detailed view of new features and bug fixes, see the [release notes|http://jira.logicblaze.com/jira/secure/IssueNavigator.jspa?reset=true&pid=10950&fixfor=11670]
+
+h2. Summary
+ServiceMix is an open source ESB designed from the ground up on JBI (JSR 208) principles, semantics and APIs. ServiceMix includes a complete JBI container including the Normalised Message Service and Router, the [JBI Management MBeans|http://servicemix.org/Management] support for JBI deployment units and [Ant tasks|http://servicemix.org/Ant+Tasks] to install components and manage the container.
+
+In addition ServiceMix contains a suite of JBI components
+
+SOAP Bindings:
+* SAAJ & Apache Axis, WSIF, ActiveSOAP and XFire
+
+Transport components:
+* JMS, HTTP, email, FTP, Jabber, Mule
+
+JBI services:
+* WS-BPEL support via PXE (http://pxe.fivesight.com)
+* transformation via XSLT
+* caching via JCache
+* timing & scheduler services using JCA and Quartz,
+* validation through XSD/RelaxNG
+* scripting via JSR 223 and Groovy
+
+For more detail see the [Components list].
+
+ServiceMix has support for straight through processing, SEDA based process flows or fully clustered [process flows|http://servicemix.org/NMR+Flows].
+
+ServiceMix includes a [fully integrated JCA container|http://servicemix.org/JCA] for high performance inbound message consumption (e.g. via JMS) with connection & thread pooling, transaction management, exception and retry handling and support for highly concurrent processing.
+
+ServiceMix is completely integrated into Apache Geronimo, which allows you to deploy JBI components and services directly into Geronimo and ServiceMix will be JBI certified as part of the Geronimo project.
+
+We welcome [contributions|http://servicemix.org/Contributing], please do come and join our [team|http://servicemix.org/Team].
+
+For more information see the [getting started guide|http://servicemix.org/Getting+Started].
+
+h3. Detail
+{jiraissues:url=http://jira.logicblaze.com/jira/secure/IssueNavigator.jspa?view=rss&pid=10950&fixfor=11670&sorter/field=issuekey&sorter/order=DESC&tempMax=25&reset=true&decorator=none}
+

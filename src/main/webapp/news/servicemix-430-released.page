@@ -1,0 +1,10 @@
+---
+title: ServiceMix 4.3.0 Released
+--- pipeline:conf
+
+h2. ServiceMix 4.3.0 released
+(by Jean-Baptiste Onofré  posted on March 04, 2011)
+
+The ServiceMix team is pleased to announce the availability of ServiceMix 4.3.0.
+This is a major release of ServiceMix and contains many bug fixes as well as new features.
+For more information, please see the [release notes|ServiceMix 4.3.0]

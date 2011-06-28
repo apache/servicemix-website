@@ -1,0 +1,69 @@
+---
+title: servicemix-cxf-bc 2009.01
+page_version: 1
+page_creator: gertvanthienen
+page_modifier: gertvanthienen
+--- pipeline:conf
+
+{excerpt}Release Notes - ServiceMix Components - Version servicemix-cxf-bc-2009.01{excerpt}
+
+
+*Bug*
+    * [SMXCOMP-111|http://issues.apache.org/active/browse/SMXCOMP-111] - When deployed in Smx4, the JBI SUs do not have access to the whole JRE
+    * [SMXCOMP-113|http://issues.apache.org/active/browse/SMXCOMP-113] - Components jars should not include the jbi descriptor
+    * [SMXCOMP-181|http://issues.apache.org/active/browse/SMXCOMP-181] - MessageExchange (org.apache.cxf.transport.jbi.JBIDestination) not serializable
+    * [SMXCOMP-183|http://issues.apache.org/active/browse/SMXCOMP-183] - smx-cxf-bc provider throws NPE at JbiInWsdl1Interceptor.handleJBIFault(JbiInWsdl1Interceptor.java:237) 
+    * [SMXCOMP-186|http://issues.apache.org/active/browse/SMXCOMP-186] - Cxf BC Provider can't handle response soap message correctly if there is "whitespace" after <soap:Body> tag
+    * [SMXCOMP-188|http://issues.apache.org/active/browse/SMXCOMP-188] - CxfBcJmsTransaction*Test  hang
+    * [SMXCOMP-193|http://issues.apache.org/active/browse/SMXCOMP-193] - INFO: Interceptor has thrown exception, unwinding now org.w3c.dom.DOMException: HIERARCHY_REQUEST_ERR:
+    * [SMXCOMP-194|http://issues.apache.org/active/browse/SMXCOMP-194] - JBIOutInterceptor is not correctly handling outgoing WSA Headers
+    * [SMXCOMP-195|http://issues.apache.org/active/browse/SMXCOMP-195] - JMSBroker used in the test shouldn't setTmpDataDirectory as ./target which will break the release process
+    * [SMXCOMP-196|http://issues.apache.org/active/browse/SMXCOMP-196] - MessageExchange (org.apache.cxf.service.model.MessageInfo) not Serializable
+    * [SMXCOMP-197|http://issues.apache.org/active/browse/SMXCOMP-197] - OutOfMemoryException (PermGen) after redeploying servicemix-cxf* and servicemix-wsn2005
+    * [SMXCOMP-198|http://issues.apache.org/active/browse/SMXCOMP-198] - Provider fails to set proper ws-addressing To header on outbound messages
+    * [SMXCOMP-200|http://issues.apache.org/active/browse/SMXCOMP-200] - When using bufCfg, the file is not found correctly from a JBI SU deployed in Smx4
+    * [SMXCOMP-202|http://issues.apache.org/active/browse/SMXCOMP-202] - cxf bc provider and cxf se doesn't send DONE back when use oneway
+    * [SMXCOMP-203|http://issues.apache.org/active/browse/SMXCOMP-203] - cxf bc with ws-security can't work with enable JDBCAuditor
+    * [SMXCOMP-212|http://issues.apache.org/active/browse/SMXCOMP-212] - cxf-bc provider w/mtomEnabled=false talking to cxf-bc consumer w/mtomEnabled=true over jms throws Error reading XMLStreamReader
+    * [SMXCOMP-213|http://issues.apache.org/active/browse/SMXCOMP-213] - servicemix-common and servicemix-cxf-bc component have servicemix-core dependency as provided which is only required as test dependency.
+    * [SMXCOMP-214|http://issues.apache.org/active/browse/SMXCOMP-214] - smx-cxf-bc consumer throws NPE in CxfBcConsumer.process() for one-way request where synchronous=false
+    * [SMXCOMP-215|http://issues.apache.org/active/browse/SMXCOMP-215] - Loading jax-ws-catalog.xml into servicemix-cxf-bc component
+    * [SMXCOMP-216|http://issues.apache.org/active/browse/SMXCOMP-216] - need add lock for DeliveryChannel of cxf bc consumer to handle multiple client invocation
+    * [SMXCOMP-458|http://issues.apache.org/active/browse/SMXCOMP-458] - Malformed manifest.mf  is generated for the servicemix-http bundle
+    * [SMXCOMP-461|http://issues.apache.org/active/browse/SMXCOMP-461] - Fix smx-cxf-bc consumer timeout property JavaDoc and code interpretation
+    * [SMXCOMP-470|http://issues.apache.org/active/browse/SMXCOMP-470] - we need cache attachment earlier when use ws-addressing and mtom
+    * [SMXCOMP-476|http://issues.apache.org/active/browse/SMXCOMP-476] - A CXF-BC provider used with WS-RM sends the CreateSequence request without SOAP envelope
+    * [SMXCOMP-478|http://issues.apache.org/active/browse/SMXCOMP-478] - OSGi bundles for components should not require the jaxp-ri bundle
+
+*Improvement*
+    * [SMXCOMP-9|http://issues.apache.org/active/browse/SMXCOMP-9] - if cxf endpoint use specific bus, then we should shutdown the bus cleanly when shutdown the  endpoint
+    * [SMXCOMP-115|http://issues.apache.org/active/browse/SMXCOMP-115] - Patch available for upgrading components to Spring 2.5.6
+    * [SMXCOMP-116|http://issues.apache.org/active/browse/SMXCOMP-116] - Upgrade to spring osgi 1.2.0-m2
+    * [SMXCOMP-184|http://issues.apache.org/active/browse/SMXCOMP-184] - Add "features" support from cxf to the smx-cxf-bc endpoint
+    * [SMXCOMP-185|http://issues.apache.org/active/browse/SMXCOMP-185] - CXF BC Provider using JMS Transport is not scalable (locks thread waiting for external service response)
+    * [SMXCOMP-190|http://issues.apache.org/active/browse/SMXCOMP-190] - Develop cxf-bc provider test case to verify that MTOM response is successfully handled regardless of mtomEnabled flag value
+    * [SMXCOMP-191|http://issues.apache.org/active/browse/SMXCOMP-191] - Develop test case to demonstrate and verify that smx-cxf-bc consumer endpoint with transactional JMS transport sends transactional exchange correctly
+    * [SMXCOMP-192|http://issues.apache.org/active/browse/SMXCOMP-192] - Excessive console output from cxfbc tests
+    * [SMXCOMP-204|http://issues.apache.org/active/browse/SMXCOMP-204] - cxf provider should be able to extract operationName based on payload and wsdl if using doc/literal style in case that no operationName bound to the MessageExchange
+    * [SMXCOMP-205|http://issues.apache.org/active/browse/SMXCOMP-205] - cxf-bc consumer should allow async sending of message exchanges to the NMR
+    * [SMXCOMP-206|http://issues.apache.org/active/browse/SMXCOMP-206] - ensure OASISCatalogManager is loaded before getting wsdl definition
+    * [SMXCOMP-207|http://issues.apache.org/active/browse/SMXCOMP-207] - remove unnecessary direct jaxws-api, jaxb dependency  from servicemix-cxf-se and servicemix-cxf-bc
+    * [SMXCOMP-208|http://issues.apache.org/active/browse/SMXCOMP-208] - remove unreachable code from JbiInInterceptor
+    * [SMXCOMP-450|http://issues.apache.org/active/browse/SMXCOMP-450] - CXF Binding Component ships with the generated code from the hello_world.wsdl
+    * [SMXCOMP-464|http://issues.apache.org/active/browse/SMXCOMP-464] - avoid adding xmlns for each element when using prefixes
+
+
+*Task*
+    * [SMXCOMP-199|http://issues.apache.org/active/browse/SMXCOMP-199] - Upgrade to cxf 2.1.4
+    * [SMXCOMP-210|http://issues.apache.org/active/browse/SMXCOMP-210] - upgrade to CXF 2.1.3 release version
+
+*Test*
+    * [SMXCOMP-187|http://issues.apache.org/active/browse/SMXCOMP-187] - CxfBcJmsTest failure 
+    * [SMXCOMP-189|http://issues.apache.org/active/browse/SMXCOMP-189] - CxfBcJmsTransaction*Test is broken caused by recent change in cxf
+    * [SMXCOMP-201|http://issues.apache.org/active/browse/SMXCOMP-201] - changes in CXF-1946 cause CxfBCSEProviderSystemTest fail
+    * [SMXCOMP-209|http://issues.apache.org/active/browse/SMXCOMP-209] - test to ensure the different JMSConduit instance share share replyDest work correctly for cxf bc provider
+    * [SMXCOMP-211|http://issues.apache.org/active/browse/SMXCOMP-211] - test to guarantee conduit is created for each cxf bc provider endpoint but not per request
+    * [SMXCOMP-466|http://issues.apache.org/active/browse/SMXCOMP-466] - WS-RM : the CreateSequenceResponse body is void
+    * [SMXCOMP-477|http://issues.apache.org/active/browse/SMXCOMP-477] - CxfBcRMSequenceTest failed due to missing configuration file
+
+

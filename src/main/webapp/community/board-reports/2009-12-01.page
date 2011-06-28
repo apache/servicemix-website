@@ -1,0 +1,20 @@
+---
+title: Board Report 2009-12-01
+--- pipeline:conf
+h1. December 1, 2009
+
+{code}
+The following releases have been performed:
+* servicemix-pom 4
+* servicemix-utils 1.2.0
+* servicemix-specs 1.40
+* several osgi bundles from third party 
+    libraries (quartz 1.6.6, juel 2.1.1, ...)
+The POMs include mainly cleanup and dependencies upgrade 
+in preparation for the next components release iteration.
+
+The SMX 4.1 release is on the road, including new Felix 
+Karaf and components release.
+
+No changes in the committers or pmc members list.
+{code}

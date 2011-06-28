@@ -1,0 +1,66 @@
+---
+title: Welcome to Apache ServiceMix!
+--- pipeline:conf
+{section}
+{column}
+[Apache ServiceMix|http://servicemix.apache.org/] is a flexible, open-source integration container that unifies the features and functionality of Apache [ActiveMQ|http://activemq.apache.org], [Camel|http://camel.apache.org], [CXF|http://cxf.apache.org], [ODE|http://ode.apache.org], [Karaf|http://karaf.apache.org] into a powerful runtime platform you can use to build your own integrations solutions. It provides a complete, enterprise ready ESB exclusively powered by OSGi.
+
+It is being released under Apache License.
+
+The main features are:
+* reliable messaging with [Apache ActiveMQ|http://activemq.apache.org]
+* messaging, routing and Enterprise Integration Patterns with [Apache Camel|http://camel.apache.org]
+* WS-\* and RESTful web services with [Apache CXF|http://cxf.apache.org]
+* loosely coupled integration between all the other components with Apache ServiceMix NMR including rich Event, Messaging and Audit API
+* complete WS-BPEL engine with [Apache ODE|http://ode.apache.org]
+* OSGi-based server runtime powered by [Apache Karaf|http://karaf.apache.org]
+
+{column}
+{column}
+{center}
+*[Download ServiceMix 4.3.0|index/community/download.html#Karaf2.2.1]*
+[!/images/servicemix-box.jpg|width=256!|Download]
+{center}
+{html}
+<script src="http://widgets.twimg.com/j/2/widget.js"></script>
+<script>
+new TWTR.Widget({
+  version: 2,
+  type: 'search',
+  search: '#servicemix',
+  interval: 6000,
+  title: 'What do people say about',
+  subject: 'ServiceMix',
+  width: 250,
+  height: 300,
+  theme: {
+    shell: {
+      background: '#5b8fbe',
+      color: '#ffffff'
+    },
+    tweets: {
+      background: '#ffffff',
+      color: '#444444',
+      links: '#1985b5'
+    }
+  },
+  features: {
+    scrollbar: false,
+    loop: true,
+    live: true,
+    hashtags: true,
+    timestamp: true,
+    avatars: true,
+    toptweets: true,
+    behavior: 'default'
+  }
+}).render().start();
+</script>
+{html}
+{column}
+{section}
+
+
+h2. [News|news]
+
+{include:/news/recent.page}

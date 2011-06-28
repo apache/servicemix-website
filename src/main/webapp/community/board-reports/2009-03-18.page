@@ -1,0 +1,25 @@
+---
+title: Board Report 2009-03-18
+--- pipeline:conf
+h1. March 18th, 2009
+
+{noformat}
+Development continues towards a release of ServiceMix 4, while we also keep on working on improving and stabilizing ServiceMix 3.
+The upcoming release already gets a fair share of the attention on the mailing, with early adopters helping out by testing, raising issues and suggesting improvements.
+
+Preparing for our next major release, we have released:
+* ServiceMix Specs 1.2.0
+* a set of 13 osgi bundles for 3thd party dependencies
+
+We have added 4 new committers to the project:
+- Ulhas Bhole
+- Jamie Goodyear
+- Edell Nolan
+- Jean-Baptiste Onofr�
+
+The last board report already mentioned the addition of Gianfranco Boccalon and Andrea Zopello, whose ICLAs have also been processed in meanwhile.
+
+In the PMC, we welcome Chris Custine as our newest member!
+
+A Google Analytics Privacy Policy page has been set up and a link has been added to the footer of all our website pages.
+{noformat}

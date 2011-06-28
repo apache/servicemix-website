@@ -1,0 +1,17 @@
+---
+title: Navigation
+--- pipeline:conf
+h1. Documentation
+
+h2. Latest version (4.3.0-SNAPSHOT)
+Quickly navigate to one of the guides below...
+* [Quickstart Guide|http://servicemix.apache.org/docs/4.3.0-SNAPSHOT/quickstart/index.html] ([pdf|http://servicemix.apache.org/docs/4.3.0-SNAPSHOT/quickstart/quickstart.pdf])
+* [Camel Guide|http://servicemix.apache.org/docs/4.3.0-SNAPSHOT/users-guide/camel/index.html] ([pdf|http://servicemix.apache.org/docs/4.3.0-SNAPSHOT/users-guide/camel/camel-guide.pdf])
+* [NMR Guide|http://servicemix.apache.org/docs/4.3.0-SNAPSHOT/users-guide/nmr/index.html] ([pdf|http://servicemix.apache.org/docs/4.3.0-SNAPSHOT/users-guide/nmr/nmr-guide.pdf])
+* [JBI Guide|http://servicemix.apache.org/docs/4.3.0-SNAPSHOT/jbi/index.html] ([pdf|http://servicemix.apache.org/docs/4.3.0-SNAPSHOT/jbi/jbi-guide.pdf])
+* [Karaf Guide|http://servicemix.apache.org/docs/4.3.0-SNAPSHOT/karaf/index.html]
+
+... or browse the [4.3.0-SNAPSHOT documentation site | http://servicemix.apache.org/docs/4.3.0-SNAPSHOT/]
+
+h2. Other versions
+Nothing here yet - let's get the latest version documented first ;-)

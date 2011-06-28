@@ -1,0 +1,105 @@
+---
+title: Servicemix 3.2.3
+page_version: 3
+page_creator: ffang
+page_modifier: ffang
+--- pipeline:conf
+h2. Getting the Distributions
+
+{excerpt}
+*Linux/Mac OS X/Unix Downloads*
+*** [Apache ServiceMix 3.2.3 (.tar.gz)|http://www.apache.org/dyn/closer.cgi?path=/servicemix/servicemix-3/3.2.3/apache-servicemix-3.2.3.tar.gz] [PGP|http://www.apache.org/dist/servicemix/servicemix-3/3.2.3/apache-servicemix-3.2.3.tar.gz.asc] [SHA|http://www.apache.org/dist/servicemix/servicemix-3/3.2.3/apache-servicemix-3.2.3.tar.gz.sha1] [MD5|http://www.apache.org/dist/servicemix/servicemix-3/3.2.3/apache-servicemix-3.2.3.tar.gz.md5]
+*** [Apache ServiceMix 3.2.3 Sources (.tar.gz)|http://www.apache.org/dyn/closer.cgi?path=/servicemix/servicemix-3/3.2.3/apache-servicemix-3.2.3-src.tar.gz] [PGP|http://www.apache.org/dist/servicemix/servicemix-3/3.2.3/apache-servicemix-3.2.3-src.tar.gz.asc] [SHA|http://www.apache.org/dist/servicemix/servicemix-3/3.2.3/apache-servicemix-3.2.3-src.tar.gz.sha1] [MD5|http://www.apache.org/dist/servicemix/servicemix-3/3.2.3/apache-servicemix-3.2.3-src.tar.gz.md5]
+
+*Windows  downloads*
+*** [Apache ServiceMix 3.2.3 (.zip)|http://www.apache.org/dyn/closer.cgi?path=/servicemix/servicemix-3/3.2.3/apache-servicemix-3.2.3.zip] [PGP|http://www.apache.org/dist/servicemix/servicemix-3/3.2.3/apache-servicemix-3.2.3.zip.asc] [SHA|http://www.apache.org/dist/servicemix/servicemix-3/3.2.3/apache-servicemix-3.2.3.zip.sha1] [MD5|http://www.apache.org/dist/servicemix/servicemix-3/3.2.3/apache-servicemix-3.2.3.zip.md5]
+*** [Apache ServiceMix 3.2.3 Sources (.zip)|http://www.apache.org/dyn/closer.cgi?path=/servicemix/servicemix-3/3.2.3/apache-servicemix-3.2.3-src.zip] [PGP|http://www.apache.org/dist/servicemix/servicemix-3/3.2.3/apache-servicemix-3.2.3-src.zip.asc] [SHA|http://www.apache.org/dist/servicemix/servicemix-3/3.2.3/apache-servicemix-3.2.3-src.zip.sha1] [MD5|http://www.apache.org/dist/servicemix/servicemix-3/3.2.3/apache-servicemix-3.2.3-src.zip.md5]
+
+*Web Application*
+*** [Apache ServiceMix Web Application 3.2.3  (.war)|http://www.apache.org/dyn/closer.cgi?path=/servicemix/servicemix-3/3.2.3/apache-servicemix-web-3.2.3.war] [PGP|http://www.apache.org/dist/servicemix/servicemix-3/3.2.3/apache-servicemix-web-3.2.3.war.asc] [SHA|http://www.apache.org/dist/servicemix/servicemix-3/3.2.3/apache-servicemix-web-3.2.3.war.sha1] [MD5|http://www.apache.org/dist/servicemix/servicemix-3/3.2.3/apache-servicemix-web-3.2.3.war.md5]
+{excerpt}
+
+{info:title=The above URLs use redirection}
+The above URLs use the Apache Mirror system to redirect you to a suitable mirror for your download. Some users have experienced issues with some versions of browsers (e.g. some Safari browsers). If the download doesn't seem to work for you from the above URL then try using [FireFox|http://www.mozilla.com/en-US/firefox/]
+{info}
+
+h2. Release notes
+
+* *Bug*
+    ** [SM-819|https://issues.apache.org/activemq/browse/SM-819] - Saxon NullPointerException at INFO level
+    ** [SM-1017|https://issues.apache.org/activemq/browse/SM-1017] - JMS properties gets lost while using servicemix-jms component
+    ** [SM-1354|https://issues.apache.org/activemq/browse/SM-1354] - ServiceMix process spins to 100% CPU on CXF re-deploy
+    ** [SM-1404|https://issues.apache.org/activemq/browse/SM-1404] - can't init servicemix-wsn2005 in the ServiceMix 3.3-SNAPSHOT
+    ** [SM-1407|https://issues.apache.org/activemq/browse/SM-1407] - Memory Leak in http consumer processor when a timeout occurs
+    ** [SM-1422|https://issues.apache.org/activemq/browse/SM-1422] - Jetty engine not stopped when CXF BC is undeployed
+    ** [SM-1436|https://issues.apache.org/activemq/browse/SM-1436] - MessageExchange (org.apache.cxf.service.model.MessageInfo) not Serializable
+    ** [SM-1473|https://issues.apache.org/activemq/browse/SM-1473] - Camel Service Engine Component not handling error from Camel processing
+    ** [SM-1483|https://issues.apache.org/activemq/browse/SM-1483] - CXF BC provider setting wrong content-type for soap 1.1
+    ** [SM-1489|https://issues.apache.org/activemq/browse/SM-1489] - camelendpoint should transform StreamSource to DomSource which support to be consumed multiple times
+    ** [SM-1497|https://issues.apache.org/activemq/browse/SM-1497] - cxf bc provider should handle soap fault mesage without detail element
+    ** [SM-1500|https://issues.apache.org/activemq/browse/SM-1500] - Build failure: servicemix-soap doesn't compile after upgrade to wss4j 1.5.4
+    ** [SM-1504|https://issues.apache.org/activemq/browse/SM-1504] - Old version of wsdl4j.jar
+    ** [SM-1508|https://issues.apache.org/activemq/browse/SM-1508] - servicemix-cxf service with outbound attachment and jms transport generates XMLStreamReader error
+    ** [SM-1510|https://issues.apache.org/activemq/browse/SM-1510] - Servicemix kit size is increased from 78Mb to 132Mb in current snapshot.
+    ** [SM-1513|https://issues.apache.org/activemq/browse/SM-1513] - Under high load JMS in/out provider fails to receive responses.
+    ** [SM-1525|https://issues.apache.org/activemq/browse/SM-1525] - significant typo in servicemix classloader documentation
+    ** [SM-1526|https://issues.apache.org/activemq/browse/SM-1526] - MessageExchange (org.apache.cxf.transport.jbi.JBIDestination) not serializable
+    ** [SM-1540|https://issues.apache.org/activemq/browse/SM-1540] - servicemix-camel component should check if property value is serializable before copy it from camel exchange to servicemix exchange
+    ** [SM-1548|https://issues.apache.org/activemq/browse/SM-1548] - SMX-EIP AbstractAggregator timeout exchange has bad correlationId
+    ** [SM-1550|https://issues.apache.org/activemq/browse/SM-1550] - Exchange Listeners may not be receiving all events
+    ** [SM-1556|https://issues.apache.org/activemq/browse/SM-1556] - CXF BC Provider strips namespace declarations from jbi wrapper element
+    ** [SM-1562|https://issues.apache.org/activemq/browse/SM-1562] - each eip endpoint creates a timer thread even if it is not used at all
+    ** [SM-1581|https://issues.apache.org/activemq/browse/SM-1581] - cxf-bc provider jms conduit session pool highWaterMark does not bound replyTo temporary queue allocation
+    ** [SM-1593|https://issues.apache.org/activemq/browse/SM-1593] - memory leak in cxf bc provider
+    ** [SM-1602|https://issues.apache.org/activemq/browse/SM-1602] - cxf-bc provider w/mtomEnabled=false talking to cxf-bc consumer w/mtomEnabled=true over jms throws Error reading XMLStreamReader
+    ** [SM-1612|https://issues.apache.org/activemq/browse/SM-1612] - EIP wiretap should save operationname by default
+    ** [SM-1622|https://issues.apache.org/activemq/browse/SM-1622] - servicemix-eip content enricher should copy original message properties in the way the pipeline does
+    ** [SM-1632|https://issues.apache.org/activemq/browse/SM-1632] - Backport a change to Smx 3.2 branch to allow artifacts that use the servicemix-bean component to deploy on Smx4
+    ** [SM-1637|https://issues.apache.org/activemq/browse/SM-1637] - smx-cxf-bc provider throws NPE at JbiInWsdl1Interceptor.handleJBIFault(JbiInWsdl1Interceptor.java:237)
+    ** [SM-1658|https://issues.apache.org/activemq/browse/SM-1658] - can't shundown container from jmx console
+  
+* *Improvement*
+    ** [SM-1271|https://issues.apache.org/activemq/browse/SM-1271] - Make ComponentContext available to beans configured in BeanComponent service unit xbean.xml
+    ** [SM-1364|https://issues.apache.org/activemq/browse/SM-1364] - allow SimpleFlatFileMarshaler to use XmlEscapingCoverter
+    ** [SM-1486|https://issues.apache.org/activemq/browse/SM-1486] - servicemix-camel should use asynchronous messaging
+    ** [SM-1501|https://issues.apache.org/activemq/browse/SM-1501] - ServiceMix 3.2 should change the Jetty HttpClient from blocking mode to Non blocking (similar to 3.3 trunk version)
+    ** [SM-1512|https://issues.apache.org/activemq/browse/SM-1512] - update file component generated reference docs
+    ** [SM-1515|https://issues.apache.org/activemq/browse/SM-1515] - Allow override of SOAPAction on new HTTP provider endpoint
+    ** [SM-1518|https://issues.apache.org/activemq/browse/SM-1518] - Aggregator keeps a list of closed aggregations causing a slight memory leak
+    ** [SM-1542|https://issues.apache.org/activemq/browse/SM-1542] - Modify servicemix-web sample pom file to include jetty <stopKey> and <stopPort> configuration for gracefully stopping jetty plugin.
+    ** [SM-1565|https://issues.apache.org/activemq/browse/SM-1565] - Update CXF SE schema docs
+    ** [SM-1566|https://issues.apache.org/activemq/browse/SM-1566] - Update generated schema configuration doc
+    ** [SM-1570|https://issues.apache.org/activemq/browse/SM-1570] - CxfBcJmsTest fails frequently on slower machine
+    ** [SM-1574|https://issues.apache.org/activemq/browse/SM-1574] - Allow forced shutdown of the container by cancelling pending sendSync exchanges
+    ** [SM-1586|https://issues.apache.org/activemq/browse/SM-1586] - Copying properties from and to JMS messages
+    ** [SM-1596|https://issues.apache.org/activemq/browse/SM-1596] - The version of Spring included in ServiceMix 3.2.x contains a bug prohibiting the use of the <tx:annotation-driven> tag in XBean config files
+    ** [SM-1601|https://issues.apache.org/activemq/browse/SM-1601] - Excessive console output from cxfbc tests
+    ** [SM-1603|https://issues.apache.org/activemq/browse/SM-1603] - Develop cxf-bc provider test case to verify that MTOM response is successfully handled regardless of mtomEnabled flag value
+    ** [SM-1610|https://issues.apache.org/activemq/browse/SM-1610] - Upgrade ServiceMix 3.2.x branch to Spring 2.0.8
+    ** [SM-1621|https://issues.apache.org/activemq/browse/SM-1621] - New JMS in/out provider should support temporary queues/topics (as reply destinations)
+    ** [SM-1640|https://issues.apache.org/activemq/browse/SM-1640] - Backporting SM-|https://issues.apache.org/activemq/browse/SM-1502 servicemix-drools should allow for asynchronous message handling.
+
+* *Task*
+
+    ** [SM-1442|https://issues.apache.org/activemq/browse/SM-1442] - Allow ServiceMix 3 to build using the ibm jdk.
+    ** [SM-1498|https://issues.apache.org/activemq/browse/SM-1498] - update cxf version to 2.0.9-SNAPSHOT for smx3.2 branch to get lastest changes in cxf
+    ** [SM-1638|https://issues.apache.org/activemq/browse/SM-1638] - use cxf 2.0.9 for coming smx 3.2.3 release 
+ 
+* *Test*
+    ** [SM-1485|https://issues.apache.org/activemq/browse/SM-1485] - test to illustrate cxf bc can handle exception when work as proxy/bridge
+    ** [SM-1544|https://issues.apache.org/activemq/browse/SM-1544] - test to illustrate MessageExchange which contain cxf property and attachment can be serialize/deserialize correctly
+    ** [SM-1553|https://issues.apache.org/activemq/browse/SM-1553] - testEndpointDoc of CxfBcComponentTest failed due to recent changes in cxf
+    ** [SM-1557|https://issues.apache.org/activemq/browse/SM-1557] - CxfBCSEProviderSystemTest failed due to recent refactor of JMS transport in cxf
+   
+
+
+    
+h2. SVN Tag Checkout
+
+{code}
+svn co http://svn.apache.org/repos/asf/servicemix/smx3/tags/servicemix-3.2.3/
+{code}
+
+h2. Changelog
+
+For a more detailed view of new features and bug fixes, see the [changelog|https://issues.apache.org/activemq/secure/IssueNavigator.jspa?reset=true&mode=hide&sorter/order=DESC&sorter/field=priority&pid=10950&fixfor=11910]

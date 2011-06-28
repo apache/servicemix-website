@@ -1,0 +1,28 @@
+---
+title: Users
+--- pipeline:conf
+This page lists the open source projects, people and companies using ServiceMix. Please add yourself to this list - click on the edit button on the bottom right of this page or get [more help|How does the website work].
+
+h3. Open Source Projects using ServiceMix
+
+* [Apache Geronimo|http://geronimo.apache.org/] uses ServiceMix as its JBI container and component suite.
+* [ChainBuilder ESB|http://www.chainforge.net/] uses ServiceMix as its JBI container and HTTP component.
+* [InstantSVC|http://instantsvc.sourceforge.net/] uses ServiceMix as a foundation to implement [Task-Role Based Access Control (T-RBAC) for SOAs|http://sourceforge.net/project/showfiles.php?group_id=176328&package_id=241922].
+* [GASWerk|http://gaswerk.sourceforge.net/]
+* [Spagic|http://www.spagic.org/ecm/faces/public/guest/home/solutions/spagic]
+
+
+h3. People and Companies using ServiceMix
+
+|| Name || Description || Industry Type ||
+| [FuseSource|http://fusesource.com/] | [FuseSource|http://fusesource.com/] provides enterprise class [support, training and mentoring|http://fusesource.com/enterprise-support/] around Apache projects including ServiceMix, [Camel|http://camel.apache.org] and [ActiveMQ|http://activemq.org/] | Enterprise SOA Software |
+| Stefan Klinger \\ | Distributed decision support system for deployment in maintenance applications and environments ([DAME|http://www.cs.york.ac.uk/dame/]) \\ | Grid-based SOA \\ |
+| Ramon Buckland \\ | Work with a Sydney based company on many things related to ServiceMix \\ | Enterprise SOA \\ |
+| John McRobb \\ | ESB Design and Architecture \\ | Enterprise SOA \\ |
+| [ARCTIC.PARK AS|http://www.arcticpark.no] | business integration, bpm and soa backbone for enterprise service net solution ([ARCTIC.SERVICE.NET|http://www.arcticpark.no/servicenet_no.html]) \\ | SOA consulting\\ |
+| Gordon Dickens \\ | Business Solutions Integrator([Anexinet|http://www.anexinet.com]) \\ | SOA Consulting \\ |
+| [blue elephant systems|http://www.blue-elephant-systems.com] | We specialize in developing IT Management solutions that present the complete HP OpenView configuration information in a simplified format providing transparent and accessible information for IT Administrators and Application Managers. | Consulting and Software Development |
+| [Union Investment |http://www.union-investment.de] | We've implemented our EAI-Application based on ServiceMix 3.1 for data-replication and Onlineservice B2B and B2C (SOA)	| Asset Management |
+| [Tecsisa|http://www.tecsisa.com/] | We are a Spanish IT consulting firm specialized in the automation of complex business processes using leading technology approaches such as BPM-SOA [BPM-SOA|http://www.tecsisa.com/index.igw?item=1555] | Enterprise SOA
+consulting and development |
+|[TouK|http://touk.pl/toukeu/rw/pages/index.en.do]|We are using Apache ServiceMix (both 3.x and 4.x) with [Apache Camel|http://camel.apache.org/], [Apache ODE|http://ode.apache.org/] and [Apache HISE|http://incubator.apache.org/hise/] as a middleware integration platform, with the biggest deployment for [Play|http://www.playmobile.pl/], mobile telco operator in Poland|Enterprise architecture & development|

@@ -1,0 +1,26 @@
+---
+title: servicemix-shared 2009.01
+page_version: 1
+page_creator: gertvanthienen
+page_modifier: gertvanthienen
+--- pipeline:conf
+
+{excerpt}Release Notes - ServiceMix Components - Version servicemix-shared-2009.01{excerpt}
+
+
+*Bug*
+    * [SMXCOMP-113|http://issues.apache.org/active/browse/SMXCOMP-113] - Components jars should not include the jbi descriptor
+    * [SMXCOMP-226|http://issues.apache.org/active/browse/SMXCOMP-226] - AsyncBaseLifeCycle should catch all throwables when processing a given exchange
+    * [SMXCOMP-460|http://issues.apache.org/active/browse/SMXCOMP-460] - The TCCL is not set to the correct value after deploying a service unit
+    * [SMXCOMP-469|http://issues.apache.org/active/browse/SMXCOMP-469] - Terminated exchanges are sometimes sent when handling an exception, leading to errors
+    * [SMXCOMP-478|http://issues.apache.org/active/browse/SMXCOMP-478] - OSGi bundles for components should not require the jaxp-ri bundle
+
+*Improvement*
+    * [SMXCOMP-115|http://issues.apache.org/active/browse/SMXCOMP-115] - Patch available for upgrading components to Spring 2.5.6
+    * [SMXCOMP-116|http://issues.apache.org/active/browse/SMXCOMP-116] - Upgrade to spring osgi 1.2.0-m2
+    * [SMXCOMP-170|http://issues.apache.org/active/browse/SMXCOMP-170] - SoapEndpoint loadWsdl() does not support importing from relative paths
+    * [SMXCOMP-179|http://issues.apache.org/active/browse/SMXCOMP-179] - Add better documentation around attributes & elements for the servicemix-file component
+    * [SMXCOMP-225|http://issues.apache.org/active/browse/SMXCOMP-225] - Add additional Log output to the SimpleEndpoint methods
+
+*New Feature*
+    * [SMXCOMP-155|http://issues.apache.org/active/browse/SMXCOMP-155] - Support WS-Addressing for the new http endpoints

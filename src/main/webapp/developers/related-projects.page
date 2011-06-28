@@ -1,0 +1,14 @@
+---
+title: Related Projects
+--- pipeline:conf
+h3. Related Projects
+
+- [Apache Karaf|http://karaf.apache.org/|OSGi Container]
+- [Apache ActiveMQ|http://activemq.apache.org/|The most popular and powerful open source Message Bus]
+- [Apache Camel|http://activemq.apache.org/camel/|POJO based Enterprise Integration Patterns and routing framework]
+- [Apache CXF|http://cxf.apache.org/|Service Enablement Framework based on SOAP and JAX-WS]
+- [Apache ODE|http://ode.apache.org/|Orchestration Engine]
+- [Jencks|http://jencks.codehaus.org/|Message Driven POJOs and pooling for JMS and JDBC]
+- [Stomp|http://stomp.codehaus.org/|Simple cross language protocol for messaging]
+- [Spring|http://www.springframework.org/|The well know framework]
+- [Geronimo|http://geronimo.apache.org/|The Apache J2EE server]

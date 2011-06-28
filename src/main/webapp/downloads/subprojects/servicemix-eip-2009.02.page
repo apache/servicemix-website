@@ -1,0 +1,22 @@
+---
+title: servicemix-eip 2009.02
+page_version: 1
+page_creator: gertvanthienen
+page_modifier: gertvanthienen
+--- pipeline:conf
+h3. {excerpt}Release notes - servicemix-eip-2009.02{excerpt}
+
+h4. Bug
+* [SMXCOMP-607|http://issues.apache.org/activemq/browse/SMXCOMP-607] - Persistence-id of the component can&apos;t contain the minus char
+* [SMXCOMP-636|http://issues.apache.org/activemq/browse/SMXCOMP-636] - Upgrade components to use Jencks 2.2
+* [SMXCOMP-640|http://issues.apache.org/activemq/browse/SMXCOMP-640] - smx-eip async AbstractSplitter throws UnsupportedOperationException when reportErrors=&quot;true&quot;
+
+h4. Improvement
+* [SMX4KNL-243|http://issues.apache.org/activemq/browse/SMX4KNL-243] - Start using https://repository.apache.org for Apache snapshots
+
+h4. Task
+* [SM-1911|http://issues.apache.org/activemq/browse/SM-1911] - Upgrade Derby to 10.5.3.0_1
+
+h4. Test
+* [SMXCOMP-531|http://issues.apache.org/activemq/browse/SMXCOMP-531] - Improve test coverage - ServiceMix :: EIP
+* [SMXCOMP-647|http://issues.apache.org/activemq/browse/SMXCOMP-647] - Use dynamic ports for tests

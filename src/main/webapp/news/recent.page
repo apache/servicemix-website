@@ -1,0 +1,7 @@
+---
+title: Apache ServiceMix Recent News
+--- pipeline:conf
+
+{include:servicemix-430-released}
+{include:servicemix-420-released}
+{include:servicemix-332-released}

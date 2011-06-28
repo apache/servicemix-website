@@ -1,0 +1,32 @@
+---
+title: Board Report 2010-06-16
+--- pipeline:conf
+h1. June 16th, 2010
+
+{code}
+The following releases have been performed:
+* Components 2010.01 
+* ServiceMix 3.3.2
+* ServiceMix JBI Maven plugin 4.3.1
+* ServiceMix 4.2.0
+* ServiceMix Specs 1.5.0
+* OSGi bundles:
+   ** cometd-java-server-1.0.1_1
+   ** hibernate-validator-4.0.2.GA_1
+   ** jsendnsca-core-1.3.1_1
+   ** jsch-0.1.42_1
+   ** jdt-core-3.2.3_3
+   ** smack-3.1.0_1
+   ** lucene-3.0.1_1
+   ** opensaml-1.1_4
+
+
+Charles Moulliard has been voted in as a 
+ServiceMix committer.
+
+Submitted a resolution for Chris Custine to become the
+new PMC chair.
+
+The community is healthy and diverse.  No issues for 
+the board to consider.
+{code}

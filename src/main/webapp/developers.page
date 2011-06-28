@@ -1,0 +1,28 @@
+---
+title: Apache ServiceMix - Developer information
+--- pipeline:conf
+h1. Information for developers
+
+This page contains a lot of useful information for people who want to learn more about the way Apache ServiceMix is being developed.
+
+h2. Building Apache ServiceMix
+Here are twe two main things you need to know before building Apache ServiceMix:
+* [source] code locations
+* [building] instructions
+
+There's also a set of [coding standards] we follow to ensure that the codebase stays readable and maintainable.
+
+Being an integration container project, we obviously have a lot of [related projects] both inside and outside of the ASF.
+
+h2. Committer information
+Once you become a committer, you might want to read this [guide|becoming-a-committer].
+
+There's a handy [release guide] available to guide you through the process of preparing and releasing a new version of ServiceMix.
+
+We also have a bit of background information on the [Apache Software Foundation].
+
+h2. Tools
+* information for [using Eclipse], incl. how to do [remote debugging|remote-debugging-servicemix-in-eclipse]
+* a hearty [thanks|tools] to these tool vendors for providing additional tooling for Apache ServiceMix developers
+
+

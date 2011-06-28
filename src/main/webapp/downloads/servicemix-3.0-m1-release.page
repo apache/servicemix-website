@@ -1,0 +1,24 @@
+---
+title: ServiceMix 3.0-M1 Release
+page_version: 1
+page_creator: gnodet
+page_modifier: gnodet
+--- pipeline:conf
+h2. Download Here
+
+|| Description || Download Link || PGP Signature file of download ||
+| Binary for Windows | [servicemix-3.0-M1.zip|http://people.apache.org/~gnodet/incubator-servicemix-3.0-M1/incubator-servicemix/distributions/servicemix-3.0-M1.zip] | [servicemix-3.0-M1.zip.asc|http://people.apache.org/~gnodet/incubator-servicemix-3.0-M1/incubator-servicemix/distributions/servicemix-3.0-M1.zip.asc] |
+| Source code for Windows | [servicemix-3.0-M1-src.zip|http://people.apache.org/~gnodet/incubator-servicemix-3.0-M1/incubator-servicemix/distributions/servicemix-3.0-M1-src.zip] | [servicemix-3.0-M1-src.zip.asc|http://people.apache.org/~gnodet/incubator-servicemix-3.0-M1/incubator-servicemix/distributions/servicemix-3.0-M1-src.zip.asc] |  |
+| Binary for Unix | [servicemix-3.0-M1.tar.gz|http://people.apache.org/~gnodet/incubator-servicemix-3.0-M1/incubator-servicemix/distributions/servicemix-3.0-M1.tar.gz] | [servicemix-3.0-M1.tar.gz.asc|http://people.apache.org/~gnodet/incubator-servicemix-3.0-M1/incubator-servicemix/distributions/servicemix-3.0-M1.tar.gz.asc] |
+| Source code for Windows | [servicemix-3.0-M1-src.tar.gz|http://people.apache.org/~gnodet/incubator-servicemix-3.0-M1/incubator-servicemix/distributions/servicemix-3.0-M1-src.tar.gz] | [servicemix-3.0-M1-src.tar.gz.asc|http://people.apache.org/~gnodet/incubator-servicemix-3.0-M1/incubator-servicemix/distributions/servicemix-3.0-M1-src.tar.gz.asc]  |
+
+h2. SVN Tag Checkout
+
+{code}
+svn co http://svn.apache.org/repos/asf/incubator/servicemix/tags/servicemix-3.0-M1/
+{code}
+
+h2. Changelog
+
+For a more detailed view of new features and bug fixes, see the [release notes|http://issues.apache.org/activemq/secure/ReleaseNote.jspa?version=11713&styleName=Html&projectId=10950&Create=Create]
+{jiraissues:url=http://issues.apache.org/activemq/secure/IssueNavigator.jspa?view=rss&&pid=10950&fixfor=11713&sorter/field=issuekey&sorter/order=DESC&tempMax=999&reset=true&decorator=none}

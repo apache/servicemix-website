@@ -1,0 +1,84 @@
+---
+title: Board Report 2010-09-15
+--- pipeline:conf
+h1. September 15th, 2010
+
+{code}
+Status report for the Apache ServiceMix project - September 2010 (Missed 2010-09-15, will be resubmitted for 2010-10-20)
+
+Project Status
+--------------
+
+We continue to have an active community with high levels of participation from users on mailing lists, IRC, and issue reporting in Jira.  
+
+No issues for the board to consider.
+
+Community
+---------
+
+* Voted and accepted Dan Kulp as Comitter
+* Chris Custine assumed role as PMC Chair
+
+
+Community Objectives
+--------------------
+
+We are currently working towards a release of ServiceMix 4.3.0 and associated dependencies.  This will be the primary objective for the next quarter.
+
+We are actively pursuing new methods of maintaining our static web site as well as documentation for each release.  Page naming limitations of Confluence make it difficult to maintain multiple versions of documentation for fix releases and historic reference.
+
+Releases
+--------
+
+Core Project
+* Components 2010.01
+* Archetypes 2010.01
+
+OSGi Bundles (Versions of these libraries with added OSGi metadata)
+* commons-vfs-1.0_4
+* jetty-bundle-6.1.24_1
+* jsmpp-2.1.0_1
+* quartz-1.8.3_1
+* scala-compiler-2.8.0.RC7_1
+* scala-library-2.8.0.RC7_1
+* AspectJ 1.6.8
+* Castor 0.9.6
+* Commons Attributes 2.1
+* Commons Beanutils 1.8.2
+* Commons Collections 3.2.1
+* Commons Configuration 1.4
+* Commons Digester 1.8
+* Commons IO 1.4
+* Flatpack 3.2.0
+* Groovy 1.6.3
+* Javassist 3.7.GA
+* JAXB Impl 2.1.13
+* Jaxen 1.1.1
+* jCIFS 0.8.3
+* Jetty Cometd 6.1.22
+* JiBX 1.1.3
+* JRuby 1.4.0
+* jSCH 0.1.43
+* jSTL 1.1.2
+* Lucene 3.0.0
+* mvel 1.3.16
+* OpenJPA 2.0.0
+* POI 3.6
+* Protobuf 2.3.0
+* QDox 1.5
+* Quartz 1.8.1
+* Quartz 1.8.2
+* Regexp 1.3
+* Rome 1.0
+* Saxon 9.1.0.8
+* Scala 2.8.0
+* Stax Utils 20040917
+* Velocity 1.6.4
+* Woodstox 3.2.9
+* xFire 1.2.5
+* XmlBeans 1.2.5
+* xmlpull 1.1.3.1
+* Jasypt 1.6_1
+* Hibernate Validator 4.1.0.Final_1
+
+{code}

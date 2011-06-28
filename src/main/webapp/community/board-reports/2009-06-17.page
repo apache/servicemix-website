@@ -1,0 +1,32 @@
+---
+title: Board Report 2009-06-17
+--- pipeline:conf
+h1. June 17th, 2009
+
+{code}
+We have release ServiceMix 4.0.0, which includes a bunch of subprojects released:
+  * a set of 21 osgi bundles for third party dependencies
+  * ServiceMix Kernel 1.1.0
+  * ServiceMix NMR 1.0.0
+  * JBI components 2009.01 release
+  * 4 maven plugins (depends-maven-plugin 1.1, features-maven-plugin 1.1, 
+       jbi-maven-plugin 4.1, xfire-maven-plugin 4.1)
+  * ServiceMix Utils 1.1.0
+  * ServiceMix 4.0.0
+Following our JBI component roadmap, a new component has been released:
+  * ServiceMix Exec
+
+Apache ServiceMix Kernel has been donated as Karaf to the Apache Felix TLP 
+and a few committers have been granted commit rights to Felix to continue the 
+work on Karaf. 
+
+We are mentoring a Google Summer of Code project: Marcin Wilkos is building 
+a web-based management console for ServiceMix 4 on top of the Felix Web Console.  
+At this time, most of his work is targeted at the new Apache Felix Karaf project.
+
+From an infrastructure perspective, we started using Hudson for doing CI builds.  
+The Apache infra team has also set up the Nexus instance at http://repository.apache.org 
+so we can now use if for staging our releases under vote.
+
+There has been no new committers / pmc members this quarter.
+{code}

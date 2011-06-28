@@ -1,0 +1,91 @@
+---
+title: Building
+--- pipeline:conf
+
+{note}
+TODO: Update this page to reflect the multi-project build structure we have and to properly discriminate between ServiceMix 3.x, 4.x and 5.x builds
+{note}
+
+h1. Building ServiceMix From Source 
+
+ServiceMix uses [Maven|http://maven.apache.org/] as its build and management tool. We have tested the build with Maven 2.0.8 and it works fine, but Maven 2.0.9 is known to cause some issues that prevent a successful build for ServiceMix 3.2.1 and previous versions.  This has been fixed for 3.2.2 and 3.3. Be sure to read the [FAQ|Build]
+
+ServiceMix 4.x requires to use Maven 2.2.1 or better.
+
+h2. Getting started
+
+* Download and [install Maven|http://maven.apache.org/download.html#Installation].
+* Get the latest code [from SVN|Source]
+* Build the code with the following command
+
+{code}
+mvn -Dmaven.test.skip=true -Pstep1 install
+mvn -Dmaven.test.skip=true -Pstep2 install
+{code}
+
+{tip:title=Useful Hints}
+* It may happen, that building step1 fails with an error message regarding PMD or checkstyle. In this case you can add a 'nochecks' to the line so it looks like this:
+
+{{mvn -Dmaven.test.skip=true -Pstep1,nochecks install}}
+
+* Also, if an out of memory error is encountered during compilation, set the MAVEN_OPTS environment variable to a larger amount of memory. Below is an example: 
+
+{{MAVEN_OPTS=-Xmx768m}}
+
+* Some dependencies have POMs that specify repository URLs that are no longer valid. This can cause invalid artifacts to be downloaded to your local repository. You can add the following mirror to your maven settings.xml file to avoid this problem:
+{code}
+<mirror>
+  <id>servicemix-repo</id>
+  <name>Apache ServiceMix Repository</name>
+  <url>http://svn.apache.org/repos/asf/servicemix/m2-repo/</url>
+  <mirrorOf>servicemix-repo,servicemix-m2-repo</mirrorOf>
+</mirror>
+{code}
+{tip}
+
+{warning:title=Please Note}
+There is an [issue|https://issues.apache.org/activemq/browse/SM-1079] in building if you use the system property style of declaring the profiles (i.e., -Dprofile=step2) as the XFire Maven plugin thinks step2 is a profile name it should use. This is fixed in the ServiceMix trunk (3.3 or greater). To work around this issue, try the following items below: 
+
+* Use the -Pstep2 style of declaring the profile as noted above 
+* Comment out the [Geronimo module in the platform POM|http://fisheye6.atlassian.com/browse/servicemix/smx3/tags/servicemix-3.2.1/platforms/pom.xml?r=trunk#l36] 
+{warning}
+
+Next time you build, you can just run
+
+{code}
+mvn -Dmaven.test.skip=true install
+{code}
+
+{tip:title=Building 3.1.1}
+If an out of memory error is encountered when building 3.1.1, 
+setting the following environmental variable may help
+
+MAVEN_OPTS=-Xmx768m
+{tip}
+
+{tip:title=Building 3.0-M1 and 3.0-M2}
+Note that this only works for versions from 3.0-M3.
+To build previous versions, you need to run:
+
+mvn \-N install
+cd tooling
+mvn install \-Dmaven.test.skip=true
+cd ..
+mvn install \-Dmaven.test.skip=true
+{tip}
+
+h2. Code Conventions 
+
+Checkstyle and PMD rules are used to scour the ServiceMix source code when performing a build. If you are hacking code and it does not follow these conventions, the build will fail. To make things easier on folks who are using Eclipse, there is an [Eclipse code convention profile|http://svn.apache.org/viewvc/servicemix/smx3/branches/servicemix-3.2/build/src/main/resources/smx-eclipse-code-conventions.xml?view=markup] that matches the Checkstyle conventions, making things a bit easier in this regard. Import this profile into Eclipse under Preferences->Java->Code Style->Formatter->Import. 
+
+h2. Using an IDE
+
+h3. Using Eclipse
+For [Eclipse|http://www.eclipse.org/], a detailed description is given at [Importing ServiceMix into Eclipse]. In addition, this page also describes how to start ServiceMix inside Eclipse with all debugging possibilities.
+
+h3. Other IDEs
+Any modern IDE with self respect can start a new project based on a Maven pom.xml file. 
+
+Note that you may need to build the whole ServiceMix project once using maven.
+
+Please refer to the [plugin reference|http://maven.apache.org/plugins/index.html] for more details on using them.

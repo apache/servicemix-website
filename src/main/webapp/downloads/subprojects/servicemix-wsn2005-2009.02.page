@@ -1,0 +1,18 @@
+---
+title: servicemix-wsn2005 2009.02
+page_version: 1
+page_creator: gertvanthienen
+page_modifier: gertvanthienen
+--- pipeline:conf
+h3. {excerpt}Release notes - servicemix-wsn2005-2009.02{excerpt}
+
+h4. Bug
+* [SMXCOMP-607|http://issues.apache.org/activemq/browse/SMXCOMP-607] - Persistence-id of the component can&apos;t contain the minus char
+* [SMXCOMP-646|http://issues.apache.org/activemq/browse/SMXCOMP-646] - WSNSpringComponentTest hanging on Solaris
+
+h4. Improvement
+* [SMX4KNL-243|http://issues.apache.org/activemq/browse/SMX4KNL-243] - Start using https://repository.apache.org for Apache snapshots
+* [SMXCOMP-665|http://issues.apache.org/activemq/browse/SMXCOMP-665] - Upgrade components to ActiveMQ 5.3
+
+h4. Test
+* [SMXCOMP-647|http://issues.apache.org/activemq/browse/SMXCOMP-647] - Use dynamic ports for tests

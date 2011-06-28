@@ -1,0 +1,22 @@
+---
+title: Board Report 2007-11-14
+--- pipeline:conf
+h1. 14 November 2007
+
+{code}
+This report for  November is  the second report 
+since ServiceMix graduation.
+
+ServiceMix  resources  have not been completely
+moved yet.  The web site has moved to its final
+location (http://servicemix.apache.org) but the
+mailing lists and svn have not been touched.
+
+We  have  released ServiceMix 3.2 on November 
+the 7th.  Work is continuing on ServiceMix 4.0
+and we aim for a milestone release before the 
+end of the year.
+
+A new PMC member has just been voted in.
+{code}
+   

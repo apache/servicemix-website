@@ -1,0 +1,20 @@
+---
+title: Board Report 2008-06-18
+--- pipeline:conf
+h2. June 18th, 2008
+
+{noformat}
+In the three months that passed since our latest board report, there were no changes to the committer base or PMC.  With the existing team however, we had a lot of activity on ServiceMix 4:
+- the release of ServiceMix NMR 1.0-m1 in the second half or March 
+- the release of ServiceMix Kernel 1.0-m3 in May
+- the release of ServiceMix Kernel 1.0.0-rc1 in June
+
+ServiceMix Kernel by now provides a stable OSGi runtime with a very nice feature set.  The recent release of ServiceMix Kernel 1.0.0-rc1 is the first step in getting an official ServiceMix Kernel 1.0 out.
+
+Meanwhile, development also continues on ServiceMix 3.
+- ServiceMix 3.2.2 (a bugfix release) will be released as soon as new versions of some core components are available
+- for the next major release (ServiceMix 3.3), we already have some new features done as well (e.g. a JBI compliant mail component, scripting service engine with JSR-223 support)
+- we are planning to split the JBI components into a separate project, which should make it easier to re-use them in ServiceMix 4 (or other JBI-compliant products).  This work has already started and one of the main driver was to be able to have shorter release cycles (due to the great number of dependant projects, it is very difficult to find a time window where we don't depend on snapshots).
+
+Most concerns from the previous board report have been dealt with; work on creation of the ServiceMix zone is still ongoing (INFRA-1564).
+{noformat}

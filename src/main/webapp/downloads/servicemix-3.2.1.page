@@ -1,0 +1,67 @@
+---
+title: ServiceMix 3.2.1
+page_version: 8
+page_creator: gnodet
+page_modifier: bsnyder
+--- pipeline:conf
+h2. New and Noteworthy
+ 
+Contains slew of bug fixes that are tracked in the change log.
+
+h2. Getting the Distributions
+
+{excerpt}
+*Linux/Mac OS X/Unix Downloads*
+* [Apache ServiceMix 3.2.1 (.tar.gz)|http://www.apache.org/dyn/closer.cgi?path=/servicemix/servicemix-3/3.2.1/apache-servicemix-3.2.1.tar.gz] [PGP|http://www.apache.org/dist/servicemix/servicemix-3/3.2.1/apache-servicemix-3.2.1.tar.gz.asc] [SHA|http://www.apache.org/dist/servicemix/servicemix-3/3.2.1/apache-servicemix-3.2.1.tar.gz.sha1] [MD5|http://www.apache.org/dist/servicemix/servicemix-3/3.2.1/apache-servicemix-3.2.1.tar.gz.md5]
+* [Apache ServiceMix 3.2.1 Sources (.tar.gz)|http://www.apache.org/dyn/closer.cgi?path=/servicemix/servicemix-3/3.2.1/apache-servicemix-3.2.1-src.tar.gz] [PGP|http://www.apache.org/dist/servicemix/servicemix-3/3.2.1/apache-servicemix-3.2.1-src.tar.gz.asc] [SHA|http://www.apache.org/dist/servicemix/servicemix-3/3.2.1/apache-servicemix-3.2.1-src.tar.gz.sha1] [MD5|http://www.apache.org/dist/servicemix/servicemix-3/3.2.1/apache-servicemix-3.2.1-src.tar.gz.md5]
+
+*Windows  downloads*
+* [Apache ServiceMix 3.2.1 (.zip)|http://www.apache.org/dyn/closer.cgi?path=/servicemix/servicemix-3/3.2.1/apache-servicemix-3.2.1.zip] [PGP|http://www.apache.org/dist/servicemix/servicemix-3/3.2.1/apache-servicemix-3.2.1.zip.asc] [SHA|http://www.apache.org/dist/servicemix/servicemix-3/3.2.1/apache-servicemix-3.2.1.zip.sha1] [MD5|http://www.apache.org/dist/servicemix/servicemix-3/3.2.1/apache-servicemix-3.2.1.zip.md5]
+* [Apache ServiceMix 3.2.1 Sources (.zip)|http://www.apache.org/dyn/closer.cgi?path=/servicemix/servicemix-3/3.2.1/apache-servicemix-3.2.1-src.zip] [PGP|http://www.apache.org/dist/servicemix/servicemix-3/3.2.1/apache-servicemix-3.2.1-src.zip.asc] [SHA|http://www.apache.org/dist/servicemix/servicemix-3/3.2.1/apache-servicemix-3.2.1-src.zip.sha1] [MD5|http://www.apache.org/dist/servicemix/servicemix-3/3.2.1/apache-servicemix-3.2.1-src.zip.md5]
+
+*Web Application*
+* [Apache ServiceMix Web Application 3.2.1  (.war)|http://www.apache.org/dyn/closer.cgi?path=/servicemix/servicemix-3/3.2.1/apache-servicemix-web-3.2.1.war] [PGP|http://www.apache.org/dist/servicemix/servicemix-3/3.2.1/apache-servicemix-web-3.2.1.war.asc] [SHA|http://www.apache.org/dist/servicemix/servicemix-3/3.2.1/apache-servicemix-web-3.2.1.war.sha1] [MD5|http://www.apache.org/dist/servicemix/servicemix-3/3.2.1/apache-servicemix-web-3.2.1.war.md5]
+{excerpt}
+
+{info:title=The above URLs use redirection}
+The above URLs use the Apache Mirror system to redirect you to a suitable mirror for your download. Some users have experienced issues with some versions of browsers (e.g. some Safari browsers). If the download doesn't seem to work for you from the above URL then try using [FireFox|http://www.mozilla.com/en-US/firefox/]
+{info}
+
+h2. Release notes
+
+* *Bug*
+    ** [SM-822|https://issues.apache.org/activemq/browse/SM-822] - java.lang.IllegalStateException: component is not owner, with jmsflow and jcaflow
+    ** [SM-915|https://issues.apache.org/activemq/browse/SM-915] - FTP poller stalls with threads waiting on PlainSocketImpl.socketAccept()
+    ** [SM-1051|https://issues.apache.org/activemq/browse/SM-1051] - servicemix.bat contains unix style environment variables, instead of all windows style environment variables
+    ** [SM-1119|https://issues.apache.org/activemq/browse/SM-1119] - Encoding problem in text returned by HTTP-SU
+    ** [SM-1124|https://issues.apache.org/activemq/browse/SM-1124] - Message content silently dropped when conversion fails
+    ** [SM-1131|https://issues.apache.org/activemq/browse/SM-1131] - Redeployment fails for Geronimo integration
+    ** [SM-1132|https://issues.apache.org/activemq/browse/SM-1132] - No clean shutdown of ServiceMix
+    ** [SM-1143|https://issues.apache.org/activemq/browse/SM-1143] - Both wsdl-first-sa projects have the same artifactId
+    ** [SM-1144|https://issues.apache.org/activemq/browse/SM-1144] - Error in writeDetails method when I need return fault messages
+    ** [SM-1145|https://issues.apache.org/activemq/browse/SM-1145] - NoClassDefFound (org.springframework.aop.support.AopUtils) when deploying the Camel example
+    ** [SM-1149|https://issues.apache.org/activemq/browse/SM-1149] - the resource path shouldn't include any "target" to avoid being filtered when build the src kit
+    ** [SM-1151|https://issues.apache.org/activemq/browse/SM-1151] - LwContainer test has the version number hard coded inside
+
+* *Improvement*
+    ** [SM-180|https://issues.apache.org/activemq/browse/SM-180] - Update JavaDoc link on in website template
+    ** [SM-810|https://issues.apache.org/activemq/browse/SM-810] - Create single complete ServiceMix Shared Library
+
+* *Task*
+    ** [SM-1146|https://issues.apache.org/activemq/browse/SM-1146] - Change servicemix repo url due to the svn relation out of the incubator area
+
+
+h2. SVN Tag Checkout
+
+{code}
+svn co http://svn.apache.org/repos/asf/servicemix/tags/servicemix-3.2.1/
+{code}
+
+h2. Changelog
+
+For a more detailed view of new features and bug fixes, see the [changelog|https://issues.apache.org/activemq/secure/IssueNavigator.jspa?reset=true&mode=hide&sorter/order=DESC&sorter/field=priority&pid=10950&fixfor=11847]
+
+h2. Resources
+
+Links to pages on the wiki with information specific for this version of ServiceMix
+* [XML Schemas for 3.2.1]

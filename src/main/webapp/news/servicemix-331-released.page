@@ -1,0 +1,10 @@
+---
+title: ServiceMix 3.3.1 Released
+--- pipeline:conf
+
+h2. ServiceMix 3.3.1 released
+(by Gert Vanthienen on June 23, 2009
+
+The ServiceMix team is pleased to announce the availability of ServiceMix 3.3.1.
+This releases fixes a number of bugs and ships with the latest 2009.01 version of all the JBI components.
+For more informations, please see the [release notes|ServiceMix 3.3.1]

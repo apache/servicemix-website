@@ -1,0 +1,108 @@
+---
+title: Team
+page_version: 122
+page_creator: jstrachan
+page_modifier: joed
+--- pipeline:conf
+This page lists the people who belong to the core team. By all means add yourself to the list as a contributor. If you are using ServiceMix please add yourself to the [Users page|Users].
+
+h3. Committers
+
+|| Name || ID || Organisation || PMC Member ||
+| Aaron Mulder | | | (/) |
+| Alan D. Cabrera | maguro |  | |
+| Alex Boisvert | boisvert | | |
+| Adrian Co | aco |  | (/) |
+| Andreas Oberhack | andreas | [Softwarefabrik GmbH |http://www.softwarefabrik.biz/] | |
+| [Bruce Snyder|http://bsnyderblog.blogspot.com/] | bsnyder | [SpringSource|http://springsource.com/] | (/) |
+| [Chris Custine|http://blog.organicelement.com/] | ccustine | [FuseSource |http://fusesource.com/] | (/) |
+| Dain Sundstrom | dain | [IBM|http://www.ibm.com] | |
+| Dan Diephouse | dandiep | [EnvoiSolutions|http://envoisolutions.com/] | |
+| Darwin Flores | dflores |  | |
+| David Blevins | dblevins | [IBM|http://www.ibm.com] | |
+| David Jencks | djencks | [IBM|http://www.ibm.com] | (/) |
+| Edell Nolan | edelln | [FuseSource |http://fusesource.com/] | |
+| Eoghan Glynn | eglynn | [FuseSource |http://fusesource.com/] | |
+| Eric Dofonsou | ewrick | \\ | |
+| Frederick Oconer | foconer |  | |
+| Freeman Fang | ffang | [FuseSource|http://fusesource.com/] | (/) |
+| George Gastaldi | gastaldi | \\ | |
+| Gert Vanthienen | gertv | [anova|http://www.anova.be] | (/) |
+| Grant McDonald | grantm | \\ | |
+| Greg Wilkins | gregw | [MortBay|http://mortbay.com] | |
+| [Guillaume Nodet|http://gnodet.blogspot.com] | gnodet | [FuseSource |http://fusesource.com/] | (/) |
+| [Hiram Chirino|http://hiramchirino.com] | chirino | [FuseSource |http://fusesource.com/] | (/) |
+| Ioannis Canellos | iocanel | [Upstream S.A.|http://corp.upstreamsystems.com/]  | |
+| Jacek Laskowski | | | (/) |
+| Jan Bartel | janb | [MortBay|http://mortbay.com] | |
+| James Strachan | jstrachan | [FuseSource |http://fusesource.com/] | |
+| [Jamie Goodyear|http://icodebythesea.blogspot.com] | jgoodyear | | |
+| Jason van Zyl | jason |  | |
+| [Jean-Baptiste Onofré|http://www.nanthrax.net] | jbonofre | [Fimasys|http://www.fimasys.com] | (/) |
+| Jeff Genender | jgenender | [Savoir Technologies|http://www.savoirtech.com/] | (/) |
+| Johan Edstrom | joed | [Savoir Technologies|http://www.savoirtech.com/] | |
+| Jonas Lim | jlim | | (/) |
+| Joseph Gapuz | jgapuz |  | |
+| [Lars Heinemann|http://lhein.blogspot.com/] | lhein | [FuseSource |http://fusesource.com/] | (/) |
+| Matt Hogstrom | | [IBM|http://www.ibm.com] | (/) |
+| Merwin Yap | myap |  | |
+| Patrick Villacorta | pvillacorta |  | |
+| Philip Dodds | pdodds | [DevZuz |http://www.devzuz.com/] | (/) |
+| [Rob Davies|http://rajdavies.blogspot.com/] | rajdavies | [FuseSource |http://fusesource.com/] | (/) |
+| Roger Menday | rogerm | [Forschungszentrum Jülich|http://www.fz-juelich.de/] | |
+| Thomas Termin | tterm | [Blue Elephant Systems|http://www.blue-elephant-systems.com/] | (/) |
+|[Jeff Yu|http://jeffyuchang.blogspot.com]| jeffyu| | |
+|[Ulhas Bhole|http://ulhasbhole.blogspot.com] | ulhasbhole | [FuseSource |http://fusesource.com/] | |
+
+h3. Contributors
+
+|| Name || Organisation ||
+| Allan Brighton | |
+| Anders Hammar | |
+| Andreas Held | |
+| Andrea Zoppello | [Engineering Ingegneria Informatica S.p.A.|http://www.eng.it/] |
+| Charles Souillard | Bull R&D |
+| Christian Schneider | [EnBW Energie Baden-Württemberg AG| http://www.enbw.com] [Homepage|http://www.liquid-reality.de]|
+| Christopher Steinmeyer | |
+| David Grigglestone | |
+| Dave Stanley | [FuseSource |http://fusesource.com/] |
+| Edell Nolan | |
+| Eduardo Burgos | |
+| Eric Crampton | |
+| Fabrice Dewasmes | |
+| Frank Trietsch | |
+| Georg Dembowski | |
+| Gianfranco Boccalon | [Engineering Ingegneria Informatica S.p.A.|http://www.eng.it/] |
+| GrÃ©goire A. Autric | [Capgemini France|http://www.capgemini.fr] |
+| James Lorenzen | |
+| Jamie McCrindle | |
+| John Muth | |
+| Jordan Christensen | |
+| Juergen Mayrbaeurl | CSC Austria AG |
+| Hossam Karim \\ | [GAIA-TI|http://www.gaiati.com] |
+| Ken Berthelot | |
+| Kevin Bouchard | |
+| Kristian Koehler | |
+| Marc Swanson | |
+| Marc Tremblay | |
+| Maciej Szefler | |
+| Martin Krasser | [InterComponentWare AG|http://www.icw-global.com/] |
+| Rabi Mishra | [Wipro Technologies|http://www.wipro.com] |
+| Ramon Buckland | |
+| Renaud Bruyeron | |
+| Robert Liguori|STG Technologies, Inc.|
+| Roehl Sioson | |
+| Ryan Schweter | |
+| Simone Bordet | |
+| Soumadeep Sen | |
+| Stefan Klinger | |
+| Terry Cox | |
+| Peter Smith | FAST |
+| Philipp Rossmanith | | 
+|Willem Jiang|  [FuseSource |http://fusesource.com/] |
+| William Wong | |
+| Greg Lucas | [Progress |http://www.progress.com/] |
+
+h3. Contributing
+
+We welcome contributions, please do come and [join in the fun|Contributing].

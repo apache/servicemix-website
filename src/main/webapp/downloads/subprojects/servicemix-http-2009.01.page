@@ -1,0 +1,37 @@
+---
+title: servicemix-http 2009.01
+page_version: 1
+page_creator: gertvanthienen
+page_modifier: gertvanthienen
+--- pipeline:conf
+
+{excerpt}Release Notes - ServiceMix Components - Version servicemix-http-2009.01{excerpt}
+
+
+*Bug*
+    * [SMXCOMP-111|http://issues.apache.org/active/browse/SMXCOMP-111] - When deployed in Smx4, the JBI SUs do not have access to the whole JRE
+    * [SMXCOMP-113|http://issues.apache.org/active/browse/SMXCOMP-113] - Components jars should not include the jbi descriptor
+    * [SMXCOMP-160|http://issues.apache.org/active/browse/SMXCOMP-160] - When a SU is stopped on servicemix-http, pending exchanges are not processed correctly
+    * [SMXCOMP-161|http://issues.apache.org/active/browse/SMXCOMP-161] - running servicemix-http unit tests stalls intermittently
+    * [SMXCOMP-165|http://issues.apache.org/active/browse/SMXCOMP-165] - servicemix-http provider endpoint may convey incorrect http headers, leading to problems
+    * [SMXCOMP-172|http://issues.apache.org/active/browse/SMXCOMP-172] - Build problem: Incorrect parent pom version
+    * [SMXCOMP-458|http://issues.apache.org/active/browse/SMXCOMP-458] - Malformed manifest.mf  is generated for the servicemix-http bundle
+    * [SMXCOMP-469|http://issues.apache.org/active/browse/SMXCOMP-469] - Terminated exchanges are sometimes sent when handling an exception, leading to errors
+    * [SMXCOMP-478|http://issues.apache.org/active/browse/SMXCOMP-478] - OSGi bundles for components should not require the jaxp-ri bundle
+
+*Improvement*
+    * [SMXCOMP-115|http://issues.apache.org/active/browse/SMXCOMP-115] - Patch available for upgrading components to Spring 2.5.6
+    * [SMXCOMP-116|http://issues.apache.org/active/browse/SMXCOMP-116] - Upgrade to spring osgi 1.2.0-m2
+    * [SMXCOMP-152|http://issues.apache.org/active/browse/SMXCOMP-152] - Add WSDL proxy in new HTTP endpoint
+    * [SMXCOMP-157|http://issues.apache.org/active/browse/SMXCOMP-157] - Update JettyContextManager to use QueuedThreadPool (BoundedThreadPool is deprecated)
+    * [SMXCOMP-164|http://issues.apache.org/active/browse/SMXCOMP-164] - servicemix-http consumer endpoints can not handle PUT and DELETE methods
+    * [SMXCOMP-168|http://issues.apache.org/active/browse/SMXCOMP-168] - servicemix-http component depends on servicemix-core for compilation which can be removed and the dependcy can be dropped down to test scope.
+    * [SMXCOMP-170|http://issues.apache.org/active/browse/SMXCOMP-170] - SoapEndpoint loadWsdl() does not support importing from relative paths
+
+*New Feature*
+    * [SMXCOMP-155|http://issues.apache.org/active/browse/SMXCOMP-155] - Support WS-Addressing for the new http endpoints
+    * [SMXCOMP-166|http://issues.apache.org/active/browse/SMXCOMP-166] - servicemix-http: Support for "Content-Encoding: gzip" both on the consumer and the provider side
+
+*Task*
+    * [SMXCOMP-154|http://issues.apache.org/active/browse/SMXCOMP-154] - Remove the HttpManagedServlet from servicemix-http, as it is duplicated by the one in apache-servicemix-web and introduce a strong dependency on servicemix-core
+    * [SMXCOMP-159|http://issues.apache.org/active/browse/SMXCOMP-159] - Upgrade to Jetty 6.1.12

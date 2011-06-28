@@ -1,0 +1,77 @@
+---
+title: servicemix-cxfbc 2009.02
+page_version: 1
+page_creator: gertvanthienen
+page_modifier: gertvanthienen
+--- pipeline:conf
+h3. {excerpt}Release notes - servicemix-cxf-bc-2009.02{excerpt}
+
+h4. Bug
+* [SMXCOMP-28|http://issues.apache.org/activemq/browse/SMXCOMP-28] - in-out cxf-bc async jms consumer with cxf-se provider loses messages under load with no errors reported
+* [SMXCOMP-32|http://issues.apache.org/activemq/browse/SMXCOMP-32] - CXF-SE client proxies should support MTOM/attachments
+* [SMXCOMP-487|http://issues.apache.org/activemq/browse/SMXCOMP-487] - cxf bc provider lost faultstring and faultcode for incoming soap fault message from externel service
+* [SMXCOMP-493|http://issues.apache.org/activemq/browse/SMXCOMP-493] - STFlow doesn&apos;t work with servicemix-http/servicemix-cxf-bc
+* [SMXCOMP-500|http://issues.apache.org/activemq/browse/SMXCOMP-500] - ensure the cxf consumer&apos;s classloader is used for its interceptor chain
+* [SMXCOMP-504|http://issues.apache.org/activemq/browse/SMXCOMP-504] - ConcurrentModificationExceptions under heavy load in CXF BC
+* [SMXCOMP-509|http://issues.apache.org/activemq/browse/SMXCOMP-509] - cxfse:endpoint service and endpoint attributes do not influence nmr endpoint as expected
+* [SMXCOMP-511|http://issues.apache.org/activemq/browse/SMXCOMP-511] - cxf bc provider should close InputStream of response message
+* [SMXCOMP-536|http://issues.apache.org/activemq/browse/SMXCOMP-536] - potential memory leak for cxf continuation
+* [SMXCOMP-540|http://issues.apache.org/activemq/browse/SMXCOMP-540] - Registration/deregistration problem for consumer endpoint
+* [SMXCOMP-543|http://issues.apache.org/activemq/browse/SMXCOMP-543] - potentail cxf bc  tests hang with jms broker
+* [SMXCOMP-547|http://issues.apache.org/activemq/browse/SMXCOMP-547] - CXF-BC Component unable to use web services with parameter named &quot;Body&quot; when useJBIWrapper=false
+* [SMXCOMP-555|http://issues.apache.org/activemq/browse/SMXCOMP-555] - Not correctly processed org.apache.axis2.AxisFault when using servicemix-cxf-bc as a web service proxy, causes java.lang.NullPointerException in JbiInWsdl1Interceptor class
+* [SMXCOMP-557|http://issues.apache.org/activemq/browse/SMXCOMP-557] - cxf bc should honor implicitly used soap header
+* [SMXCOMP-573|http://issues.apache.org/activemq/browse/SMXCOMP-573] - cxf bc component shouldn&apos;t rely on the default bus
+* [SMXCOMP-584|http://issues.apache.org/activemq/browse/SMXCOMP-584] - when shutdown cxf bc consumer endpoint,  shouldn&apos;t  shutdown the cxf bc component&apos;s bus
+* [SMXCOMP-585|http://issues.apache.org/activemq/browse/SMXCOMP-585] - cxf bc provider can&apos;t handle soap fault message correctly when there&apos;s whitespace/tab/return in the fault details
+* [SMXCOMP-589|http://issues.apache.org/activemq/browse/SMXCOMP-589] - cxf bc provider shouldn&apos;t try to set fault message back to InOnly MessageExchange
+* [SMXCOMP-590|http://issues.apache.org/activemq/browse/SMXCOMP-590] - The org.apache.servicemix.cxfbc.ws.security.CxfBcHttpsConsumerTest is failing on IBM machines
+* [SMXCOMP-600|http://issues.apache.org/activemq/browse/SMXCOMP-600] - namespace will miss after changing from soap message to jbi message on mac osx
+* [SMXCOMP-607|http://issues.apache.org/activemq/browse/SMXCOMP-607] - Persistence-id of the component can&apos;t contain the minus char
+* [SMXCOMP-617|http://issues.apache.org/activemq/browse/SMXCOMP-617] - CXF-BCProvider and JbiOutWsdl1Interceptor generate classcast exception in case where JBI messageExchange have newline characters in xml (formatted xml).
+* [SMXCOMP-618|http://issues.apache.org/activemq/browse/SMXCOMP-618] - should use StaxUtils.writeElement/Node with repairing "true" instead of add namespace explicitly
+* [SMXCOMP-628|http://issues.apache.org/activemq/browse/SMXCOMP-628] - ensure getBus() of CxfBcComponent not return null
+* [SMXCOMP-632|http://issues.apache.org/activemq/browse/SMXCOMP-632] - cxf bc consumer should support the case that there&apos;s soap header in the out Message
+* [SMXCOMP-633|http://issues.apache.org/activemq/browse/SMXCOMP-633] - check if the NormalizedMessage is fault in org.apache.servicemix.cxfse.interceptors.AttachmentInInterceptor
+* [SMXCOMP-636|http://issues.apache.org/activemq/browse/SMXCOMP-636] - Upgrade components to use Jencks 2.2
+* [SMXCOMP-671|http://issues.apache.org/activemq/browse/SMXCOMP-671] - should defer start org.apache.cxf.endpoint.Server to cxf bc consumer start method
+* [SMXCOMP-681|http://issues.apache.org/activemq/browse/SMXCOMP-681] - add xml-resolver dependency explicitly to ensure org/apache/xml/resolver/CatalogManager is available
+
+h4. Improvement
+* [SMX4KNL-243|http://issues.apache.org/activemq/browse/SMX4KNL-243] - Start using https://repository.apache.org for Apache snapshots
+* [SMXCOMP-490|http://issues.apache.org/activemq/browse/SMXCOMP-490] - ensure cxf bc and se endpoint check exchange status at very first place
+* [SMXCOMP-548|http://issues.apache.org/activemq/browse/SMXCOMP-548] - when smx-cxf-bc use MTOM message over JMS transport, need specify jms message type as byte to use real binary way to transfer the attachment
+* [SMXCOMP-549|http://issues.apache.org/activemq/browse/SMXCOMP-549] - add decoupled endpoint support for cxf bc provider
+* [SMXCOMP-550|http://issues.apache.org/activemq/browse/SMXCOMP-550] - cxf se should be able to extract operationName based on payload and servicemodel if using doc/literal style in case that no operationName bound to the MessageExchange
+* [SMXCOMP-571|http://issues.apache.org/activemq/browse/SMXCOMP-571] - should put CxfBcProvider instance into cxf exchange for potentially later use
+* [SMXCOMP-574|http://issues.apache.org/activemq/browse/SMXCOMP-574] - CXF-BC and CXF-SE should allow separate configuration for non-default busCfg at component level.
+* [SMXCOMP-591|http://issues.apache.org/activemq/browse/SMXCOMP-591] - cxf bc provider should be able to send exception back when something wrong during process soap fault message
+* [SMXCOMP-649|http://issues.apache.org/activemq/browse/SMXCOMP-649] - CXF-BC raises a NullPointerException if the targetEndpoint is not found (without WSDL provided)
+
+h4. New Feature
+* [SMXCOMP-482|http://issues.apache.org/activemq/browse/SMXCOMP-482] - Upgrade to CXF 2.2
+* [SMXCOMP-572|http://issues.apache.org/activemq/browse/SMXCOMP-572] - JbiJAASInterceptor should also support WS-Security X.509 Certificate Token Profile
+* [SMXCOMP-616|http://issues.apache.org/activemq/browse/SMXCOMP-616] - add schemaValidationEnabled flag for cxf bc endpoint
+
+h4. Task
+* [SM-1877|http://issues.apache.org/activemq/browse/SM-1877] - update wss4j to 1.5.8
+* [SM-1911|http://issues.apache.org/activemq/browse/SM-1911] - Upgrade Derby to 10.5.3.0_1
+* [SMX4-296|http://issues.apache.org/activemq/browse/SMX4-296] - upgrade to cxf 2.2.2
+* [SMXCOMP-542|http://issues.apache.org/activemq/browse/SMXCOMP-542] - remove AbstractBindingFactory.DATABINDING_DISABLED dependency when build interceptor chain
+* [SMXCOMP-554|http://issues.apache.org/activemq/browse/SMXCOMP-554] - refactor tests to not use port 9000 so that the tests can pass with sonar plugin
+* [SMXCOMP-575|http://issues.apache.org/activemq/browse/SMXCOMP-575] - Intermittent failure in CxfBcRMSequenceTest.testInactivityTimeout()
+* [SMXCOMP-596|http://issues.apache.org/activemq/browse/SMXCOMP-596] - CxfBCPolicyTest intermittently failed on some box
+* [SMXCOMP-668|http://issues.apache.org/activemq/browse/SMXCOMP-668] - upgrade activemq version used in servicemix-cxf-bc tests to 5.3.0
+
+h4. Test
+* [SMXCOMP-498|http://issues.apache.org/activemq/browse/SMXCOMP-498] - several test failed caused by recent change in cxf
+* [SMXCOMP-533|http://issues.apache.org/activemq/browse/SMXCOMP-533] - Improve test coverage - ServiceMix :: CXF Binding Component
+* [SMXCOMP-535|http://issues.apache.org/activemq/browse/SMXCOMP-535] - Refactor CxfBcProviderTest
+* [SMXCOMP-539|http://issues.apache.org/activemq/browse/SMXCOMP-539] - add test to verify the PIC of cxf bc su will always use its own classloader even use same jetty port with other SU
+* [SMXCOMP-551|http://issues.apache.org/activemq/browse/SMXCOMP-551] - update the expired certificate which are used for the security tests
+* [SMXCOMP-597|http://issues.apache.org/activemq/browse/SMXCOMP-597] - CxfBCSESystemTest failed due to recent change in cxf
+* [SMXCOMP-609|http://issues.apache.org/activemq/browse/SMXCOMP-609] - CxfBcProviderConsumerTest fails with an IBM JDK
+* [SMXCOMP-613|http://issues.apache.org/activemq/browse/SMXCOMP-613] - CxfBCConsumerAsynTest intermittently failed on some machine
+* [SMXCOMP-630|http://issues.apache.org/activemq/browse/SMXCOMP-630] - CxfBcAddressingTest.testExplicitMAPs failed caused by recent change in cxf
+* [SMXCOMP-669|http://issues.apache.org/activemq/browse/SMXCOMP-669] - add test to verify exception in code first way can be handled correctly by cxf bc/se
+* [SMXCOMP-676|http://issues.apache.org/activemq/browse/SMXCOMP-676] - CxfBcRMSequenceTest.testInactivityTimeout failed intermittently especially on some slow windows machine

@@ -1,0 +1,24 @@
+---
+title: ServiceMix 3.0-M2 Release
+page_version: 4
+page_creator: gnodet
+page_modifier: gnodet
+--- pipeline:conf
+h2. Download Here
+
+|| Description || Download Link || PGP Signature file of download ||
+| Binary for Windows | [apache-servicemix-3.0-M2-incubating.zip|http://people.apache.org/~gnodet/servicemix-3.0-M2-incubating/m2/org/apache/servicemix/apache-servicemix/3.0-M2-incubating/apache-servicemix-3.0-M2-incubating.zip] | [apache-servicemix-3.0-M2-incubating.zip.asc|http://people.apache.org/~gnodet/servicemix-3.0-M2-incubating/m2/org/apache/servicemix/apache-servicemix/3.0-M2-incubating/apache-servicemix-3.0-M2-incubating.zip.asc] |
+| Source code for Windows | [apache-servicemix-3.0-M2-incubating-src.zip|http://people.apache.org/~gnodet/servicemix-3.0-M2-incubating/m2/org/apache/servicemix/apache-servicemix/3.0-M2-incubating/apache-servicemix-3.0-M2-incubating-src.zip] | [apache-servicemix-3.0-M2-incubating-src.zip.asc|http://people.apache.org/~gnodet/servicemix-3.0-M2-incubating/m2/org/apache/servicemix/apache-servicemix/3.0-M2-incubating/apache-servicemix-3.0-M2-incubating-src.zip.asc] |
+| Binary for Unix | [apache-servicemix-3.0-M2-incubating.tar.gz|http://people.apache.org/~gnodet/servicemix-3.0-M2-incubating/m2/org/apache/servicemix/apache-servicemix/3.0-M2-incubating/apache-servicemix-3.0-M2-incubating.tar.gz] | [apache-servicemix-3.0-M2-incubating.tar.gz.asc|http://people.apache.org/~gnodet/servicemix-3.0-M2-incubating/m2/org/apache/servicemix/apache-servicemix/3.0-M2-incubating/apache-servicemix-3.0-M2-incubating.tar.gz.asc] |
+| Source code for Unix | [apache-servicemix-3.0-M2-incubating-src.tar.gz|http://people.apache.org/~gnodet/servicemix-3.0-M2-incubating/m2/org/apache/servicemix/apache-servicemix/3.0-M2-incubating/apache-servicemix-3.0-M2-incubating-src.tar.gz] | [apache-servicemix-3.0-M2-incubating-src.tar.gz.asc|http://people.apache.org/~gnodet/servicemix-3.0-M2-incubating/m2/org/apache/servicemix/apache-servicemix/3.0-M2-incubating/apache-servicemix-3.0-M2-incubating-src.tar.gz.asc] |
+
+h2. SVN Tag Checkout
+
+{code}
+svn co http://svn.apache.org/repos/asf/incubator/servicemix/tags/servicemix-3.0-M2-incubating/
+{code}
+
+h2. Changelog
+
+For a more detailed view of new features and bug fixes, see the [release notes|http://issues.apache.org/activemq/secure/ReleaseNote.jspa?version=11714&amp;styleName=Html&amp;projectId=10950&amp;Create=Create]
+{jiraissues:url=http://issues.apache.org/activemq/secure/IssueNavigator.jspa?view=rss&amp;&amp;pid=10950&amp;fixfor=11714&amp;sorter/field=issuekey&amp;sorter/order=DESC&amp;tempMax=999&amp;reset=true&amp;decorator=none}

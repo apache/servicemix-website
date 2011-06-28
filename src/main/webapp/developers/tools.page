@@ -1,0 +1,7 @@
+---
+title: Tools
+--- pipeline:conf
+h3. We thank the following vendors for supporting open source and providing free licenses or services for project committers to use in developing Apache ServiceMix.  
+
+| [!/images/sonar.png!|http://sonar.codehaus.org] | The Sonar Team has set up builds on their public instance \\ (http://nemo.sonar.codehaus.org) |
+| [!/images/yourkit.jpg!|http://www.yourkit.com] | YourKit has given the ServiceMix team free licenses. |

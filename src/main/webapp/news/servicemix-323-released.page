@@ -1,0 +1,10 @@
+---
+title: ServiceMix 3.2.3 Released
+--- pipeline:conf
+
+h2. ServiceMix 3.2.3 released
+(by Freeman Fang posted on October 29, 2008
+
+The ServiceMix team is pleased to announce the availability of [ServiceMix 3.2.3.|http://servicemix.apache.org/servicemix-323.html]
+This release includes a number of bug fixes and improvements.
+For more informations, please see the [releasenotes|http://servicemix.apache.org/servicemix-323.html]

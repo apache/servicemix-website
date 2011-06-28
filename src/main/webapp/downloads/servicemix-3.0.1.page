@@ -1,0 +1,83 @@
+---
+title: ServiceMix 3.0.1
+page_version: 1
+page_creator: gnodet
+page_modifier: gnodet
+--- pipeline:conf
+{warning}
+This page is a preview of the release page which will be announced and made official once the release has been approved.
+{warning}
+
+h2. Download Here
+
+*Linux/Mac OS X/Unix Downloads*
+* [Apache ServiceMix 3.0.1-incubating (.tar.gz)|http://people.apache.org/repo/m2-incubating-repository/org/apache/servicemix/apache-servicemix/3.0.1-incubating/apache-servicemix-3.0.1-incubating.tar.gz] [PGP|http://people.apache.org/repo/m2-incubating-repository/org/apache/servicemix/apache-servicemix/3.0.1-incubating/apache-servicemix-3.0.1-incubating.tar.gz.asc] [SHA|http://people.apache.org/repo/m2-incubating-repository/org/apache/servicemix/apache-servicemix/3.0.1-incubating/apache-servicemix-3.0.1-incubating.tar.gz.sha1] [MD5|http://people.apache.org/repo/m2-incubating-repository/org/apache/servicemix/apache-servicemix/3.0.1-incubating/apache-servicemix-3.0.1-incubating.tar.gz.md5]
+* [Apache ServiceMix 3.0.1-incubating Sources (.tar.gz)|http://people.apache.org/repo/m2-incubating-repository/org/apache/servicemix/apache-servicemix/3.0.1-incubating/apache-servicemix-3.0.1-incubating-src.tar.gz] [PGP|http://people.apache.org/repo/m2-incubating-repository/org/apache/servicemix/apache-servicemix/3.0.1-incubating/apache-servicemix-3.0.1-incubating-src.tar.gz.asc] [SHA|http://people.apache.org/repo/m2-incubating-repository/org/apache/servicemix/apache-servicemix/3.0.1-incubating/apache-servicemix-3.0.1-incubating-src.tar.gz.sha1] [MD5|http://people.apache.org/repo/m2-incubating-repository/org/apache/servicemix/apache-servicemix/3.0.1-incubating/apache-servicemix-3.0.1-incubating-src.tar.gz.md5]
+
+*Windows Downloads*
+* [Apache ServiceMix 3.0.1-incubating (.zip)|http://people.apache.org/repo/m2-incubating-repository/org/apache/servicemix/apache-servicemix/3.0.1-incubating/apache-servicemix-3.0.1-incubating.zip] [PGP|http://people.apache.org/repo/m2-incubating-repository/org/apache/servicemix/apache-servicemix/3.0.1-incubating/apache-servicemix-3.0.1-incubating.zip.asc] [SHA|http://people.apache.org/repo/m2-incubating-repository/org/apache/servicemix/apache-servicemix/3.0.1-incubating/apache-servicemix-3.0.1-incubating.zip.sha1] [MD5|http://people.apache.org/repo/m2-incubating-repository/org/apache/servicemix/apache-servicemix/3.0.1-incubating/apache-servicemix-3.0.1-incubating.zip.md5]
+* [Apache ServiceMix 3.0.1-incubating Sources (.zip)|http://people.apache.org/repo/m2-incubating-repository/org/apache/servicemix/apache-servicemix/3.0.1-incubating/apache-servicemix-3.0.1-incubating-src.zip] [PGP|http://people.apache.org/repo/m2-incubating-repository/org/apache/servicemix/apache-servicemix/3.0.1-incubating/apache-servicemix-3.0.1-incubating-src.zip.asc] [SHA|http://people.apache.org/repo/m2-incubating-repository/org/apache/servicemix/apache-servicemix/3.0.1-incubating/apache-servicemix-3.0.1-incubating-src.zip.sha1] [MD5|http://people.apache.org/repo/m2-incubating-repository/org/apache/servicemix/apache-servicemix/3.0.1-incubating/apache-servicemix-3.0.1-incubating-src.zip.md5]
+
+
+h2. Release notes
+
+* *Bug*
+    ** [SM-387|https://issues.apache.org/activemq/browse/SM-387] - JBI Spec - Resource Loading Styles not correctly implemented
+    ** [SM-482|https://issues.apache.org/activemq/browse/SM-482] - Missing jars in the BPE component
+    ** [SM-570|https://issues.apache.org/activemq/browse/SM-570] - HTTP connector can blow up while trying to report a problem
+    ** [SM-583|https://issues.apache.org/activemq/browse/SM-583] - Jetty context Path verification
+    ** [SM-589|https://issues.apache.org/activemq/browse/SM-589] - The SourceTransformer should not log a warning when calling toResult with a null Source
+    ** [SM-592|https://issues.apache.org/activemq/browse/SM-592] - notifier.run() missing from DefaultState
+    ** [SM-593|https://issues.apache.org/activemq/browse/SM-593] - Jetty jars missing when running servicemix-web example
+    ** [SM-597|https://issues.apache.org/activemq/browse/SM-597] - Drools xpath expression does not use the namespaces defined
+    ** [SM-598|https://issues.apache.org/activemq/browse/SM-598] - MTOM attachments are not output by the jsr181 component
+    ** [SM-599|https://issues.apache.org/activemq/browse/SM-599] - bridge sample client.html providing no status info
+    ** [SM-603|https://issues.apache.org/activemq/browse/SM-603] - NullPointerException at org.apache.servicemix.jms.standard.StandardConsumerProcessor.doStart(StandardConsumerProcessor.java:51)
+    ** [SM-604|https://issues.apache.org/activemq/browse/SM-604] - Allow servicemix-http managed mode to dynamically determine the server, port, and context path it is running on when generating jsr181 WSDLs
+    ** [SM-608|https://issues.apache.org/activemq/browse/SM-608] - Maven based examples should include the needed repositories
+    ** [SM-610|https://issues.apache.org/activemq/browse/SM-610] - The ServiceAssembly mbean should return the names of the ServiceUnits
+    ** [SM-622|https://issues.apache.org/activemq/browse/SM-622] - JCAFlow with Howl Log throws STATUS_NO_TRANSACTION exception
+    ** [SM-674|https://issues.apache.org/activemq/browse/SM-674] - jbi:installComponent (and others) fails authentication against default SM container
+    ** [SM-676|https://issues.apache.org/activemq/browse/SM-676] - In the instance2 of the ws-notification example, the org.apache.servicemix.tck.ReceiverComponent should be removed
+    ** [SM-677|https://issues.apache.org/activemq/browse/SM-677] - FTP connection not recovered after ftp server failure/recovery
+    ** [SM-678|https://issues.apache.org/activemq/browse/SM-678] - Jsr181Component not using SU classloader to load service interface
+    ** [SM-691|https://issues.apache.org/activemq/browse/SM-691] - Client.html pages do not work in IE
+    ** [SM-697|https://issues.apache.org/activemq/browse/SM-697] - Using XSLT servicemix component causes a "java.io.IOException: Too many open files"
+    ** [SM-700|https://issues.apache.org/activemq/browse/SM-700] - ClientFactory should log problems at warning level as they are not critical
+    ** [SM-707|https://issues.apache.org/activemq/browse/SM-707] - Subscription Manager and Flow MBeans do not get unregistered.
+    ** [SM-722|https://issues.apache.org/activemq/browse/SM-722] - ExtendedXMLStreamReader strips whitespaces, which breaks servicemix-http when a SOAP invocation contains whitespace nodes
+    ** [SM-723|https://issues.apache.org/activemq/browse/SM-723] - ServiceMixClientFacade should not call "done" method
+    ** [SM-727|https://issues.apache.org/activemq/browse/SM-727] - Schema Import problem in a WSDL which doesn't let the service to be doployed on Servicemix
+
+* *Improvement*
+    ** [SM-565|https://issues.apache.org/activemq/browse/SM-585] - Enhance the JSR181 Proxy so that it can proxy non WSDL publishing components
+    ** [SM-578|https://issues.apache.org/activemq/browse/SM-578] - HttpComponent can not be deployed as managed!
+    ** [SM-581|https://issues.apache.org/activemq/browse/SM-581] - Use WSDL of servicemix-http endpoint if none is supplied by the target ServiceEndpoint
+    ** [SM-586|https://issues.apache.org/activemq/browse/SM-586] - Upgrade loan-broker example to lingo 1.1 and use different queues to avoid recieving messages from previous client runs
+    ** [SM-612|https://issues.apache.org/activemq/browse/SM-612] - servicemix-service-engine could set the scope of servicemix-core to provided
+    ** [SM-701|https://issues.apache.org/activemq/browse/SM-701] - Standardized the return of exceptions from the AdminCommandsService, also extended the ANT tasks to provide a deferExceptions settings which if set to true allows you to use the same semantics as the deploy/install directories.
+    ** [SM-702|https://issues.apache.org/activemq/browse/SM-702] - Components instantiated multiple times
+    ** [SM-709|https://issues.apache.org/activemq/browse/SM-709] - Upgrade to xbean 2.7 and Spring 2.0
+    ** [SM-710|https://issues.apache.org/activemq/browse/SM-710] - Upgrade to jetty 6.0.1
+    ** [SM-711|https://issues.apache.org/activemq/browse/SM-711] - Upgrade to woodstox 3.0.2
+    ** [SM-712|https://issues.apache.org/activemq/browse/SM-712] - Upgrade to xfire 1.2.2
+    ** [SM-715|https://issues.apache.org/activemq/browse/SM-715] - Document usage of jsr181:endpoint style parameter
+
+* *New Feature*
+    ** [SM-605|https://issues.apache.org/activemq/browse/SM-605] - Ability to configure jbi:projectDeploy goal to exclude updating dependencies
+    ** [SM-616|https://issues.apache.org/activemq/browse/SM-616] - Archetypes for the servicemix-saxon service engine
+    ** [SM-705|https://issues.apache.org/activemq/browse/SM-705] - Static Parameter map injected into XsltComponent
+
+* *Task*
+    ** [SM-671|https://issues.apache.org/activemq/browse/SM-671] - Use RI implementations for activation and javamail instead of geronimo ones
+
+h2. SVN Tag Checkout
+
+{code}
+svn co http://svn.apache.org/repos/asf/incubator/servicemix/tags/servicemix-3.0.1/
+{code}
+
+h2. Changelog
+
+For a more detailed view of new features and bug fixes, see the [changelog|http://issues.apache.org/activemq/secure/IssueNavigator.jspa?pid=10950&fixfor=11716&sorter/field=issuekey&sorter/order=DESC&tempMax=999&reset=true]
+

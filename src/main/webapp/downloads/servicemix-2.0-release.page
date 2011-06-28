@@ -1,0 +1,60 @@
+---
+title: ServiceMix 2.0 Release
+page_version: 8
+page_creator: jstrachan
+page_modifier: gnodet
+--- pipeline:conf
+
+We are pleased to announce the 2.0.2 release of ServiceMix!
+
+h3. New and Noteworthy
+
+* Improved JBI support including both interface based routing as well as service based routing together with improved WSDL parsing
+* Support for [Publish Subscribe Routing]
+* Improved [JAX WS] support 
+* Migration to [XBean|http://xbean.org/] as the XML configuration mechanism which works with any Spring release and allows us to mix and match ServiceMix configuration with other XML configuration mechanisms like ActiveMQ and Jencks
+* Migration to backport.util.concurrent to make it easier to move direct to a pure Java 5 solution.
+* a new Loan Broker example from the [EIP Patterns Book|http://www.eaipatterns.com/ComposedMessagingWS.html]
+* a new simpler POJO based deployment model
+* build reorganised to make ServiceMix more modular
+* a new ChainedComponent which implements simple pipelines of components easily
+
+In addition a number of bug fixes and performance enhancements were made.
+
+h2. Changelog
+For a more detailed view of new features and bug fixes, see the [release notes|http://jira.logicblaze.com/jira/secure/ReleaseNote.jspa?projectId=10950&styleName=Html&version=11711]
+
+We welcome [contributions|http://servicemix.org/Contributing], please do come and join our [team|http://servicemix.org/Team].
+
+For more information see the [Getting Started Guide|http://servicemix.org/Getting+Started].
+
+
+h2. Download Here
+||Download||Description||
+|[servicemix-2.0.2.zip|http://dist.codehaus.org/servicemix/distributions/servicemix-2.0.2.zip]|Binary Distribution in zip package|
+|[servicemix-2.0.2-src.zip|http://dist.codehaus.org/servicemix/distributions/servicemix-2.0.2-src.zip]|Source Distribution in zip package|
+|[servicemix-2.0.2.tar.gz|http://dist.codehaus.org/servicemix/distributions/servicemix-2.0.2.tar.gz]|Binary Distribution in gz package|
+|[servicemix-2.0.2-src.tar.gz|http://dist.codehaus.org/servicemix/distributions/servicemix-2.0.2-src.tar.gz]|Source Distribution in gz package|
+
+h3. Detail
+{jiraissues:url=http://jira.logicblaze.com/jira/secure/IssueNavigator.jspa?view=rss&pid=10950&fixfor=11718&sorter/field=issuekey&sorter/order=DESC&tempMax=25&reset=true&decorator=none}
+{jiraissues:url=http://jira.logicblaze.com/jira/secure/IssueNavigator.jspa?view=rss&pid=10950&fixfor=11711&sorter/field=issuekey&sorter/order=DESC&tempMax=25&reset=true&decorator=none}
+
+h3. About ServiceMix
+
+ServiceMix is an open source ESB designed from the ground up on JBI (JSR 208) principles, semantics and APIs. ServiceMix includes a complete JBI container including the Normalised Message Service and Router, the [JBI Management MBeans|http://servicemix.org/Management] support for JBI deployment units and [Ant tasks|http://servicemix.org/Ant+Tasks] to install components and manage the container.
+
+In addition ServiceMix contains a suite of JBI [Components list] such as
+
+Services:
+* Orchestration via [BPEL], [Smart Routing|Routing], [Transformation], [Scripting], [Rules|Drools], [Scheduling] and [Caching|JCache]
+
+SOAP Bindings:
+* SAAJ & Apache Axis, WSIF, ActiveSOAP and XFire
+
+Transport components:
+* email, Files, HTTP, JMS, Jabber, RSS and WebDAV
+
+ServiceMix includes a [fully integrated JCA container|http://servicemix.org/JCA] for high performance messaging and is fully integrated into Geronimo, Spring and JBoss.
+
+

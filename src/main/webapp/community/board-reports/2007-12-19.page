@@ -1,0 +1,27 @@
+---
+title: Board Report 2007-12-19
+--- pipeline:conf
+h1. 19 December 2007
+
+{code}
+This report for  December is the third  monthly 
+report since ServiceMix graduation.
+
+ServiceMix resources have been completely moved
+out of the Incubator area.  We have reorganized
+the svn subtree so that both ServiceMix 3.x and
+4.x versions can coexist.
+
+We  have released ServiceMix 3.2.1 on December 
+the 2nd. Work is continuing on ServiceMix 4.0:
+a  subproject  Apache  ServiceMix  Runtime has 
+been  extracted  and  should be  released this 
+month.
+
+On  the  community  side,   Freeman  Fang  has 
+accepted the prposed PMC membership (the  vote
+was begin held at the time the  previous board
+meeting  took  place).     Kristian's  account
+has been created.
+{code}
+   

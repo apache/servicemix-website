@@ -1,0 +1,126 @@
+---
+title: ServiceMix 3.3.2
+--- pipeline:conf
+h2. Getting the Distributions
+
+{excerpt}
+h5. Linux/Mac OS X/Unix Downloads
+
+!SM:Downloads^tux.png!!SM:Downloads^freebsd.png!!SM:Downloads^mac_logo.png!
+
+!SM:Downloads^tarsm.png|align=left! [Apache ServiceMix 3.3.2 (.tar.gz)|http://www.apache.org/dyn/closer.cgi?path=/servicemix/servicemix-3/3.3.2/apache-servicemix-3.3.2.tar.gz] [PGP|http://www.apache.org/dist/servicemix/servicemix-3/3.3.2/apache-servicemix-3.3.2.tar.gz.asc] [SHA|http://www.apache.org/dist/servicemix/servicemix-3/3.3.2/apache-servicemix-3.3.2.tar.gz.sha1] [MD5|http://www.apache.org/dist/servicemix/servicemix-3/3.3.2/apache-servicemix-3.3.2.tar.gz.md5]
+
+!SM:Downloads^tarsm.png|align=left! [Apache ServiceMix 3.3.2 Sources (.tar.gz)|http://www.apache.org/dyn/closer.cgi?path=/servicemix/servicemix-3/3.3.2/apache-servicemix-3.3.2-src.tar.gz] [PGP|http://www.apache.org/dist/servicemix/servicemix-3/3.3.2/apache-servicemix-3.3.2-src.tar.gz.asc] [SHA|http://www.apache.org/dist/servicemix/servicemix-3/3.3.2/apache-servicemix-3.3.2-src.tar.gz.sha1] [MD5|http://www.apache.org/dist/servicemix/servicemix-3/3.3.2/apache-servicemix-3.3.2-src.tar.gz.md5]
+
+h5. Windows Downloads
+
+!SM:Downloads^xp.png!
+
+!SM:Downloads^zipsm.png|align=left! [Apache ServiceMix 3.3.2 (.zip)|http://www.apache.org/dyn/closer.cgi?path=/servicemix/servicemix-3/3.3.2/apache-servicemix-3.3.2.zip] [PGP|http://www.apache.org/dist/servicemix/servicemix-3/3.3.2/apache-servicemix-3.3.2.zip.asc] [SHA|http://www.apache.org/dist/servicemix/servicemix-3/3.3.2/apache-servicemix-3.3.2.zip.sha1] [MD5|http://www.apache.org/dist/servicemix/servicemix-3/3.3.2/apache-servicemix-3.3.2.zip.md5]
+
+!SM:Downloads^zipsm.png|align=left! [Apache ServiceMix 3.3.2 Sources (.zip)|http://www.apache.org/dyn/closer.cgi?path=/servicemix/servicemix-3/3.3.2/apache-servicemix-3.3.2-src.zip] [PGP|http://www.apache.org/dist/servicemix/servicemix-3/3.3.2/apache-servicemix-3.3.2-src.zip.asc] [SHA|http://www.apache.org/dist/servicemix/servicemix-3/3.3.2/apache-servicemix-3.3.2-src.zip.sha1] [MD5|http://www.apache.org/dist/servicemix/servicemix-3/3.3.2/apache-servicemix-3.3.2-src.zip.md5]
+
+*Web Application*
+
+[Apache ServiceMix Web Application 3.3.2  (.war)|http://www.apache.org/dyn/closer.cgi?path=/servicemix/servicemix-3/3.3.2/apache-servicemix-web-3.3.2.war] [PGP|http://www.apache.org/dist/servicemix/servicemix-3/3.3.2/apache-servicemix-web-3.3.2.war.asc] [SHA|http://www.apache.org/dist/servicemix/servicemix-3/3.3.2/apache-servicemix-web-3.3.2.war.sha1] [MD5|http://www.apache.org/dist/servicemix/servicemix-3/3.3.2/apache-servicemix-web-3.3.2.war.md5]
+{excerpt}
+
+{info:title=The above URLs use redirection}
+The above URLs use the Apache Mirror system to redirect you to a suitable mirror for your download. Some users have experienced issues with some versions of browsers (e.g. some Safari browsers). If the download doesn't seem to work for you from the above URL then try using [FireFox|http://www.mozilla.com/en-US/firefox/]
+{info}
+
+h2. Components list
+JBI components included in this release:
+* Version [2010.01|servicemix-bean 2010.01] of [servicemix-bean]
+* Version [2010.01|servicemix-camel 2010.01] of [servicemix-camel]
+* Version [2010.01|servicemix-cxf-bc 2010.01] of [servicemix-cxf-bc]
+* Version [2010.01|servicemix-cxf-se 2010.01] of [servicemix-cxf-se]
+* Version [2010.01|servicemix-drools 2010.01] of [servicemix-drools]
+* Version [2010.01|servicemix-eip 2010.01] of [servicemix-eip]
+* Version [2010.01|servicemix-exec 2010.01] of [servicemix-exec]
+* Version [2010.01|servicemix-file 2010.01] of [servicemix-file]
+* Version [2010.01|servicemix-ftp 2010.01] of [servicemix-ftp]
+* Version [2010.01|servicemix-http 2010.01] of [servicemix-http]
+* Version [2010.01|servicemix-lwcontainer 2010.01] of [servicemix-lwcontainer]
+* Version [2010.01|servicemix-jms 2010.01] of [servicemix-jms]
+* Version [2010.01|servicemix-jsr181 2010.01] of [servicemix-jsr181]
+* Version [2010.01|servicemix-mail 2010.01] of [servicemix-mail]
+* Version [2010.01|servicemix-osworkflow 2010.01] of [servicemix-osworkflow]
+* Version [2010.01|servicemix-quartz 2010.01] of [servicemix-quartz]
+* Version [2010.01|servicemix-saxon 2010.01] of [servicemix-saxon]
+* Version [2010.01|servicemix-script 2010.01] of [servicemix-script]
+* Version [2010.01|servicemix-scripting 2010.01] of [servicemix-scripting]
+* Version [2010.01|servicemix-shared 2010.01] of the standard ServiceMix shared library
+* Version [2010.01|servicemix-smpp 2010.01] of [servicemix-smpp]
+* Version [2010.01|servicemix-snmp 2010.01] of [servicemix-snmp]
+* Version [2010.01|servicemix-truezip 2010.01] of servicemix-truezip
+* Version [2010.01|servicemix-validation 2010.01] of [servicemix-validation]
+* Version [2010.01|servicemix-vfs 2010.01] of [servicemix-vfs]
+* Version [2010.01|servicemix-wsn2005 2010.01] of [servicemix-wsn2005]
+* Version [2010.01|servicemix-xmpp 2010.01] of [servicemix-xmpp]
+
+This release also includes:
+* Version 1.2.0 of servicemix-utils
+* Version [5.3.0|http://activemq.apache.org/activemq-530-release.html] of [ActiveMQ|http://activemq.apache.org]
+
+You can use it together with
+* Version 4.3 of the Maven plugins
+* Version 2010.01 of the archetypes
+
+h2. Release notes
+
+Release Notes - ServiceMix - Version 3.3.2
+
+*Bug*
+
+    * [SM-1875] - Use new snapshot repository location in archetypes
+    * [SM-1887] - should ship only one bcprov version in the kit
+    * [SM-1892] - Port property is not passed to any Servicemix Ant tasks in servicemix-ant-tasks.xml (install-component, etc)
+    * [SM-1914] - ServiceMix fails to start when JAVA is installed under path containing spaces
+    * [SM-1915] - Support more fine-grained authorization on JMX access
+    * [SM-1924] - @{releases-repo-url} not filtered in smx-arch/smx-arch.bat
+    * [SM-1925] - Add security check on remote broker when using JMSFlow/JCAFlow
+    * [SM-1926] - Statistics Service throws NPE with DynamicEndpoints
+    * [SM-1933] - Sample poms refer to people.apache.org instead of repository.apache.org for snapshot
+    * [SM-1935] - samples pom has SNAPSHOT dependency in kit
+    * [SM-1939] - RELEASE-NOTES file is not up to date
+    * [SM-1940] - Schemas folder doesn't contain all components xsd
+    * [SM-1941] - Add servicemix-vfs component in the distribution
+    * [SM-1942] - Scripts in bin folder don't depend of the distribution format
+    * [SM-1947] - Add missing Stax2 API jar file
+
+*Improvement*
+
+    * [SM-1878] - refactor client.html used in cxf-wsdl-first
+    * [SM-1899] - Upgrade to jenck 2.2
+    * [SM-1903] - Upgrade Apache ActiveMQ 5.3
+    * [SM-1905] - Upgrade ServiceMix 3 to ActiveMQ 5.3
+    * [SM-1922] - remove unnecessary kit_camel_example_pom.xml from camel example of kit
+    * [SM-1928] - Upgrade to ActiveMQ 5.3
+    * [SM-1929] - Upgrade SMX3 to use CXF 2.2.6
+    * [SM-1937] - Incorrect logic in throttle method of DeliveryChannelImpl.java
+    * [SM-1944] - Use ServiceMix Components 2010.01
+
+*New Feature*
+
+    * [SM-788] - start/stop/restart on SM
+
+*Task*
+
+    * [SM-1911] - Upgrade Derby to 10.5.3.0_1
+    * [SM-1930] - Upgrade geronimo jars to 2.1.1+
+    * [SM-1936] - Upgrade to use JavaMail 1.4.3
+
+*Wish*
+
+    * [SM-1864] - Add a sample showing the usage of servicemix-bean with a database backend
+   
+h2. SVN Tag Checkout
+
+{code}
+svn co http://svn.apache.org/repos/asf/servicemix/smx3/tags/servicemix-3.3.2/
+{code}
+
+h2. Changelog
+
+For a more detailed view of new features and bug fixes, see the [changelog|https://issues.apache.org/activemq/secure/IssueNavigator.jspa?reset=true&pid=10950&fixfor=12152&sorter/field=issuekey&sorter/order=DESC]

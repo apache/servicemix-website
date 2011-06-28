@@ -1,0 +1,18 @@
+---
+title: servicemix-vfs 2009.02
+page_version: 1
+page_creator: gertvanthienen
+page_modifier: gertvanthienen
+--- pipeline:conf
+h3. {excerpt}Release notes - servicemix-vfs-2009.02{excerpt}
+
+h4. Bug
+* [SMXCOMP-588|http://issues.apache.org/activemq/browse/SMXCOMP-588] - VFSPollingEndpoint never remove file from workingSet if lock unavailable
+* [SMXCOMP-607|http://issues.apache.org/activemq/browse/SMXCOMP-607] - Persistence-id of the component can&apos;t contain the minus char
+
+h4. Improvement
+* [SMX4KNL-243|http://issues.apache.org/activemq/browse/SMX4KNL-243] - Start using https://repository.apache.org for Apache snapshots
+* [SMXCOMP-55|http://issues.apache.org/activemq/browse/SMXCOMP-55] - Add get/setTempFileName methods to DefaultFileMarshaler and use in File/Ftp Sender Endpoints (also deprecate FTP Sender uploadPrefix/Suffix properties)
+
+h4. New Feature
+* [SMXCOMP-603|http://issues.apache.org/activemq/browse/SMXCOMP-603] - Option for synchronous sending of message exchanges for the servicemix-vfs polling endpoint

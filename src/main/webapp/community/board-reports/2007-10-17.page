@@ -1,0 +1,25 @@
+---
+title: Board Report 2007-10-17
+--- pipeline:conf
+h1. 17 October 2007
+
+{code}
+This report for  October  is  the  first report 
+since ServiceMix graduation last month.
+
+ServiceMix  resources  have not been moved yet. 
+Hopefully everything will be sorted out soon.
+
+We  have  released  our  first  non  incubating 
+version  of  ServiceMix,   the  3.1.2  version, 
+on September 25th.  We are  currently preparing 
+for our next big release, ServiceMix 3.2, which 
+is planned for the end of October.  
+Work has started on the next major  version 4.0
+which will be based on OSGi.
+
+On the community side,  both developer and user 
+community are very active. A new committer  has 
+been voted in.
+{code}
+   
