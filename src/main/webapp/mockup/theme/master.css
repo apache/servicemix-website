@@ -53,6 +53,7 @@ div#container {
 
 aside {
   font-size: 0.9em;
+  display: block;
 }
 
 aside p {
@@ -91,6 +92,7 @@ li.tar {
 article {
   min-height: 800px;
   padding: 10px;
+  display: block;
 }
 
 article p {
@@ -103,23 +105,46 @@ article ul li {
 }
 
 footer {
+  margin-top: 2em;
   vertical-align: bottom;
   background-color: #4c7691;
   border-radius: 5px;
+  font-size: .7em;
+  text-align: center;
+  color: white;
+  display: block;
+}
+
+footer a {
+  color: white;
+}
+
+footer a:hover {
+  color: orange;
 }
 
 
 /* bottom boxes on the home page */
 div#boxes {
-  padding-top: 7em;
+  display: block;
+  margin-top: 10em;
   clear: both;
   font-size: .9em;
+  border-top-color: orange;
+  border-top-style: solid;
+  border-top-width: 4px;
 }
 
-div#boxes div {
+div#boxes div.row {
+  width: 100%;
+  clear: both;
+}
+
+div#boxes div.row div {
   margin-right: 3%;
   width: 30%;
   float: left;
+  margin-top: 2em;
 }
 
 div#boxes div h1 {
