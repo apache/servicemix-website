@@ -22,6 +22,9 @@ body {
 
 div#container {
   height: 100%;
+  width: 90%;
+  min-width: 1000px;
+  margin: 0 auto;  
 }
 
 header {
@@ -60,11 +63,6 @@ div#top ul li a {
 
 div#top ul li a:hover {
   color: orange;
-}
-
-div#container {
-    width: 1000px;
-    margin: 0 auto;
 }
 
 aside {
@@ -151,6 +149,8 @@ article h3 {
  */
 footer {
   margin-top: 2em;
+  padding-top: 5px;
+  padding-bottom: 5px;
   vertical-align: bottom;
   background-color: #4c7691;
   border-radius: 5px;
@@ -214,3 +214,16 @@ div#boxes div.row div {
 div#boxes div h1 {
   text-align: center;
 }
+
+div#boxes div h1 a {
+  color: black;
+}
+
+div#boxes div h1 a:visited {
+  color: black;
+}
+
+div#boxes div h1 a:hover {
+  color: orange;
+}
+
