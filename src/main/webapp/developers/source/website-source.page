@@ -11,23 +11,21 @@ h3. Web Browsing of SVN
 To browse the raw SVN repo, use the following URL:
 
 {panel}
-http://svn.apache.org/repos/asf/servicemix/website/trunk/
+[http://svn.apache.org/repos/asf/servicemix/website/trunk/]
 {panel}
 
 To browse the SVN repo using [ViewVC|http://www.viewvc.org/], use the following URL:
 
 {panel}
-http://svn.apache.org/viewvc/servicemix/website/trunk/
+[http://svn.apache.org/viewvc/servicemix/website/trunk/]
 {panel}
 
 h3. Web Browsing of FishEye
 
-!/images/Fisheye_logo.png!
-
 A hearty thanks to [Atlassian|http://atlassian.com/] for providing [FishEye|http://www.atlassian.com/software/fisheye/] hosting for ServiceMix. Below is the URL to browse the Subversion repo via FishEye:
 
 {panel}
-http://fisheye6.cenqua.com/browse/servicemix/website/
+[http://fisheye6.cenqua.com/browse/servicemix/website/]
 {panel}
 
 h2. Checking out the Source Tree
@@ -36,25 +34,28 @@ h3. Anonymous Checkout from the ServiceMix SVN Repo
 
 This project's SVN repository can be checked out anonymously using the following command:
 
-{code}
-svn co http://svn.apache.org/repos/asf/servicemix/website/trunk/
-{code}
+{panel}
+*{{svn co http://svn.apache.org/repos/asf/servicemix/website/trunk/}}*
+{panel}
 
 h3. Committer Checkout from the ServiceMix SVN Repo
 
 ServiceMix committers can check out using the following command:
 
-{code}
-svn co https://svn.apache.org/repos/asf/servicemix/website/trunk
-{code}
+{panel}
+*{{svn co https://svn.apache.org/repos/asf/servicemix/website/trunk/}}*
+{panel}
 
 *Only project developers can commit to the SVN tree via this method. SSH must be installed on your client machine. Enter your site password when prompted.*
 
 h2. Building a new website
 
 h3. A few words about the project structure
+The project is a basic Maven WAR project.  Some important directories and files in the project:
+* {{src/main/webapp}} : Contains the documentation page contents
+* {{src/main/webapp/WEB-INF/scalate/layouts}} : Scalate SSP templates for the site
 
-This project looks like a regular Maven war project.  The source for the website pages are living in the {{src/main/webapp}} directory.  We don't intend to release this project, the main goal is just to upload the result of the build to http://servicemix.apache.org/staging
+We don't intend to release this project, the main goal is just to upload the result of the build to http://servicemix.apache.org/staging
 
 h3. Build and browse locally
 
@@ -68,9 +69,19 @@ If you're a committer, you can upload a new copy of the website into the staging
 Before you run this command, ensure to configure the {{people.apache.org}} server credentials in your {{~/.m2/settings.xml}}.
 
 {pygmentize:lang=xml}
-<server>
-  <id>people.apache.org</id>
-  <username>your_apache_user_name</username>
-  <password/> or <privateKey/>
-</server>
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0
+                      http://maven.apache.org/xsd/settings-1.0.0.xsd">
+  <servers>
+    <server>
+      <id>people.apache.org</id>
+      <username>gertv</username>
+      <!-- either one of these authentication methods -->
+      <privateKey/>
+      <password/>
+    </server>
+  </servers>
+
+</settings>
 {pygmentize}

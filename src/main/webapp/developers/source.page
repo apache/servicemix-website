@@ -17,9 +17,13 @@ h2. ServiceMix 5.x
 
 //TODO: write something about this
 
-h2. Documentation
 
-//TODO: write something about this
+h2. [Documentation|documentation-source]
+
+The ServiceMix documentation project aims to build a set of manuals for ServiceMix using [Scalate|http://scalate.fusesource.org].
+
+More information about the source code locations and how to build the documentation project, can be found [here|documentation-source].
+
 
 h2. [Website|website-source]
 

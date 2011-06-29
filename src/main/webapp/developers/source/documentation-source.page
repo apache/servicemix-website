@@ -1,0 +1,105 @@
+---
+title: Documentation Project
+--- pipeline:conf
+
+h1. Documentation Project
+
+The ServiceMix documentation project aims to build a set of manuals for ServiceMix using [Scalate|http://scalate.fusesource.org].
+
+It's currently used to generate the contents for:
+- ServiceMix 4.3-SNAPSHOT: [http://servicemix.apache.org/docs/4.3.0-SNAPSHOT/]
+
+h2. Browsing the Source Tree
+
+h3. Web Browsing of SVN
+
+To browse the raw SVN repo, use the following URL:
+
+{panel}
+[http://svn.apache.org/repos/asf/servicemix/documentation/trunk/]
+{panel}
+
+To browse the SVN repo using [ViewVC|http://www.viewvc.org/], use the following URL:
+
+{panel}
+[http://svn.apache.org/viewvc/servicemix/documentation/trunk/]
+{panel}
+
+h3. Web Browsing of FishEye
+
+A hearty thanks to [Atlassian|http://atlassian.com/] for providing [FishEye|http://www.atlassian.com/software/fisheye/] hosting for ServiceMix. Below is the URL to browse the Subversion repo via FishEye:
+
+{panel}
+[http://fisheye6.cenqua.com/browse/servicemix/documentation/]
+{panel}
+
+h2. Checking out the Source Tree
+
+h3. Anonymous Checkout from the ServiceMix SVN Repo
+
+This project's SVN repository can be checked out anonymously using the following command:
+
+{panel}
+*{{svn co http://svn.apache.org/repos/asf/servicemix/documentation/trunk/}}*
+{panel}
+
+h3. Committer Checkout from the ServiceMix SVN Repo
+
+ServiceMix committers can check out using the following command:
+
+{panel}
+*{{svn co https://svn.apache.org/repos/asf/servicemix/documentation/trunk/}}*
+{panel}
+
+*Only project developers can commit to the SVN tree via this method. SSH must be installed on your client machine. Enter your site password when prompted.*
+
+h2. Project layout
+The project is a basic Maven WAR project.  Some important directories and files in the project:
+* {{src/main/webapp}} : Contains the documentation page contents
+* {{src/main/webapp/commands}} : TOC and index files for Console Commands manual section
+* {{src/main/webapp/karaf}} : TOC and index files for Karaf manual section
+* {{src/main/webapp/users-guide}} : The ServiceMix User's Guide section
+* {{src/main/webapp/WEB-INF/scalate/layouts}} : Scalate SSP templates for the site
+
+h2. Building and deploying
+
+h3. Prerequisites
+Before being able to build and run this project, you need to download and install:
+* [Pygments|http://pygments.org/] : http://pygments.org/download/
+* [Prince XML|http://princexml.com] : http://princexml.com/download/
+
+h3. Static website and WAR
+The documentation website and WAR can be built by running *{{mvn clean install}}* on the documentation project.  This will create and install:
+- {{target/sitegen}}: a local copy of the static website
+- A WAR file for installing the documentation on an application server
+- If [Prince XML|http://princexml.com] has been installed, it will also create the PDF manuals
+
+h3. Live website for editing
+Running *{{mvn jetty:run}}* in the documentation project allows you to preview the resulting website on http://localhost:8080.  Just edit any page and hit refresh in the browser to have a look at the result.
+
+h3. Deploying a new documentation site copy
+You can also deploy the site directly by running *{{mvn scalate:deploy}}* afterwards, provided you have set up the correct credentials for *{{people.apache.org}}* in *{{~/.m2/settings.xml}}*:
+{pygmentize:lang=xml}
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0
+                      http://maven.apache.org/xsd/settings-1.0.0.xsd">
+  <servers>
+    <server>
+      <id>people.apache.org</id>
+      <username>gertv</username>
+      <!-- either one of these authentication methods -->
+      <privateKey/>
+      <password/>
+    </server>
+  </servers>
+
+</settings>
+{pygmentize}
+
+h2. Hudson builds
+A Hudson build has been set up for trunk in http://hudson.zones.apache.org/hudson/job/ServiceMix-Docs/
+
+{note:title=No automatic deployment}
+At the moment, we're unable to deploy updates to the documentation automatically from the Hudson builds.
+{note}
