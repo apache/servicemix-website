@@ -1,0 +1,31 @@
+---
+title: ServiceMix Bundles Source
+--- name:overview pipeline:conf
+
+h1. ServiceMix Bundles Project
+
+The Bundles project contains OSGi-fied versions of popular Java JARs that we use for building ServiceMix 4.
+
+--- name:building pipeline:conf
+
+h2. Layout
+
+In the bundles project, every version of every JAR we tranform into an OSGi bundle has its own directory.
+There is a root pom.xml available to conveniently build SNAPSHOT versions of new bundles.
+
+h2. Building
+
+This project is a normal Maven build.  Just use *{{mvn clean install}}* to build.
+
+h2. Jenkins
+
+Jenkins CI build has been set up at [https://builds.apache.org/job/ServiceMix-Bundles/]
+
+--- name:content pipeline:ssp
+<%@ val overview : String %>
+<%@ val building : String %>
+
+<% render("/developers/source/_source.scaml", Map("overview" -> overview,
+                                                  "building" -> building,
+                                                  "svn" -> "smx4/bundles",
+                                                  "git" -> "servicemix4-bundles")) %>

@@ -1,0 +1,27 @@
+---
+title: ServiceMix Specs Source
+--- name:overview pipeline:conf
+
+h1. ServiceMix Specs Project
+
+The servicemix-specs project contains OSGi-fied versions of popular JSR-* specifications.
+It also contains helper classes to allow these specifications to lookup suitable implementations more efficiently in an OSGi environment.
+
+--- name:building pipeline:conf
+
+h2. Building
+
+This project is a normal Maven build.  Just use *{{mvn clean install}}* to build.
+
+h2. Jenkins
+
+Jenkins CI build has been set up at [https://builds.apache.org/job/ServiceMix-Specs/]
+
+--- name:content pipeline:ssp
+<%@ val overview : String %>
+<%@ val building : String %>
+
+<% render("/developers/source/_source.scaml", Map("overview" -> overview,
+                                                  "building" -> building,
+                                                  "svn" -> "smx4/specs",
+                                                  "git" -> "servicemix4-specs")) %>

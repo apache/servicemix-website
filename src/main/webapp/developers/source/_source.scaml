@@ -1,0 +1,58 @@
+-@ val overview: String
+-@ val building: String
+-@ val svn: String
+-@ val git: String
+
+= unescape(overview)
+
+%h2 Browsing the Source Tree
+
+%h3 Web Browsing of SVN
+%p To browse the raw SVN repo, use the following URL:
+%div.panel
+  %p
+    - var url = "http://svn.apache.org/repos/asf/servicemix/%s/trunk/".format(svn)
+    %a{:href => url}= url
+
+%p To browse the SVN repo using <a href="http://www.viewvc.org/">ViewVC</a>, use the following URL:
+%div.panel
+  %p
+    - url = "http://svn.apache.org/viewvc/servicemix/%s/trunk/".format(svn)
+    %a{:href => url}= url
+
+%p A hearty thanks to <a href="http://atlassian.com/">Atlassian</a> for providing <a href="http://www.atlassian.com/software/fisheye/">FishEye</a> hosting for ServiceMix. Below is the URL to browse the Subversion repo via FishEye:
+%div.panel
+  %p
+    - url = "http://fisheye6.cenqua.com/browse/servicemix/%s/".format(svn)
+    %a{:href => url}= url
+
+%h2 Checking out the Source Tree
+
+%h3 Anonymous Checkout from the ServiceMix SVN Repo
+%P This project's SVN repository can be checked out anonymously using the following command:
+%div.panel
+  %p
+    %strong
+      - url = "http://svn.apache.org/repos/asf/servicemix/%s/trunk/".format(svn)
+      %tt= "svn co %s".format(url)
+
+%h3 Using the git mirror
+%p There was a git mirror set up for the documentation project at git://git.apache.org/servicemix-documentation.git. <br/> Have a look at <a href="http://wiki.apache.org/general/GitAtApache">http://wiki.apache.org/general/GitAtApache</a> for more information on working with the git mirrors.
+
+%div.panel
+  %p
+    %strong
+      %tt= "git clone git://git.apache.org/%s.git".format(git)
+
+%h3 Committer Checkout from the ServiceMix SVN Repo
+%p ServiceMix committers can check out using the following command:
+%div.panel
+  %p
+    %strong
+      - url = "https://svn.apache.org/repos/asf/servicemix/%s/trunk/".format(svn)
+      %tt= "svn co %s".format(url)
+
+%p
+  %strong Only project developers can commit to the SVN tree via this method. SSH must be installed on your client machine. Enter your site password when prompted.
+
+= unescape(building)

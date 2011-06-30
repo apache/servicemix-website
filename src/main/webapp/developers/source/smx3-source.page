@@ -1,0 +1,31 @@
+---
+title: ServiceMix 3 Source
+--- name:overview pipeline:conf
+
+h1. ServiceMix 3 Project
+
+This project contains the JBI container implementation for the ServiceMix 3.x releases
+
+--- name:building pipeline:conf
+
+h2. Building
+
+This project is a normal Maven build.  Just use *{{mvn clean install}}* to build.
+
+h3. Source Code Checking
+
+There's a special profile called *{{sourcecheck}}* available to do more thorough source code checking during a build.
+Activate it by running *{{mvn -Psourcecheck clean install}}*.
+
+h2. Jenkins
+
+Jenkins CI build has been set up at [https://builds.apache.org/job/ServiceMix3/]
+
+--- name:content pipeline:ssp
+<%@ val overview : String %>
+<%@ val building : String %>
+
+<% render("/developers/source/_source.scaml", Map("overview" -> overview,
+                                                  "building" -> building,
+                                                  "svn" -> "smx3",
+                                                  "git" -> "servicemix3")) %>

@@ -1,0 +1,32 @@
+---
+title: ServiceMix 4 Features Source
+--- name:overview pipeline:conf
+
+h1. ServiceMix 4 Features Project
+
+The ServiceMix 4 Features Project contains:
+* the actual ServiceMix 4 container
+* the examples that come with the container
+* the Camel and CXF NMR component implementaions
+
+--- name:building pipeline:conf
+
+h2. Project layout
+
+h2. Building
+
+This project is a normal Maven build.
+Just use *{{mvn clean install}}* to build.
+
+h2. Jenkins
+
+Jenkins CI build has been set up at [https://builds.apache.org/job/ServiceMix-Features/]
+
+--- name:content pipeline:ssp
+<%@ val overview : String %>
+<%@ val building : String %>
+
+<% render("/developers/source/_source.scaml", Map("overview" -> overview,
+                                                  "building" -> building,
+                                                  "svn" -> "smx4/features",
+                                                  "git" -> "servicemix4-features")) %>

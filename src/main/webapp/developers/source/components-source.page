@@ -1,0 +1,37 @@
+---
+title: ServiceMix Components Source
+--- name:overview pipeline:conf
+
+h1. ServiceMix Components Project
+
+The components project holds a set of JBI components that can be installed in both the ServiceMix 3 and ServiceMix 4 containers.
+
+--- name:building pipeline:conf
+
+h2. Project Layout
+The project contains 3 top-level directories:
+* {{shared-libraries}} contains the code for the {{servicemix-shared}} JBI Shared Library
+* {{engines}} contains 15 JBI Service Engines
+* {{bindings}} holds 13 JBI Binding Components
+
+h2. Building
+
+This project is a normal Maven build.  Just use *{{mvn clean install}}* to build.
+
+h3. Source Code Checking
+
+There's a special profile called *{{sourcecheck}}* available to do more thorough source code checking during a build.
+Activate it by running *{{mvn -Psourcecheck clean install}}*.
+
+h2. Jenkins
+
+Jenkins CI build has been set up at [https://builds.apache.org/job/ServiceMix-Components/]
+
+--- name:content pipeline:ssp
+<%@ val overview : String %>
+<%@ val building : String %>
+
+<% render("/developers/source/_source.scaml", Map("overview" -> overview,
+                                                  "building" -> building,
+                                                  "svn" -> "components",
+                                                  "git" -> "servicemix-components")) %>

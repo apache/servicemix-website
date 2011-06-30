@@ -5,18 +5,28 @@ title: Source
 At the Apache ServiceMix project, we are maintaining a few versions of ServiceMix, each of which has its own set of modules, components, ...
 The information on this page will show you where the source code lives for all these different bits and pieces, as well as provide you with instructions on how to build the projects.
 
-h2. ServiceMix 3.x
+h2. [ServiceMix 3.x|smx3-source]
 
-//TODO: write something about this
+ServiceMix 3.x consists of a number of different subprojects that need to be built independently:
+* [ServiceMix Utils|utils-source]: a set of utility classes, shared between ServiceMix 3, ServiceMix 4 and the JBI components
+* [ServiceMix Components|components-source]: the JBI component set shipped with ServiceMix 3
+* [ServiceMix 3|smx3-source]: ServiceMix 3 JBI container implementation
+* [ServiceMix Archetypes|archetypes-source]: a set of Maven archetypes
 
-h2. ServiceMix 4.x
+h2. [ServiceMix 4.x|smx4-features-source]
 
-//TODO: write something about this
+ServiceMix 4.x consists of a number of different subprojects that need to be built independently:
+* [ServiceMix Utils|utils-source]: a set of utility classes, shared between ServiceMix 3, ServiceMix 4 and the JBI components
+* [ServiceMix Components|components-source]: the JBI component set shipped with ServiceMix 4
+* [ServiceMix Bundles|bundles-source]: a set of OSGi bundles for all kinds of dependency JARs
+* [ServiceMix Specs|specs-source]: a set of OSGi-fied and -enhanced versions for Java specifications like JAXB, JAX-RS, ...
+* [ServiceMix 4 NMR|smx4-nmr-source]: NMR and JBI implementation of ServiceMix 4
+* [ServiceMix 4 Features|smx4-features-source]: ServiceMix 4 container based on Apache Karaf
+* [ServiceMix Archetypes|archetypes-source]: a set of Maven archetypes
 
-h2. ServiceMix 5.x
+h2. [ServiceMix 5.x|smx5-source]
 
-//TODO: write something about this
-
+ServiceMix 5.x is our next major version of Apache ServiceMix.  Have a look at the road map to find out more about this project.
 
 h2. [Documentation|documentation-source]
 

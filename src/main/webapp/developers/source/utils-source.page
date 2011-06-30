@@ -1,0 +1,26 @@
+---
+title: ServiceMix Utils Source
+--- name:overview pipeline:conf
+
+h1. ServiceMix Utils Project
+
+The servicemix-utils project holds the code for a set of classes that are common to ServiceMix 3, ServiceMix 4 and JBI components projects.
+
+--- name:building pipeline:conf
+
+h2. Building
+
+This project is a normal Maven build.  Just use *{{mvn clean install}}* to build.
+
+h2. Jenkins
+
+Jenkins CI build has been set up at [https://builds.apache.org/job/ServiceMix-Utils/]
+
+--- name:content pipeline:ssp
+<%@ val overview : String %>
+<%@ val building : String %>
+
+<% render("/developers/source/_source.scaml", Map("overview" -> overview,
+                                                  "building" -> building,
+                                                  "svn" -> "utils",
+                                                  "git" -> "servicemix-utils")) %>

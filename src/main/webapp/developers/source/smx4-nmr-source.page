@@ -1,0 +1,31 @@
+---
+title: ServiceMix 4 NMR Source
+--- name:overview pipeline:conf
+
+h1. ServiceMix 4 NMR Project
+
+The ServiceMix 4 NMR Project contains two building blocks for ServiceMix 4:
+* NMR is a generic, lightweight OSGi messaging implementation, useful for e.g. interconnecting Camel routes across bundles
+* a JBI 1.0 compatibility layer built on top of the NMR to allow ServiceMix 4 to support JBI components and deployables
+
+--- name:building pipeline:conf
+
+h2. Project layout
+
+
+h2. Building
+
+This project is a normal Maven build.  Just use *{{mvn clean install}}* to build.
+
+h2. Jenkins
+
+Jenkins CI build has been set up at [https://builds.apache.org/job/ServiceMix-NMR/]
+
+--- name:content pipeline:ssp
+<%@ val overview : String %>
+<%@ val building : String %>
+
+<% render("/developers/source/_source.scaml", Map("overview" -> overview,
+                                                  "building" -> building,
+                                                  "svn" -> "smx4/nmr",
+                                                  "git" -> "servicemix4-nmr")) %>

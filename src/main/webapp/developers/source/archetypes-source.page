@@ -1,0 +1,26 @@
+---
+title: ServiceMix Archetypes Source
+--- name:overview pipeline:conf
+
+h1. ServiceMix Archetypes Project
+
+This project contains a set of Maven archetypes for generating JBI SU and SA as well as OSGi bundles for Camel and CXF integration solutions.
+
+--- name:building pipeline:conf
+
+h2. Building
+
+This project is a normal Maven build.  Just use *{{mvn clean install}}* to build.
+
+h2. Jenkins
+
+Jenkins CI build has been set up at [https://builds.apache.org/job/ServiceMix-Archetypes/]
+
+--- name:content pipeline:ssp
+<%@ val overview : String %>
+<%@ val building : String %>
+
+<% render("/developers/source/_source.scaml", Map("overview" -> overview,
+                                                  "building" -> building,
+                                                  "svn" -> "archetypes",
+                                                  "git" -> "servicemix-archetypes")) %>

@@ -1,6 +1,6 @@
 ---
 title: Documentation Project
---- pipeline:conf
+--- name:overview pipeline:conf
 
 h1. Documentation Project
 
@@ -9,49 +9,7 @@ The ServiceMix documentation project aims to build a set of manuals for ServiceM
 It's currently used to generate the contents for:
 - ServiceMix 4.3-SNAPSHOT: [http://servicemix.apache.org/docs/4.3.0-SNAPSHOT/]
 
-h2. Browsing the Source Tree
-
-h3. Web Browsing of SVN
-
-To browse the raw SVN repo, use the following URL:
-
-{panel}
-[http://svn.apache.org/repos/asf/servicemix/documentation/trunk/]
-{panel}
-
-To browse the SVN repo using [ViewVC|http://www.viewvc.org/], use the following URL:
-
-{panel}
-[http://svn.apache.org/viewvc/servicemix/documentation/trunk/]
-{panel}
-
-h3. Web Browsing of FishEye
-
-A hearty thanks to [Atlassian|http://atlassian.com/] for providing [FishEye|http://www.atlassian.com/software/fisheye/] hosting for ServiceMix. Below is the URL to browse the Subversion repo via FishEye:
-
-{panel}
-[http://fisheye6.cenqua.com/browse/servicemix/documentation/]
-{panel}
-
-h2. Checking out the Source Tree
-
-h3. Anonymous Checkout from the ServiceMix SVN Repo
-
-This project's SVN repository can be checked out anonymously using the following command:
-
-{panel}
-*{{svn co http://svn.apache.org/repos/asf/servicemix/documentation/trunk/}}*
-{panel}
-
-h3. Committer Checkout from the ServiceMix SVN Repo
-
-ServiceMix committers can check out using the following command:
-
-{panel}
-*{{svn co https://svn.apache.org/repos/asf/servicemix/documentation/trunk/}}*
-{panel}
-
-*Only project developers can commit to the SVN tree via this method. SSH must be installed on your client machine. Enter your site password when prompted.*
+--- name:building pipeline:conf
 
 h2. Project layout
 The project is a basic Maven WAR project.  Some important directories and files in the project:
@@ -103,3 +61,12 @@ A Hudson build has been set up for trunk in http://hudson.zones.apache.org/hudso
 {note:title=No automatic deployment}
 At the moment, we're unable to deploy updates to the documentation automatically from the Hudson builds.
 {note}
+
+--- name:content pipeline:ssp
+<%@ val overview : String %>
+<%@ val building : String %>
+
+<% render("/developers/source/_source.scaml", Map("overview" -> overview,
+                                                  "building" -> building,
+                                                  "svn" -> "documentation",
+                                                  "git" -> "servicemix-documentation")) %>
