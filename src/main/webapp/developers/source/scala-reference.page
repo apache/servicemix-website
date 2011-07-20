@@ -1,0 +1,14 @@
+---
+title: Some useful Scala references
+--- name:content pipeline:conf
+
+Our [ServiceMix 5|smx5-source] project is the first piece of Apache ServiceMix that is being developed using [Scala|http://www.scala-lang.org] instead of Java.
+On this page, you'll find a few links to useful resources about (getting started with) Scala, recommended by members of the Apache ServiceMix community to ease your transition into the Scala world.
+
+h2. Books
+* Odersky, M., Spoon, L., and Venners, B. (2011) _Programming Scala 2nd Ed._  Artima Inc. ([publisher book info|http://www.artima.com/shop/programming_in_scala_2ed])
+* Subramaniam, V. (2009) _Programming Scala._ Pragmatic Bookshelf. ([publisher book info|http://pragprog.com/book/vsscala/programming-scala])
+
+h2. Websites
+* [Learn Scala|http://www.scala-lang.org/node/1305] resources from the main [Scala|http://www.scala-lang.org] website
+* [Scala for Java refugees|http://www.codecommit.com/blog/scala/roundup-scala-for-java-refugees] blog series

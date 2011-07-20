@@ -12,6 +12,8 @@ h2. Building
 
 This project is a normal Maven build.  Just use *{{mvn clean install}}* to build.
 
+Because this is the first part of Apache ServiceMix where we use Scala, we have provided a list of [getting started resources|scala-reference] that can help you build your first Scala patch.
+
 --- name:content pipeline:ssp
 <%@ val overview : String %>
 <%@ val building : String %>
