@@ -9,19 +9,19 @@ h2. Getting the Distributions
 {excerpt}
 *Linux/Mac OS X/Unix Downloads*
 
-!tux.png! !freebsd.png! !mac_logo.png!
+!/images/tux.png! !/images/freebsd.png! !/images/mac_logo.png!
 
-!tarsm.png|align=left! [Apache ServiceMix 4.2.0 (.tar.gz)|http://www.apache.org/dyn/closer.cgi?path=/servicemix/servicemix-4/4.2.0/apache-servicemix-4.2.0.tar.gz] [PGP|http://www.apache.org/dist/servicemix/servicemix-4/4.2.0/apache-servicemix-4.2.0.tar.gz.asc] [SHA|http://www.apache.org/dist/servicemix/servicemix-4/4.2.0/apache-servicemix-4.2.0.tar.gz.sha1] [MD5|http://www.apache.org/dist/servicemix/servicemix-4/4.2.0/apache-servicemix-4.2.0.tar.gz.md5]
+!/images/tarsm.png|align=left! [Apache ServiceMix 4.2.0 (.tar.gz)|http://archive.apache.org/dist/servicemix/servicemix-4/4.2.0/apache-servicemix-4.2.0.tar.gz] [PGP|http://archive.apache.org/dist/servicemix/servicemix-4/4.2.0/apache-servicemix-4.2.0.tar.gz.asc] [SHA|http://archive.apache.org/dist/servicemix/servicemix-4/4.2.0/apache-servicemix-4.2.0.tar.gz.sha1] [MD5|http://archive.apache.org/dist/servicemix/servicemix-4/4.2.0/apache-servicemix-4.2.0.tar.gz.md5]
 
-!tarsm.png|align=left! [Apache ServiceMix 4.2.0 Sources (.tar.gz)|http://www.apache.org/dyn/closer.cgi?path=/servicemix/servicemix-4/4.2.0/apache-servicemix-4.2.0-src.tar.gz] [PGP|http://www.apache.org/dist/servicemix/servicemix-4/4.2.0/apache-servicemix-4.2.0-src.tar.gz.asc] [SHA|http://www.apache.org/dist/servicemix/servicemix-4/4.2.0/apache-servicemix-4.2.0-src.tar.gz.sha1] [MD5|http://www.apache.org/dist/servicemix/servicemix-4/4.2.0/apache-servicemix-4.2.0-src.tar.gz.md5]
+!/images/tarsm.png|align=left! [Apache ServiceMix 4.2.0 Sources (.tar.gz)|http://archive.apache.org/dist/servicemix/servicemix-4/4.2.0/apache-servicemix-4.2.0-src.tar.gz] [PGP|http://archive.apache.org/dist/servicemix/servicemix-4/4.2.0/apache-servicemix-4.2.0-src.tar.gz.asc] [SHA|http://archive.apache.org/dist/servicemix/servicemix-4/4.2.0/apache-servicemix-4.2.0-src.tar.gz.sha1] [MD5|http://archive.apache.org/dist/servicemix/servicemix-4/4.2.0/apache-servicemix-4.2.0-src.tar.gz.md5]
 
 *Windows  downloads*
 
-!xp.png!
+!/images/xp.png!
 
-!zipsm.png|align=left! [Apache ServiceMix 4.2.0 (.zip)|http://www.apache.org/dyn/closer.cgi?path=/servicemix/servicemix-4/4.2.0/apache-servicemix-4.2.0.zip] [PGP|http://www.apache.org/dist/servicemix/servicemix-4/4.2.0/apache-servicemix-4.2.0.zip.asc] [SHA|http://www.apache.org/dist/servicemix/servicemix-4/4.2.0/apache-servicemix-4.2.0.zip.sha1] [MD5|http://www.apache.org/dist/servicemix/servicemix-4/4.2.0/apache-servicemix-4.2.0.zip.md5]
+!/images/zipsm.png|align=left! [Apache ServiceMix 4.2.0 (.zip)|http://archive.apache.org/dist/servicemix/servicemix-4/4.2.0/apache-servicemix-4.2.0.zip] [PGP|http://archive.apache.org/dist/servicemix/servicemix-4/4.2.0/apache-servicemix-4.2.0.zip.asc] [SHA|http://archive.apache.org/dist/servicemix/servicemix-4/4.2.0/apache-servicemix-4.2.0.zip.sha1] [MD5|http://archive.apache.org/dist/servicemix/servicemix-4/4.2.0/apache-servicemix-4.2.0.zip.md5]
 
-!zipsm.png|align=left! [Apache ServiceMix 4.2.0 Sources (.zip)|http://www.apache.org/dyn/closer.cgi?path=/servicemix/servicemix-4/4.2.0/apache-servicemix-4.2.0-src.zip] [PGP|http://www.apache.org/dist/servicemix/servicemix-4/4.2.0/apache-servicemix-4.2.0-src.zip.asc] [SHA|http://www.apache.org/dist/servicemix/servicemix-4/4.2.0/apache-servicemix-4.2.0-src.zip.sha1] [MD5|http://www.apache.org/dist/servicemix/servicemix-4/4.2.0/apache-servicemix-4.2.0-src.zip.md5]
+!/images/zipsm.png|align=left! [Apache ServiceMix 4.2.0 Sources (.zip)|http://archive.apache.org/dist/servicemix/servicemix-4/4.2.0/apache-servicemix-4.2.0-src.zip] [PGP|http://archive.apache.org/dist/servicemix/servicemix-4/4.2.0/apache-servicemix-4.2.0-src.zip.asc] [SHA|http://archive.apache.org/dist/servicemix/servicemix-4/4.2.0/apache-servicemix-4.2.0-src.zip.sha1] [MD5|http://archive.apache.org/dist/servicemix/servicemix-4/4.2.0/apache-servicemix-4.2.0-src.zip.md5]
 
 {excerpt}
 

@@ -6,19 +6,19 @@ h2. Getting the Distributions
 {excerpt}
 h5. Linux/Mac OS X/Unix Downloads
 
-!SM:Downloads^tux.png!!SM:Downloads^freebsd.png!!SM:Downloads^mac_logo.png!
+!/images/tux.png!!/images/freebsd.png!!/images/mac_logo.png!
 
-!SM:Downloads^tarsm.png|align=left! [Apache ServiceMix 3.3.2 (.tar.gz)|http://www.apache.org/dyn/closer.cgi?path=/servicemix/servicemix-3/3.3.2/apache-servicemix-3.3.2.tar.gz] [PGP|http://www.apache.org/dist/servicemix/servicemix-3/3.3.2/apache-servicemix-3.3.2.tar.gz.asc] [SHA|http://www.apache.org/dist/servicemix/servicemix-3/3.3.2/apache-servicemix-3.3.2.tar.gz.sha1] [MD5|http://www.apache.org/dist/servicemix/servicemix-3/3.3.2/apache-servicemix-3.3.2.tar.gz.md5]
+!/images/tarsm.png|align=left! [Apache ServiceMix 3.3.2 (.tar.gz)|http://www.apache.org/dyn/closer.cgi?path=/servicemix/servicemix-3/3.3.2/apache-servicemix-3.3.2.tar.gz] [PGP|http://www.apache.org/dist/servicemix/servicemix-3/3.3.2/apache-servicemix-3.3.2.tar.gz.asc] [SHA|http://www.apache.org/dist/servicemix/servicemix-3/3.3.2/apache-servicemix-3.3.2.tar.gz.sha1] [MD5|http://www.apache.org/dist/servicemix/servicemix-3/3.3.2/apache-servicemix-3.3.2.tar.gz.md5]
 
-!SM:Downloads^tarsm.png|align=left! [Apache ServiceMix 3.3.2 Sources (.tar.gz)|http://www.apache.org/dyn/closer.cgi?path=/servicemix/servicemix-3/3.3.2/apache-servicemix-3.3.2-src.tar.gz] [PGP|http://www.apache.org/dist/servicemix/servicemix-3/3.3.2/apache-servicemix-3.3.2-src.tar.gz.asc] [SHA|http://www.apache.org/dist/servicemix/servicemix-3/3.3.2/apache-servicemix-3.3.2-src.tar.gz.sha1] [MD5|http://www.apache.org/dist/servicemix/servicemix-3/3.3.2/apache-servicemix-3.3.2-src.tar.gz.md5]
+!/images/tarsm.png|align=left! [Apache ServiceMix 3.3.2 Sources (.tar.gz)|http://www.apache.org/dyn/closer.cgi?path=/servicemix/servicemix-3/3.3.2/apache-servicemix-3.3.2-src.tar.gz] [PGP|http://www.apache.org/dist/servicemix/servicemix-3/3.3.2/apache-servicemix-3.3.2-src.tar.gz.asc] [SHA|http://www.apache.org/dist/servicemix/servicemix-3/3.3.2/apache-servicemix-3.3.2-src.tar.gz.sha1] [MD5|http://www.apache.org/dist/servicemix/servicemix-3/3.3.2/apache-servicemix-3.3.2-src.tar.gz.md5]
 
 h5. Windows Downloads
 
-!SM:Downloads^xp.png!
+!/images/xp.png!
 
-!SM:Downloads^zipsm.png|align=left! [Apache ServiceMix 3.3.2 (.zip)|http://www.apache.org/dyn/closer.cgi?path=/servicemix/servicemix-3/3.3.2/apache-servicemix-3.3.2.zip] [PGP|http://www.apache.org/dist/servicemix/servicemix-3/3.3.2/apache-servicemix-3.3.2.zip.asc] [SHA|http://www.apache.org/dist/servicemix/servicemix-3/3.3.2/apache-servicemix-3.3.2.zip.sha1] [MD5|http://www.apache.org/dist/servicemix/servicemix-3/3.3.2/apache-servicemix-3.3.2.zip.md5]
+!/images/zipsm.png|align=left! [Apache ServiceMix 3.3.2 (.zip)|http://www.apache.org/dyn/closer.cgi?path=/servicemix/servicemix-3/3.3.2/apache-servicemix-3.3.2.zip] [PGP|http://www.apache.org/dist/servicemix/servicemix-3/3.3.2/apache-servicemix-3.3.2.zip.asc] [SHA|http://www.apache.org/dist/servicemix/servicemix-3/3.3.2/apache-servicemix-3.3.2.zip.sha1] [MD5|http://www.apache.org/dist/servicemix/servicemix-3/3.3.2/apache-servicemix-3.3.2.zip.md5]
 
-!SM:Downloads^zipsm.png|align=left! [Apache ServiceMix 3.3.2 Sources (.zip)|http://www.apache.org/dyn/closer.cgi?path=/servicemix/servicemix-3/3.3.2/apache-servicemix-3.3.2-src.zip] [PGP|http://www.apache.org/dist/servicemix/servicemix-3/3.3.2/apache-servicemix-3.3.2-src.zip.asc] [SHA|http://www.apache.org/dist/servicemix/servicemix-3/3.3.2/apache-servicemix-3.3.2-src.zip.sha1] [MD5|http://www.apache.org/dist/servicemix/servicemix-3/3.3.2/apache-servicemix-3.3.2-src.zip.md5]
+!/images/zipsm.png|align=left! [Apache ServiceMix 3.3.2 Sources (.zip)|http://www.apache.org/dyn/closer.cgi?path=/servicemix/servicemix-3/3.3.2/apache-servicemix-3.3.2-src.zip] [PGP|http://www.apache.org/dist/servicemix/servicemix-3/3.3.2/apache-servicemix-3.3.2-src.zip.asc] [SHA|http://www.apache.org/dist/servicemix/servicemix-3/3.3.2/apache-servicemix-3.3.2-src.zip.sha1] [MD5|http://www.apache.org/dist/servicemix/servicemix-3/3.3.2/apache-servicemix-3.3.2-src.zip.md5]
 
 *Web Application*
 

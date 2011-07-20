@@ -1,18 +1,34 @@
 ---
 title: Download
-page_version: 43
-page_creator: jstrachan
-page_modifier: nanthrax
 --- pipeline:conf
 h1. Latest Releases
 
 The latest release is the [ServiceMix 4.3.0 Release|ServiceMix 4.3.0].
 We strongly encourage all users to use this Release.
 
-{excerpt-include:ServiceMix 4.3.0|nopanel=true}
+{include:_latest_release}
 
 h2. Previous Releases
 
 An archive of previous releases can be found [here|http://archive.apache.org/dist/servicemix/].
 
-{children:sort=title}
+* [Apache ServiceMix 1.0-m1|downloads/servicemix-1.0-m1-release.html]
+* [Apache ServiceMix 1.0-m2|downloads/servicemix-1.0-m2-release.html]
+* [Apache ServiceMix 1.0|downloads/servicemix-1.0-release.html]
+* [Apache ServiceMix 1.1|downloads/servicemix-1.1-release.html]
+* [Apache ServiceMix 2.0|downloads/servicemix-2.0-release.html]
+* [Apache ServiceMix 3.0-m1|downloads/servicemix-3.0-m1-release.html]
+* [Apache ServiceMix 3.0-m2|downloads/servicemix-3.0-m2-release.html]
+* [Apache ServiceMix 3.0|downloads/servicemix-3.0.html]
+* [Apache ServiceMix 3.0.1|downloads/servicemix-3.0.1.html]
+* [Apache ServiceMix 3.1|downloads/servicemix-3.1.html]
+* [Apache ServiceMix 3.1.1|downloads/servicemix-3.1.1.html]
+* [Apache ServiceMix 3.1.2|downloads/servicemix-3.1.2.html]
+* [Apache ServiceMix 3.2|downloads/servicemix-3.2.html]
+* [Apache ServiceMix 3.2.1|downloads/servicemix-3.2.1.html]
+* [Apache ServiceMix 3.2.2|downloads/servicemix-3.2.2.html]
+* [Apache ServiceMix 3.2.3|downloads/servicemix-3.2.3.html]
+* [Apache ServiceMix 3.3|downloads/servicemix-3.3.html]
+* [Apache ServiceMix 3.3.1|downloads/servicemix-3.3.1.html]
+* [Apache ServiceMix 3.3.2|downloads/servicemix-3.3.2.html]
+* [Apache ServiceMix 4.2.0|downloads/servicemix-4.2.0.html]
