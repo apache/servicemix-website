@@ -3,15 +3,16 @@ title: Navigation
 --- pipeline:conf
 h1. Documentation
 
-h2. Latest version (4.3.0-SNAPSHOT)
+h2. Latest version (4.4.0)
 Quickly navigate to one of the guides below...
-* [Quickstart Guide|http://servicemix.apache.org/docs/4.3.0-SNAPSHOT/quickstart/index.html] ([pdf|http://servicemix.apache.org/docs/4.3.0-SNAPSHOT/quickstart/quickstart.pdf])
-* [Camel Guide|http://servicemix.apache.org/docs/4.3.0-SNAPSHOT/users-guide/camel/index.html] ([pdf|http://servicemix.apache.org/docs/4.3.0-SNAPSHOT/users-guide/camel/camel-guide.pdf])
-* [NMR Guide|http://servicemix.apache.org/docs/4.3.0-SNAPSHOT/users-guide/nmr/index.html] ([pdf|http://servicemix.apache.org/docs/4.3.0-SNAPSHOT/users-guide/nmr/nmr-guide.pdf])
-* [JBI Guide|http://servicemix.apache.org/docs/4.3.0-SNAPSHOT/jbi/index.html] ([pdf|http://servicemix.apache.org/docs/4.3.0-SNAPSHOT/jbi/jbi-guide.pdf])
-* [Karaf Guide|http://servicemix.apache.org/docs/4.3.0-SNAPSHOT/karaf/index.html]
+* [Quickstart Guide|http://servicemix.apache.org/docs/4.4.0/quickstart/index.html] ([pdf|http://servicemix.apache.org/docs/4.4.0/quickstart/quickstart.pdf])
+* [Camel Guide|http://servicemix.apache.org/docs/4.4.0/users-guide/camel/index.html] ([pdf|http://servicemix.apache.org/docs/4.4.0/users-guide/camel/camel-guide.pdf])
+* [NMR Guide|http://servicemix.apache.org/docs/4.4.0/users-guide/nmr/index.html] ([pdf|http://servicemix.apache.org/docs/4.4.0/users-guide/nmr/nmr-guide.pdf])
+* [JBI Guide|http://servicemix.apache.org/docs/4.4.0/jbi/index.html] ([pdf|http://servicemix.apache.org/docs/4.4.0/jbi/jbi-guide.pdf])
+* [Karaf Guide|http://servicemix.apache.org/docs/4.4.0/karaf/index.html]
 
-... or browse the [4.3.0-SNAPSHOT documentation site | http://servicemix.apache.org/docs/4.3.0-SNAPSHOT/]
+... or browse the [4.4.0 documentation site | http://servicemix.apache.org/docs/4.4.0/]
 
 h2. Other versions
 Nothing here yet - let's get the latest version documented first ;-)
+We might want to include a link to the original wiki exported pages though

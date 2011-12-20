@@ -8,7 +8,12 @@ h3. [Overview]
 - [License]
 
 h3. [Documentation]
-- TODO
+{html}
+<ul>
+<li><a href="http://servicemix.apache.org/docs/4.4.0/quickstart/index.html" target="quickstart">Quickstart Guide</a></li>
+<li><a href="http://servicemix.apache.org/docs/4.4.0/index.html" target="documentation">Documentation: 4.4.0</a></li>
+</ul>
+{html}
 
 h3. Search
 
