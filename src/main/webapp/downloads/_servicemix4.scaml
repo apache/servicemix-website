@@ -1,0 +1,116 @@
+-@ val version: String
+
+%div#downloads
+  %table
+    %thead
+      %tr
+        %th.first
+        %th
+          %p Linux/Mac OS X/Unix Downloads
+          %img{:src => {uri("/images/tux.png")}}
+          %img{:src => {uri("/images/freebsd.png")}}
+          %img{:src => {uri("/images/mac_logo.png")}}
+        %th
+          %p Windows Downloads
+          %img{:src => {uri("/images/xp.png")}}
+    %tbody
+      %tr.default
+        %td.first
+          %p.title Default assembly
+          %p Our default assembly is the best way to get started with Apache ServiceMix.
+        %td
+          %p.tar
+            %a{:href => "http://www.apache.org/dyn/closer.cgi?path=/servicemix/servicemix-4/#{version}/apache-servicemix-#{version}.tar.gz"}
+              Apache ServiceMix #{version} (tar.gz)
+          %p.keys
+            %a{:href => "http://www.apache.org/dist/servicemix/servicemix-4/#{version}/apache-servicemix-#{version}.tar.gz.asc"} [PGP]
+            %a{:href => "http://www.apache.org/dist/servicemix/servicemix-4/#{version}/apache-servicemix-#{version}.tar.gz.sha1"} [SHA1]
+            %a{:href => "http://www.apache.org/dist/servicemix/servicemix-4/#{version}/apache-servicemix-#{version}.tar.gz.md5"} [MD5]
+        %td
+          %p.zip
+            %a{:href => "http://www.apache.org/dyn/closer.cgi?path=/servicemix/servicemix-4/#{version}/apache-servicemix-#{version}.zip"}
+              Apache ServiceMix #{version} (zip)
+          %p.keys
+            %a{:href => "http://www.apache.org/dist/servicemix/servicemix-4/#{version}/apache-servicemix-#{version}.zip.asc"} [PGP]
+            %a{:href => "http://www.apache.org/dist/servicemix/servicemix-4/#{version}/apache-servicemix-#{version}.zip.sha1"} [SHA1]
+            %a{:href => "http://www.apache.org/dist/servicemix/servicemix-4/#{version}/apache-servicemix-#{version}.zip.md5"} [MD5]
+      %tr
+        %td.first
+          %p.title Source assembly
+          %p Use this if you want to build Apache ServiceMix from source yourself
+        %td
+          %p.tar
+            %a{:href => "http://www.apache.org/dyn/closer.cgi?path=/servicemix/servicemix-4/#{version}/apache-servicemix-#{version}-src.tar.gz"}
+              Apache ServiceMix Sources #{version} (tar.gz)
+          %p.keys
+            %a{:href => "http://www.apache.org/dist/servicemix/servicemix-4/#{version}/apache-servicemix-#{version}-src.tar.gz.asc"} [PGP]
+            %a{:href => "http://www.apache.org/dist/servicemix/servicemix-4/#{version}/apache-servicemix-#{version}-src.tar.gz.sha1"} [SHA1]
+            %a{:href => "http://www.apache.org/dist/servicemix/servicemix-4/#{version}/apache-servicemix-#{version}-src.tar.gz.md5"} [MD5]
+        %td
+          %p.zip
+            %a{:href => "http://www.apache.org/dyn/closer.cgi?path=/servicemix/servicemix-4/#{version}/apache-servicemix-#{version}-src.zip"}
+              Apache ServiceMix Sources #{version} (zip)
+          %p.keys
+            %a{:href => "http://www.apache.org/dist/servicemix/servicemix-4/#{version}/apache-servicemix-#{version}-src.zip.asc"} [PGP]
+            %a{:href => "http://www.apache.org/dist/servicemix/servicemix-4/#{version}/apache-servicemix-#{version}-src.zip.sha1"} [SHA1]
+            %a{:href => "http://www.apache.org/dist/servicemix/servicemix-4/#{version}/apache-servicemix-#{version}-src.zip.md5"} [MD5]
+      %tr
+        %td.first
+          %p.title Full assembly
+          %p Use this if you want to run Apache ServiceMix on a server that does not have an internet connection
+        %td
+          %p.tar
+            %a{:href => "http://www.apache.org/dyn/closer.cgi?path=/servicemix/servicemix-4/#{version}/apache-servicemix-full-#{version}.tar.gz"}
+              Apache ServiceMix Full #{version} (tar.gz)
+          %p.keys
+            %a{:href => "http://www.apache.org/dist/servicemix/servicemix-4/#{version}/apache-servicemix-full-#{version}.tar.gz.asc"} [PGP]
+            %a{:href => "http://www.apache.org/dist/servicemix/servicemix-4/#{version}/apache-servicemix-full-#{version}.tar.gz.sha1"} [SHA1]
+            %a{:href => "http://www.apache.org/dist/servicemix/servicemix-4/#{version}/apache-servicemix-full-#{version}.tar.gz.md5"} [MD5]
+        %td
+          %p.zip
+            %a{:href => "http://www.apache.org/dyn/closer.cgi?path=/servicemix/servicemix-4/#{version}/apache-servicemix-full-#{version}.zip"}
+              Apache ServiceMix Full #{version} (zip)
+          %p.keys
+            %a{:href => "http://www.apache.org/dist/servicemix/servicemix-4/#{version}/apache-servicemix-full-#{version}.zip.asc"} [PGP]
+            %a{:href => "http://www.apache.org/dist/servicemix/servicemix-4/#{version}/apache-servicemix-full-#{version}.zip.sha1"} [SHA1]
+            %a{:href => "http://www.apache.org/dist/servicemix/servicemix-4/#{version}/apache-servicemix-full-#{version}.zip.md5"} [MD5]
+      %tr
+        %td.first
+          %p.title JBI assembly
+          %p Use this if you're migrating from ServiceMix 3.x or if you want to reuse your existing JBI artifacts
+        %td
+          %p.tar
+            %a{:href => "http://www.apache.org/dyn/closer.cgi?path=/servicemix/servicemix-4/#{version}/apache-servicemix-jbi-#{version}.tar.gz"}
+              Apache ServiceMix JBI #{version} (tar.gz)
+          %p.keys
+            %a{:href => "http://www.apache.org/dist/servicemix/servicemix-4/#{version}/apache-servicemix-jbi-#{version}.tar.gz.asc"} [PGP]
+            %a{:href => "http://www.apache.org/dist/servicemix/servicemix-4/#{version}/apache-servicemix-jbi-#{version}.tar.gz.sha1"} [SHA1]
+            %a{:href => "http://www.apache.org/dist/servicemix/servicemix-4/#{version}/apache-servicemix-jbi-#{version}.tar.gz.md5"} [MD5]
+        %td
+          %p.zip
+            %a{:href => "http://www.apache.org/dyn/closer.cgi?path=/servicemix/servicemix-4/#{version}/apache-servicemix-jbi-#{version}.zip"}
+              Apache ServiceMix JBI #{version} (zip)
+          %p.keys
+            %a{:href => "http://www.apache.org/dist/servicemix/servicemix-4/#{version}/apache-servicemix-jbi-#{version}.zip.asc"} [PGP]
+            %a{:href => "http://www.apache.org/dist/servicemix/servicemix-4/#{version}/apache-servicemix-jbi-#{version}.zip.sha1"} [SHA1]
+            %a{:href => "http://www.apache.org/dist/servicemix/servicemix-4/#{version}/apache-servicemix-jbi-#{version}.zip.md5"} [MD5]
+      %tr
+        %td.first
+          %p.title Minimal assembly
+          %p Use this if you're an advanced user that wants to create your own edition of Apache ServiceMix at runtime
+        %td
+          %p.tar
+            %a{:href => "http://www.apache.org/dyn/closer.cgi?path=/servicemix/servicemix-4/#{version}/apache-servicemix-minimal-#{version}.tar.gz"}
+              Apache ServiceMix Minimal #{version} (tar.gz)
+          %p.keys
+            %a{:href => "http://www.apache.org/dist/servicemix/servicemix-4/#{version}/apache-servicemix-minimal-#{version}.tar.gz.asc"} [PGP]
+            %a{:href => "http://www.apache.org/dist/servicemix/servicemix-4/#{version}/apache-servicemix-minimal-#{version}.tar.gz.sha1"} [SHA1]
+            %a{:href => "http://www.apache.org/dist/servicemix/servicemix-4/#{version}/apache-servicemix-minimal-#{version}.tar.gz.md5"} [MD5]
+        %td
+          %p.zip
+            %a{:href => "http://www.apache.org/dyn/closer.cgi?path=/servicemix/servicemix-4/#{version}/apache-servicemix-minimal-#{version}.zip"}
+              Apache ServiceMix Minimal #{version} (zip)
+          %p.keys
+            %a{:href => "http://www.apache.org/dist/servicemix/servicemix-4/#{version}/apache-servicemix-minimal-#{version}.zip.asc"} [PGP]
+            %a{:href => "http://www.apache.org/dist/servicemix/servicemix-4/#{version}/apache-servicemix-minimal-#{version}.zip.sha1"} [SHA1]
+            %a{:href => "http://www.apache.org/dist/servicemix/servicemix-4/#{version}/apache-servicemix-minimal-#{version}.zip.md5"} [MD5]

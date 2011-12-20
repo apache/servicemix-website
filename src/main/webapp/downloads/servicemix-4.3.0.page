@@ -9,19 +9,19 @@ h2. Getting the Distributions
 {excerpt}
 *Linux/Mac OS X/Unix Downloads*
 
-!tux.png! !freebsd.png! !mac_logo.png!
+!/images/tux.png! !/images/freebsd.png! !/images/mac_logo.png!
 
-!tarsm.png|align=left! [Apache ServiceMix 4.3.0 (.tar.gz)|http://www.apache.org/dyn/closer.cgi?path=/servicemix/servicemix-4/4.3.0/apache-servicemix-4.3.0.tar.gz] [PGP|http://www.apache.org/dist/servicemix/servicemix-4/4.3.0/apache-servicemix-4.3.0.tar.gz.asc] [SHA|http://www.apache.org/dist/servicemix/servicemix-4/4.3.0/apache-servicemix-4.3.0.tar.gz.sha1] [MD5|http://www.apache.org/dist/servicemix/servicemix-4/4.3.0/apache-servicemix-4.3.0.tar.gz.md5]
+!/images/tarsm.png|align=left! [Apache ServiceMix 4.3.0 (.tar.gz)|http://www.apache.org/dyn/closer.cgi?path=/servicemix/servicemix-4/4.3.0/apache-servicemix-4.3.0.tar.gz] [PGP|http://www.apache.org/dist/servicemix/servicemix-4/4.3.0/apache-servicemix-4.3.0.tar.gz.asc] [SHA|http://www.apache.org/dist/servicemix/servicemix-4/4.3.0/apache-servicemix-4.3.0.tar.gz.sha1] [MD5|http://www.apache.org/dist/servicemix/servicemix-4/4.3.0/apache-servicemix-4.3.0.tar.gz.md5]
 
-!tarsm.png|align=left! [Apache ServiceMix 4.3.0 Sources (.tar.gz)|http://www.apache.org/dyn/closer.cgi?path=/servicemix/servicemix-4/4.3.0/apache-servicemix-4.3.0-src.tar.gz] [PGP|http://www.apache.org/dist/servicemix/servicemix-4/4.3.0/apache-servicemix-4.3.0-src.tar.gz.asc] [SHA|http://www.apache.org/dist/servicemix/servicemix-4/4.3.0/apache-servicemix-4.3.0-src.tar.gz.sha1] [MD5|http://www.apache.org/dist/servicemix/servicemix-4/4.3.0/apache-servicemix-4.3.0-src.tar.gz.md5]
+!/images/tarsm.png|align=left! [Apache ServiceMix 4.3.0 Sources (.tar.gz)|http://www.apache.org/dyn/closer.cgi?path=/servicemix/servicemix-4/4.3.0/apache-servicemix-4.3.0-src.tar.gz] [PGP|http://www.apache.org/dist/servicemix/servicemix-4/4.3.0/apache-servicemix-4.3.0-src.tar.gz.asc] [SHA|http://www.apache.org/dist/servicemix/servicemix-4/4.3.0/apache-servicemix-4.3.0-src.tar.gz.sha1] [MD5|http://www.apache.org/dist/servicemix/servicemix-4/4.3.0/apache-servicemix-4.3.0-src.tar.gz.md5]
 
 *Windows  downloads*
 
-!xp.png!
+!/images/xp.png!
 
-!zipsm.png|align=left! [Apache ServiceMix 4.3.0 (.zip)|http://www.apache.org/dyn/closer.cgi?path=/servicemix/servicemix-4/4.3.0/apache-servicemix-4.3.0.zip] [PGP|http://www.apache.org/dist/servicemix/servicemix-4/4.3.0/apache-servicemix-4.3.0.zip.asc] [SHA|http://www.apache.org/dist/servicemix/servicemix-4/4.3.0/apache-servicemix-4.3.0.zip.sha1] [MD5|http://www.apache.org/dist/servicemix/servicemix-4/4.3.0/apache-servicemix-4.3.0.zip.md5]
+!/images/zipsm.png|align=left! [Apache ServiceMix 4.3.0 (.zip)|http://www.apache.org/dyn/closer.cgi?path=/servicemix/servicemix-4/4.3.0/apache-servicemix-4.3.0.zip] [PGP|http://www.apache.org/dist/servicemix/servicemix-4/4.3.0/apache-servicemix-4.3.0.zip.asc] [SHA|http://www.apache.org/dist/servicemix/servicemix-4/4.3.0/apache-servicemix-4.3.0.zip.sha1] [MD5|http://www.apache.org/dist/servicemix/servicemix-4/4.3.0/apache-servicemix-4.3.0.zip.md5]
 
-!zipsm.png|align=left! [Apache ServiceMix 4.3.0 Sources (.zip)|http://www.apache.org/dyn/closer.cgi?path=/servicemix/servicemix-4/4.3.0/apache-servicemix-4.3.0-src.zip] [PGP|http://www.apache.org/dist/servicemix/servicemix-4/4.3.0/apache-servicemix-4.3.0-src.zip.asc] [SHA|http://www.apache.org/dist/servicemix/servicemix-4/4.3.0/apache-servicemix-4.3.0-src.zip.sha1] [MD5|http://www.apache.org/dist/servicemix/servicemix-4/4.3.0/apache-servicemix-4.3.0-src.zip.md5]
+!/images/zipsm.png|align=left! [Apache ServiceMix 4.3.0 Sources (.zip)|http://www.apache.org/dyn/closer.cgi?path=/servicemix/servicemix-4/4.3.0/apache-servicemix-4.3.0-src.zip] [PGP|http://www.apache.org/dist/servicemix/servicemix-4/4.3.0/apache-servicemix-4.3.0-src.zip.asc] [SHA|http://www.apache.org/dist/servicemix/servicemix-4/4.3.0/apache-servicemix-4.3.0-src.zip.sha1] [MD5|http://www.apache.org/dist/servicemix/servicemix-4/4.3.0/apache-servicemix-4.3.0-src.zip.md5]
 
 {excerpt}
 
@@ -69,142 +69,147 @@ You can use it together with
 
 h2. Release notes
 
-Release Notes - ServiceMix 4 - Version 4.3.0
+h3. Sub-task
 
-** Sub-task
-    * [SMX4-543|https://issues.apache.org/jira/browse/SMX4-543] - Improve Camel NMR component to leverage async camel routing
+* [SMX4-543|https://issues.apache.org/jira/browse/SMX4-543] - Improve Camel NMR component to leverage async camel routing
 
-** Bug
-    * [SMX4-398|https://issues.apache.org/jira/browse/SMX4-398] - openjpa bundle should import the transaction package without optional flag
-    * [SMX4-415|https://issues.apache.org/jira/browse/SMX4-415] - need add josql bundle to activemq feature
-    * [SMX4-417|https://issues.apache.org/jira/browse/SMX4-417] - calling <setHeader> with <groovy> expression can delete message and headers
-    * [SMX4-455|https://issues.apache.org/jira/browse/SMX4-455] - activemq feature missing dependencies; fails to start two bundles without camel-cxf installed
-    * [SMX4-489|https://issues.apache.org/jira/browse/SMX4-489] - ServiceMix 4.x/ Fuse 4.2 hangs when using command dev:show-tree
-    * [SMX4-519|https://issues.apache.org/jira/browse/SMX4-519] - Allow configuring Camel NMR endpoint to bypass thread pool for handling exchanges
-    * [SMX4-520|https://issues.apache.org/jira/browse/SMX4-520] - NMR Destination should check Exchange Status and Mep Pattern
-    * [SMX4-522|https://issues.apache.org/jira/browse/SMX4-522] - Camel NMR component: reponse NMR message contains reference to itself in property
-    * [SMX4-527|https://issues.apache.org/jira/browse/SMX4-527] - cxf nmr transport should copy over property headers and attachment between cxf message and nmr message
-    * [SMX4-530|https://issues.apache.org/jira/browse/SMX4-530] - servicemix-vfs fails with sftp
-    * [SMX4-539|https://issues.apache.org/jira/browse/SMX4-539] - Inconsistent use of Endpoint.INTERFACE_NAME in cxf nmr transport
-    * [SMX4-541|https://issues.apache.org/jira/browse/SMX4-541] - Jetty bundles export package is not correct
-    * [SMX4-548|https://issues.apache.org/jira/browse/SMX4-548] - remove javax.script package from config.properties for jre export package
-    * [SMX4-561|https://issues.apache.org/jira/browse/SMX4-561] - Servicemix flatpack component is missing the default fpconvert.properties, causing NullPointerException
-    * [SMX4-564|https://issues.apache.org/jira/browse/SMX4-564] - stacktrace dumped on console when shutdown smx
-    * [SMX4-578|https://issues.apache.org/jira/browse/SMX4-578] - Ensure that SecuritySubject is properly conveyed by cxf-nmr transport
-    * [SMX4-581|https://issues.apache.org/jira/browse/SMX4-581] - xpp3 bundle is missing META-INF/services/org.xmlpull.v1.XmlPullParserFactory needed to support zero configuation operation mode
-    * [SMX4-585|https://issues.apache.org/jira/browse/SMX4-585] - incorrect MTOM message for NMR transport
-    * [SMX4-602|https://issues.apache.org/jira/browse/SMX4-602] - Update Karaf jre package
-    * [SMX4-608|https://issues.apache.org/jira/browse/SMX4-608] - Drools package doesn't export org.drools.runtime.rule
-    * [SMX4-648|https://issues.apache.org/jira/browse/SMX4-648] - Camel NMR component does not propagate Exception when using an InOnly MEP
-    * [SMX4-649|https://issues.apache.org/jira/browse/SMX4-649] - config:* commands not available out-of-the-box
-    * [SMX4-652|https://issues.apache.org/jira/browse/SMX4-652] - camel example doesn't work
-    * [SMX4-674|https://issues.apache.org/jira/browse/SMX4-674] - ActiveMQ 5.4.1 feature has a missing dependency
-    * [SMX4-706|https://issues.apache.org/jira/browse/SMX4-706] - specify version for cxf-codegen-plugin in pluginManagement to avoid downloading latest snapshot cxf-codegen-plugin
-    * [SMX4-708|https://issues.apache.org/jira/browse/SMX4-708] - NMR adds null header in Camel Exchange ?
-    * [SMX4-709|https://issues.apache.org/jira/browse/SMX4-709] - Features pom contains duplicate dependency declaration
-    * [SMX4-711|https://issues.apache.org/jira/browse/SMX4-711] - check Exception from Camel Exchange at very first place to honor asyn processor in camel 2.5
-    * [SMX4-720|https://issues.apache.org/jira/browse/SMX4-720] - Several poms contain old JIRA URL
-    * [SMX4-729|https://issues.apache.org/jira/browse/SMX4-729] - "Ather URL Handler not available" messages in the log file
-    * [SMX4-735|https://issues.apache.org/jira/browse/SMX4-735] - Problem on install camel-cxf component for unresolved dependency org.apache.servicemix.specs/org.apache.servicemix.specs.jsr311-api_1.0/1.6.0
-    * [SMX4-739|https://issues.apache.org/jira/browse/SMX4-739] - add nmr features.xml dependency to make the kit build pass
-    * [SMX4-748|https://issues.apache.org/jira/browse/SMX4-748] - Improve logging policy to avoid impact on performances
-    * [SMX4-749|https://issues.apache.org/jira/browse/SMX4-749] - JBI deployer version range is not up to date
-    * [SMX4-760|https://issues.apache.org/jira/browse/SMX4-760] - JAXB API and implementation version mismatch in Camel features descriptor
-    * [SMX4-761|https://issues.apache.org/jira/browse/SMX4-761] - cxf-osgi example miss a package import which cause it fail with felix
-    * [SMX4-762|https://issues.apache.org/jira/browse/SMX4-762] - 'java.lang.IllegalStateException: zip file closed' while installing examples-camel-nmr on felix
-    * [SMX4-763|https://issues.apache.org/jira/browse/SMX4-763] - The examples/web/pom.xml parent version is not correct
-    * [SMX4-764|https://issues.apache.org/jira/browse/SMX4-764] - Override Apache Felix Framework to 3.0.8 version
-    * [SMX4-765|https://issues.apache.org/jira/browse/SMX4-765] - ServiceMix doesn't start using JVM 1.5
+h3. Bug
 
-** Improvement
-    * [SMX4-512|https://issues.apache.org/jira/browse/SMX4-512] - Upgrade to ActiveMQ 5.3.1
-    * [SMX4-523|https://issues.apache.org/jira/browse/SMX4-523] - Use Camel Synchronization to ensure NMR exchange can be handled asynchronously
-    * [SMX4-531|https://issues.apache.org/jira/browse/SMX4-531] - Update the jsmpp bundle to 2.1.0
-    * [SMX4-534|https://issues.apache.org/jira/browse/SMX4-534] - Add quartz 1.8.1 bundle
-    * [SMX4-536|https://issues.apache.org/jira/browse/SMX4-536] - Add Quartz 1.8.2 bundle
-    * [SMX4-538|https://issues.apache.org/jira/browse/SMX4-538] - Add quartz 1.8.3 bundle
-    * [SMX4-544|https://issues.apache.org/jira/browse/SMX4-544] - Update poms to not have warnings with Maven 3
-    * [SMX4-551|https://issues.apache.org/jira/browse/SMX4-551] - upgrade to spring 3.x
-    * [SMX4-552|https://issues.apache.org/jira/browse/SMX4-552] - Upgrade to ActiveMQ 5.4
-    * [SMX4-556|https://issues.apache.org/jira/browse/SMX4-556] - Wrap the jaxb impl 2.1.13
-    * [SMX4-560|https://issues.apache.org/jira/browse/SMX4-560] - Prepare the upgrade to ActiveMQ 5.4.0
-    * [SMX4-562|https://issues.apache.org/jira/browse/SMX4-562] - Update flatpack to 3.2.0
-    * [SMX4-565|https://issues.apache.org/jira/browse/SMX4-565] - Upgrade to Karaf 2.0.0
-    * [SMX4-567|https://issues.apache.org/jira/browse/SMX4-567] - Normalize SMX4 naming convention of resources
-    * [SMX4-573|https://issues.apache.org/jira/browse/SMX4-573] - Rome bundle should try to load the configure file from local bundle classloader as a fallback
-    * [SMX4-576|https://issues.apache.org/jira/browse/SMX4-576] - Ensure that Subject is properly conveyed by camel-nmr component
-    * [SMX4-579|https://issues.apache.org/jira/browse/SMX4-579] - extract common used classes for itests
-    * [SMX4-584|https://issues.apache.org/jira/browse/SMX4-584] - Upgrade to the latest release of ServiceMix Bundles
-    * [SMX4-586|https://issues.apache.org/jira/browse/SMX4-586] - The Camel examples uses @deprecated namespace
-    * [SMX4-588|https://issues.apache.org/jira/browse/SMX4-588] - refactor NMRMessageHelper to use new api from cxf StaxUtis
-    * [SMX4-591|https://issues.apache.org/jira/browse/SMX4-591] - Upgrade to ActveMQ 5.4.0
-    * [SMX4-592|https://issues.apache.org/jira/browse/SMX4-592] - Add hibernate-validator 4.1.0.Final bundle
-    * [SMX4-598|https://issues.apache.org/jira/browse/SMX4-598] - HSQLDB bundles.
-    * [SMX4-599|https://issues.apache.org/jira/browse/SMX4-599] - Create drools-5.1.1 bundle with minimal set of dependencies
-    * [SMX4-600|https://issues.apache.org/jira/browse/SMX4-600] - Create antlr-runtime 3.2 bundle
-    * [SMX4-601|https://issues.apache.org/jira/browse/SMX4-601] - Upgrade to Karaf 2.1.0
-    * [SMX4-603|https://issues.apache.org/jira/browse/SMX4-603] - Upgrade to Camel 2.5.0
-    * [SMX4-604|https://issues.apache.org/jira/browse/SMX4-604] - Upgrade to CXF 2.2.11
-    * [SMX4-606|https://issues.apache.org/jira/browse/SMX4-606] - Make the executors/threadpool viewable as JMX mbeans
-    * [SMX4-660|https://issues.apache.org/jira/browse/SMX4-660] - Create OSGi wrap bundle for Jetty 6.1.25
-    * [SMX4-667|https://issues.apache.org/jira/browse/SMX4-667] - Upgrade to JAXP 1.4.4
-    * [SMX4-673|https://issues.apache.org/jira/browse/SMX4-673] - Upgrade to Karaf 2.1.1
-    * [SMX4-676|https://issues.apache.org/jira/browse/SMX4-676] - Upgrade to Karaf 2.1.2
-    * [SMX4-689|https://issues.apache.org/jira/browse/SMX4-689] - Upgrade to ActiveMQ 5.4.2
-    * [SMX4-710|https://issues.apache.org/jira/browse/SMX4-710] - Add Camel NMR blueprint example
-    * [SMX4-713|https://issues.apache.org/jira/browse/SMX4-713] - upgrade to cxf 2.3.1
-    * [SMX4-716|https://issues.apache.org/jira/browse/SMX4-716] - Upgrade to SMX components 2010.02
-    * [SMX4-719|https://issues.apache.org/jira/browse/SMX4-719] - Make camel-blueprint feature installed by default
-    * [SMX4-728|https://issues.apache.org/jira/browse/SMX4-728] - Add a Camel blueprint example
-    * [SMX4-738|https://issues.apache.org/jira/browse/SMX4-738] - remove org.apache.camel.osgi package import for camel-osgi example
-    * [SMX4-740|https://issues.apache.org/jira/browse/SMX4-740] - JAXB-IMPL 2.1.13 Release
-    * [SMX4-741|https://issues.apache.org/jira/browse/SMX4-741] - Upgrade to Karaf 2.1.3
-    * [SMX4-742|https://issues.apache.org/jira/browse/SMX4-742] - Upgrade to Spring 3.0.5.RELEASE
-    * [SMX4-745|https://issues.apache.org/jira/browse/SMX4-745] - Upgrade to Camel 2.6.0
-    * [SMX4-746|https://issues.apache.org/jira/browse/SMX4-746] - Upgrade to CXF 2.3.2
-    * [SMX4-754|https://issues.apache.org/jira/browse/SMX4-754] - Upgrade to ServiceMix Components 2011.01
-    * [SMX4-755|https://issues.apache.org/jira/browse/SMX4-755] - Upgrade to ServiceMix NMR 1.4.0
-    * [SMX4-757|https://issues.apache.org/jira/browse/SMX4-757] - Upgrade to Apache ODE 1.3.5
-    * [SMX4-766|https://issues.apache.org/jira/browse/SMX4-766] - Upgrade to Felix Framework 3.0.9
+* [SMX4-398|https://issues.apache.org/jira/browse/SMX4-398] - openjpa bundle should import the transaction package without optional flag
+* [SMX4-415|https://issues.apache.org/jira/browse/SMX4-415] - need add josql bundle to activemq feature
+* [SMX4-417|https://issues.apache.org/jira/browse/SMX4-417] - calling <setHeader> with <groovy> expression can delete message and headers
+* [SMX4-455|https://issues.apache.org/jira/browse/SMX4-455] - activemq feature missing dependencies; fails to start two bundles without camel-cxf installed
+* [SMX4-489|https://issues.apache.org/jira/browse/SMX4-489] - ServiceMix 4.x/ Fuse 4.2 hangs when using command dev:show-tree
+* [SMX4-519|https://issues.apache.org/jira/browse/SMX4-519] - Allow configuring Camel NMR endpoint to bypass thread pool for handling exchanges
+* [SMX4-520|https://issues.apache.org/jira/browse/SMX4-520] - NMR Destination should check Exchange Status and Mep Pattern
+* [SMX4-522|https://issues.apache.org/jira/browse/SMX4-522] - Camel NMR component: reponse NMR message contains reference to itself in property
+* [SMX4-527|https://issues.apache.org/jira/browse/SMX4-527] - cxf nmr transport should copy over property headers and attachment between cxf message and nmr message
+* [SMX4-530|https://issues.apache.org/jira/browse/SMX4-530] - servicemix-vfs fails with sftp
+* [SMX4-539|https://issues.apache.org/jira/browse/SMX4-539] - Inconsistent use of Endpoint.INTERFACE_NAME in cxf nmr transport
+* [SMX4-541|https://issues.apache.org/jira/browse/SMX4-541] - Jetty bundles export package is not correct
+* [SMX4-548|https://issues.apache.org/jira/browse/SMX4-548] - remove javax.script package from config.properties for jre export package
+* [SMX4-561|https://issues.apache.org/jira/browse/SMX4-561] - Servicemix flatpack component is missing the default fpconvert.properties, causing NullPointerException
+* [SMX4-564|https://issues.apache.org/jira/browse/SMX4-564] - stacktrace dumped on console when shutdown smx
+* [SMX4-578|https://issues.apache.org/jira/browse/SMX4-578] - Ensure that SecuritySubject is properly conveyed by cxf-nmr transport
+* [SMX4-581|https://issues.apache.org/jira/browse/SMX4-581] - xpp3 bundle is missing META-INF/services/org.xmlpull.v1.XmlPullParserFactory needed to support zero configuation operation mode
+* [SMX4-585|https://issues.apache.org/jira/browse/SMX4-585] - incorrect MTOM message for NMR transport
+* [SMX4-602|https://issues.apache.org/jira/browse/SMX4-602] - Update Karaf jre package
+* [SMX4-608|https://issues.apache.org/jira/browse/SMX4-608] - Drools package doesn't export org.drools.runtime.rule
+* [SMX4-648|https://issues.apache.org/jira/browse/SMX4-648] - Camel NMR component does not propagate Exception when using an InOnly MEP
+* [SMX4-649|https://issues.apache.org/jira/browse/SMX4-649] - config:* commands not available out-of-the-box
+* [SMX4-652|https://issues.apache.org/jira/browse/SMX4-652] - camel example doesn't work
+* [SMX4-674|https://issues.apache.org/jira/browse/SMX4-674] - ActiveMQ 5.4.1 feature has a missing dependency
+* [SMX4-706|https://issues.apache.org/jira/browse/SMX4-706] - specify version for cxf-codegen-plugin in pluginManagement to avoid downloading latest snapshot cxf-codegen-plugin
+* [SMX4-708|https://issues.apache.org/jira/browse/SMX4-708] - NMR adds null header in Camel Exchange ?
+* [SMX4-709|https://issues.apache.org/jira/browse/SMX4-709] - Features pom contains duplicate dependency declaration
+* [SMX4-711|https://issues.apache.org/jira/browse/SMX4-711] - check Exception from Camel Exchange at very first place to honor asyn processor in camel 2.5
+* [SMX4-720|https://issues.apache.org/jira/browse/SMX4-720] - Several poms contain old JIRA URL
+* [SMX4-729|https://issues.apache.org/jira/browse/SMX4-729] - "Ather URL Handler not available" messages in the log file
+* [SMX4-735|https://issues.apache.org/jira/browse/SMX4-735] - Problem on install camel-cxf component for unresolved dependency org.apache.servicemix.specs/org.apache.servicemix.specs.jsr311-api_1.0/1.6.0
+* [SMX4-739|https://issues.apache.org/jira/browse/SMX4-739] - add nmr features.xml dependency to make the kit build pass
+* [SMX4-748|https://issues.apache.org/jira/browse/SMX4-748] - Improve logging policy to avoid impact on performances
+* [SMX4-749|https://issues.apache.org/jira/browse/SMX4-749] - JBI deployer version range is not up to date
+* [SMX4-760|https://issues.apache.org/jira/browse/SMX4-760] - JAXB API and implementation version mismatch in Camel features descriptor
+* [SMX4-761|https://issues.apache.org/jira/browse/SMX4-761] - cxf-osgi example miss a package import which cause it fail with felix
+* [SMX4-762|https://issues.apache.org/jira/browse/SMX4-762] - 'java.lang.IllegalStateException: zip file closed' while installing examples-camel-nmr on felix
+* [SMX4-763|https://issues.apache.org/jira/browse/SMX4-763] - The examples/web/pom.xml parent version is not correct
+* [SMX4-764|https://issues.apache.org/jira/browse/SMX4-764] - Override Apache Felix Framework to 3.0.8 version
+* [SMX4-765|https://issues.apache.org/jira/browse/SMX4-765] - ServiceMix doesn't start using JVM 1.5
 
-** New Feature
-    * [SMX4-558|https://issues.apache.org/jira/browse/SMX4-558] - Add a wrap bundle of xmlbeans 2.5.0
-    * [SMX4-559|https://issues.apache.org/jira/browse/SMX4-559] - Add the wrap bundle of jsch-0.1.43
-    * [SMX4-590|https://issues.apache.org/jira/browse/SMX4-590] - Create OSGi bundle for Jasypt 1.6
-    * [SMX4-614|https://issues.apache.org/jira/browse/SMX4-614] - Documentation: Add a Getting Started Guide
-    * [SMX4-675|https://issues.apache.org/jira/browse/SMX4-675] - Bundles for Mongo DB
+h3. Improvement
 
-** Task
-    * [SMX4-524|https://issues.apache.org/jira/browse/SMX4-524] - upgrade to cxf 2.2.7
-    * [SMX4-528|https://issues.apache.org/jira/browse/SMX4-528] - upgrade to cxf 2.2.8
-    * [SMX4-533|https://issues.apache.org/jira/browse/SMX4-533] - upgrade to cxf 2.2.9
-    * [SMX4-542|https://issues.apache.org/jira/browse/SMX4-542] - Upgrade to Camel 2.4.0
-    * [SMX4-545|https://issues.apache.org/jira/browse/SMX4-545] - Update SMX to use aries version of blueprint and latest Felix/Karaf stuff that also uses aries
-    * [SMX4-547|https://issues.apache.org/jira/browse/SMX4-547] - upgrade to use new karaf artifacts
-    * [SMX4-553|https://issues.apache.org/jira/browse/SMX4-553] - Upgrade to google protobuf 2.3.0
-    * [SMX4-557|https://issues.apache.org/jira/browse/SMX4-557] - Upgrade to Velocity 1.6.4
-    * [SMX4-563|https://issues.apache.org/jira/browse/SMX4-563] - upgrade aries to 0.1-r964701
-    * [SMX4-574|https://issues.apache.org/jira/browse/SMX4-574] - add commons-digester-1.8 bundle
-    * [SMX4-575|https://issues.apache.org/jira/browse/SMX4-575] - add commons-configuration-1.4 bundle
-    * [SMX4-582|https://issues.apache.org/jira/browse/SMX4-582] - upgrade to activemq 5.4
-    * [SMX4-587|https://issues.apache.org/jira/browse/SMX4-587] - upgrade to cxf 2.2.10
-    * [SMX4-593|https://issues.apache.org/jira/browse/SMX4-593] - Create Bundles for SIP API and RI.
-    * [SMX4-607|https://issues.apache.org/jira/browse/SMX4-607] - downgrade geronimo-annotation version to 1.0 from 1.1
-    * [SMX4-613|https://issues.apache.org/jira/browse/SMX4-613] - Create a wrap bundle dozer 5.3.0
-    * [SMX4-655|https://issues.apache.org/jira/browse/SMX4-655] - Release ServiceMix 4.3.0
-    * [SMX4-668|https://issues.apache.org/jira/browse/SMX4-668] - Upgrade to MVEL 2.0.18
-    * [SMX4-671|https://issues.apache.org/jira/browse/SMX4-671] - add scala 2.8.1 bundle
-    * [SMX4-672|https://issues.apache.org/jira/browse/SMX4-672] - Create a wrap bundle for Jetty 6.1.26
-    * [SMX4-707|https://issues.apache.org/jira/browse/SMX4-707] - Fix the camel-nmr failed unit tests
+* [SMX4-512|https://issues.apache.org/jira/browse/SMX4-512] - Upgrade to ActiveMQ 5.3.1
+* [SMX4-523|https://issues.apache.org/jira/browse/SMX4-523] - Use Camel Synchronization to ensure NMR exchange can be handled asynchronously
+* [SMX4-531|https://issues.apache.org/jira/browse/SMX4-531] - Update the jsmpp bundle to 2.1.0
+* [SMX4-534|https://issues.apache.org/jira/browse/SMX4-534] - Add quartz 1.8.1 bundle
+* [SMX4-536|https://issues.apache.org/jira/browse/SMX4-536] - Add Quartz 1.8.2 bundle
+* [SMX4-538|https://issues.apache.org/jira/browse/SMX4-538] - Add quartz 1.8.3 bundle
+* [SMX4-544|https://issues.apache.org/jira/browse/SMX4-544] - Update poms to not have warnings with Maven 3
+* [SMX4-551|https://issues.apache.org/jira/browse/SMX4-551] - upgrade to spring 3.x
+* [SMX4-552|https://issues.apache.org/jira/browse/SMX4-552] - Upgrade to ActiveMQ 5.4
+* [SMX4-556|https://issues.apache.org/jira/browse/SMX4-556] - Wrap the jaxb impl 2.1.13
+* [SMX4-560|https://issues.apache.org/jira/browse/SMX4-560] - Prepare the upgrade to ActiveMQ 5.4.0
+* [SMX4-562|https://issues.apache.org/jira/browse/SMX4-562] - Update flatpack to 3.2.0
+* [SMX4-565|https://issues.apache.org/jira/browse/SMX4-565] - Upgrade to Karaf 2.0.0
+* [SMX4-567|https://issues.apache.org/jira/browse/SMX4-567] - Normalize SMX4 naming convention of resources
+* [SMX4-573|https://issues.apache.org/jira/browse/SMX4-573] - Rome bundle should try to load the configure file from local bundle classloader as a fallback
+* [SMX4-576|https://issues.apache.org/jira/browse/SMX4-576] - Ensure that Subject is properly conveyed by camel-nmr component
+* [SMX4-579|https://issues.apache.org/jira/browse/SMX4-579] - extract common used classes for itests
+* [SMX4-584|https://issues.apache.org/jira/browse/SMX4-584] - Upgrade to the latest release of ServiceMix Bundles
+* [SMX4-586|https://issues.apache.org/jira/browse/SMX4-586] - The Camel examples uses @deprecated namespace
+* [SMX4-588|https://issues.apache.org/jira/browse/SMX4-588] - refactor NMRMessageHelper to use new api from cxf StaxUtis
+* [SMX4-591|https://issues.apache.org/jira/browse/SMX4-591] - Upgrade to ActveMQ 5.4.0
+* [SMX4-592|https://issues.apache.org/jira/browse/SMX4-592] - Add hibernate-validator 4.1.0.Final bundle
+* [SMX4-598|https://issues.apache.org/jira/browse/SMX4-598] - HSQLDB bundles.
+* [SMX4-599|https://issues.apache.org/jira/browse/SMX4-599] - Create drools-5.1.1 bundle with minimal set of dependencies
+* [SMX4-600|https://issues.apache.org/jira/browse/SMX4-600] - Create antlr-runtime 3.2 bundle
+* [SMX4-601|https://issues.apache.org/jira/browse/SMX4-601] - Upgrade to Karaf 2.1.0
+* [SMX4-603|https://issues.apache.org/jira/browse/SMX4-603] - Upgrade to Camel 2.5.0
+* [SMX4-604|https://issues.apache.org/jira/browse/SMX4-604] - Upgrade to CXF 2.2.11
+* [SMX4-606|https://issues.apache.org/jira/browse/SMX4-606] - Make the executors/threadpool viewable as JMX mbeans
+* [SMX4-660|https://issues.apache.org/jira/browse/SMX4-660] - Create OSGi wrap bundle for Jetty 6.1.25
+* [SMX4-667|https://issues.apache.org/jira/browse/SMX4-667] - Upgrade to JAXP 1.4.4
+* [SMX4-673|https://issues.apache.org/jira/browse/SMX4-673] - Upgrade to Karaf 2.1.1
+* [SMX4-676|https://issues.apache.org/jira/browse/SMX4-676] - Upgrade to Karaf 2.1.2
+* [SMX4-689|https://issues.apache.org/jira/browse/SMX4-689] - Upgrade to ActiveMQ 5.4.2
+* [SMX4-710|https://issues.apache.org/jira/browse/SMX4-710] - Add Camel NMR blueprint example
+* [SMX4-713|https://issues.apache.org/jira/browse/SMX4-713] - upgrade to cxf 2.3.1
+* [SMX4-716|https://issues.apache.org/jira/browse/SMX4-716] - Upgrade to SMX components 2010.02
+* [SMX4-719|https://issues.apache.org/jira/browse/SMX4-719] - Make camel-blueprint feature installed by default
+* [SMX4-728|https://issues.apache.org/jira/browse/SMX4-728] - Add a Camel blueprint example
+* [SMX4-738|https://issues.apache.org/jira/browse/SMX4-738] - remove org.apache.camel.osgi package import for camel-osgi example
+* [SMX4-740|https://issues.apache.org/jira/browse/SMX4-740] - JAXB-IMPL 2.1.13 Release
+* [SMX4-741|https://issues.apache.org/jira/browse/SMX4-741] - Upgrade to Karaf 2.1.3
+* [SMX4-742|https://issues.apache.org/jira/browse/SMX4-742] - Upgrade to Spring 3.0.5.RELEASE
+* [SMX4-745|https://issues.apache.org/jira/browse/SMX4-745] - Upgrade to Camel 2.6.0
+* [SMX4-746|https://issues.apache.org/jira/browse/SMX4-746] - Upgrade to CXF 2.3.2
+* [SMX4-754|https://issues.apache.org/jira/browse/SMX4-754] - Upgrade to ServiceMix Components 2011.01
+* [SMX4-755|https://issues.apache.org/jira/browse/SMX4-755] - Upgrade to ServiceMix NMR 1.4.0
+* [SMX4-757|https://issues.apache.org/jira/browse/SMX4-757] - Upgrade to Apache ODE 1.3.5
+* [SMX4-766|https://issues.apache.org/jira/browse/SMX4-766] - Upgrade to Felix Framework 3.0.9
 
-** Test
-    * [SMX4-554|https://issues.apache.org/jira/browse/SMX4-554] - fix itests failure
-    * [SMX4-568|https://issues.apache.org/jira/browse/SMX4-568] - add cxf mtom test
-    * [SMX4-650|https://issues.apache.org/jira/browse/SMX4-650] - fix loan-broker-drools-su test failure
-    * [SMX4-651|https://issues.apache.org/jira/browse/SMX4-651] - add osgi service property for itests test client
+h3. New Feature
 
-** Wish
-    * [SMX4-540|https://issues.apache.org/jira/browse/SMX4-540] - Jetty bundle 6.1.24
+* [SMX4-558|https://issues.apache.org/jira/browse/SMX4-558] - Add a wrap bundle of xmlbeans 2.5.0
+* [SMX4-559|https://issues.apache.org/jira/browse/SMX4-559] - Add the wrap bundle of jsch-0.1.43
+* [SMX4-590|https://issues.apache.org/jira/browse/SMX4-590] - Create OSGi bundle for Jasypt 1.6
+* [SMX4-614|https://issues.apache.org/jira/browse/SMX4-614] - Documentation: Add a Getting Started Guide
+* [SMX4-675|https://issues.apache.org/jira/browse/SMX4-675] - Bundles for Mongo DB
+
+h3. Task
+
+* [SMX4-524|https://issues.apache.org/jira/browse/SMX4-524] - upgrade to cxf 2.2.7
+* [SMX4-528|https://issues.apache.org/jira/browse/SMX4-528] - upgrade to cxf 2.2.8
+* [SMX4-533|https://issues.apache.org/jira/browse/SMX4-533] - upgrade to cxf 2.2.9
+* [SMX4-542|https://issues.apache.org/jira/browse/SMX4-542] - Upgrade to Camel 2.4.0
+* [SMX4-545|https://issues.apache.org/jira/browse/SMX4-545] - Update SMX to use aries version of blueprint and latest Felix/Karaf stuff that also uses aries
+* [SMX4-547|https://issues.apache.org/jira/browse/SMX4-547] - upgrade to use new karaf artifacts
+* [SMX4-553|https://issues.apache.org/jira/browse/SMX4-553] - Upgrade to google protobuf 2.3.0
+* [SMX4-557|https://issues.apache.org/jira/browse/SMX4-557] - Upgrade to Velocity 1.6.4
+* [SMX4-563|https://issues.apache.org/jira/browse/SMX4-563] - upgrade aries to 0.1-r964701
+* [SMX4-574|https://issues.apache.org/jira/browse/SMX4-574] - add commons-digester-1.8 bundle
+* [SMX4-575|https://issues.apache.org/jira/browse/SMX4-575] - add commons-configuration-1.4 bundle
+* [SMX4-582|https://issues.apache.org/jira/browse/SMX4-582] - upgrade to activemq 5.4
+* [SMX4-587|https://issues.apache.org/jira/browse/SMX4-587] - upgrade to cxf 2.2.10
+* [SMX4-593|https://issues.apache.org/jira/browse/SMX4-593] - Create Bundles for SIP API and RI.
+* [SMX4-607|https://issues.apache.org/jira/browse/SMX4-607] - downgrade geronimo-annotation version to 1.0 from 1.1
+* [SMX4-613|https://issues.apache.org/jira/browse/SMX4-613] - Create a wrap bundle dozer 5.3.0
+* [SMX4-655|https://issues.apache.org/jira/browse/SMX4-655] - Release ServiceMix 4.3.0
+* [SMX4-668|https://issues.apache.org/jira/browse/SMX4-668] - Upgrade to MVEL 2.0.18
+* [SMX4-671|https://issues.apache.org/jira/browse/SMX4-671] - add scala 2.8.1 bundle
+* [SMX4-672|https://issues.apache.org/jira/browse/SMX4-672] - Create a wrap bundle for Jetty 6.1.26
+* [SMX4-707|https://issues.apache.org/jira/browse/SMX4-707] - Fix the camel-nmr failed unit tests
+
+h3. Test
+
+* [SMX4-554|https://issues.apache.org/jira/browse/SMX4-554] - fix itests failure
+* [SMX4-568|https://issues.apache.org/jira/browse/SMX4-568] - add cxf mtom test
+* [SMX4-650|https://issues.apache.org/jira/browse/SMX4-650] - fix loan-broker-drools-su test failure
+* [SMX4-651|https://issues.apache.org/jira/browse/SMX4-651] - add osgi service property for itests test client
+
+h3. Wish
+
+* [SMX4-540|https://issues.apache.org/jira/browse/SMX4-540] - Jetty bundle 6.1.24
 
 h2. SVN Tag Checkout
 

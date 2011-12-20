@@ -1,0 +1,92 @@
+/**
+ * Copyright (C) 2009-2010 the original author or authors.
+ * See the notice.md file distributed with this work for additional
+ * information regarding copyright ownership.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+div#downloads {
+    margin-left: 5%;
+}
+
+div#downloads table {
+    width: 90%;
+}
+
+div#downloads table td {
+    width: 30%;
+}
+
+div#downloads table th {
+    width: 30%;
+    text-align: center;
+    background-color: #cccccc;
+    font-size: 110%;
+    font-weight: bold;
+}
+
+div#downloads table tr.default {
+    border: solid thin red;
+}
+
+div#downloads tr.default {
+    background-color: #fafad2;
+}
+
+div#downloads td.first {
+    background-color: #cccccc;
+}
+
+div#downloads th.first {
+    background-color: transparent;
+}
+
+
+div#downloads td.first p.title {
+    font-size: 110%;
+    font-weight: bold;
+}
+
+div#downloads ul {
+    margin-left: 180px;
+}
+
+div#downloads ul li {
+    list-style-image: url('/images/tarsm.png');
+}
+
+div#downloads p.tar {
+    background-image: url('/images/tarsm.png');
+    background-repeat: no-repeat;
+    padding-left: 25px;
+    font-weight: bold;
+}
+
+div#downloads tr.default p.tar {
+    font-size: 140%;
+}
+
+div#downloads p.zip {
+    background-image: url('/images/zipsm.png');
+    background-repeat: no-repeat;
+    padding-left: 25px;
+    font-weight: bold;
+}
+
+div#downloads tr.default p.zip {
+    font-size: 140%;
+}
+
+div#downloads p.keys {
+    padding-left: 25px;
+}

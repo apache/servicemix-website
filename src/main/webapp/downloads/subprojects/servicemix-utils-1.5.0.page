@@ -1,0 +1,34 @@
+---
+title: ServiceMix Utils 1.5.0
+--- pipeline:conf
+
+h2. Release Notes: ServiceMix Utils 1.5.0
+
+*Bug*
+* [SM-1831|http://issues.apache.org/active/browse/SM-1831] - Messages with StaxSource content are not handled well when running in non-DEBUG mode
+* [SM-1847|http://issues.apache.org/active/browse/SM-1847] - Executor service silently swallows any Errors being thrown from Runnable task
+
+*Improvement*
+* [SM-1830|http://issues.apache.org/active/browse/SM-1830] - Enable Content Rereadability for StaxSource
+* [SM-2061|http://issues.apache.org/active/browse/SM-2061] - Hazelcast store should support reusing an existing Hazelcast instance.
+* [SM-2063|http://issues.apache.org/active/browse/SM-2063] - Allow overriding parts of the executor configuration when creating a new executor
+* [SM-2064|http://issues.apache.org/active/browse/SM-2064] - Switch to SLF4J for servicemix-utils
+* [SM-2069|http://issues.apache.org/active/browse/SM-2069] - SourceTransformer should cache DocumentBuilder & TransformerFactory
+* [SM-2110|http://issues.apache.org/active/browse/SM-2110] - HazelcastStore tests should not use the default group
+
+*New Feature*
+* [SM-2047|http://issues.apache.org/active/browse/SM-2047] - Create a distributed memory store.
+* [SM-2067|http://issues.apache.org/active/browse/SM-2067] - Create a Redis Store
+* [SM-2108|http://issues.apache.org/active/browse/SM-2108] - Create a Event Listener for ServiceMix stores
+* [SM-2109|http://issues.apache.org/active/browse/SM-2109] - EhCache Store Implementation
+* [SM-2114|http://issues.apache.org/active/browse/SM-2114] - It would be nice to have a Krati implementation for the org.apache.servicemix.store interface. Also, it could be nice to have a Krati Persistence Provider for Hazelcast stores
+
+*Task*
+* [SM-2083|http://issues.apache.org/active/browse/SM-2083] - Release ServiceMix Utils 1.5.0
+* [SM-2088|http://issues.apache.org/active/browse/SM-2088] - Upgrade to ServiceMix Specs 1.8.0
+* [SM-2106|http://issues.apache.org/active/browse/SM-2106] - Upgrade to Hazelcast 1.9.3 (used in Hazelcast store)
+
+
+
+
+
