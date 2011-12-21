@@ -1,0 +1,139 @@
+---
+title: ServiceMix 3.4.0
+--- name:notes pipeline:conf
+
+h2. Dependency versions
+
+This release packages the following dependencies:
+* Version [2011.02|/downloads/subprojects/servicemix-components-2011.02.html] of the JBI components
+* Version [1.5.0|/downloads/subprojects/servicemix-utils-1.5.0.html] of ServiceMix Utils
+* Version [5.5.1|http://activemq.apache.org/activemq-551-release.html] of [ActiveMQ|http://activemq.apache.org]
+* Version 2.8.3 of [Camel|http://camel.apache.org]
+* Version 2.4.4 of [CXF|http://cxf.apache.org]
+
+You can use it together with
+* Version 4.5 of the Maven plugins
+* Version 2011.02 of the archetypes
+
+h2. Release notes
+
+h3. Sub-task
+
+* [SM-2096|http://issues.apache.org/active/browse/SM-2096] - MBean lookup failures in web console
+* [SM-2097|http://issues.apache.org/active/browse/SM-2097] - Ant tasks should allow interacting with ServiceMix running in WebSphere
+
+h3. Bug
+
+* [SM-1206|http://issues.apache.org/active/browse/SM-1206] - ClientFactory JNDI bind fails in non-standalone ServiceMix installs
+* [SM-1438|http://issues.apache.org/active/browse/SM-1438] - Exceptions while shutting down ServiceMix
+* [SM-1456|http://issues.apache.org/active/browse/SM-1456] - Statistics Service throws NPE on startup.
+* [SM-1521|http://issues.apache.org/active/browse/SM-1521] - Released version of archetype-catalog is corrupt
+* [SM-1823|http://issues.apache.org/active/browse/SM-1823] - JaasAuthenticationService not properly authenticating certificate chains.
+* [SM-1863|http://issues.apache.org/active/browse/SM-1863] - Exceptions for SOAP calls after retrieving WSDL
+* [SM-1887|http://issues.apache.org/active/browse/SM-1887] - should ship only one bcprov version in the kit
+* [SM-1949|http://issues.apache.org/active/browse/SM-1949] - Upgrade stax-api version
+* [SM-1958|http://issues.apache.org/active/browse/SM-1958] - ServiceMix 3 doesn't start correctly due to NoClassDefFoundError on ActiveMQ bean
+* [SM-1972|http://issues.apache.org/active/browse/SM-1972] - Missing javax.annotation causes exceptions on AIX
+* [SM-1995|http://issues.apache.org/active/browse/SM-1995] - Maven tries to download several resources from java.net repository that aren't there.
+* [SM-2025|http://issues.apache.org/active/browse/SM-2025] - ServiceMix fails to start if SU hangs during startup
+* [SM-2026|http://issues.apache.org/active/browse/SM-2026] - ServiceMix does not start some components if some component failed during start
+* [SM-2030|http://issues.apache.org/active/browse/SM-2030] - SMX3 doesn't build
+* [SM-2037|http://issues.apache.org/active/browse/SM-2037] - Cant use servicemix start just after installation
+* [SM-2056|http://issues.apache.org/active/browse/SM-2056] - Upgrade to JAXB 2.2 and include JAXB API in the container lib
+* [SM-2057|http://issues.apache.org/active/browse/SM-2057] - Add JAX-WS in the distribution kit
+* [SM-2066|http://issues.apache.org/active/browse/SM-2066] - Reinclude lightweight component into build
+* [SM-2071|http://issues.apache.org/active/browse/SM-2071] - lots of tests failure in common/servicemix-components
+* [SM-2075|http://issues.apache.org/active/browse/SM-2075] - Basic examples doesn't work
+* [SM-2077|http://issues.apache.org/active/browse/SM-2077] - ServiceMix wsn2005 doesn't start correctly on SMX3
+* [SM-2094|http://issues.apache.org/active/browse/SM-2094] - Duplicate entry for wsnotificationCF
+* [SM-2111|http://issues.apache.org/active/browse/SM-2111] - kit miss spring-jms jar
+* [SM-2117|http://issues.apache.org/active/browse/SM-2117] - Fail to uninstall components after container restart
+* [SM-2119|http://issues.apache.org/active/browse/SM-2119] - Hardcoded parameters are used instead of ones in property files in default configuration
+* [SM-2129|http://issues.apache.org/active/browse/SM-2129] - NullPointerException at org.apache.servicemix.jbi.framework.DeploymentService.start(DeploymentService.java:390)
+* [SM-2137|http://issues.apache.org/active/browse/SM-2137] - Each call to a servicemix-http endpoint, in apache-servicemix-web deployed on Apache Tomcat, opens a new session.
+
+h3. Improvement
+* [SM-1573|http://issues.apache.org/active/browse/SM-1573] - Use of useJBIWrapper flag in smx-cxf-bc consumer and smx-http soap-consumer endpoints is inconsistent
+* [SM-1659|http://issues.apache.org/active/browse/SM-1659] - should filter the version for kit_camel_example_pom.xml which is used in kit
+* [SM-1660|http://issues.apache.org/active/browse/SM-1660] - add createDaemonExecutor api for ExecutorFactory
+* [SM-1945|http://issues.apache.org/active/browse/SM-1945] - Upgrade to ActiveMQ 5.3.1
+* [SM-1950|http://issues.apache.org/active/browse/SM-1950] - Upgrade to ActiveMQ 5.3.2
+* [SM-1960|http://issues.apache.org/active/browse/SM-1960] - Upgrade to log4j 1.2.16
+* [SM-1962|http://issues.apache.org/active/browse/SM-1962] - Upgrade ServiceMix 3.3 to use Spring 3
+* [SM-1964|http://issues.apache.org/active/browse/SM-1964] - JMS Flow only uses one connection even with a PooledConnectionFactory
+* [SM-1965|http://issues.apache.org/active/browse/SM-1965] - Prepare the upgrade to ActiveMQ 5.4.0
+* [SM-1966|http://issues.apache.org/active/browse/SM-1966] - Upgrade to Camel 2.4.0
+* [SM-1971|http://issues.apache.org/active/browse/SM-1971] - Upgrade to Spring 3.0.3.RELEASE
+* [SM-1973|http://issues.apache.org/active/browse/SM-1973] - Upgrade to ActiveMQ 5.4.0
+* [SM-1996|http://issues.apache.org/active/browse/SM-1996] - Upgrade to ActiveMQ 5.4.1
+* [SM-1997|http://issues.apache.org/active/browse/SM-1997] - Upgrade to CXF 2.2.10
+* [SM-1998|http://issues.apache.org/active/browse/SM-1998] - Upgrade to Camel 2.5.0
+* [SM-2001|http://issues.apache.org/active/browse/SM-2001] - Make the executors/threadpool viewable as JMX mbeans
+* [SM-2007|http://issues.apache.org/active/browse/SM-2007] - Components should use separate thread pools for consumer and provider endpoints
+* [SM-2019|http://issues.apache.org/active/browse/SM-2019] - Upgrade to ActiveMQ 5.4.2
+* [SM-2024|http://issues.apache.org/active/browse/SM-2024] - Improve message flow logging
+* [SM-2031|http://issues.apache.org/active/browse/SM-2031] - Upgrade to SMX components 2010.02
+* [SM-2032|http://issues.apache.org/active/browse/SM-2032] - Upgrade to slf4j 1.5.8
+* [SM-2035|http://issues.apache.org/active/browse/SM-2035] - Upgrade to Spring 3.0.5.RELEASE
+* [SM-2039|http://issues.apache.org/active/browse/SM-2039] - Upgrade to CXF 2.3.2
+* [SM-2040|http://issues.apache.org/active/browse/SM-2040] - Upgrade to Camel 2.6.0
+* [SM-2041|http://issues.apache.org/active/browse/SM-2041] - Upgrade to ServiceMix Components 2011.01
+* [SM-2043|http://issues.apache.org/active/browse/SM-2043] - SimpleEndpoint fail method error is not logged
+* [SM-2070|http://issues.apache.org/active/browse/SM-2070] - update woodstox stax2-api to 3.0.2
+* [SM-2072|http://issues.apache.org/active/browse/SM-2072] - upgrade to jetty 6.1.26 for smx3
+* [SM-2076|http://issues.apache.org/active/browse/SM-2076] - Avoid usage of jbi:projectDeploy in examples
+* [SM-2095|http://issues.apache.org/active/browse/SM-2095] - Improve compatibility with WebSphere (WAR deployment)
+* [SM-2103|http://issues.apache.org/active/browse/SM-2103] - Fix ServiceMix 3 build to get rid of warnings in Maven 3
+* [SM-2118|http://issues.apache.org/active/browse/SM-2118] - Container is in inconsistent state just after start
+* [SM-2133|http://issues.apache.org/active/browse/SM-2133] - Upgrade to Camel 2.8.3
+* [SM-2139|http://issues.apache.org/active/browse/SM-2139] - Upgrade to ActiveMQ 5.5.1
+
+h3. New Feature
+
+* [SM-1756|http://issues.apache.org/active/browse/SM-1756] - add CXFManagedServlet to apache-servicemix-web to enable servicemix-cxf-bc endpoint deploy into servlet container without starting jetty
+* [SM-1977|http://issues.apache.org/active/browse/SM-1977] - Support exploded JBI artifacts
+
+h3. Task
+
+* [SM-1877|http://issues.apache.org/active/browse/SM-1877] - update wss4j to 1.5.8
+* [SM-1951|http://issues.apache.org/active/browse/SM-1951] - upgrade to cxf 2.2.8
+* [SM-1954|http://issues.apache.org/active/browse/SM-1954] - upgrade to cxf 2.2.9
+* [SM-2048|http://issues.apache.org/active/browse/SM-2048] - Switch to use slf4j as logger (instead of commons-logging)
+* [SM-2055|http://issues.apache.org/active/browse/SM-2055] - Release ServiceMix 3.4
+* [SM-2079|http://issues.apache.org/active/browse/SM-2079] - Upgrade ServiceMix 3 to use JBI maven plugin 4.5
+* [SM-2084|http://issues.apache.org/active/browse/SM-2084] - Upgrade to Camel 2.7.1
+* [SM-2085|http://issues.apache.org/active/browse/SM-2085] - Upgrade to CXF 2.3.3
+* [SM-2086|http://issues.apache.org/active/browse/SM-2086] - Upgrade to ServiceMix Specs 1.8.0
+* [SM-2090|http://issues.apache.org/active/browse/SM-2090] - Upgrade to Camel 2.8.0
+* [SM-2093|http://issues.apache.org/active/browse/SM-2093] - upgrade to cxf 2.4.1
+* [SM-2116|http://issues.apache.org/active/browse/SM-2116] - upgrade to cxf 2.4.2
+* [SM-2120|http://issues.apache.org/active/browse/SM-2120] - Camel log level should be set
+* [SM-2123|http://issues.apache.org/active/browse/SM-2123] - Upgrade to Camel 2.8.1
+* [SM-2128|http://issues.apache.org/active/browse/SM-2128] - upgrade to spring 3.0.6
+* [SM-2130|http://issues.apache.org/active/browse/SM-2130] - upgrade to cxf 2.4.4
+
+h3. Test
+
+* [SM-1306|http://issues.apache.org/active/browse/SM-1306] - Improve success ratio of timing sensitive tests
+* [SM-1968|http://issues.apache.org/active/browse/SM-1968] - Use dynamic port for tests
+
+
+
+h2. SVN Tag Checkout
+
+{code}
+svn co http://svn.apache.org/repos/asf/servicemix/smx4/features/tags/features-4.4.0/
+{code}
+
+h2. Changelog
+
+For a more detailed view of new features and bug fixes, see the [changelog|https://issues.apache.org/jira/secure/IssueNavigator.jspa?reset=true&jqlQuery=project+%3D+SMX4+AND+fixVersion+%3D+%224.4.0%22+AND+status+%3D+Resolved+ORDER+BY+priority+DESC&mode=hide]
+
+--- name:content pipeline:ssp
+<%@ val notes : String %>
+
+<h2>Downloads : Apache ServiceMix 3.4.0</h2>
+
+<% render("/downloads/_servicemix3.scaml", Map("version" -> "3.4.0")) %>
+
+<%= unescape(notes) %>

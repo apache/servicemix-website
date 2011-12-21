@@ -1,6 +1,10 @@
 ---
 title: Welcome to Apache ServiceMix!
 --- pipeline:conf
+{info}
+If you're looking for information on the older Apache ServiceMix 3.x release, you may want to take a look at the [old website|http://servicemix.apache.org/old/home.html]
+{info}
+
 {section}
 {column}
 [Apache ServiceMix|http://servicemix.apache.org/] is a flexible, open-source integration container that unifies the features and functionality of Apache [ActiveMQ|http://activemq.apache.org], [Camel|http://camel.apache.org], [CXF|http://cxf.apache.org], [ODE|http://ode.apache.org], [Karaf|http://karaf.apache.org] into a powerful runtime platform you can use to build your own integrations solutions. It provides a complete, enterprise ready ESB exclusively powered by OSGi.

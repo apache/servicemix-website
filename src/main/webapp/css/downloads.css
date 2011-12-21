@@ -90,3 +90,15 @@ div#downloads tr.default p.zip {
 div#downloads p.keys {
     padding-left: 25px;
 }
+
+div#downloads div.info {
+    margin-top: 30px;
+    border: 1px solid #3c78b5;
+    background-color: #D8E4F1;
+    padding: 0px 6px 0px 6px;
+    width: 90%;
+}
+
+div#downloads div.info p.title {
+    font-weight: bold;
+}
