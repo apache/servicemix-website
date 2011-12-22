@@ -1,28 +1,6 @@
 ---
 title: ServiceMix 3.3.1
-page_version: 7
-page_creator: gertvanthienen
-page_modifier: gertvanthienen
---- pipeline:conf
-
-h2. Getting the Distributions
-
-{excerpt}
-*Linux/Mac OS X/Unix Downloads*
-** [Apache ServiceMix 3.3.1 (.tar.gz)|http://archive.apache.org/dist/servicemix/servicemix-3/3.3.1/apache-servicemix-3.3.1.tar.gz] [PGP|http://archive.apache.org/dist/servicemix/servicemix-3/3.3.1/apache-servicemix-3.3.1.tar.gz.asc] [SHA|http://archive.apache.org/dist/servicemix/servicemix-3/3.3.1/apache-servicemix-3.3.1.tar.gz.sha1] [MD5|http://archive.apache.org/dist/servicemix/servicemix-3/3.3.1/apache-servicemix-3.3.1.tar.gz.md5]
-** [Apache ServiceMix 3.3.1 Sources (.tar.gz)|http://archive.apache.org/dist/servicemix/servicemix-3/3.3.1/apache-servicemix-3.3.1-src.tar.gz] [PGP|http://archive.apache.org/dist/servicemix/servicemix-3/3.3.1/apache-servicemix-3.3.1-src.tar.gz.asc] [SHA|http://archive.apache.org/dist/servicemix/servicemix-3/3.3.1/apache-servicemix-3.3.1-src.tar.gz.sha1] [MD5|http://archive.apache.org/dist/servicemix/servicemix-3/3.3.1/apache-servicemix-3.3.1-src.tar.gz.md5]
-
-*Windows  downloads*
-** [Apache ServiceMix 3.3.1 (.zip)|http://archive.apache.org/dist/servicemix/servicemix-3/3.3.1/apache-servicemix-3.3.1.zip] [PGP|http://archive.apache.org/dist/servicemix/servicemix-3/3.3.1/apache-servicemix-3.3.1.zip.asc] [SHA|http://archive.apache.org/dist/servicemix/servicemix-3/3.3.1/apache-servicemix-3.3.1.zip.sha1] [MD5|http://archive.apache.org/dist/servicemix/servicemix-3/3.3.1/apache-servicemix-3.3.1.zip.md5]
-** [Apache ServiceMix 3.3.1 Sources (.zip)|http://archive.apache.org/dist/servicemix/servicemix-3/3.3.1/apache-servicemix-3.3.1-src.zip] [PGP|http://archive.apache.org/dist/servicemix/servicemix-3/3.3.1/apache-servicemix-3.3.1-src.zip.asc] [SHA|http://archive.apache.org/dist/servicemix/servicemix-3/3.3.1/apache-servicemix-3.3.1-src.zip.sha1] [MD5|http://archive.apache.org/dist/servicemix/servicemix-3/3.3.1/apache-servicemix-3.3.1-src.zip.md5]
-
-*Web Application*
-** [Apache ServiceMix Web Application 3.3.1  (.war)|http://archive.apache.org/dist/servicemix/servicemix-3/3.3.1/apache-servicemix-web-3.3.1.war] [PGP|http://archive.apache.org/dist/servicemix/servicemix-3/3.3.1/apache-servicemix-web-3.3.1.war.asc] [SHA|http://archive.apache.org/dist/servicemix/servicemix-3/3.3.1/apache-servicemix-web-3.3.1.war.sha1] [MD5|http://archive.apache.org/dist/servicemix/servicemix-3/3.3.1/apache-servicemix-web-3.3.1.war.md5]
-{excerpt}
-
-{info:title=The above URLs use redirection}
-The above URLs use the Apache Mirror system to redirect you to a suitable mirror for your download. Some users have experienced issues with some versions of browsers (e.g. some Safari browsers). If the download doesn't seem to work for you from the above URL then try using [FireFox|http://www.mozilla.com/en-US/firefox/]
-{info}
+--- name:notes pipeline:conf
 
 h2. Components list
 JBI components included in this release:
@@ -132,3 +110,12 @@ svn co http://svn.apache.org/repos/asf/servicemix/smx3/tags/servicemix-3.3.1/
 h2. Changelog
 
 For a more detailed view of new features and bug fixes, see the [changelog|https://issues.apache.org/activemq/secure/IssueNavigator.jspa?reset=true&&pid=10950&fixfor=11978&sorter/field=issuekey&sorter/order=DESC]
+
+--- name:content pipeline:ssp
+<%@ val notes : String %>
+
+<h2>Downloads : Apache ServiceMix 3.3.1</h2>
+
+<% render("/downloads/_servicemix3.scaml", Map("version" -> "3.3.1", "archive" -> true)) %>
+
+<%= unescape(notes) %>

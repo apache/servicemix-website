@@ -9,7 +9,7 @@ If you're looking for information on the older Apache ServiceMix 3.x release, yo
 {column}
 [Apache ServiceMix|http://servicemix.apache.org/] is a flexible, open-source integration container that unifies the features and functionality of Apache [ActiveMQ|http://activemq.apache.org], [Camel|http://camel.apache.org], [CXF|http://cxf.apache.org], [ODE|http://ode.apache.org], [Karaf|http://karaf.apache.org] into a powerful runtime platform you can use to build your own integrations solutions. It provides a complete, enterprise ready ESB exclusively powered by OSGi.
 
-It is being released under Apache License.
+It is being released under [Apache License v2|license].
 
 The main features are:
 * reliable messaging with [Apache ActiveMQ|http://activemq.apache.org]

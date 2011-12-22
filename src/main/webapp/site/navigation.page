@@ -1,7 +1,7 @@
 ---
 title: Navigation
 --- pipeline:conf
-h3. [Overview]
+h3. [Overview|index]
 
 - [Home|index]
 - [Downloads|/downloads.html]

@@ -102,3 +102,7 @@ div#downloads div.info {
 div#downloads div.info p.title {
     font-weight: bold;
 }
+
+div#downloads td.both {
+    padding-left: 20%;
+}

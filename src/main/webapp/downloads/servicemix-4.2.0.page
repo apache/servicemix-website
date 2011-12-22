@@ -1,34 +1,6 @@
 ---
 title: ServiceMix 4.2.0
-page_version: 8
-page_creator: ccustine
-page_modifier: lhein
---- pipeline:conf
-h2. Getting the Distributions
-
-{excerpt}
-*Linux/Mac OS X/Unix Downloads*
-
-!/images/tux.png! !/images/freebsd.png! !/images/mac_logo.png!
-
-!/images/tarsm.png|align=left! [Apache ServiceMix 4.2.0 (.tar.gz)|http://archive.apache.org/dist/servicemix/servicemix-4/4.2.0/apache-servicemix-4.2.0.tar.gz] [PGP|http://archive.apache.org/dist/servicemix/servicemix-4/4.2.0/apache-servicemix-4.2.0.tar.gz.asc] [SHA|http://archive.apache.org/dist/servicemix/servicemix-4/4.2.0/apache-servicemix-4.2.0.tar.gz.sha1] [MD5|http://archive.apache.org/dist/servicemix/servicemix-4/4.2.0/apache-servicemix-4.2.0.tar.gz.md5]
-
-!/images/tarsm.png|align=left! [Apache ServiceMix 4.2.0 Sources (.tar.gz)|http://archive.apache.org/dist/servicemix/servicemix-4/4.2.0/apache-servicemix-4.2.0-src.tar.gz] [PGP|http://archive.apache.org/dist/servicemix/servicemix-4/4.2.0/apache-servicemix-4.2.0-src.tar.gz.asc] [SHA|http://archive.apache.org/dist/servicemix/servicemix-4/4.2.0/apache-servicemix-4.2.0-src.tar.gz.sha1] [MD5|http://archive.apache.org/dist/servicemix/servicemix-4/4.2.0/apache-servicemix-4.2.0-src.tar.gz.md5]
-
-*Windows  downloads*
-
-!/images/xp.png!
-
-!/images/zipsm.png|align=left! [Apache ServiceMix 4.2.0 (.zip)|http://archive.apache.org/dist/servicemix/servicemix-4/4.2.0/apache-servicemix-4.2.0.zip] [PGP|http://archive.apache.org/dist/servicemix/servicemix-4/4.2.0/apache-servicemix-4.2.0.zip.asc] [SHA|http://archive.apache.org/dist/servicemix/servicemix-4/4.2.0/apache-servicemix-4.2.0.zip.sha1] [MD5|http://archive.apache.org/dist/servicemix/servicemix-4/4.2.0/apache-servicemix-4.2.0.zip.md5]
-
-!/images/zipsm.png|align=left! [Apache ServiceMix 4.2.0 Sources (.zip)|http://archive.apache.org/dist/servicemix/servicemix-4/4.2.0/apache-servicemix-4.2.0-src.zip] [PGP|http://archive.apache.org/dist/servicemix/servicemix-4/4.2.0/apache-servicemix-4.2.0-src.zip.asc] [SHA|http://archive.apache.org/dist/servicemix/servicemix-4/4.2.0/apache-servicemix-4.2.0-src.zip.sha1] [MD5|http://archive.apache.org/dist/servicemix/servicemix-4/4.2.0/apache-servicemix-4.2.0-src.zip.md5]
-
-{excerpt}
-
-{info:title=The above URLs use redirection}
-The above URLs use the Apache Mirror system to redirect you to a suitable mirror for your download. Some users have experienced issues with some versions of browsers (e.g. some Safari browsers). If the download doesn't seem to work for you from the above URL then try using [FireFox|http://www.mozilla.com/en-US/firefox/]
-{info}
-
+--- name:notes pipeline:conf
 h2. Components list
 JBI components included in this release:
 * Version [2010.01|servicemix-bean 2010.01] of [servicemix-bean]
@@ -287,3 +259,12 @@ svn co http://svn.apache.org/repos/asf/servicemix/smx4/features/tags/features-4.
 h2. Changelog
 
 For a more detailed view of new features and bug fixes, see the [changelog|https://issues.apache.org/activemq/secure/IssueNavigator.jspa?reset=true&pid=11060&fixfor=12083]
+
+--- name:content pipeline:ssp
+<%@ val notes : String %>
+
+<h2>Downloads : Apache ServiceMix 4.2.0</h2>
+
+<% render("/downloads/_servicemix4.scaml", Map("version" -> "4.2.0", "archive" -> true)) %>
+
+<%= unescape(notes) %>
