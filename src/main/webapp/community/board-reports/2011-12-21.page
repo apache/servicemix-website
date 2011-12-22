@@ -1,0 +1,45 @@
+---
+title: Board Report 2011-12-21
+--- pipeline:conf
+
+h2. December 21st, 2011
+
+{code}
+Project Status
+--------------
+While we continue to have an active community with good participation from users on mailing lists, IRC, and issue reporting in Jira,
+we also have lost some of our momentum now that major parts of the functionality are being maintained in related projects
+like Apache Karaf and Apache Camel.
+
+With the community objectives mentioned below, we want to ensure a new and better focus for the Apache ServiceMix project.
+
+Community
+---------
+* Jonathan Anstey has been voted in as a new committer.
+
+Community Objectives
+--------------------
+Our current objective is to release ServiceMix 4.4.0: we improved the project packaging to better meet common use cases and
+we also optimized our project structure to allow for more frequent releases of ServiceMix 4.x in the future.
+We keep on working on the documentation and website to ensure both new and existing users are finding their way around the project more easily.
+
+These changes will help us regain the momentum we need to work towards our second community objective -
+our next major release, Apache ServiceMix 5.x, planned for next year, will be where we start adding the necessary additional features
+to ensure that the project keeps adding value on top of what Apache Karaf and Apache Camel are offering.
+
+Branding Status
+---------------
+- Project Naming And Descriptions : Compliant
+- Website Navigation Links : Compliant
+- Trademark Attributions : Non-compliant, will be compliant in new web site.
+- Logos and Graphics : Current logo is not compliant, new logo will be compliant
+- Project Metadata : Compliant
+
+Releases
+--------
+- ServiceMix Archetypes 2011.01
+- ServiceMix Specs 1.9.0
+- A set of 5 OSGi bundles in September
+- A set of 11 OSGi bundles in October
+- A set of 18 OSGi bundles in December
+{code}
