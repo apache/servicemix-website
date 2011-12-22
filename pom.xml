@@ -184,7 +184,7 @@
                 </executions>
                 <configuration>
                     <remoteServerId>people.apache.org</remoteServerId>
-                    <remoteServerUrl>scp://people.apache.org/www/servicemix.apache.org/staging</remoteServerUrl>
+                    <remoteServerUrl>scp://people.apache.org/www/servicemix.apache.org</remoteServerUrl>
                     <target>${basedir}/src/main/webapp</target>
                 </configuration>
                 <dependencies>
