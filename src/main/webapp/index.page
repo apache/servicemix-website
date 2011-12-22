@@ -1,6 +1,6 @@
 ---
 title: Welcome to Apache ServiceMix!
---- pipeline:conf
+--- name:main pipeline:conf
 {info}
 If you're looking for information on the older Apache ServiceMix 3.x release, you may want to take a look at the [old website|http://servicemix.apache.org/old/home.html]
 {info}
@@ -68,3 +68,8 @@ new TWTR.Widget({
 h2. [News|news]
 
 {include:/news/recent.page}
+
+--- name:content pipeline:scaml
+-@ val main : String
+- unescape(main)
+- attributes("title") = "Welcome to Apache ServiceMix!"
