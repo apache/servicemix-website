@@ -9,7 +9,7 @@ This release packages the following dependencies:
 * Version 1.5.0 of [ServiceMix NMR|http://servicemix.apache.org/SMX4NMR/index.html]
 * Version [2011.02|/downloads/subprojects/servicemix-components-2011.02.html] of the JBI components
 * Version [1.5.0|/downloads/subprojects/servicemix-utils-1.5.0.html] of ServiceMix Utils
-* Version 2.2.3 of [Apache Karaf|http://karaf.apache.org/]
+* Version 2.2.4 of [Apache Karaf|http://karaf.apache.org/]
 * Version [5.5.1|http://activemq.apache.org/activemq-551-release.html] of [ActiveMQ|http://activemq.apache.org]
 * Version 2.8.3 of [Camel|http://camel.apache.org]
 * Version 2.4.4 of [CXF|http://cxf.apache.org]
