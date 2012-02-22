@@ -1,0 +1,54 @@
+---
+title: ServiceMix 4.4.1
+--- name:notes pipeline:conf
+
+h2. OSGi components list
+OSGi/JBI components included in this release:
+
+This release packages the following dependencies:
+* Version 1.5.0 of [ServiceMix NMR|http://servicemix.apache.org/SMX4NMR/index.html]
+* Version [2011.02|/downloads/subprojects/servicemix-components-2011.02.html] of the JBI components
+* Version [1.5.0|/downloads/subprojects/servicemix-utils-1.5.0.html] of ServiceMix Utils
+* Version 2.2.4 of [Apache Karaf|http://karaf.apache.org/]
+* Version [5.5.1|http://activemq.apache.org/activemq-551-release.html] of [ActiveMQ|http://activemq.apache.org]
+* Version 2.8.4 of [Camel|http://camel.apache.org]
+* Version 2.4.6 of [CXF|http://cxf.apache.org]
+
+You can use it together with
+* Version 4.5 of the Maven plugins
+* Version 2011.02 of the archetypes
+
+h2. Release notes
+
+h3. Bug
+* [SMX4-1024|http://issues.apache.org/active/browse/SMX4-1024] - Incorrect Apache XML Security Version in POM
+* [SMX4-1094|http://issues.apache.org/active/browse/SMX4-1094] - feature connector can't be load cause aries.version is not defined
+
+h3. Improvement
+* [SMX4-1026|http://issues.apache.org/active/browse/SMX4-1026] - Upgrade to CXF 2.4.5
+* [SMX4-1030|http://issues.apache.org/active/browse/SMX4-1030] - Upgrade to Camel 2.8.4
+* [SMX4-1037|http://issues.apache.org/active/browse/SMX4-1037] - some bundle miss dependency="true" in cxf-jaxrs feature
+* [SMX4-1044|http://issues.apache.org/active/browse/SMX4-1044] - Upgrade to CXF 2.4.6
+
+h3. Task
+* [SMX4-1031|http://issues.apache.org/active/browse/SMX4-1031] - Release Apache ServiceMix 4.4.1
+* [SMX4-1082|http://issues.apache.org/active/browse/SMX4-1082] - Upgrade to CXF 2.4.6
+
+h2. SVN Tag Checkout
+
+{code}
+svn co http://svn.apache.org/repos/asf/servicemix/smx4/features/tags/features-4.4.1/
+{code}
+
+h2. Changelog
+
+For a more detailed view of new features and bug fixes, see the [changelog|https://issues.apache.org/jira/browse/SMX4/fixforversion/12319445]
+
+--- name:content pipeline:ssp
+<%@ val notes : String %>
+
+<h2>Downloads : Apache ServiceMix 4.4.1</h2>
+
+<% render("/downloads/_servicemix4.scaml", Map("version" -> "4.4.1")) %>
+
+<%= unescape(notes) %>

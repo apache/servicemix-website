@@ -191,6 +191,6 @@ For a more detailed view of new features and bug fixes, see the [changelog|https
 
 <h2>Downloads : Apache ServiceMix 4.4.0</h2>
 
-<% render("/downloads/_servicemix4.scaml", Map("version" -> "4.4.0")) %>
+<% render("/downloads/_servicemix4.scaml", Map("version" -> "4.4.0", "archive" -> true)) %>
 
 <%= unescape(notes) %>

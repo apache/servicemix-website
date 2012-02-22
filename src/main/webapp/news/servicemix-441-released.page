@@ -1,0 +1,9 @@
+---
+title: ServiceMix 4.4.1 Released
+--- pipeline:conf
+
+h2. ServiceMix 4.4.1 released
+
+The ServiceMix team is pleased to announce the availability of ServiceMix 4.4.1.
+This is a minor release of ServiceMix 4.4.x to pick up new versions of dependencies: Camel 2.8.4 and CXF 2.4.6.
+For more information, please see the [release notes|/downloads/servicemix-4.4.1]
