@@ -1,0 +1,55 @@
+---
+title: ServiceMix 4.4.2
+--- name:notes pipeline:conf
+
+h2. OSGi components list
+OSGi/JBI components included in this release:
+
+This release packages the following dependencies:
+* Version 1.5.0 of [ServiceMix NMR|http://servicemix.apache.org/SMX4NMR/index.html]
+* Version [2011.02|/downloads/subprojects/servicemix-components-2011.02.html] of the JBI components
+* Version [1.5.0|/downloads/subprojects/servicemix-utils-1.5.0.html] of ServiceMix Utils
+* Version 2.2.4 of [Apache Karaf|http://karaf.apache.org/]
+* Version [5.5.1|http://activemq.apache.org/activemq-551-release.html] of [ActiveMQ|http://activemq.apache.org]
+* Version 2.8.5 of [Camel|http://camel.apache.org]
+* Version 2.4.6 of [CXF|http://cxf.apache.org]
+
+You can use it together with
+* Version 4.5 of the Maven plugins
+* Version 2011.02 of the archetypes
+
+h2. Release notes
+
+h3. Improvement
+* [SMX4-1120|http://issues.apache.org/active/browse/SMX4-1120] - remove some uncessary features
+
+h3. Task
+* [SMX4-1109|http://issues.apache.org/active/browse/SMX4-1109] - upgrade to wss4j 1.6.5 and xmlsec 1.5.1
+* [SMX4-1143|http://issues.apache.org/active/browse/SMX4-1143] - Upgrade to Camel 2.8.5
+
+h3. Wish
+* [SMX4-944|http://issues.apache.org/active/browse/SMX4-944] - Provide a SMX test jar
+
+h2. SVN Tag Checkout
+
+{code}
+svn co http://svn.apache.org/repos/asf/servicemix/smx4/features/tags/features-4.4.2/
+{code}
+
+h2. Changelog
+
+For a more detailed view of new features and bug fixes, see the [changelog|https://issues.apache.org/jira/browse/SMX4/fixforversion/12321271]
+
+--- name:content pipeline:ssp
+<%@ val notes : String %>
+
+<h2>Downloads : Apache ServiceMix 4.4.2</h2>
+
+<div class="warningPanel">
+This page contains information about a version of Apache ServiceMix that has not yet been released.
+Please visit <a href="<%= uri("/downloads.servicemix.html")%>">this page</a> for information about the latest release.
+</div>
+
+<% render("/downloads/_servicemix4.scaml", Map("version" -> "4.4.2")) %>
+
+<%= unescape(notes) %>
