@@ -21,6 +21,8 @@ div#downloads {
 
 div#downloads table {
     width: 90%;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 div#downloads table td {
@@ -91,6 +93,11 @@ div#downloads p.keys {
     padding-left: 25px;
 }
 
+div#downloads div {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
 div#downloads div.info {
     margin-top: 30px;
     border: 1px solid #3c78b5;
@@ -99,7 +106,15 @@ div#downloads div.info {
     width: 90%;
 }
 
-div#downloads div.info p.title {
+div#downloads div.alert {
+    margin-bottom: 30px;
+    border: 1px solid #C00;
+    background-color: #FFCCCC;
+    padding: 0px 6px 0px 6px;
+    width: 90%;
+}
+
+div#downloads p.title {
     font-weight: bold;
 }
 
