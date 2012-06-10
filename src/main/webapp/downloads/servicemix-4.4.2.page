@@ -45,11 +45,6 @@ For a more detailed view of new features and bug fixes, see the [changelog|https
 
 <h2>Downloads : Apache ServiceMix 4.4.2</h2>
 
-<div class="warningPanel">
-This page contains information about a version of Apache ServiceMix that has not yet been released.
-Please visit <a href="<%= uri("/downloads.servicemix.html")%>">this page</a> for information about the latest release.
-</div>
-
 <% render("/downloads/_servicemix4.scaml", Map("version" -> "4.4.2")) %>
 
 <%= unescape(notes) %>
