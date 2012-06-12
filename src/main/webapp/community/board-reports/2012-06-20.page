@@ -7,11 +7,13 @@ h2. June 2Oth, 2012
 {code}
 Project Status
 --------------
-While we continue to have an active community with good participation from users on mailing lists, IRC, and issue reporting
-in JIRA, we also have lost some of our momentum now that major parts of the functionality are being maintained in related
-projects like Apache Karaf and Apache Camel.
+While we continue to have an active community with good participation from
+users on mailing lists, IRC, and issue reporting in JIRA, we also have lost
+some of our momentum now that major parts of the functionality are being
+maintained in related projects like Apache Karaf and Apache Camel.
 
-With the community objectives mentioned below, we want to ensure a new and better focus for the Apache ServiceMix project.
+With the community objectives mentioned below, we want to ensure a new and
+better focus for the Apache ServiceMix project.
 
 Community
 ---------
@@ -19,32 +21,38 @@ No changes since last report.
 
 Community Objectives
 --------------------
-One of the things we set out to do was to improve our release schedule in order to gain some momentum again.
-With the initial 4.4.0 release out in December last year, we managed to get two fix releases out since then.
-Our current objective is to work on a ServiceMix 4.5.0 release and then start doing fix releases on that version as well
-to ensure we keep our steady delivery schedule.
+One of the things we set out to do was to improve our release schedule in
+order to gain some momentum again.  With the initial 4.4.0 release out in
+December last year, we managed to get two fix releases out since then.
+Our current objective is to work on a ServiceMix 4.5.0 release and then
+start doing fix releases on that version as well to ensure we keep our
+steady delivery schedule.
 
-We keep on working on the documentation and website to ensure both new and existing users are finding their way around
-the project more easily.  One of the challenges there was the mix of ServiceMix 3.x and ServiceMix 4.x related content.
+We keep on working on the documentation and website to ensure both new and
+existing users are finding their way around the project more easily.  One
+of the challenges there was the mix of ServiceMix 3.x and ServiceMix 4.x
+related content.
 
-Therefore, we recently had a discussion on the mailing list to put the focus on ServiceMix 4.x entirely and starting to
-communicate to our user base that we are no longer planning lots of new activity on the ServiceMix 3.x branches.  We
-came up with a plan to do 2 more 3.4.x fix releases until the end of 2012, but no new minor releases are being planned
-at the moment.
+Therefore, we recently had a discussion on the mailing list to put the focus
+on ServiceMix 4.x entirely and starting to communicate to our user base that
+we are no longer planning lots of new activity on the ServiceMix 3.x
+branches.  We came up with a plan to do 2 more 3.4.x fix releases until the
+end of 2012, but no new minor releases are being planned at the moment.
 
 Branding Status
 ---------------
 - Project Naming And Descriptions : Compliant
 - Website Navigation Links : Compliant
 - Trademark Attributions : Compliant
-- Logos and Graphics : Current logo is not compliant, new logo will be compliant
+- Logos and Graphics : Current logo is not compliant, mail sent to dev list
+                       to find volunteer to update the logos
 - Project Metadata : Compliant
 
 Releases
 --------
 - A set of 13 OSGi bundles in March
 - A set of 10 OSGi bundles in May
-- A set of 24 OSGi bundles in June (vote pending)
+- A set of 24 OSGi bundles in June
 - ServiceMix Specs 2.0.0 in June (vote pending)
 - ServiceMix 4.4.2 in June
 {code}
