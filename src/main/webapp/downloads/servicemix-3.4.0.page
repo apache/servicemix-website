@@ -117,17 +117,15 @@ h3. Test
 * [SM-1306|http://issues.apache.org/active/browse/SM-1306] - Improve success ratio of timing sensitive tests
 * [SM-1968|http://issues.apache.org/active/browse/SM-1968] - Use dynamic port for tests
 
-
-
 h2. SVN Tag Checkout
 
 {code}
-svn co http://svn.apache.org/repos/asf/servicemix/smx4/features/tags/features-4.4.0/
+svn co http://svn.apache.org/repos/asf/servicemix/smx3/tags/servicemix-3.4.0/
 {code}
 
 h2. Changelog
 
-For a more detailed view of new features and bug fixes, see the [changelog|https://issues.apache.org/jira/secure/IssueNavigator.jspa?reset=true&jqlQuery=project+%3D+SMX4+AND+fixVersion+%3D+%224.4.0%22+AND+status+%3D+Resolved+ORDER+BY+priority+DESC&mode=hide]
+For a more detailed view of new features and bug fixes, see the [changelog|https://issues.apache.org/jira/secure/IssueNavigator.jspa?reset=true&jqlQuery=project+%3D+SM+AND+fixVersion+%3D+%223.4.0%22+AND+status+%3D+Resolved+ORDER+BY+priority+DESC&mode=hide]
 
 --- name:content pipeline:ssp
 <%@ val notes : String %>

@@ -1,0 +1,12 @@
+---
+title: ServiceMix Components 2011.02.1
+--- pipeline:conf
+
+h2. Release Notes: ServiceMix Components 2011.02.1
+
+h3. Bug
+* [SMXCOMP-932|http://issues.apache.org/active/browse/SMXCOMP-932] - Upgrade to Camel 2.8.5
+* [SMXCOMP-933|http://issues.apache.org/active/browse/SMXCOMP-933] - Upgrade to CXF 2.4.8
+
+h3. Improvement
+* [SMXCOMP-935|http://issues.apache.org/active/browse/SMXCOMP-935] - Upgrade to XBean 3.11.1

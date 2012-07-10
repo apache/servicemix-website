@@ -1,0 +1,52 @@
+---
+title: ServiceMix 3.4.1
+--- name:notes pipeline:conf
+
+h2. Dependency versions
+
+This release packages the following dependencies:
+* Version [2011.02.1|/downloads/subprojects/servicemix-components-2011.02.1.html] of the JBI components
+* Version [1.5.0|/downloads/subprojects/servicemix-utils-1.5.0.html] of ServiceMix Utils
+* Version [5.5.1|http://activemq.apache.org/activemq-551-release.html] of [ActiveMQ|http://activemq.apache.org]
+* Version 2.8.5 of [Camel|http://camel.apache.org]
+* Version 2.4.8 of [CXF|http://cxf.apache.org]
+
+You can use it together with
+* Version 4.5 of the Maven plugins
+* Version 2011.02 of the archetypes
+
+h2. Release notes
+
+h3. Bug
+* [SM-2115|http://issues.apache.org/active/browse/SM-2115] - ensure cxf servlet transport and cxf bc can share same bus out of box when deploy smx-cxf-bc in web container
+* [SM-2141|http://issues.apache.org/active/browse/SM-2141] - Leak in servicemix-eip when handling late responses
+* [SM-2142|http://issues.apache.org/active/browse/SM-2142] - Memory leak when deploying ServiceMix as WAR in Tomcat
+* [SM-2150|http://issues.apache.org/active/browse/SM-2150] - Building of ServiceMix :: Samples :: Loan Broker :: fails
+* [SM-2153|http://issues.apache.org/active/browse/SM-2153] - PropertiesLoginModule always leave file handler open 
+* [SM-2158|http://issues.apache.org/active/browse/SM-2158] - "too many open files" exception causes undeployment of all components
+
+h3. Improvement
+* [SM-2131|http://issues.apache.org/active/browse/SM-2131] - Start script improvements: config file, better handling of file limits, permgen
+* [SM-2156|http://issues.apache.org/active/browse/SM-2156] - Upgrade to XBean 3.11.1
+
+h3. Task
+* [SM-2159|http://issues.apache.org/active/browse/SM-2159] - Upgrade to ServiceMix Components 2011.02.1
+
+h2. SVN Tag Checkout
+
+{code}
+svn co http://svn.apache.org/repos/asf/servicemix/smx3/tags/servicemix-3.4.1
+{code}
+
+h2. Changelog
+
+For a more detailed view of new features and bug fixes, see the [changelog|https://issues.apache.org/jira/secure/IssueNavigator.jspa?reset=true&jqlQuery=project+%3D+SM+AND+fixVersion+%3D+%223.4.1%22+AND+status+%3D+Resolved+ORDER+BY+priority+DESC&mode=hide]
+
+--- name:content pipeline:ssp
+<%@ val notes : String %>
+
+<h2>Downloads : Apache ServiceMix 3.4.1</h2>
+
+<% render("/downloads/_servicemix3.scaml", Map("version" -> "3.4.1")) %>
+
+<%= unescape(notes) %>
