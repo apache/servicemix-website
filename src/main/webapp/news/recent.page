@@ -2,6 +2,7 @@
 title: Apache ServiceMix Recent News
 --- pipeline:conf
 
+{include:servicemix-341-released}
 {include:servicemix-442-released}
 {include:servicemix-441-released}
 {include:servicemix-440-released}

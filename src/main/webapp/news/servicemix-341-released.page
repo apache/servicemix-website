@@ -1,0 +1,9 @@
+---
+title: ServiceMix 3.4.1 Released
+--- pipeline:conf
+
+h2. ServiceMix 3.4.1 released
+
+The ServiceMix team is pleased to announce the availability of ServiceMix 3.4.1.
+This is a minor release of ServiceMix and contains update of dependency projects (Camel and CXF).
+For more information, please see the [release notes|/downloads/servicemix-3.4.1]
