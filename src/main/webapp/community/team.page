@@ -1,58 +1,59 @@
 ---
 title: Team
-page_version: 122
-page_creator: jstrachan
-page_modifier: joed
 --- pipeline:conf
 This page lists the people who belong to the core team. By all means add yourself to the list as a contributor. If you are using ServiceMix please add yourself to the [Users page|Users].
 
 h3. Committers
 
 || Name || ID || Organisation || PMC Member ||
-| Aaron Mulder | | | (/) |
+| Aaron Mulder | | | (_emeritus_) |
+| Adrian Co | aco |  | !/images/check.gif! |
 | Alan D. Cabrera | maguro |  | |
 | Alex Boisvert | boisvert | | |
-| Adrian Co | aco |  | (/) |
+| Andrea Zoppello | azoppello | | |
 | Andreas Oberhack | andreas | [Softwarefabrik GmbH |http://www.softwarefabrik.biz/] | |
-| [Bruce Snyder|http://bsnyderblog.blogspot.com/] | bsnyder | [SpringSource|http://springsource.com/] | (/) |
-| [Chris Custine|http://blog.organicelement.com/] | ccustine | [FuseSource |http://fusesource.com/] | (/) |
+| [Bruce Snyder|http://bsnyderblog.blogspot.com/] | bsnyder | [SpringSource|http://springsource.com/] | !/images/check.gif! |
+| Charles Mouillard | cmouillard | [FuseSource |http://fusesource.com/] |  |
+| [Chris Custine|http://blog.organicelement.com/] | ccustine | [FuseSource |http://fusesource.com/] | !/images/check.gif! |
 | Dain Sundstrom | dain | [IBM|http://www.ibm.com] | |
 | Dan Diephouse | dandiep | [EnvoiSolutions|http://envoisolutions.com/] | |
 | Darwin Flores | dflores |  | |
 | David Blevins | dblevins | [IBM|http://www.ibm.com] | |
-| David Jencks | djencks | [IBM|http://www.ibm.com] | (/) |
+| David Jencks | djencks | [IBM|http://www.ibm.com] | !/images/check.gif! |
 | Edell Nolan | edelln | [FuseSource |http://fusesource.com/] | |
 | Eoghan Glynn | eglynn | [FuseSource |http://fusesource.com/] | |
 | Eric Dofonsou | ewrick | \\ | |
 | Frederick Oconer | foconer |  | |
-| Freeman Fang | ffang | [FuseSource|http://fusesource.com/] | (/) |
+| Freeman Fang | ffang | [FuseSource|http://fusesource.com/] | !/images/check.gif! |
 | George Gastaldi | gastaldi | \\ | |
-| Gert Vanthienen | gertv | [anova|http://www.anova.be] | (/) |
+| Gianfranco Boccalon | gboccalon | | |
+| Gert Vanthienen | gertv | [anova|http://www.anova.be] | !/images/check.gif! |
 | Grant McDonald | grantm | \\ | |
 | Greg Wilkins | gregw | [MortBay|http://mortbay.com] | |
-| [Guillaume Nodet|http://gnodet.blogspot.com] | gnodet | [FuseSource |http://fusesource.com/] | (/) |
-| [Hiram Chirino|http://hiramchirino.com] | chirino | [FuseSource |http://fusesource.com/] | (/) |
+| [Guillaume Nodet|http://gnodet.blogspot.com] | gnodet | [FuseSource |http://fusesource.com/] | !/images/check.gif! |
+| [Hiram Chirino|http://hiramchirino.com] | chirino | [FuseSource |http://fusesource.com/] | !/images/check.gif! |
 | Ioannis Canellos | iocanel | [Upstream S.A.|http://corp.upstreamsystems.com/]  | |
-| Jacek Laskowski | | | (/) |
+| Jacek Laskowski | | | !/images/check.gif! |
 | Jan Bartel | janb | [MortBay|http://mortbay.com] | |
-| James Strachan | jstrachan | [FuseSource |http://fusesource.com/] | |
+| James Strachan | jstrachan | [FuseSource |http://fusesource.com/] | !/images/check.gif! |
 | [Jamie Goodyear|http://icodebythesea.blogspot.com] | jgoodyear | [Savoir Technologies|http://www.savoirtech.com/] | |
 | Jason van Zyl | jason |  | |
-| [Jean-Baptiste Onofr�|http://www.nanthrax.net] | jbonofre | [Fimasys|http://www.fimasys.com] | (/) |
-| Jeff Genender | jgenender | [Savoir Technologies|http://www.savoirtech.com/] | (/) |
+| [Jean-Baptiste Onofré|http://www.nanthrax.net] | jbonofre | [Fimasys|http://www.fimasys.com] | !/images/check.gif! |
+| Jeff Genender | jgenender | [Savoir Technologies|http://www.savoirtech.com/] | !/images/check.gif! |
+|[Jeff Yu|http://jeffyuchang.blogspot.com]| jeffyu| | |
 | Johan Edstrom | joed | [Savoir Technologies|http://www.savoirtech.com/] | |
-| [Jon Anstey|http://janstey.blogspot.com] | janstey | [FuseSource |http://fusesource.com/] | (/) |^M
-| Jonas Lim | jlim | | (/) |
+| [Jon Anstey|http://janstey.blogspot.com] | janstey | [FuseSource |http://fusesource.com/] | !/images/check.gif! |
+| Jonas Lim | jlim | | !/images/check.gif! |
 | Joseph Gapuz | jgapuz |  | |
-| [Lars Heinemann|http://lhein.blogspot.com/] | lhein | [FuseSource |http://fusesource.com/] | (/) |
-| Matt Hogstrom | | [IBM|http://www.ibm.com] | (/) |
+| Kristian Köhler | kkoehler | | |
+| [Lars Heinemann|http://lhein.blogspot.com/] | lhein | [FuseSource |http://fusesource.com/] | !/images/check.gif! |
+| Matt Hogstrom | | [IBM|http://www.ibm.com] | !/images/check.gif! |
 | Merwin Yap | myap |  | |
 | Patrick Villacorta | pvillacorta |  | |
-| Philip Dodds | pdodds | [DevZuz |http://www.devzuz.com/] | (/) |
-| [Rob Davies|http://rajdavies.blogspot.com/] | rajdavies | [FuseSource |http://fusesource.com/] | (/) |
-| Roger Menday | rogerm | [Forschungszentrum J�lich|http://www.fz-juelich.de/] | |
-| Thomas Termin | tterm | [Blue Elephant Systems|http://www.blue-elephant-systems.com/] | (/) |
-|[Jeff Yu|http://jeffyuchang.blogspot.com]| jeffyu| | |
+| Philip Dodds | pdodds | [DevZuz |http://www.devzuz.com/] | !/images/check.gif! |
+| [Rob Davies|http://rajdavies.blogspot.com/] | rajdavies | [FuseSource |http://fusesource.com/] | !/images/check.gif! |
+| Roger Menday | rogerm | [Forschungszentrum Jülich|http://www.fz-juelich.de/] | |
+| Thomas Termin | tterm | [Blue Elephant Systems|http://www.blue-elephant-systems.com/] | !/images/check.gif! |
 |[Ulhas Bhole|http://ulhasbhole.blogspot.com] | ulhasbhole | [FuseSource |http://fusesource.com/] | |
 
 h3. Contributors
@@ -63,7 +64,7 @@ h3. Contributors
 | Andreas Held | |
 | Andrea Zoppello | [Engineering Ingegneria Informatica S.p.A.|http://www.eng.it/] |
 | Charles Souillard | Bull R&D |
-| Christian Schneider | [EnBW Energie Baden-W�rttemberg AG| http://www.enbw.com] [Homepage|http://www.liquid-reality.de]|
+| Christian Schneider | [EnBW Energie Baden-Württemberg AG| http://www.enbw.com] [Homepage|http://www.liquid-reality.de]|
 | Christopher Steinmeyer | |
 | David Grigglestone | |
 | Dave Stanley | [FuseSource |http://fusesource.com/] |
@@ -74,7 +75,7 @@ h3. Contributors
 | Frank Trietsch | |
 | Georg Dembowski | |
 | Gianfranco Boccalon | [Engineering Ingegneria Informatica S.p.A.|http://www.eng.it/] |
-| Gr̩goire A. Autric | [Capgemini France|http://www.capgemini.fr] |
+| Grégoire A. Autric | [Capgemini France|http://www.capgemini.fr] |
 | James Lorenzen | |
 | Jamie McCrindle | |
 | John Muth | |
