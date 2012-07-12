@@ -7,7 +7,7 @@ h1. Documentation Project
 The ServiceMix documentation project aims to build a set of manuals for ServiceMix using [Scalate|http://scalate.fusesource.org].
 
 It's currently used to generate the contents for:
-- ServiceMix 4.3-SNAPSHOT: [http://servicemix.apache.org/docs/4.3.0-SNAPSHOT/]
+- ServiceMix 4.4.0: [http://servicemix.apache.org/docs/4.4.0/]
 
 --- name:building pipeline:conf
 
