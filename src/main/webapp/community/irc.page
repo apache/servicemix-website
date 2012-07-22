@@ -1,41 +1,31 @@
 ---
 title: IRC
-page_version: 9
-page_creator: gnodet
-page_modifier: gertvanthienen
---- pipeline:conf
-h1. IRC
+--- pipeline:markdown
 
-Although the preferred means of communication regarding ServiceMix is always the [mailing lists|Mailing lists], you can also find most of us hanging out on the [#servicemix channel|irc://irc.codehaus.org/servicemix] on the Codehaus IRC server. Many of us hang out there while we're working because it's a good place to have quick chats.
+# IRC
 
-h3. Connecting to IRC
+Although the preferred means of communication regarding ServiceMix is always the [mailing lists](/community/mailing-lists.html), you can also find most of us hanging out on the [#servicemix channel](irc://irc.codehaus.org/servicemix) on the Codehaus IRC server. Many of us hang out there while we're working because it's a good place to have quick chats.
 
-Below is the connection information: 
+## Connecting to IRC
 
-{panel}
-*server:* irc.codehaus.org
-*port:* 6667
-*channel:* #servicemix 
-{panel}
+Below is the connection information:
 
-h2. Use the Mibbit IRC Client
+* **server**: `irc.codehaus.org`
+* **port**: `6667`
+* **channel**: `#servicemix
 
-If you aren't a habitual IRC user, feel free to take a hit off the Mibbit IRC client by entering an optional nick and clicking the connect button below, or you can {html}<a href='#servicemix' onclick='window.open("http://embed.mibbit.com/?server=irc.codehaus.org&channel=%23servicemix&nick=wiki_user&chatOutputShowTimes=true","","width=640,height=480")'>
-open a popout IRC client</a>
-{html}
+### Use the Mibbit IRC Client
 
-{html}
-<iframe width="600" height="380" scrolling="no" frameborder="0"
- src="http://embed.mibbit.com/?server=irc.codehaus.org&channel=%23servicemix&nick=wiki_user&chatOutputShowTimes=true">
+If you aren't a habitual IRC user, feel free to take a hit off the Mibbit IRC client by entering an optional nick and clicking the connect button below, or you can
+<a href='#servicemix' onclick='window.open("http://embed.mibbit.com/?server=irc.codehaus.org&channel=%23servicemix&nick=wiki_user&chatOutputShowTimes=true","","width=640,height=480")'>open a popout IRC client</a>
+
+<iframe width="600" height="380" scrolling="no" frameborder="0" src="http://embed.mibbit.com/?server=irc.codehaus.org&channel=%23servicemix&nick=wiki_user&chatOutputShowTimes=true">
 </iframe>
-{html}
 
-h2. Other IRC Clients 
+### Other IRC Clients
 
-To connect to the Codehaus IRC server, you'll need an IRC client. There's a decent [list of IRC clients on Wikipedia|http://en.wikipedia.org/wiki/List_of_IRC_clients] along with some feature comparisons and other information. 
+To connect to the Codehaus IRC server, you'll need an IRC client. There's a decent [list of IRC clients on Wikipedia](http://en.wikipedia.org/wiki/List_of_IRC_clients) along with some feature comparisons and other information.
 
-h2. IRC Log 
+## IRC Log
 
-The IRC log is [publicly available for browsing|http://irclogs.dankulp.com/logs/irclogger_logs/servicemix].
-
-
+The IRC log is [publicly available for browsing](http://irclogs.dankulp.com/logs/irclogger_logs/servicemix).
