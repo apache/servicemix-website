@@ -5,6 +5,10 @@ title: Board Report 2012-06-20
 h2. June 2Oth, 2012
 
 {code}
+Apache ServiceMix is a flexible, open-source integration container that
+unifies the features and functionality of Apache ActiveMQ, Camel, CXF and
+Karaf to provide a complete, enterprise-ready ESB powered by OSGi.
+
 Project Status
 --------------
 While we continue to have an active community with good participation from
