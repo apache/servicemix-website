@@ -9,11 +9,11 @@ page_modifier: gertvanthienen
 
 
 *Bug*
-    * [SMXCOMP-111|http://issues.apache.org/active/browse/SMXCOMP-111] - When deployed in Smx4, the JBI SUs do not have access to the whole JRE
-    * [SMXCOMP-113|http://issues.apache.org/active/browse/SMXCOMP-113] - Components jars should not include the jbi descriptor
-    * [SMXCOMP-458|http://issues.apache.org/active/browse/SMXCOMP-458] - Malformed manifest.mf  is generated for the servicemix-http bundle
-    * [SMXCOMP-478|http://issues.apache.org/active/browse/SMXCOMP-478] - OSGi bundles for components should not require the jaxp-ri bundle
+    * [SMXCOMP-111|http://issues.apache.org/jira/browse/SMXCOMP-111] - When deployed in Smx4, the JBI SUs do not have access to the whole JRE
+    * [SMXCOMP-113|http://issues.apache.org/jira/browse/SMXCOMP-113] - Components jars should not include the jbi descriptor
+    * [SMXCOMP-458|http://issues.apache.org/jira/browse/SMXCOMP-458] - Malformed manifest.mf  is generated for the servicemix-http bundle
+    * [SMXCOMP-478|http://issues.apache.org/jira/browse/SMXCOMP-478] - OSGi bundles for components should not require the jaxp-ri bundle
 
 *Improvement*
-    * [SMXCOMP-115|http://issues.apache.org/active/browse/SMXCOMP-115] - Patch available for upgrading components to Spring 2.5.6
-    * [SMXCOMP-116|http://issues.apache.org/active/browse/SMXCOMP-116] - Upgrade to spring osgi 1.2.0-m2
+    * [SMXCOMP-115|http://issues.apache.org/jira/browse/SMXCOMP-115] - Patch available for upgrading components to Spring 2.5.6
+    * [SMXCOMP-116|http://issues.apache.org/jira/browse/SMXCOMP-116] - Upgrade to spring osgi 1.2.0-m2

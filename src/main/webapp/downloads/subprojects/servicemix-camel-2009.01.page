@@ -9,29 +9,29 @@ page_modifier: gertvanthienen
 
 
 *Bug*
-    * [SMXCOMP-111|http://issues.apache.org/active/browse/SMXCOMP-111] - When deployed in Smx4, the JBI SUs do not have access to the whole JRE
-    * [SMXCOMP-113|http://issues.apache.org/active/browse/SMXCOMP-113] - Components jars should not include the jbi descriptor
-    * [SMXCOMP-231|http://issues.apache.org/active/browse/SMXCOMP-231] - DeploymentException on shutdown when multiple routes target the same endpoint
-    * [SMXCOMP-232|http://issues.apache.org/active/browse/SMXCOMP-232] - smx-camel errorHandler w/handleFault="true" should consistently throw JBIFaultException and not CamelException when mep is robust-in-only
-    * [SMXCOMP-234|http://issues.apache.org/active/browse/SMXCOMP-234] - When stopping a bundle with a camel route from("jbi:xxx"), the jbi endpoint is not unregistered when the bundle is stopped
-    * [SMXCOMP-453|http://issues.apache.org/active/browse/SMXCOMP-453] - smx-camel errorHandler w/handleFault="true" does not "handle" JBIFault thrown by smx-cxf-bc provider
-    * [SMXCOMP-458|http://issues.apache.org/active/browse/SMXCOMP-458] - Malformed manifest.mf  is generated for the servicemix-http bundle
-    * [SMXCOMP-462|http://issues.apache.org/active/browse/SMXCOMP-462] - change osgi spring file for servicemix-camel according to the recent servicemix-camel refactor(SMXCOMP-455Create JbiComponent per SU (camel context))
-    * [SMXCOMP-471|http://issues.apache.org/active/browse/SMXCOMP-471] - Deploying camel routes involving JBI endpoints in ServiceMix 4 does not work anymore
-    * [SMXCOMP-478|http://issues.apache.org/active/browse/SMXCOMP-478] - OSGi bundles for components should not require the jaxp-ri bundle
+    * [SMXCOMP-111|http://issues.apache.org/jira/browse/SMXCOMP-111] - When deployed in Smx4, the JBI SUs do not have access to the whole JRE
+    * [SMXCOMP-113|http://issues.apache.org/jira/browse/SMXCOMP-113] - Components jars should not include the jbi descriptor
+    * [SMXCOMP-231|http://issues.apache.org/jira/browse/SMXCOMP-231] - DeploymentException on shutdown when multiple routes target the same endpoint
+    * [SMXCOMP-232|http://issues.apache.org/jira/browse/SMXCOMP-232] - smx-camel errorHandler w/handleFault="true" should consistently throw JBIFaultException and not CamelException when mep is robust-in-only
+    * [SMXCOMP-234|http://issues.apache.org/jira/browse/SMXCOMP-234] - When stopping a bundle with a camel route from("jbi:xxx"), the jbi endpoint is not unregistered when the bundle is stopped
+    * [SMXCOMP-453|http://issues.apache.org/jira/browse/SMXCOMP-453] - smx-camel errorHandler w/handleFault="true" does not "handle" JBIFault thrown by smx-cxf-bc provider
+    * [SMXCOMP-458|http://issues.apache.org/jira/browse/SMXCOMP-458] - Malformed manifest.mf  is generated for the servicemix-http bundle
+    * [SMXCOMP-462|http://issues.apache.org/jira/browse/SMXCOMP-462] - change osgi spring file for servicemix-camel according to the recent servicemix-camel refactor(SMXCOMP-455Create JbiComponent per SU (camel context))
+    * [SMXCOMP-471|http://issues.apache.org/jira/browse/SMXCOMP-471] - Deploying camel routes involving JBI endpoints in ServiceMix 4 does not work anymore
+    * [SMXCOMP-478|http://issues.apache.org/jira/browse/SMXCOMP-478] - OSGi bundles for components should not require the jaxp-ri bundle
 
 *Improvement*
-    * [SMXCOMP-15|http://issues.apache.org/active/browse/SMXCOMP-15] - Consider adding a placeholder shared library to the servicemix-camel jbi component
-    * [SMXCOMP-115|http://issues.apache.org/active/browse/SMXCOMP-115] - Patch available for upgrading components to Spring 2.5.6
-    * [SMXCOMP-116|http://issues.apache.org/active/browse/SMXCOMP-116] - Upgrade to spring osgi 1.2.0-m2
-    * [SMXCOMP-236|http://issues.apache.org/active/browse/SMXCOMP-236] - Upgrade to camel 1.5.0
-    * [SMXCOMP-238|http://issues.apache.org/active/browse/SMXCOMP-238] - Upgrade to Camel 1.5
-    * [SMXCOMP-239|http://issues.apache.org/active/browse/SMXCOMP-239] - Improve error handling in smx-camel
-    * [SMXCOMP-455|http://issues.apache.org/active/browse/SMXCOMP-455] - Create JbiComponent per SU (camel context)
+    * [SMXCOMP-15|http://issues.apache.org/jira/browse/SMXCOMP-15] - Consider adding a placeholder shared library to the servicemix-camel jbi component
+    * [SMXCOMP-115|http://issues.apache.org/jira/browse/SMXCOMP-115] - Patch available for upgrading components to Spring 2.5.6
+    * [SMXCOMP-116|http://issues.apache.org/jira/browse/SMXCOMP-116] - Upgrade to spring osgi 1.2.0-m2
+    * [SMXCOMP-236|http://issues.apache.org/jira/browse/SMXCOMP-236] - Upgrade to camel 1.5.0
+    * [SMXCOMP-238|http://issues.apache.org/jira/browse/SMXCOMP-238] - Upgrade to Camel 1.5
+    * [SMXCOMP-239|http://issues.apache.org/jira/browse/SMXCOMP-239] - Improve error handling in smx-camel
+    * [SMXCOMP-455|http://issues.apache.org/jira/browse/SMXCOMP-455] - Create JbiComponent per SU (camel context)
 
 
 
 *Test*
-    * [SMXCOMP-241|http://issues.apache.org/active/browse/SMXCOMP-241] - Added a simple unit test to verify the service-camel component will use different camel context for different su
+    * [SMXCOMP-241|http://issues.apache.org/jira/browse/SMXCOMP-241] - Added a simple unit test to verify the service-camel component will use different camel context for different su
 
 

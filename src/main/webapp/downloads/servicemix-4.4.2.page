@@ -21,14 +21,14 @@ You can use it together with
 h2. Release notes
 
 h3. Improvement
-* [SMX4-1120|http://issues.apache.org/active/browse/SMX4-1120] - remove some uncessary features
+* [SMX4-1120|http://issues.apache.org/jira/browse/SMX4-1120] - remove some uncessary features
 
 h3. Task
-* [SMX4-1109|http://issues.apache.org/active/browse/SMX4-1109] - upgrade to wss4j 1.6.5 and xmlsec 1.5.1
-* [SMX4-1143|http://issues.apache.org/active/browse/SMX4-1143] - Upgrade to Camel 2.8.5
+* [SMX4-1109|http://issues.apache.org/jira/browse/SMX4-1109] - upgrade to wss4j 1.6.5 and xmlsec 1.5.1
+* [SMX4-1143|http://issues.apache.org/jira/browse/SMX4-1143] - Upgrade to Camel 2.8.5
 
 h3. Wish
-* [SMX4-944|http://issues.apache.org/active/browse/SMX4-944] - Provide a SMX test jar
+* [SMX4-944|http://issues.apache.org/jira/browse/SMX4-944] - Provide a SMX test jar
 
 h2. SVN Tag Checkout
 

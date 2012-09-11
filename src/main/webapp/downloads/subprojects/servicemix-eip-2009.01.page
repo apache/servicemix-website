@@ -9,27 +9,27 @@ page_modifier: gertvanthienen
 
 
 *Bug*
-    * [SMXCOMP-44|http://issues.apache.org/active/browse/SMXCOMP-44] - EPI Content Enricher may not work if input content is a stream
-    * [SMXCOMP-111|http://issues.apache.org/active/browse/SMXCOMP-111] - When deployed in Smx4, the JBI SUs do not have access to the whole JRE
-    * [SMXCOMP-113|http://issues.apache.org/active/browse/SMXCOMP-113] - Components jars should not include the jbi descriptor
-    * [SMXCOMP-119|http://issues.apache.org/active/browse/SMXCOMP-119] - LockManager impl causes memory leak in ServiceMix EIP
-    * [SMXCOMP-252|http://issues.apache.org/active/browse/SMXCOMP-252] - EIP Pipeline with "sendFaultsToTarget" = true does not copy properties and attachments to target ME "in" message for a fault
-    * [SMXCOMP-253|http://issues.apache.org/active/browse/SMXCOMP-253] - Content enricher does not handle StreamSources correctly
-    * [SMXCOMP-255|http://issues.apache.org/active/browse/SMXCOMP-255] - EIP wiretap should save operationname  by default
-    * [SMXCOMP-258|http://issues.apache.org/active/browse/SMXCOMP-258] - running servicemix-eip unit tests stalls intermittently
-    * [SMXCOMP-458|http://issues.apache.org/active/browse/SMXCOMP-458] - Malformed manifest.mf  is generated for the servicemix-http bundle
-    * [SMXCOMP-478|http://issues.apache.org/active/browse/SMXCOMP-478] - OSGi bundles for components should not require the jaxp-ri bundle
+    * [SMXCOMP-44|http://issues.apache.org/jira/browse/SMXCOMP-44] - EPI Content Enricher may not work if input content is a stream
+    * [SMXCOMP-111|http://issues.apache.org/jira/browse/SMXCOMP-111] - When deployed in Smx4, the JBI SUs do not have access to the whole JRE
+    * [SMXCOMP-113|http://issues.apache.org/jira/browse/SMXCOMP-113] - Components jars should not include the jbi descriptor
+    * [SMXCOMP-119|http://issues.apache.org/jira/browse/SMXCOMP-119] - LockManager impl causes memory leak in ServiceMix EIP
+    * [SMXCOMP-252|http://issues.apache.org/jira/browse/SMXCOMP-252] - EIP Pipeline with "sendFaultsToTarget" = true does not copy properties and attachments to target ME "in" message for a fault
+    * [SMXCOMP-253|http://issues.apache.org/jira/browse/SMXCOMP-253] - Content enricher does not handle StreamSources correctly
+    * [SMXCOMP-255|http://issues.apache.org/jira/browse/SMXCOMP-255] - EIP wiretap should save operationname  by default
+    * [SMXCOMP-258|http://issues.apache.org/jira/browse/SMXCOMP-258] - running servicemix-eip unit tests stalls intermittently
+    * [SMXCOMP-458|http://issues.apache.org/jira/browse/SMXCOMP-458] - Malformed manifest.mf  is generated for the servicemix-http bundle
+    * [SMXCOMP-478|http://issues.apache.org/jira/browse/SMXCOMP-478] - OSGi bundles for components should not require the jaxp-ri bundle
 
 *Improvement*
-    * [SMXCOMP-115|http://issues.apache.org/active/browse/SMXCOMP-115] - Patch available for upgrading components to Spring 2.5.6
-    * [SMXCOMP-116|http://issues.apache.org/active/browse/SMXCOMP-116] - Upgrade to spring osgi 1.2.0-m2
-    * [SMXCOMP-261|http://issues.apache.org/active/browse/SMXCOMP-261] - set copyAttachments and copyProperties default value to true for ContentEnricher Pipeline and WireTap
+    * [SMXCOMP-115|http://issues.apache.org/jira/browse/SMXCOMP-115] - Patch available for upgrading components to Spring 2.5.6
+    * [SMXCOMP-116|http://issues.apache.org/jira/browse/SMXCOMP-116] - Upgrade to spring osgi 1.2.0-m2
+    * [SMXCOMP-261|http://issues.apache.org/jira/browse/SMXCOMP-261] - set copyAttachments and copyProperties default value to true for ContentEnricher Pipeline and WireTap
 
 *New Feature*
-    * [SMXCOMP-259|http://issues.apache.org/active/browse/SMXCOMP-259] - smx-eip AbstractAggregator should support boolean property "reportTimeoutAsErrors"
+    * [SMXCOMP-259|http://issues.apache.org/jira/browse/SMXCOMP-259] - smx-eip AbstractAggregator should support boolean property "reportTimeoutAsErrors"
 
 *Task*
-    * [SMXCOMP-256|http://issues.apache.org/active/browse/SMXCOMP-256] - Improve servicemix-eip schema documentation
+    * [SMXCOMP-256|http://issues.apache.org/jira/browse/SMXCOMP-256] - Improve servicemix-eip schema documentation
 
 
 

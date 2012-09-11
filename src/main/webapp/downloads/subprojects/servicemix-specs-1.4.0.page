@@ -9,14 +9,14 @@ page_modifier: gertvanthienen
 
 
 *Bug*
-    * [SMX4-329|http://issues.apache.org/active/browse/SMX4-329] - jaxb-api bundle should throw JAXBException when contextPath is empty string
-    * [SMX4-358|http://issues.apache.org/active/browse/SMX4-358] - JAX-RS 1.1 specification is unable to load implementation classes
-    * [SMX4-384|http://issues.apache.org/active/browse/SMX4-384] - Unable to build JAXP 1.3 specification on IBM JDK 1.6
-    * [SMX4-390|http://issues.apache.org/active/browse/SMX4-390] - jsr311-api-1.1 specs is missing a factory locator
+    * [SMX4-329|http://issues.apache.org/jira/browse/SMX4-329] - jaxb-api bundle should throw JAXBException when contextPath is empty string
+    * [SMX4-358|http://issues.apache.org/jira/browse/SMX4-358] - JAX-RS 1.1 specification is unable to load implementation classes
+    * [SMX4-384|http://issues.apache.org/jira/browse/SMX4-384] - Unable to build JAXP 1.3 specification on IBM JDK 1.6
+    * [SMX4-390|http://issues.apache.org/jira/browse/SMX4-390] - jsr311-api-1.1 specs is missing a factory locator
 
 *Improvement*
-    * [SMX4-237|http://issues.apache.org/active/browse/SMX4-237] - A stax-api bundle that exports javax.xml.stream packages with version 1.0.1
-    * [SMX4-355|http://issues.apache.org/active/browse/SMX4-355] - Added JavaPersistence1.1.1 API spec
+    * [SMX4-237|http://issues.apache.org/jira/browse/SMX4-237] - A stax-api bundle that exports javax.xml.stream packages with version 1.0.1
+    * [SMX4-355|http://issues.apache.org/jira/browse/SMX4-355] - Added JavaPersistence1.1.1 API spec
 
 *New Feature*
-    * [SMX4-318|http://issues.apache.org/active/browse/SMX4-318] - Add JSR-311 (JAX-RS) 1.1 specification bundle
+    * [SMX4-318|http://issues.apache.org/jira/browse/SMX4-318] - Add JSR-311 (JAX-RS) 1.1 specification bundle
