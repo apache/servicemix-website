@@ -9,5 +9,5 @@ page_modifier: gertvanthienen
 
 
 *Bug*
-    * [SMXCOMP-458|http://issues.apache.org/active/browse/SMXCOMP-458] - Malformed manifest.mf  is generated for the servicemix-http bundle
-    * [SMXCOMP-478|http://issues.apache.org/active/browse/SMXCOMP-478] - OSGi bundles for components should not require the jaxp-ri bundle
+    * [SMXCOMP-458|http://issues.apache.org/jira/browse/SMXCOMP-458] - Malformed manifest.mf  is generated for the servicemix-http bundle
+    * [SMXCOMP-478|http://issues.apache.org/jira/browse/SMXCOMP-478] - OSGi bundles for components should not require the jaxp-ri bundle

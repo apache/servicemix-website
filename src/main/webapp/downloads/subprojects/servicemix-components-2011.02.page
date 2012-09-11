@@ -5,62 +5,62 @@ title: ServiceMix Components 2011.02
 h2. Release Notes: ServiceMix Components 2011.02
 
 *Bug*
-* [SMXCOMP-855|http://issues.apache.org/active/browse/SMXCOMP-855] - MessageExchange Leak in CXF SE Proxy Per-Request
-* [SMXCOMP-858|http://issues.apache.org/active/browse/SMXCOMP-858] - CXFSE Proxy  Doesn't Implement "propagateSubject" Setting
-* [SMXCOMP-866|http://issues.apache.org/active/browse/SMXCOMP-866] - HTTP Consumer timeout handling is incorrect
-* [SMXCOMP-876|http://issues.apache.org/active/browse/SMXCOMP-876] - servicemix-soap bundle is missing some necessary <Import-Package> and <Export-Package>
-* [SMXCOMP-878|http://issues.apache.org/active/browse/SMXCOMP-878] - ensure cxf bc consumer endpoint can publish wsdl
-* [SMXCOMP-886|http://issues.apache.org/active/browse/SMXCOMP-886] - <http:soap-consumer> config may fail to import xsd or wsdl files
-* [SMXCOMP-887|http://issues.apache.org/active/browse/SMXCOMP-887] - <http:soap-consumer> config may fail to import xsd or wsdl files in sub-directories
-* [SMXCOMP-891|http://issues.apache.org/active/browse/SMXCOMP-891] - Avoid adding commons-logging 1.0.3 to servicemix-shared
-* [SMXCOMP-896|http://issues.apache.org/active/browse/SMXCOMP-896] - CXF-BC will be blocked after handling some request when working in the async model
-* [SMXCOMP-897|http://issues.apache.org/active/browse/SMXCOMP-897] - ensure cxf servlet transport and cxf bc can share same bus out of box when deploy smx-cxf-bc in web container
-* [SMXCOMP-903|http://issues.apache.org/active/browse/SMXCOMP-903] - Sending unsubscribe can leave servicemix-wsn2005 threads hanging on sendSync()
-* [SMXCOMP-905|http://issues.apache.org/active/browse/SMXCOMP-905] - ensure DONE status is set when cxf bc consumer encounter soap fault and use synchronous="true"
-* [SMXCOMP-910|http://issues.apache.org/active/browse/SMXCOMP-910] - NPE Generated whenever a soap message is received that contains a namespace prefix but no namespace uri.
-* [SMXCOMP-912|http://issues.apache.org/active/browse/SMXCOMP-912] - servicemix-cxf-se OSGi header is incorrect
-* [SMXCOMP-914|http://issues.apache.org/active/browse/SMXCOMP-914] - servicemix-wsn2005 can't restart correctly when the dependency activemq-broker.xml bundle restart
-* [SMXCOMP-916|http://issues.apache.org/active/browse/SMXCOMP-916] - org.apache.servicemix.http.jetty.JCLLogger can't get initialized in OSGi container
-* [SMXCOMP-919|http://issues.apache.org/active/browse/SMXCOMP-919] - JMS soap endpoint tests failing
+* [SMXCOMP-855|http://issues.apache.org/jira/browse/SMXCOMP-855] - MessageExchange Leak in CXF SE Proxy Per-Request
+* [SMXCOMP-858|http://issues.apache.org/jira/browse/SMXCOMP-858] - CXFSE Proxy  Doesn't Implement "propagateSubject" Setting
+* [SMXCOMP-866|http://issues.apache.org/jira/browse/SMXCOMP-866] - HTTP Consumer timeout handling is incorrect
+* [SMXCOMP-876|http://issues.apache.org/jira/browse/SMXCOMP-876] - servicemix-soap bundle is missing some necessary <Import-Package> and <Export-Package>
+* [SMXCOMP-878|http://issues.apache.org/jira/browse/SMXCOMP-878] - ensure cxf bc consumer endpoint can publish wsdl
+* [SMXCOMP-886|http://issues.apache.org/jira/browse/SMXCOMP-886] - <http:soap-consumer> config may fail to import xsd or wsdl files
+* [SMXCOMP-887|http://issues.apache.org/jira/browse/SMXCOMP-887] - <http:soap-consumer> config may fail to import xsd or wsdl files in sub-directories
+* [SMXCOMP-891|http://issues.apache.org/jira/browse/SMXCOMP-891] - Avoid adding commons-logging 1.0.3 to servicemix-shared
+* [SMXCOMP-896|http://issues.apache.org/jira/browse/SMXCOMP-896] - CXF-BC will be blocked after handling some request when working in the async model
+* [SMXCOMP-897|http://issues.apache.org/jira/browse/SMXCOMP-897] - ensure cxf servlet transport and cxf bc can share same bus out of box when deploy smx-cxf-bc in web container
+* [SMXCOMP-903|http://issues.apache.org/jira/browse/SMXCOMP-903] - Sending unsubscribe can leave servicemix-wsn2005 threads hanging on sendSync()
+* [SMXCOMP-905|http://issues.apache.org/jira/browse/SMXCOMP-905] - ensure DONE status is set when cxf bc consumer encounter soap fault and use synchronous="true"
+* [SMXCOMP-910|http://issues.apache.org/jira/browse/SMXCOMP-910] - NPE Generated whenever a soap message is received that contains a namespace prefix but no namespace uri.
+* [SMXCOMP-912|http://issues.apache.org/jira/browse/SMXCOMP-912] - servicemix-cxf-se OSGi header is incorrect
+* [SMXCOMP-914|http://issues.apache.org/jira/browse/SMXCOMP-914] - servicemix-wsn2005 can't restart correctly when the dependency activemq-broker.xml bundle restart
+* [SMXCOMP-916|http://issues.apache.org/jira/browse/SMXCOMP-916] - org.apache.servicemix.http.jetty.JCLLogger can't get initialized in OSGi container
+* [SMXCOMP-919|http://issues.apache.org/jira/browse/SMXCOMP-919] - JMS soap endpoint tests failing
 
 *Improvement*
-* [SMXCOMP-857|http://issues.apache.org/active/browse/SMXCOMP-857] - ensure cxfse:proxy is thread safe to access requestcontext
-* [SMXCOMP-862|http://issues.apache.org/active/browse/SMXCOMP-862] - Upgrade to ActiveMQ 5.5.0
-* [SMXCOMP-863|http://issues.apache.org/active/browse/SMXCOMP-863] - Make allowsCoreThreadTimeOut name consistent across mbeans and properties
-* [SMXCOMP-867|http://issues.apache.org/active/browse/SMXCOMP-867] - servicemix-camel performance optimizations
-* [SMXCOMP-868|http://issues.apache.org/active/browse/SMXCOMP-868] - Align stax-api version
-* [SMXCOMP-870|http://issues.apache.org/active/browse/SMXCOMP-870] - upgrade to cxf 2.4.0
-* [SMXCOMP-879|http://issues.apache.org/active/browse/SMXCOMP-879] - cxf se endpoint should support configure JAXBDataBinding with extraClass
-* [SMXCOMP-880|http://issues.apache.org/active/browse/SMXCOMP-880] - Refactor servicemix-http component to avoid use of wrapper for locking
-* [SMXCOMP-881|http://issues.apache.org/active/browse/SMXCOMP-881] - Allow configuring HTTP consumer endpoint for handling late responses from the bus
-* [SMXCOMP-883|http://issues.apache.org/active/browse/SMXCOMP-883] - cxf bc consumer should be able to determine soap version from incoming message
-* [SMXCOMP-885|http://issues.apache.org/active/browse/SMXCOMP-885] - Dynamic Soap address in wsdl
-* [SMXCOMP-888|http://issues.apache.org/active/browse/SMXCOMP-888] - remove xmlschema from sharedlib
-* [SMXCOMP-889|http://issues.apache.org/active/browse/SMXCOMP-889] - use local copy of XSD for servicemix-soap2 to avoid test hang
-* [SMXCOMP-893|http://issues.apache.org/active/browse/SMXCOMP-893] - remove META-INF/cxf/cxf-extension-soap.xml from servicemix-cxf-se
-* [SMXCOMP-902|http://issues.apache.org/active/browse/SMXCOMP-902] - should be able to configure jaas domain name used in JbiJAASInterceptor
-* [SMXCOMP-906|http://issues.apache.org/active/browse/SMXCOMP-906] - servicemix-cxf-bc should use version range for javax.servlet package import
-* [SMXCOMP-911|http://issues.apache.org/active/browse/SMXCOMP-911] - Add shared-library bundles to JBI component bundle classloader
-* [SMXCOMP-915|http://issues.apache.org/active/browse/SMXCOMP-915] - Upgrade to Camel 2.8.3
+* [SMXCOMP-857|http://issues.apache.org/jira/browse/SMXCOMP-857] - ensure cxfse:proxy is thread safe to access requestcontext
+* [SMXCOMP-862|http://issues.apache.org/jira/browse/SMXCOMP-862] - Upgrade to ActiveMQ 5.5.0
+* [SMXCOMP-863|http://issues.apache.org/jira/browse/SMXCOMP-863] - Make allowsCoreThreadTimeOut name consistent across mbeans and properties
+* [SMXCOMP-867|http://issues.apache.org/jira/browse/SMXCOMP-867] - servicemix-camel performance optimizations
+* [SMXCOMP-868|http://issues.apache.org/jira/browse/SMXCOMP-868] - Align stax-api version
+* [SMXCOMP-870|http://issues.apache.org/jira/browse/SMXCOMP-870] - upgrade to cxf 2.4.0
+* [SMXCOMP-879|http://issues.apache.org/jira/browse/SMXCOMP-879] - cxf se endpoint should support configure JAXBDataBinding with extraClass
+* [SMXCOMP-880|http://issues.apache.org/jira/browse/SMXCOMP-880] - Refactor servicemix-http component to avoid use of wrapper for locking
+* [SMXCOMP-881|http://issues.apache.org/jira/browse/SMXCOMP-881] - Allow configuring HTTP consumer endpoint for handling late responses from the bus
+* [SMXCOMP-883|http://issues.apache.org/jira/browse/SMXCOMP-883] - cxf bc consumer should be able to determine soap version from incoming message
+* [SMXCOMP-885|http://issues.apache.org/jira/browse/SMXCOMP-885] - Dynamic Soap address in wsdl
+* [SMXCOMP-888|http://issues.apache.org/jira/browse/SMXCOMP-888] - remove xmlschema from sharedlib
+* [SMXCOMP-889|http://issues.apache.org/jira/browse/SMXCOMP-889] - use local copy of XSD for servicemix-soap2 to avoid test hang
+* [SMXCOMP-893|http://issues.apache.org/jira/browse/SMXCOMP-893] - remove META-INF/cxf/cxf-extension-soap.xml from servicemix-cxf-se
+* [SMXCOMP-902|http://issues.apache.org/jira/browse/SMXCOMP-902] - should be able to configure jaas domain name used in JbiJAASInterceptor
+* [SMXCOMP-906|http://issues.apache.org/jira/browse/SMXCOMP-906] - servicemix-cxf-bc should use version range for javax.servlet package import
+* [SMXCOMP-911|http://issues.apache.org/jira/browse/SMXCOMP-911] - Add shared-library bundles to JBI component bundle classloader
+* [SMXCOMP-915|http://issues.apache.org/jira/browse/SMXCOMP-915] - Upgrade to Camel 2.8.3
 
 *Task*
-* [SMXCOMP-852|http://issues.apache.org/active/browse/SMXCOMP-852] - Switch to use slf4j as logger (instead of commons-logging)
-* [SMXCOMP-859|http://issues.apache.org/active/browse/SMXCOMP-859] - Upgrade to Camel 2.7
-* [SMXCOMP-861|http://issues.apache.org/active/browse/SMXCOMP-861] - upgrade to cxf 2.3.3
-* [SMXCOMP-865|http://issues.apache.org/active/browse/SMXCOMP-865] - Update to CXF 2.4.0
-* [SMXCOMP-874|http://issues.apache.org/active/browse/SMXCOMP-874] - Upgrade to ServiceMix Specs 1.8.0
-* [SMXCOMP-875|http://issues.apache.org/active/browse/SMXCOMP-875] - Update to Camel 2.8.0
-* [SMXCOMP-882|http://issues.apache.org/active/browse/SMXCOMP-882] - Upgrade to Java Mail 1.4.4
-* [SMXCOMP-890|http://issues.apache.org/active/browse/SMXCOMP-890] - upgrade to cxf 2.4.1
-* [SMXCOMP-892|http://issues.apache.org/active/browse/SMXCOMP-892] - Upgrade to Groovy 1.8.0
-* [SMXCOMP-894|http://issues.apache.org/active/browse/SMXCOMP-894] - Upgrade to Quartz 1.8.5
-* [SMXCOMP-898|http://issues.apache.org/active/browse/SMXCOMP-898] - Upgrade to cxf 2.4.2
-* [SMXCOMP-899|http://issues.apache.org/active/browse/SMXCOMP-899] - upgrade to cxf 2.4.2
-* [SMXCOMP-900|http://issues.apache.org/active/browse/SMXCOMP-900] - Upgrade to Camel 2.8.1
-* [SMXCOMP-901|http://issues.apache.org/active/browse/SMXCOMP-901] - upgrade to cxf 2.4.3
-* [SMXCOMP-909|http://issues.apache.org/active/browse/SMXCOMP-909] - upgrade to spring 3.0.6
-* [SMXCOMP-913|http://issues.apache.org/active/browse/SMXCOMP-913] - upgrade to cxf 2.4.4
-* [SMXCOMP-920|http://issues.apache.org/active/browse/SMXCOMP-920] - upgrade to wss4j 1.6.3
+* [SMXCOMP-852|http://issues.apache.org/jira/browse/SMXCOMP-852] - Switch to use slf4j as logger (instead of commons-logging)
+* [SMXCOMP-859|http://issues.apache.org/jira/browse/SMXCOMP-859] - Upgrade to Camel 2.7
+* [SMXCOMP-861|http://issues.apache.org/jira/browse/SMXCOMP-861] - upgrade to cxf 2.3.3
+* [SMXCOMP-865|http://issues.apache.org/jira/browse/SMXCOMP-865] - Update to CXF 2.4.0
+* [SMXCOMP-874|http://issues.apache.org/jira/browse/SMXCOMP-874] - Upgrade to ServiceMix Specs 1.8.0
+* [SMXCOMP-875|http://issues.apache.org/jira/browse/SMXCOMP-875] - Update to Camel 2.8.0
+* [SMXCOMP-882|http://issues.apache.org/jira/browse/SMXCOMP-882] - Upgrade to Java Mail 1.4.4
+* [SMXCOMP-890|http://issues.apache.org/jira/browse/SMXCOMP-890] - upgrade to cxf 2.4.1
+* [SMXCOMP-892|http://issues.apache.org/jira/browse/SMXCOMP-892] - Upgrade to Groovy 1.8.0
+* [SMXCOMP-894|http://issues.apache.org/jira/browse/SMXCOMP-894] - Upgrade to Quartz 1.8.5
+* [SMXCOMP-898|http://issues.apache.org/jira/browse/SMXCOMP-898] - Upgrade to cxf 2.4.2
+* [SMXCOMP-899|http://issues.apache.org/jira/browse/SMXCOMP-899] - upgrade to cxf 2.4.2
+* [SMXCOMP-900|http://issues.apache.org/jira/browse/SMXCOMP-900] - Upgrade to Camel 2.8.1
+* [SMXCOMP-901|http://issues.apache.org/jira/browse/SMXCOMP-901] - upgrade to cxf 2.4.3
+* [SMXCOMP-909|http://issues.apache.org/jira/browse/SMXCOMP-909] - upgrade to spring 3.0.6
+* [SMXCOMP-913|http://issues.apache.org/jira/browse/SMXCOMP-913] - upgrade to cxf 2.4.4
+* [SMXCOMP-920|http://issues.apache.org/jira/browse/SMXCOMP-920] - upgrade to wss4j 1.6.3
 
 
 

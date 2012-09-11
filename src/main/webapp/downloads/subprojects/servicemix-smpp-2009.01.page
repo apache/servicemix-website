@@ -9,4 +9,4 @@ page_modifier: gertvanthienen
 
 
 *Bug*
-    * [SMXCOMP-478|http://issues.apache.org/active/browse/SMXCOMP-478] - OSGi bundles for components should not require the jaxp-ri bundle
+    * [SMXCOMP-478|http://issues.apache.org/jira/browse/SMXCOMP-478] - OSGi bundles for components should not require the jaxp-ri bundle

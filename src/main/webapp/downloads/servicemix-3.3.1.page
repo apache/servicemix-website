@@ -43,62 +43,62 @@ Release Notes - ServiceMix - Version 3.3.1
 
 
 *Bug*
-    * [SM-1438|http://issues.apache.org/active/browse/SM-1438] - Exceptions while shutting down ServiceMix
-    * [SM-1456|http://issues.apache.org/active/browse/SM-1456] - Statistics Service throws NPE on startup.
-    * [SM-1521|http://issues.apache.org/active/browse/SM-1521] - Released version of archetype-catalog is corrupt
-    * [SM-1654|http://issues.apache.org/active/browse/SM-1654] - Format of the Message cannot be different than XML within Camel
-    * [SM-1657|http://issues.apache.org/active/browse/SM-1657] - Auto-enlistment should only occur when transactions status is ACTIVE
-    * [SM-1685|http://issues.apache.org/active/browse/SM-1685] - The DeliveryChannel does not recognize the new MessageExchangeListener interface
-    * [SM-1712|http://issues.apache.org/active/browse/SM-1712] - ExchangeListener is called with exchangeSent instead of exchangeAccepted when using sendSync
-    * [SM-1713|http://issues.apache.org/active/browse/SM-1713] - servicemix common component should be moved before deployable as servicemix-lwcontainer need it. (this was fixed in 3.2 but not on trunk)
-    * [SM-1719|http://issues.apache.org/active/browse/SM-1719] - org.apache.servicemix.jdbc.JDBCAdapter : bug in Statements and add of new functionnality doLoadData
-    * [SM-1749|http://issues.apache.org/active/browse/SM-1749] - Incorrect Logger name creation in ComponentContextImpl
-    * [SM-1761|http://issues.apache.org/active/browse/SM-1761] - AutoDeployment stops working after x deployments
-    * [SM-1766|http://issues.apache.org/active/browse/SM-1766] - servicemix-web sample in Servicemix 3 trunk is broken because of the removal of ManagedHttpServlet from servicemix-http component. 
-    * [SM-1773|http://issues.apache.org/active/browse/SM-1773] - xercesImpl and xml-apis conflict when running inside Jboss
-    * [SM-1791|http://issues.apache.org/active/browse/SM-1791] - org.apache.servicemix.jbi.framework.InstallerMBeanImpl is missing bootstrap.init() call on uninstall phase which is required as per JBI specs.
-    * [SM-1818|http://issues.apache.org/active/browse/SM-1818] - invoking stop on SA in SHUTDOWN state brings it to STOPPED state
-    * [SM-1819|http://issues.apache.org/active/browse/SM-1819] -  jms archetypes generate extra http:// for xmlns:xsi namespace.
-    * [SM-1820|http://issues.apache.org/active/browse/SM-1820] - Almost all archetypes generate extra http:// for xmlns:xsi namespace.
-    * [SM-1824|http://issues.apache.org/active/browse/SM-1824] - BUG in JDK6  ReentrantReadWriteLock can cause SMX hang when redeploy SA
-    * [SM-1827|http://issues.apache.org/active/browse/SM-1827] -  servicemix-camel-service-unit archetype depends on non-existent servicemix-camel jbi-component
-    * [SM-1835|http://issues.apache.org/active/browse/SM-1835] - whitespace interfering with ResolvedEndpoint.resolveEndpoint()
-    * [SM-1845|http://issues.apache.org/active/browse/SM-1845] - keystore.jks should be filtered during distribution package
-    * [SM-1853|http://issues.apache.org/active/browse/SM-1853] - ClassCast exception in ClassLoaderXmlPreprocessor
+    * [SM-1438|http://issues.apache.org/jira/browse/SM-1438] - Exceptions while shutting down ServiceMix
+    * [SM-1456|http://issues.apache.org/jira/browse/SM-1456] - Statistics Service throws NPE on startup.
+    * [SM-1521|http://issues.apache.org/jira/browse/SM-1521] - Released version of archetype-catalog is corrupt
+    * [SM-1654|http://issues.apache.org/jira/browse/SM-1654] - Format of the Message cannot be different than XML within Camel
+    * [SM-1657|http://issues.apache.org/jira/browse/SM-1657] - Auto-enlistment should only occur when transactions status is ACTIVE
+    * [SM-1685|http://issues.apache.org/jira/browse/SM-1685] - The DeliveryChannel does not recognize the new MessageExchangeListener interface
+    * [SM-1712|http://issues.apache.org/jira/browse/SM-1712] - ExchangeListener is called with exchangeSent instead of exchangeAccepted when using sendSync
+    * [SM-1713|http://issues.apache.org/jira/browse/SM-1713] - servicemix common component should be moved before deployable as servicemix-lwcontainer need it. (this was fixed in 3.2 but not on trunk)
+    * [SM-1719|http://issues.apache.org/jira/browse/SM-1719] - org.apache.servicemix.jdbc.JDBCAdapter : bug in Statements and add of new functionnality doLoadData
+    * [SM-1749|http://issues.apache.org/jira/browse/SM-1749] - Incorrect Logger name creation in ComponentContextImpl
+    * [SM-1761|http://issues.apache.org/jira/browse/SM-1761] - AutoDeployment stops working after x deployments
+    * [SM-1766|http://issues.apache.org/jira/browse/SM-1766] - servicemix-web sample in Servicemix 3 trunk is broken because of the removal of ManagedHttpServlet from servicemix-http component.
+    * [SM-1773|http://issues.apache.org/jira/browse/SM-1773] - xercesImpl and xml-apis conflict when running inside Jboss
+    * [SM-1791|http://issues.apache.org/jira/browse/SM-1791] - org.apache.servicemix.jbi.framework.InstallerMBeanImpl is missing bootstrap.init() call on uninstall phase which is required as per JBI specs.
+    * [SM-1818|http://issues.apache.org/jira/browse/SM-1818] - invoking stop on SA in SHUTDOWN state brings it to STOPPED state
+    * [SM-1819|http://issues.apache.org/jira/browse/SM-1819] -  jms archetypes generate extra http:// for xmlns:xsi namespace.
+    * [SM-1820|http://issues.apache.org/jira/browse/SM-1820] - Almost all archetypes generate extra http:// for xmlns:xsi namespace.
+    * [SM-1824|http://issues.apache.org/jira/browse/SM-1824] - BUG in JDK6  ReentrantReadWriteLock can cause SMX hang when redeploy SA
+    * [SM-1827|http://issues.apache.org/jira/browse/SM-1827] -  servicemix-camel-service-unit archetype depends on non-existent servicemix-camel jbi-component
+    * [SM-1835|http://issues.apache.org/jira/browse/SM-1835] - whitespace interfering with ResolvedEndpoint.resolveEndpoint()
+    * [SM-1845|http://issues.apache.org/jira/browse/SM-1845] - keystore.jks should be filtered during distribution package
+    * [SM-1853|http://issues.apache.org/jira/browse/SM-1853] - ClassCast exception in ClassLoaderXmlPreprocessor
 
 *Improvement*
-    * [SM-1302|http://issues.apache.org/active/browse/SM-1302] - Make failover:// transport the default protocol used in ServiceMix.
-    * [SM-1317|http://issues.apache.org/active/browse/SM-1317] - Add a system property to change CXF to use Log4J instead of JUL
-    * [SM-1360|http://issues.apache.org/active/browse/SM-1360] - Add a reference to the XSD in the archetype-generated xbean.xml files
-    * [SM-1573|http://issues.apache.org/active/browse/SM-1573] - Use of useJBIWrapper flag in smx-cxf-bc consumer and smx-http soap-consumer endpoints is inconsistent
-    * [SM-1607|http://issues.apache.org/active/browse/SM-1607] - JBI container should be able to initialize all SAs first and then start them
-    * [SM-1621|http://issues.apache.org/active/browse/SM-1621] - New JMS in/out provider should support temporary queues/topics (as reply destinations)
-    * [SM-1659|http://issues.apache.org/active/browse/SM-1659] - should filter the version for kit_camel_example_pom.xml which is used in kit
-    * [SM-1660|http://issues.apache.org/active/browse/SM-1660] - add createDaemonExecutor api for ExecutorFactory
-    * [SM-1688|http://issues.apache.org/active/browse/SM-1688] - update classworlds version from 1.0.1 to 1.1
-    * [SM-1717|http://issues.apache.org/active/browse/SM-1717] - getError() shouldn't return a null exception in case of sendSync timeout
-    * [SM-1808|http://issues.apache.org/active/browse/SM-1808] - Back port the patch of SMXCOMP-455 to SMX 3.2 branch
-    * [SM-1810|http://issues.apache.org/active/browse/SM-1810] - should use new activemq namsespace instead of the old one
-    * [SM-1817|http://issues.apache.org/active/browse/SM-1817] - Publish components schema files as part of the distribution in a schemas/ directory
-    * [SM-1822|http://issues.apache.org/active/browse/SM-1822] - Add JMS connection credentials to JCAFlow
-    * [SM-1839|http://issues.apache.org/active/browse/SM-1839] - Main entry improvement to allow run by procrun as Windows Service
-    * [SM-1843|http://issues.apache.org/active/browse/SM-1843] - pick up new added bridge-camel sample in the distribution kit
-    * [SM-1848|http://issues.apache.org/active/browse/SM-1848] - add client.html for wsn-http-binding example
-    * [SM-1870|http://issues.apache.org/active/browse/SM-1870] - Upgrade to Geronimo 2.0.2
+    * [SM-1302|http://issues.apache.org/jira/browse/SM-1302] - Make failover:// transport the default protocol used in ServiceMix.
+    * [SM-1317|http://issues.apache.org/jira/browse/SM-1317] - Add a system property to change CXF to use Log4J instead of JUL
+    * [SM-1360|http://issues.apache.org/jira/browse/SM-1360] - Add a reference to the XSD in the archetype-generated xbean.xml files
+    * [SM-1573|http://issues.apache.org/jira/browse/SM-1573] - Use of useJBIWrapper flag in smx-cxf-bc consumer and smx-http soap-consumer endpoints is inconsistent
+    * [SM-1607|http://issues.apache.org/jira/browse/SM-1607] - JBI container should be able to initialize all SAs first and then start them
+    * [SM-1621|http://issues.apache.org/jira/browse/SM-1621] - New JMS in/out provider should support temporary queues/topics (as reply destinations)
+    * [SM-1659|http://issues.apache.org/jira/browse/SM-1659] - should filter the version for kit_camel_example_pom.xml which is used in kit
+    * [SM-1660|http://issues.apache.org/jira/browse/SM-1660] - add createDaemonExecutor api for ExecutorFactory
+    * [SM-1688|http://issues.apache.org/jira/browse/SM-1688] - update classworlds version from 1.0.1 to 1.1
+    * [SM-1717|http://issues.apache.org/jira/browse/SM-1717] - getError() shouldn't return a null exception in case of sendSync timeout
+    * [SM-1808|http://issues.apache.org/jira/browse/SM-1808] - Back port the patch of SMXCOMP-455 to SMX 3.2 branch
+    * [SM-1810|http://issues.apache.org/jira/browse/SM-1810] - should use new activemq namsespace instead of the old one
+    * [SM-1817|http://issues.apache.org/jira/browse/SM-1817] - Publish components schema files as part of the distribution in a schemas/ directory
+    * [SM-1822|http://issues.apache.org/jira/browse/SM-1822] - Add JMS connection credentials to JCAFlow
+    * [SM-1839|http://issues.apache.org/jira/browse/SM-1839] - Main entry improvement to allow run by procrun as Windows Service
+    * [SM-1843|http://issues.apache.org/jira/browse/SM-1843] - pick up new added bridge-camel sample in the distribution kit
+    * [SM-1848|http://issues.apache.org/jira/browse/SM-1848] - add client.html for wsn-http-binding example
+    * [SM-1870|http://issues.apache.org/jira/browse/SM-1870] - Upgrade to Geronimo 2.0.2
 
 *New Feature*
-    * [SM-1756|http://issues.apache.org/active/browse/SM-1756] - add CXFManagedServlet to apache-servicemix-web to enable servicemix-cxf-bc endpoint deploy into servlet container without starting jetty
-    * [SM-1782|http://issues.apache.org/active/browse/SM-1782] - Add JBoss Deployer to platforms module
-    * [SM-1856|http://issues.apache.org/active/browse/SM-1856] - Add archetype for servicemix-smpp component
+    * [SM-1756|http://issues.apache.org/jira/browse/SM-1756] - add CXFManagedServlet to apache-servicemix-web to enable servicemix-cxf-bc endpoint deploy into servlet container without starting jetty
+    * [SM-1782|http://issues.apache.org/jira/browse/SM-1782] - Add JBoss Deployer to platforms module
+    * [SM-1856|http://issues.apache.org/jira/browse/SM-1856] - Add archetype for servicemix-smpp component
 
 *Task*
-    * [SM-1723|http://issues.apache.org/active/browse/SM-1723] - Upgrade to ActiveMQ 5.2.0
-    * [SM-1846|http://issues.apache.org/active/browse/SM-1846] - add wsn-cxfbc-binding example
-    * [SM-1867|http://issues.apache.org/active/browse/SM-1867] - upgrade to spring 2.5.6
+    * [SM-1723|http://issues.apache.org/jira/browse/SM-1723] - Upgrade to ActiveMQ 5.2.0
+    * [SM-1846|http://issues.apache.org/jira/browse/SM-1846] - add wsn-cxfbc-binding example
+    * [SM-1867|http://issues.apache.org/jira/browse/SM-1867] - upgrade to spring 2.5.6
 
 *Test*
-    * [SM-1306|http://issues.apache.org/active/browse/SM-1306] - Improve success ratio of timing sensitive tests
-    * [SM-1811|http://issues.apache.org/active/browse/SM-1811] - bridge-sa-itest failed due to missing activemq-camel dependency
+    * [SM-1306|http://issues.apache.org/jira/browse/SM-1306] - Improve success ratio of timing sensitive tests
+    * [SM-1811|http://issues.apache.org/jira/browse/SM-1811] - bridge-sa-itest failed due to missing activemq-camel dependency
 
     
 h2. SVN Tag Checkout

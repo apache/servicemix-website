@@ -9,27 +9,27 @@ page_modifier: gertvanthienen
 
 
 *Bug*
-    * [SMXCOMP-111|http://issues.apache.org/active/browse/SMXCOMP-111] - When deployed in Smx4, the JBI SUs do not have access to the whole JRE
-    * [SMXCOMP-113|http://issues.apache.org/active/browse/SMXCOMP-113] - Components jars should not include the jbi descriptor
-    * [SMXCOMP-181|http://issues.apache.org/active/browse/SMXCOMP-181] - MessageExchange (org.apache.cxf.transport.jbi.JBIDestination) not serializable
-    * [SMXCOMP-196|http://issues.apache.org/active/browse/SMXCOMP-196] - MessageExchange (org.apache.cxf.service.model.MessageInfo) not Serializable
-    * [SMXCOMP-197|http://issues.apache.org/active/browse/SMXCOMP-197] - OutOfMemoryException (PermGen) after redeploying servicemix-cxf* and servicemix-wsn2005
-    * [SMXCOMP-202|http://issues.apache.org/active/browse/SMXCOMP-202] - cxf bc provider and cxf se doesn't send DONE back when use oneway
-    * [SMXCOMP-458|http://issues.apache.org/active/browse/SMXCOMP-458] - Malformed manifest.mf  is generated for the servicemix-http bundle
-    * [SMXCOMP-478|http://issues.apache.org/active/browse/SMXCOMP-478] - OSGi bundles for components should not require the jaxp-ri bundle
+    * [SMXCOMP-111|http://issues.apache.org/jira/browse/SMXCOMP-111] - When deployed in Smx4, the JBI SUs do not have access to the whole JRE
+    * [SMXCOMP-113|http://issues.apache.org/jira/browse/SMXCOMP-113] - Components jars should not include the jbi descriptor
+    * [SMXCOMP-181|http://issues.apache.org/jira/browse/SMXCOMP-181] - MessageExchange (org.apache.cxf.transport.jbi.JBIDestination) not serializable
+    * [SMXCOMP-196|http://issues.apache.org/jira/browse/SMXCOMP-196] - MessageExchange (org.apache.cxf.service.model.MessageInfo) not Serializable
+    * [SMXCOMP-197|http://issues.apache.org/jira/browse/SMXCOMP-197] - OutOfMemoryException (PermGen) after redeploying servicemix-cxf* and servicemix-wsn2005
+    * [SMXCOMP-202|http://issues.apache.org/jira/browse/SMXCOMP-202] - cxf bc provider and cxf se doesn't send DONE back when use oneway
+    * [SMXCOMP-458|http://issues.apache.org/jira/browse/SMXCOMP-458] - Malformed manifest.mf  is generated for the servicemix-http bundle
+    * [SMXCOMP-478|http://issues.apache.org/jira/browse/SMXCOMP-478] - OSGi bundles for components should not require the jaxp-ri bundle
 
 *Improvement*
-    * [SMXCOMP-115|http://issues.apache.org/active/browse/SMXCOMP-115] - Patch available for upgrading components to Spring 2.5.6
-    * [SMXCOMP-116|http://issues.apache.org/active/browse/SMXCOMP-116] - Upgrade to spring osgi 1.2.0-m2
-    * [SMXCOMP-207|http://issues.apache.org/active/browse/SMXCOMP-207] - remove unnecessary direct jaxws-api, jaxb dependency  from servicemix-cxf-se and servicemix-cxf-bc
-    * [SMXCOMP-242|http://issues.apache.org/active/browse/SMXCOMP-242] - support aegis databinding in cxf se
-    * [SMXCOMP-244|http://issues.apache.org/active/browse/SMXCOMP-244] - add simple frontend support in  cxf se
-    * [SMXCOMP-246|http://issues.apache.org/active/browse/SMXCOMP-246] - Add testContextInjectionRobustInOnly() test to CxfSeContextInjectionTest.java to verify robust-in-only mep is handled correctly
+    * [SMXCOMP-115|http://issues.apache.org/jira/browse/SMXCOMP-115] - Patch available for upgrading components to Spring 2.5.6
+    * [SMXCOMP-116|http://issues.apache.org/jira/browse/SMXCOMP-116] - Upgrade to spring osgi 1.2.0-m2
+    * [SMXCOMP-207|http://issues.apache.org/jira/browse/SMXCOMP-207] - remove unnecessary direct jaxws-api, jaxb dependency  from servicemix-cxf-se and servicemix-cxf-bc
+    * [SMXCOMP-242|http://issues.apache.org/jira/browse/SMXCOMP-242] - support aegis databinding in cxf se
+    * [SMXCOMP-244|http://issues.apache.org/jira/browse/SMXCOMP-244] - add simple frontend support in  cxf se
+    * [SMXCOMP-246|http://issues.apache.org/jira/browse/SMXCOMP-246] - Add testContextInjectionRobustInOnly() test to CxfSeContextInjectionTest.java to verify robust-in-only mep is handled correctly
 
 
 *Task*
-    * [SMXCOMP-199|http://issues.apache.org/active/browse/SMXCOMP-199] - Upgrade to cxf 2.1.4
-    * [SMXCOMP-210|http://issues.apache.org/active/browse/SMXCOMP-210] - upgrade to CXF 2.1.3 release version
+    * [SMXCOMP-199|http://issues.apache.org/jira/browse/SMXCOMP-199] - Upgrade to cxf 2.1.4
+    * [SMXCOMP-210|http://issues.apache.org/jira/browse/SMXCOMP-210] - upgrade to CXF 2.1.3 release version
 
 
 
