@@ -7,7 +7,7 @@ h1. Documentation Project
 The ServiceMix documentation project aims to build a set of manuals for ServiceMix using [Scalate|http://scalate.fusesource.org].
 
 It's currently used to generate the contents for:
-- ServiceMix 4.4.0: [http://servicemix.apache.org/docs/4.4.0/]
+- ServiceMix 4.4.x: [http://servicemix.apache.org/docs/4.4.x/]
 
 --- name:building pipeline:conf
 
@@ -36,31 +36,11 @@ h3. Live website for editing
 Running *{{mvn jetty:run}}* in the documentation project allows you to preview the resulting website on http://localhost:8080.  Just edit any page and hit refresh in the browser to have a look at the result.
 
 h3. Deploying a new documentation site copy
-You can also deploy the site directly by running *{{mvn scalate:deploy}}* afterwards, provided you have set up the correct credentials for *{{people.apache.org}}* in *{{~/.m2/settings.xml}}*:
-{pygmentize:lang=xml}
-<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0
-                      http://maven.apache.org/xsd/settings-1.0.0.xsd">
-  <servers>
-    <server>
-      <id>people.apache.org</id>
-      <username>gertv</username>
-      <!-- either one of these authentication methods -->
-      <privateKey/>
-      <password/>
-    </server>
-  </servers>
-
-</settings>
-{pygmentize}
+If you're a committer, you can also deploy the site directly by running *{{mvn scm-publish:publish-scm}}* afterwards.  This will upload a new copy to {{https://svn.apache.org/repos/asf/servicemix/site/production/}}.
 
 h2. Hudson builds
 A Hudson build has been set up for trunk in http://hudson.zones.apache.org/hudson/job/ServiceMix-Docs/
 
-{note:title=No automatic deployment}
-At the moment, we're unable to deploy updates to the documentation automatically from the Hudson builds.
-{note}
 
 --- name:content pipeline:ssp
 <%@ val overview : String %>
