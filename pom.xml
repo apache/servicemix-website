@@ -36,9 +36,6 @@
     <packaging>war</packaging>
 
     <properties>
-        <must-succeed>false</must-succeed>
-        <site.dir>${project.build.directory}/site</site.dir>
-        <manual>${site.dir}/manual-${project.version}</manual>
         <netbeans.hint.deploy.server>Tomcat60</netbeans.hint.deploy.server>
         <jetty-port>8080</jetty-port>
         <jetty-war-dir>${project.build.directory}/webapp/</jetty-war-dir>
@@ -48,8 +45,8 @@
         <scalate.mode>production</scalate.mode>
         <scalate.workdir>${project.build.directory}/scalateWorkDir</scalate.workdir>
         <scala.version>2.9.1</scala.version>
-        <karaf.version>${project.version}</karaf.version>
-        <maven.wagon.version>1.0-beta-6</maven.wagon.version>
+
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     </properties>
 
     <repositories>
@@ -65,20 +62,6 @@
             </snapshots>
         </repository>
     </repositories>
-
-    <pluginRepositories>
-        <pluginRepository>
-            <id>fusesource</id>
-            <name>Fusesource Maven Repository</name>
-            <url>http://repo.fusesource.com/nexus/content/repositories/snapshots/</url>
-            <releases>
-                <enabled>false</enabled>
-            </releases>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-        </pluginRepository>
-    </pluginRepositories>
 
     <dependencies>
         <dependency>
@@ -182,17 +165,7 @@
                         </configuration> -->
                     </execution>
                 </executions>
-                <configuration>
-                    <remoteServerId>people.apache.org</remoteServerId>
-                    <remoteServerUrl>scp://people.apache.org/www/servicemix.apache.org</remoteServerUrl>
-                    <target>${basedir}/src/main/webapp</target>
-                </configuration>
                 <dependencies>
-                    <dependency>
-                        <groupId>org.apache.maven.wagon</groupId>
-                        <artifactId>wagon-ssh</artifactId>
-                        <version>${maven.wagon.version}</version>
-                    </dependency>
                     <dependency>
                         <groupId>org.fusesource.wikitext</groupId>
                         <artifactId>confluence-core</artifactId>
@@ -282,6 +255,19 @@
                         <Embed-Transitive>true</Embed-Transitive>
                         <Webapp-Context>/karaf-doc</Webapp-Context>
                     </instructions>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-scm-publish-plugin</artifactId>
+                <version>1.0-beta-1</version>
+                <configuration>
+                    <checkinComment>Updating main website contents</checkinComment>
+                    <pubScmUrl>scm:svn:https://svn.apache.org/repos/asf/servicemix/site/production</pubScmUrl>
+                    <content>${project.build.directory}/sitegen</content>
+                    <ignorePathsToDelete>
+                        <ignorePathToDelete>docs/**</ignorePathToDelete>
+                    </ignorePathsToDelete>
                 </configuration>
             </plugin>
         </plugins>

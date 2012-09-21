@@ -5,7 +5,6 @@ title: Website Source
 h1. Website Project
 
 The website projects holds the code for our main website.
-The new website is currently work-in-progress and staged at http://servicemix.apache.org/staging
 
 --- name:building pipeline:conf
 
@@ -16,7 +15,7 @@ The project is a basic Maven WAR project.  Some important directories and files 
 * {{src/main/webapp}} : Contains the documentation page contents
 * {{src/main/webapp/WEB-INF/scalate/layouts}} : Scalate SSP templates for the site
 
-We don't intend to release this project, the main goal is just to upload the result of the build to http://servicemix.apache.org/staging
+We don't intend to release this project, the main goal is just to upload the result of the build to http://servicemix.apache.org
 
 h3. Build and browse locally
 
@@ -25,27 +24,7 @@ You can also run {{mvn jetty:run}} to have a live, browsable copy of the website
 
 h3. Upload a new copy
 
-If you're a committer, you can upload a new copy of the website into the staging area at http://servicemix.apache.org/staging by running a {{mvn scalate:deploy}}.
-
-Before you run this command, ensure to configure the {{people.apache.org}} server credentials in your {{~/.m2/settings.xml}}.
-
-{pygmentize:lang=xml}
-<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0
-                      http://maven.apache.org/xsd/settings-1.0.0.xsd">
-  <servers>
-    <server>
-      <id>people.apache.org</id>
-      <username>gertv</username>
-      <!-- either one of these authentication methods -->
-      <privateKey/>
-      <password/>
-    </server>
-  </servers>
-
-</settings>
-{pygmentize}
+If you're a committer, you can upload a new copy of the website to the Subversion repository at {{https://svn.apache.org/repos/asf/servicemix/site/production/}} by running a {{mvn scm-publish:publish-scm}}.
 
 --- name:content pipeline:ssp
 <%@ val overview : String %>
