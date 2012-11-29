@@ -1,8 +1,5 @@
 ---
 title: Contributing
-page_version: 34
-page_creator: jstrachan
-page_modifier: ccustine
 --- pipeline:conf
 h1. Anyone Can Contribute! 
 
@@ -22,7 +19,7 @@ Apache committers are allowed write access to the [ServiceMix sandbox|https://sv
 h2. Getting In Touch
 
 There are various ways of communicating with the ServiceMix community.
-- visit the [Discussion Forum|http://www.nabble.com/ServiceMix---User-f12050.html]
+- visit the [Discussion Forums]
 - subscribe to the [Mailing Lists] and take part in any conversations
 - pop by on [IRC|irc://irc.codehaus.org/servicemix] and say hi
 - add some comments to the [wiki|Navigation](requires a log in)
@@ -34,9 +31,9 @@ Please create a new issue in the [JIRA issue tracker|http://issues.apache.org/ac
 
 h3. Creating a JIRA Issue 
 
-# [Register for a JIRA account|https://issues.apache.org/activemq/secure/Signup!default.jspa] 
+# Register for a JIRA account at [https://issues.apache.org/jira/secure/Signup!default.jspa]
 # Log in to the JIRA issue tracking system 
-# Visit the [ServiceMix JIRA page|http://issues.apache.org/activemq/browse/SM] and click the link named [Create a new issue in project ServiceMix|https://issues.apache.org/activemq/secure/CreateIssue!default.jspa] 
+# Visit the [ServiceMix JIRA page|http://issues.apache.org/jira/browse/SMX4] - at the top right of the page, you can create a new JIRA issue.
 # Fill in as much detail as possible 
 # Add a JUnit test if possible
 
