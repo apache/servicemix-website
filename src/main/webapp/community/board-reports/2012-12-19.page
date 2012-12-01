@@ -1,8 +1,8 @@
 ---
-title: Board Report 2012-09-19
+title: Board Report 2012-12-19
 --- pipeline:conf
 
-h2. September 19th, 2012
+h2. December 19th, 2012
 
 {code}
 Apache ServiceMix is a flexible, open-source integration container that
@@ -22,11 +22,9 @@ No changes since last report.
 
 Community Objectives
 --------------------
-Our current objective is to work on a ServiceMix 4.5.0 release - with all
-dependency project releases done, we can start working on getting this out.
-
-Documentation and website remain important working topics - we are looking
-into the mandatory migration to svnpubsub at the moment.
+Since our last board report, we have completed the migration to svnpubsub
+for both our website and our distribution are. Documentation and website
+remain important working topics.
 
 When releasing OSGi bundles, we are repackaging and wrapping existing
 artifacts from other projects.  To ensure these changes get donated/
@@ -43,7 +41,9 @@ Branding Status
 
 Releases
 --------
-- ServiceMix Specs 2.0.0 in June
-- Apache ServiceMix 3.4.1 release in July
-- A set of 31 OSGi bundles in September
+- ServiceMix Specs 2.1.0 in October
+- A set of 18 OSGi bundles in October
+- ServiceMix Specs 2.2.0 in December (Vote in progress)
+- A set of x OSGi bundles in December (TBD)
+- Apache ServiceMix 4.5.0 (TBD)
 {code}
