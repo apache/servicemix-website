@@ -11,10 +11,11 @@ Karaf to provide a complete, enterprise-ready ESB powered by OSGi.
 
 Project Status
 --------------
-While we continue to have an active community with good participation from
-users on mailing lists, IRC, and issue reporting in JIRA, we also have lost
+While we continue to have an active community, we also have lost
 some of our momentum now that major parts of the functionality are being
 maintained in related projects like Apache Karaf and Apache Camel.
+
+There are no outstanding issues requiring board attention.
 
 Community
 ---------
@@ -23,7 +24,7 @@ No changes since last report.
 Community Objectives
 --------------------
 Since our last board report, we have completed the migration to svnpubsub
-for both our website and our distribution are. Documentation and website
+for both our website and our distribution area. Documentation and website
 remain important working topics.
 
 When releasing OSGi bundles, we are repackaging and wrapping existing
@@ -43,7 +44,6 @@ Releases
 --------
 - ServiceMix Specs 2.1.0 in October
 - A set of 18 OSGi bundles in October
-- ServiceMix Specs 2.2.0 in December (Vote in progress)
-- A set of x OSGi bundles in December (TBD)
-- Apache ServiceMix 4.5.0 (TBD)
+- ServiceMix Specs 2.2.0 in December
+- A set of 64 OSGi bundles in December (Vote in progress)
 {code}
