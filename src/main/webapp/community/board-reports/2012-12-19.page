@@ -24,8 +24,9 @@ No changes since last report.
 Community Objectives
 --------------------
 Since our last board report, we have completed the migration to svnpubsub
-for both our website and our distribution area. Documentation and website
-remain important working topics.
+for our website and are nearly ready for migrating our distribution area.
+
+Documentation and website remain important working topics.
 
 When releasing OSGi bundles, we are repackaging and wrapping existing
 artifacts from other projects.  To ensure these changes get donated/
