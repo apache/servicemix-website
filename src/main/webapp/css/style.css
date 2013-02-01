@@ -197,6 +197,11 @@ td.align {
 	padding-bottom: 10px;
 }
 
+.wiki-content ul p {
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
 /*
 ** when this stylesheet is used for the Tiny MCE Wysiwyg editor's edit area, we can't
 ** use an id=PageContent or class=wiki-content, so we must
@@ -223,6 +228,11 @@ ul, ol {
     margin-bottom: 2px;
     padding-top: 0px;
     padding-bottom: 0px;
+}
+
+ul p {
+    margin-top: 2px;
+    margin-bottom: 2px;
 }
 
 pre {
