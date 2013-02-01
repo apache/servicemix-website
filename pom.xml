@@ -35,6 +35,10 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>war</packaging>
 
+    <prerequisites>
+        <maven>3.0.0</maven>
+    </prerequisites>
+
     <properties>
         <netbeans.hint.deploy.server>Tomcat60</netbeans.hint.deploy.server>
         <jetty-port>8080</jetty-port>
@@ -138,7 +142,7 @@
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>build-helper-maven-plugin</artifactId>
-                <version>1.5</version>
+                <version>1.7</version>
                 <executions>
                     <execution>
                         <id>add-source</id>
@@ -184,23 +188,14 @@
                 </dependencies>
             </plugin>
             <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-war-plugin</artifactId>
-                <version>2.1</version>
-                <configuration>
-                    <webResources>
-                        <resource>
-                            <directory>${project.build.directory}/webapp/</directory>
-                        </resource>
-                    </webResources>
-                    <archive>
-                        <manifestFile>${project.build.outputDirectory}/META-INF/MANIFEST.MF</manifestFile>
-                    </archive>
-                </configuration>
+                <version>2.3</version>
             </plugin>
             <plugin>
                 <groupId>org.mortbay.jetty</groupId>
                 <artifactId>jetty-maven-plugin</artifactId>
-                <version>7.1.5.v20100705</version>
+                <version>8.1.8.v20121106</version>
                 <configuration>
                     <!-- When editing the conf files, you can comment this line to run
                         mvn jetty:run
@@ -225,47 +220,9 @@
                 </configuration>
             </plugin>
             <plugin>
-                <groupId>org.apache.felix</groupId>
-                <artifactId>maven-bundle-plugin</artifactId>
-                <version>2.3.4</version>
-                <executions>
-                    <execution>
-                        <id>bundle-manifest</id>
-                        <phase>process-classes</phase>
-                        <goals>
-                            <goal>manifest</goal>
-                        </goals>
-                    </execution>
-                </executions>
-                <configuration>
-                    <supportedProjectTypes>
-                        <supportedProjectType>jar</supportedProjectType>
-                        <supportedProjectType>bundle</supportedProjectType>
-                        <supportedProjectType>war</supportedProjectType>
-                    </supportedProjectTypes>
-                    <instructions>
-                        <Import-Package>
-                            javax.servlet,
-                            javax.servlet.http,
-                            org.osgi.framework,
-                            org.osgi.service.packageadmin,
-                            javax.swing.tree,
-                            org.apache.commons.logging;provider=paxlogging;resolution:=optional,
-                            org.apache.log4j;provider=paxlogging;resolution:=optional,
-                            org.slf4j;provider=paxlogging;resolution:=optional;version="[1.5,2)",
-                        </Import-Package>
-                        <Bundle-ClassPath>.,WEB-INF/classes</Bundle-ClassPath>
-                        <Embed-Directory>WEB-INF/lib</Embed-Directory>
-                        <Embed-Dependency>*;scope=compile|runtime</Embed-Dependency>
-                        <Embed-Transitive>true</Embed-Transitive>
-                        <Webapp-Context>/karaf-doc</Webapp-Context>
-                    </instructions>
-                </configuration>
-            </plugin>
-            <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-scm-publish-plugin</artifactId>
-                <version>1.0-beta-1</version>
+                <version>1.0-beta-2</version>
                 <configuration>
                     <checkinComment>[scm-publish] Updating main website contents</checkinComment>
                     <pubScmUrl>scm:svn:https://svn.apache.org/repos/asf/servicemix/site/production</pubScmUrl>
