@@ -1,0 +1,34 @@
+---
+title: ServiceMix NMR 1.6.0
+--- pipeline:conf
+
+h2. Release Notes: ServiceMix NMR 1.6.0
+
+*Bug*
+* [SMX4NMR-289|http://issues.apache.org/active/browse/SMX4NMR-289] - Duplicate config cm:entities.
+* [SMX4NMR-290|http://issues.apache.org/active/browse/SMX4NMR-290] - nmr osgi bundle export duplicated OSGi service org.osgi.service.cm.ManagedService
+* [SMX4NMR-291|http://issues.apache.org/active/browse/SMX4NMR-291] - NMR FlowRegistryImpl should use endpoint name but not a UUID to retrieve related AuthorizationEntry
+* [SMX4NMR-293|http://issues.apache.org/active/browse/SMX4NMR-293] - should also specify start-level=50 for the features in nmr features.xml
+* [SMX4NMR-294|http://issues.apache.org/active/browse/SMX4NMR-294] - NPE from OsgiServiceRegistryTracker when service is unavailable
+* [SMX4NMR-296|http://issues.apache.org/active/browse/SMX4NMR-296] - Add logger guard checks for nmr/ChannelImpl to optimize for better performance
+* [SMX4NMR-301|http://issues.apache.org/active/browse/SMX4NMR-301] - Update dependencies to match features project
+* [SMX4NMR-302|http://issues.apache.org/active/browse/SMX4NMR-302] - Integration tests are taking too long to complete
+* [SMX4NMR-303|http://issues.apache.org/active/browse/SMX4NMR-303] - ensure nmr testing/support can pull in correct spring version
+* [SMX4NMR-304|http://issues.apache.org/active/browse/SMX4NMR-304] - add NPE guard for AbstractComponentContext.getMBeanServer
+* [SMX4NMR-306|http://issues.apache.org/active/browse/SMX4NMR-306] - Container freezes while installing jbi feature
+
+*Improvement*
+* [SMX4NMR-292|http://issues.apache.org/active/browse/SMX4NMR-292] - Upgrade to XBean 3.11.1
+* [SMX4NMR-298|http://issues.apache.org/active/browse/SMX4NMR-298] - nmr features.xml should depend other features with version range
+
+*Task*
+* [SMX4NMR-285|http://issues.apache.org/active/browse/SMX4NMR-285] - Upgrade to Karaf 2.2.4
+* [SMX4NMR-295|http://issues.apache.org/active/browse/SMX4NMR-295] - Remove StAX 1.0 dependency in woodstox feature
+* [SMX4NMR-297|http://issues.apache.org/active/browse/SMX4NMR-297] - upgrade to karaf 2.2.9
+* [SMX4NMR-299|http://issues.apache.org/active/browse/SMX4NMR-299] - upgrade to spring 3.0.7.RELEAS
+
+*Test*
+* [SMX4NMR-300|http://issues.apache.org/active/browse/SMX4NMR-300] - add java7 package export for system bundle in testing/support
+
+
+

@@ -1,0 +1,16 @@
+---
+title: ServiceMix Utils 1.6.0
+--- pipeline:conf
+
+h2. Release Notes: ServiceMix Utils 1.6.0
+
+*Bug*
+* [SM-2148|http://issues.apache.org/active/browse/SM-2148] - NPE in TimeoutMemoryStore under heavy load
+
+*Test*
+* [SM-2166|http://issues.apache.org/active/browse/SM-2166] - Intermittent test failure in LogThrowableInExecutorTest
+
+
+
+
+
