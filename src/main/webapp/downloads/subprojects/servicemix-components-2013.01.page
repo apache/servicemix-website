@@ -1,0 +1,50 @@
+---
+title: ServiceMix Components 2013.01
+--- pipeline:conf
+
+h2. Release Notes: ServiceMix Components 2013.01
+
+*Bug*
+* [SMXCOMP-921|http://issues.apache.org/active/browse/SMXCOMP-921] - servicemix-camel blueprint configuration use duplicated PID
+* [SMXCOMP-923|http://issues.apache.org/active/browse/SMXCOMP-923] - cxf bc provider should be able to return correct fault when useSOAPEnvelope=true
+* [SMXCOMP-924|http://issues.apache.org/active/browse/SMXCOMP-924] - CXF SE should ensure jax-ws-catalog get loaded and get chance to import local schema as inline schema
+* [SMXCOMP-934|http://issues.apache.org/active/browse/SMXCOMP-934] - upgrade to cxf 2.6.1
+* [SMXCOMP-937|http://issues.apache.org/active/browse/SMXCOMP-937] - when deploying multiple CXF JBI services  all services are shown in the list regardless of port they are running on.
+* [SMXCOMP-939|http://issues.apache.org/active/browse/SMXCOMP-939] - unify jetty version for JBI components
+* [SMXCOMP-940|http://issues.apache.org/active/browse/SMXCOMP-940] - InstanceAlreadyExistsException in HTTP/JMS component bootstrap on WebSphere
+* [SMXCOMP-945|http://issues.apache.org/active/browse/SMXCOMP-945] - OsgiJbiComponent should use camel ServiceSupport to manage the lifecycle
+* [SMXCOMP-946|http://issues.apache.org/active/browse/SMXCOMP-946] - can't install servicemix-http feature
+* [SMXCOMP-949|http://issues.apache.org/active/browse/SMXCOMP-949] - Upgrade to Camel 2.10.2
+* [SMXCOMP-952|http://issues.apache.org/active/browse/SMXCOMP-952] - NPE in CxfBcConsumer when ServiceMix is deployed as a web application
+* [SMXCOMP-955|http://issues.apache.org/active/browse/SMXCOMP-955] - ensure camel-jbi endpoint url operation get decoded
+* [SMXCOMP-956|http://issues.apache.org/active/browse/SMXCOMP-956] - AsyncBaseLifeCycle should be able to return Error MessageExchange if provider threadpool is run out
+
+*Improvement*
+* [SMXCOMP-925|http://issues.apache.org/active/browse/SMXCOMP-925] - CxfBcConsumer.retrieveWSDL should throw DeploymentException when can't get wsdl definition
+* [SMXCOMP-928|http://issues.apache.org/active/browse/SMXCOMP-928] - introduce WSNUnsubsribeInterceptor which can read address from WSN unsubsribe message and determine target enpoint in WSN broker dynamically
+* [SMXCOMP-935|http://issues.apache.org/active/browse/SMXCOMP-935] - Upgrade to XBean 3.11.1
+* [SMXCOMP-938|http://issues.apache.org/active/browse/SMXCOMP-938] - introduce a showAllServices property for CxfBcComponent
+* [SMXCOMP-944|http://issues.apache.org/active/browse/SMXCOMP-944] - org.apache.servicemix.common.util.MessageUtil creates a new SourceTransformer each time.
+* [SMXCOMP-947|http://issues.apache.org/active/browse/SMXCOMP-947] - use DOMSource instead of StringSource in servicemix-common/MessageUtil
+* [SMXCOMP-951|http://issues.apache.org/active/browse/SMXCOMP-951] - refector AsyncBaseLifeCycle to avoid call into processExchangeInTx even the Exchange has no Transaction property
+* [SMXCOMP-957|http://issues.apache.org/active/browse/SMXCOMP-957] - add serverGracefulTimeout  for servicemix-http blueprint configuration
+* [SMXCOMP-958|http://issues.apache.org/active/browse/SMXCOMP-958] - servicemix-wsn2005 should be able to configure username/password when connect to a secure jms broker
+* [SMXCOMP-959|http://issues.apache.org/active/browse/SMXCOMP-959] - servicemix-wsn2005 shouldn't rely on activemq-broker.xml bundle
+* [SMXCOMP-961|http://issues.apache.org/active/browse/SMXCOMP-961] - add version range for saxon Import-Package
+
+*Task*
+* [SMXCOMP-917|http://issues.apache.org/active/browse/SMXCOMP-917] - upgrade to cxf 2.5.1
+* [SMXCOMP-918|http://issues.apache.org/active/browse/SMXCOMP-918] - upgrade to camel 2.9
+* [SMXCOMP-926|http://issues.apache.org/active/browse/SMXCOMP-926] - upgrade to saxon 9.3.0.11
+* [SMXCOMP-927|http://issues.apache.org/active/browse/SMXCOMP-927] - upgrade to wss4j 1.6.5 and xmlsec 1.5.1
+* [SMXCOMP-929|http://issues.apache.org/active/browse/SMXCOMP-929] - upgrade to cxf 2.5.3
+* [SMXCOMP-931|http://issues.apache.org/active/browse/SMXCOMP-931] - upgrade to cxf 2.6.0
+* [SMXCOMP-941|http://issues.apache.org/active/browse/SMXCOMP-941] - upgrade to camel 2.10.0
+* [SMXCOMP-942|http://issues.apache.org/active/browse/SMXCOMP-942] - upgrade to cxf 2.6.2
+* [SMXCOMP-943|http://issues.apache.org/active/browse/SMXCOMP-943] - upgrade to camel 2.10.1
+* [SMXCOMP-950|http://issues.apache.org/active/browse/SMXCOMP-950] - upgrade to cxf 2.6.3
+* [SMXCOMP-960|http://issues.apache.org/active/browse/SMXCOMP-960] - upgrade to cxf 2.6.4
+
+*Test*
+* [SMXCOMP-936|http://issues.apache.org/active/browse/SMXCOMP-936] - CxfBcPolicyTest#testUsingAddressing intermittently fails
+* [SMXCOMP-948|http://issues.apache.org/active/browse/SMXCOMP-948] - https related test failure with JDK7
