@@ -98,7 +98,7 @@ h3. Wish
 h2. SVN Tag Checkout
 
 {code}
-svn co http://svn.apache.org/repos/asf/servicemix/smx4/features/tags/features-4.4.2/
+svn co http://svn.apache.org/repos/asf/servicemix/smx4/features/tags/features-4.5.0/
 {code}
 
 h2. Changelog
