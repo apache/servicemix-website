@@ -108,10 +108,6 @@ For a more detailed view of new features and bug fixes, see the [changelog|https
 --- name:content pipeline:ssp
 <%@ val notes : String %>
 
-<div class="warningPanel">
-This page contains information about a release that is currently under vote and that is not yet available for download.
-</div>
-
 <h2>Downloads : Apache ServiceMix 4.5.0</h2>
 
 <% render("/downloads/_servicemix4.scaml", Map("version" -> "4.5.0")) %>
