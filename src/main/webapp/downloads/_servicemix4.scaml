@@ -2,10 +2,20 @@
 -@ val archive: Boolean = false
 
 -
-  val mirror = if (archive) "http://archive.apache.org/dist/" else "http://www.apache.org/dyn/closer.cgi?path="
-  val dist = if (archive) "http://archive.apache.org/dist/" else "http://www.apache.org/dist/"
+  import org.apache.servicemix.website.Release
+  import org.apache.servicemix.website.Helper._
+  implicit val release = Release(version, archive)
 
 %div#downloads
+  - if (isSnapshot(release))
+    %div.alert
+      %p.title
+        This is a development snapshot for an upcoming Apache ServiceMix release.
+        Feel free to use it for testing purposes or to get a sneak preview of new features.
+        For production use, you should download
+        %a{:href => {uri("/downloads.html")}} our latest release
+        instead
+
   %table
     %thead
       %tr
@@ -25,40 +35,44 @@
           %p Our default assembly is the best way to get started with Apache ServiceMix.
         %td
           %p.tar
-            %a(href="#{mirror}servicemix/servicemix-4/#{version}/apache-servicemix-#{version}.tar.gz")
+            %a(href="#{download(tarball)}")
               Apache ServiceMix #{version} (tar.gz)
-          %p.keys
-            %a(href="#{dist}servicemix/servicemix-4/#{version}/apache-servicemix-#{version}.tar.gz.asc") [PGP]
-            %a(href="#{dist}servicemix/servicemix-4/#{version}/apache-servicemix-#{version}.tar.gz.sha1") [SHA1]
-            %a(href="#{dist}servicemix/servicemix-4/#{version}/apache-servicemix-#{version}.tar.gz.md5") [MD5]
+          - if (isRelease(release))
+            %p.keys
+              %a(href="#{pgp(tarball)}") [PGP]
+              %a(href="#{sha1(tarball)}") [SHA1]
+              %a(href="#{md5(tarball)}") [MD5]
         %td
           %p.zip
-            %a(href="#{mirror}servicemix/servicemix-4/#{version}/apache-servicemix-#{version}.zip")
+            %a(href="#{download(zip)}")
               Apache ServiceMix #{version} (zip)
-          %p.keys
-            %a(href="#{dist}servicemix/servicemix-4/#{version}/apache-servicemix-#{version}.zip.asc") [PGP]
-            %a(href="#{dist}servicemix/servicemix-4/#{version}/apache-servicemix-#{version}.zip.sha1") [SHA1]
-            %a(href="#{dist}servicemix/servicemix-4/#{version}/apache-servicemix-#{version}.zip.md5") [MD5]
+          - if (isRelease(release))
+            %p.keys
+              %a(href="#{pgp(zip)}") [PGP]
+              %a(href="#{sha1(zip)}") [SHA1]
+              %a(href="#{md5(zip)}") [MD5]
       %tr
         %td.first
           %p.title Source assembly
           %p Use this if you want to build Apache ServiceMix from source yourself
         %td
           %p.tar
-            %a(href="#{mirror}servicemix/servicemix-4/#{version}/apache-servicemix-#{version}-src.tar.gz")
+            %a(href="#{download(source,tarball)}")
               Apache ServiceMix Sources #{version} (tar.gz)
-          %p.keys
-            %a(href="#{dist}servicemix/servicemix-4/#{version}/apache-servicemix-#{version}-src.tar.gz.asc") [PGP]
-            %a(href="#{dist}servicemix/servicemix-4/#{version}/apache-servicemix-#{version}-src.tar.gz.sha1") [SHA1]
-            %a(href="#{dist}servicemix/servicemix-4/#{version}/apache-servicemix-#{version}-src.tar.gz.md5") [MD5]
+          - if (isRelease(release))
+            %p.keys
+              %a(href="#{pgp(source,tarball)}") [PGP]
+              %a(href="#{sha1(source,tarball)}") [SHA1]
+              %a(href="#{md5(source,tarball)}") [MD5]
         %td
           %p.zip
-            %a(href="#{mirror}servicemix/servicemix-4/#{version}/apache-servicemix-#{version}-src.zip")
+            %a(href="#{download(source,zip)}")
               Apache ServiceMix Sources #{version} (zip)
-          %p.keys
-            %a(href="#{dist}servicemix/servicemix-4/#{version}/apache-servicemix-#{version}-src.zip.asc") [PGP]
-            %a(href="#{dist}servicemix/servicemix-4/#{version}/apache-servicemix-#{version}-src.zip.sha1") [SHA1]
-            %a(href="#{dist}servicemix/servicemix-4/#{version}/apache-servicemix-#{version}-src.zip.md5") [MD5]
+          - if (isRelease(release))
+            %p.keys
+              %a(href="#{pgp(source,zip)}") [PGP]
+              %a(href="#{sha1(source,zip)}") [SHA1]
+              %a(href="#{md5(source,zip)}") [MD5]
 
       - if (version != "4.2.0" && version != "4.3.0")
         %tr
@@ -67,60 +81,66 @@
             %p Use this if you want to run Apache ServiceMix on a server that does not have an internet connection
           %td
             %p.tar
-              %a(href="#{mirror}servicemix/servicemix-4/#{version}/apache-servicemix-full-#{version}.tar.gz")
+              %a(href="#{download(full,tarball)}")
                 Apache ServiceMix Full #{version} (tar.gz)
-            %p.keys
-              %a(href="#{dist}servicemix/servicemix-4/#{version}/apache-servicemix-full-#{version}.tar.gz.asc") [PGP]
-              %a(href="#{dist}servicemix/servicemix-4/#{version}/apache-servicemix-full-#{version}.tar.gz.sha1") [SHA1]
-              %a(href="#{dist}servicemix/servicemix-4/#{version}/apache-servicemix-full-#{version}.tar.gz.md5") [MD5]
+            - if (isRelease(release))
+              %p.keys
+                %a(href="#{pgp(full,tarball)}") [PGP]
+                %a(href="#{sha1(full,tarball)}") [SHA1]
+                %a(href="#{md5(full,tarball)}") [MD5]
           %td
             %p.zip
-              %a(href="#{mirror}servicemix/servicemix-4/#{version}/apache-servicemix-full-#{version}.zip")
+              %a(href="#{download(full,zip)}")
                 Apache ServiceMix Full #{version} (zip)
-            %p.keys
-              %a(href="#{dist}servicemix/servicemix-4/#{version}/apache-servicemix-full-#{version}.zip.asc") [PGP]
-              %a(href="#{dist}servicemix/servicemix-4/#{version}/apache-servicemix-full-#{version}.zip.sha1") [SHA1]
-              %a(href="#{dist}servicemix/servicemix-4/#{version}/apache-servicemix-full-#{version}.zip.md5") [MD5]
+            - if (isRelease(release))
+              %p.keys
+                %a(href="#{pgp(full,zip)}") [PGP]
+                %a(href="#{sha1(full,zip)}") [SHA1]
+                %a(href="#{md5(full,zip)}") [MD5]
         %tr
           %td.first
             %p.title JBI assembly
             %p Use this if you're migrating from ServiceMix 3.x or if you want to reuse your existing JBI artifacts
           %td
             %p.tar
-              %a(href="#{mirror}servicemix/servicemix-4/#{version}/apache-servicemix-jbi-#{version}.tar.gz")
+              %a(href="#{download(jbi,tarball)}")
                 Apache ServiceMix JBI #{version} (tar.gz)
-            %p.keys
-              %a(href="#{dist}servicemix/servicemix-4/#{version}/apache-servicemix-jbi-#{version}.tar.gz.asc") [PGP]
-              %a(href="#{dist}servicemix/servicemix-4/#{version}/apache-servicemix-jbi-#{version}.tar.gz.sha1") [SHA1]
-              %a(href="#{dist}servicemix/servicemix-4/#{version}/apache-servicemix-jbi-#{version}.tar.gz.md5") [MD5]
+            - if (isRelease(release))
+              %p.keys
+                %a(href="#{pgp(jbi,tarball)}") [PGP]
+                %a(href="#{sha1(jbi,tarball)}") [SHA1]
+                %a(href="#{md5(jbi,tarball)}") [MD5]
           %td
             %p.zip
-              %a(href="#{mirror}servicemix/servicemix-4/#{version}/apache-servicemix-jbi-#{version}.zip")
+              %a(href="#{download(jbi,zip)}")
                 Apache ServiceMix JBI #{version} (zip)
-            %p.keys
-              %a(href="#{dist}servicemix/servicemix-4/#{version}/apache-servicemix-jbi-#{version}.zip.asc") [PGP]
-              %a(href="#{dist}servicemix/servicemix-4/#{version}/apache-servicemix-jbi-#{version}.zip.sha1") [SHA1]
-              %a(href="#{dist}servicemix/servicemix-4/#{version}/apache-servicemix-jbi-#{version}.zip.md5") [MD5]
+            - if (isRelease(release))
+              %p.keys
+                %a(href="#{pgp(jbi,zip)}") [PGP]
+                %a(href="#{sha1(jbi,zip)}") [SHA1]
+                %a(href="#{md5(jbi,zip)}") [MD5]
         %tr
           %td.first
             %p.title Minimal assembly
             %p Use this if you're an advanced user that wants to create your own edition of Apache ServiceMix at runtime
           %td
             %p.tar
-              %a(href="#{mirror}servicemix/servicemix-4/#{version}/apache-servicemix-minimal-#{version}.tar.gz")
+              %a(href="#{download(minimal,tarball)}")
                 Apache ServiceMix Minimal #{version} (tar.gz)
-            %p.keys
-              %a(href="#{dist}servicemix/servicemix-4/#{version}/apache-servicemix-minimal-#{version}.tar.gz.asc") [PGP]
-              %a(href="#{dist}servicemix/servicemix-4/#{version}/apache-servicemix-minimal-#{version}.tar.gz.sha1") [SHA1]
-              %a(href="#{dist}servicemix/servicemix-4/#{version}/apache-servicemix-minimal-#{version}.tar.gz.md5") [MD5]
+            - if (isRelease(release))
+              %p.keys
+                %a(href="#{pgp(minimal,tarball)}") [PGP]
+                %a(href="#{sha1(minimal,tarball)}") [SHA1]
+                %a(href="#{md5(minimal,tarball)}") [MD5]
           %td
             %p.zip
-              %a(href="#{mirror}servicemix/servicemix-4/#{version}/apache-servicemix-minimal-#{version}.zip")
+              %a(href="#{download(minimal,zip)}")
                 Apache ServiceMix Minimal #{version} (zip)
-            %p.keys
-              %a(href="#{dist}servicemix/servicemix-4/#{version}/apache-servicemix-minimal-#{version}.zip.asc") [PGP]
-              %a(href="#{dist}servicemix/servicemix-4/#{version}/apache-servicemix-minimal-#{version}.zip.sha1") [SHA1]
-              %a(href="#{dist}servicemix/servicemix-4/#{version}/apache-servicemix-minimal-#{version}.zip.md5") [MD5]
+            - if (isRelease(release))
+              %p.keys
+                %a(href="#{pgp(minimal,zip)}") [PGP]
+                %a(href="#{sha1(minimal,zip)}") [SHA1]
+                %a(href="#{md5(minimal,zip)}") [MD5]
 
   %div.info
     %p.title The above URLs use redirection

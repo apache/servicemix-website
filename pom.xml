@@ -44,7 +44,6 @@
         <jetty-port>8080</jetty-port>
         <jetty-war-dir>${project.build.directory}/webapp/</jetty-war-dir>
 
-
         <scalate.editor>${env.SCALATE_EDITOR}</scalate.editor>
         <scalate.mode>production</scalate.mode>
         <scalate.workdir>${project.build.directory}/scalateWorkDir</scalate.workdir>
@@ -103,20 +102,43 @@
             <artifactId>slf4j-api</artifactId>
             <version>${slf4j.version}</version>
         </dependency>
-		<dependency>
-			<groupId>org.scala-lang</groupId>
-			<artifactId>scala-library</artifactId>
-			<version>${scala.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.scala-lang</groupId>
-			<artifactId>scala-compiler</artifactId>
-			<version>${scala.version}</version>
-		</dependency>
+    		<dependency>
+			      <groupId>org.scala-lang</groupId>
+			      <artifactId>scala-library</artifactId>
+			      <version>${scala.version}</version>
+		    </dependency>
+		    <dependency>
+			      <groupId>org.scala-lang</groupId>
+			      <artifactId>scala-compiler</artifactId>
+			      <version>${scala.version}</version>
+		    </dependency>
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.11</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
 
     <build>
         <plugins>
+            <plugin>
+                <groupId>org.scala-tools</groupId>
+                <artifactId>maven-scala-plugin</artifactId>
+                <version>2.15.2</version>
+                <configuration>
+                    <scalaVersion>${scala.version}</scalaVersion>
+                </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>compile</goal>
+                            <goal>testCompile</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-resources-plugin</artifactId>
