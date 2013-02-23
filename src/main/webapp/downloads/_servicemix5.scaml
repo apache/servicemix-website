@@ -1,0 +1,125 @@
+-@ val version: String
+-@ val archive: Boolean = false
+
+-
+  import org.apache.servicemix.website.Release
+  import org.apache.servicemix.website.Helper._
+  implicit val release = Release(version, archive)
+
+%div#downloads
+  - if (isSnapshot(release))
+    %div.alert
+      %p.title
+        This is a development snapshot for an upcoming Apache ServiceMix release.
+        Feel free to use it for testing purposes or to get a sneak preview of new features.
+        For production use, you should download
+        %a{:href => {uri("/downloads.html")}} our latest release
+        instead
+
+  %table
+    %thead
+      %tr
+        %th.first
+        %th
+          %p Linux/Mac OS X/Unix Downloads
+          %img{:src => {uri("/images/tux.png")}}
+          %img{:src => {uri("/images/freebsd.png")}}
+          %img{:src => {uri("/images/mac_logo.png")}}
+        %th
+          %p Windows Downloads
+          %img{:src => {uri("/images/xp.png")}}
+    %tbody
+      %tr.default
+        %td.first
+          %p.title Default assembly
+          %p Our default assembly is the best way to get started with Apache ServiceMix.
+        %td
+          %p.tar
+            %a(href="#{download(tarball)}")
+              Apache ServiceMix #{version} (tar.gz)
+          - if (isRelease(release))
+            %p.keys
+              %a(href="#{pgp(tarball)}") [PGP]
+              %a(href="#{sha1(tarball)}") [SHA1]
+              %a(href="#{md5(tarball)}") [MD5]
+        %td
+          %p.zip
+            %a(href="#{download(zip)}")
+              Apache ServiceMix #{version} (zip)
+          - if (isRelease(release))
+            %p.keys
+              %a(href="#{pgp(zip)}") [PGP]
+              %a(href="#{sha1(zip)}") [SHA1]
+              %a(href="#{md5(zip)}") [MD5]
+      %tr
+        %td.first
+          %p.title Source assembly
+          %p Use this if you want to build Apache ServiceMix from source yourself
+        %td
+          %p.tar
+            %a(href="#{download(source,tarball)}")
+              Apache ServiceMix Sources #{version} (tar.gz)
+          - if (isRelease(release))
+            %p.keys
+              %a(href="#{pgp(source,tarball)}") [PGP]
+              %a(href="#{sha1(source,tarball)}") [SHA1]
+              %a(href="#{md5(source,tarball)}") [MD5]
+        %td
+          %p.zip
+            %a(href="#{download(source,zip)}")
+              Apache ServiceMix Sources #{version} (zip)
+          - if (isRelease(release))
+            %p.keys
+              %a(href="#{pgp(source,zip)}") [PGP]
+              %a(href="#{sha1(source,zip)}") [SHA1]
+              %a(href="#{md5(source,zip)}") [MD5]
+      %tr
+        %td.first
+          %p.title Full assembly
+          %p Use this if you want to run Apache ServiceMix on a server that does not have an internet connection
+        %td
+          %p.tar
+            %a(href="#{download(full,tarball)}")
+              Apache ServiceMix Full #{version} (tar.gz)
+          - if (isRelease(release))
+            %p.keys
+              %a(href="#{pgp(full,tarball)}") [PGP]
+              %a(href="#{sha1(full,tarball)}") [SHA1]
+              %a(href="#{md5(full,tarball)}") [MD5]
+        %td
+          %p.zip
+            %a(href="#{download(full,zip)}")
+              Apache ServiceMix Full #{version} (zip)
+          - if (isRelease(release))
+            %p.keys
+              %a(href="#{pgp(full,zip)}") [PGP]
+              %a(href="#{sha1(full,zip)}") [SHA1]
+              %a(href="#{md5(full,zip)}") [MD5]
+      %tr
+        %td.first
+          %p.title Minimal assembly
+          %p Use this if you're an advanced user that wants to create your own edition of Apache ServiceMix at runtime
+        %td
+          %p.tar
+            %a(href="#{download(minimal,tarball)}")
+              Apache ServiceMix Minimal #{version} (tar.gz)
+          - if (isRelease(release))
+            %p.keys
+              %a(href="#{pgp(minimal,tarball)}") [PGP]
+              %a(href="#{sha1(minimal,tarball)}") [SHA1]
+              %a(href="#{md5(minimal,tarball)}") [MD5]
+        %td
+          %p.zip
+            %a(href="#{download(minimal,zip)}")
+              Apache ServiceMix Minimal #{version} (zip)
+          - if (isRelease(release))
+            %p.keys
+              %a(href="#{pgp(minimal,zip)}") [PGP]
+              %a(href="#{sha1(minimal,zip)}") [SHA1]
+              %a(href="#{md5(minimal,zip)}") [MD5]
+
+  %div.info
+    %p.title The above URLs use redirection
+    %p
+      The above URLs use the Apache Mirror system to redirect you to a suitable downloads for your download. Some users have experienced issues with some versions of browsers (e.g. some Safari browsers). If the download doesn't seem to work for you from the above URL then try using
+      %a(href="http://www.mozilla.com/en-US/firefox/") FireFox

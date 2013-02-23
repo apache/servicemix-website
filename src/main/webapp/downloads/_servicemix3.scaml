@@ -2,8 +2,9 @@
 -@ val archive: Boolean = false
 
 -
-  val mirror = if (archive) "http://archive.apache.org/dist" else "http://www.apache.org/dyn/closer.cgi?path="
-  val dist = if (archive) "http://archive.apache.org/dist" else "http://www.apache.org/dist"
+  import org.apache.servicemix.website.Release
+  import org.apache.servicemix.website.Helper._
+  implicit val release = Release(version, archive)
 
 %div#downloads
   %div.alert
@@ -33,52 +34,52 @@
           %p Our default assembly is the best way to get started with Apache ServiceMix.
         %td
           %p.tar
-            %a(href="#{mirror}/servicemix/servicemix-3/#{version}/apache-servicemix-#{version}.tar.gz")
+            %a(href="#{download(tarball)}")
               Apache ServiceMix #{version} (tar.gz)
           %p.keys
-            %a(href="#{dist}/servicemix/servicemix-3/#{version}/apache-servicemix-#{version}.tar.gz.asc") [PGP]
-            %a(href="#{dist}/servicemix/servicemix-3/#{version}/apache-servicemix-#{version}.tar.gz.sha1") [SHA1]
-            %a(href="#{dist}/servicemix/servicemix-3/#{version}/apache-servicemix-#{version}.tar.gz.md5") [MD5]
+            %a(href="#{pgp(tarball)}") [PGP]
+            %a(href="#{sha1(tarball)}") [SHA1]
+            %a(href="#{md5(tarball)}") [MD5]
         %td
           %p.zip
-            %a(href="#{mirror}/servicemix/servicemix-4/#{version}/apache-servicemix-#{version}.zip")
+            %a(href="#{download(zip)}")
               Apache ServiceMix #{version} (zip)
           %p.keys
-            %a(href="#{dist}/servicemix/servicemix-3/#{version}/apache-servicemix-#{version}.zip.asc") [PGP]
-            %a(href="#{dist}/servicemix/servicemix-3/#{version}/apache-servicemix-#{version}.zip.sha1") [SHA1]
-            %a(href="#{dist}/servicemix/servicemix-3/#{version}/apache-servicemix-#{version}.zip.md5") [MD5]
+            %a(href="#{pgp(zip)}") [PGP]
+            %a(href="#{sha1(zip)}") [SHA1]
+            %a(href="#{md5(zip)}") [MD5]
       %tr
         %td.first
           %p.title Source assembly
           %p Use this if you want to build Apache ServiceMix from source yourself
         %td
           %p.tar
-            %a(href="#{mirror}/servicemix/servicemix-3/#{version}/apache-servicemix-#{version}-src.tar.gz")
+            %a(href="#{download(source,tarball)}")
               Apache ServiceMix Sources #{version} (tar.gz)
           %p.keys
-            %a(href="#{dist}/servicemix/servicemix-3/#{version}/apache-servicemix-#{version}-src.tar.gz.asc") [PGP]
-            %a(href="#{dist}/servicemix/servicemix-3/#{version}/apache-servicemix-#{version}-src.tar.gz.sha1") [SHA1]
-            %a(href="#{dist}/servicemix/servicemix-3/#{version}/apache-servicemix-#{version}-src.tar.gz.md5") [MD5]
+            %a(href="#{pgp(source,tarball)}") [PGP]
+            %a(href="#{sha1(source,tarball)}") [SHA1]
+            %a(href="#{md5(source,tarball)}") [MD5]
         %td
           %p.zip
-            %a(href="#{mirror}/servicemix/servicemix-3/#{version}/apache-servicemix-#{version}-src.zip")
+            %a(href="#{download(source,zip)}")
               Apache ServiceMix Sources #{version} (zip)
           %p.keys
-            %a(href="#{dist}/servicemix/servicemix-3/#{version}/apache-servicemix-#{version}-src.zip.asc") [PGP]
-            %a(href="#{dist}/servicemix/servicemix-3/#{version}/apache-servicemix-#{version}-src.zip.sha1") [SHA1]
-            %a(href="#{dist}/servicemix/servicemix-3/#{version}/apache-servicemix-#{version}-src.zip.md5") [MD5]
+            %a(href="#{pgp(source,zip)}") [PGP]
+            %a(href="#{sha1(source,zip)}") [SHA1]
+            %a(href="#{md5(source,zip)}") [MD5]
       %tr
         %td.first
           %p.title Web assembly
           %p Use this if you want to run Apache ServiceMix as a web application inside an existing web container
         %td.both(colspan=2)
           %p.tar
-            %a(href="#{mirror}/servicemix/servicemix-3/#{version}/apache-servicemix-web-#{version}.war")
+            %a(href="#{download(war)}")
               Apache ServiceMix WAR #{version} (tar.gz)
           %p.keys
-            %a(href="#{dist}/servicemix/servicemix-3/#{version}/apache-servicemix-web-#{version}.war.asc") [PGP]
-            %a(href="#{dist}/servicemix/servicemix-3/#{version}/apache-servicemix-web-#{version}.war.asc") [SHA1]
-            %a(href="#{dist}/servicemix/servicemix-3/#{version}/apache-servicemix-web-#{version}.war.asc") [MD5]
+            %a(href="#{pgp(war)}") [PGP]
+            %a(href="#{sha1(war)}") [SHA1]
+            %a(href="#{md5(war)}") [MD5]
 
 
   %div.info

@@ -6,6 +6,13 @@ h1. Download
 The latest release is the [ServiceMix 4.5.0 Release|/downloads/servicemix-4.5.0.html].  We strongly encourage all users to use this release.
 
 --- name:previous pipeline:conf
+h2. Development snapshots
+
+We have development snapshots available for
+
+* [Apache ServiceMix 5.0.0-SNAPSHOT|/downloads/servicemix-5.0.0.html]
+* [Apache ServiceMix 4.4.3-SNAPSHOT|/downloads/servicemix-4.4.3.html]
+
 h2. Previous Releases
 
 An archive of previous releases can be found [here|http://archive.apache.org/dist/servicemix/].
