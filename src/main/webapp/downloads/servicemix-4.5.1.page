@@ -1,0 +1,34 @@
+---
+title: ServiceMix 4.5.1-SNAPSHOT
+--- name:notes pipeline:conf
+
+h2. Helping us...
+
+You can help us by trying out this development snapshot and reporting any problems you encounter on the [mailing lists|/community/mailing-lists]
+
+An overview of outstanding JIRA issues for this release can be found at [https://issues.apache.org/jira/browse/SMX4/fixforversion/12324072]
+
+h2. OSGi components list
+OSGi/JBI components included in this release:
+
+This release packages the following dependencies:
+* Version [1.6.0|/downloads/subprojects/servicemix-nmr-1.6.0.html] of ServiceMix NMR
+* Version [2013.01|/downloads/subprojects/servicemix-components-2013.01.html] of the JBI components
+* Version [1.6.0|/downloads/subprojects/servicemix-utils-1.6.0.html] of ServiceMix Utils
+* Version 2.2.10 of [Apache Karaf|http://karaf.apache.org/]
+* Version [5.7.0|http://activemq.apache.org/activemq-570-release.html] of [ActiveMQ|http://activemq.apache.org]
+* Version 2.10.4 of [Camel|http://camel.apache.org]
+* Version 2.6.4 of [CXF|http://cxf.apache.org]
+
+You can use it together with
+* Version 4.5 of the Maven plugins
+* Version 2011.02 of the archetypes
+
+--- name:content pipeline:ssp
+<%@ val notes : String %>
+
+<h2>Downloads : Apache ServiceMix 4.5.1-SNAPSHOT</h2>
+
+<% render("/downloads/_servicemix4.scaml", Map("version" -> "4.5.1-SNAPSHOT")) %>
+
+<%= unescape(notes) %>
