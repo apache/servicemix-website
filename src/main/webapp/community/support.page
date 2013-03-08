@@ -1,8 +1,5 @@
 ---
 title: Support
-page_version: 20
-page_creator: jstrachan
-page_modifier: jgenender
 --- pipeline:conf
 h1. Support 
 
@@ -42,7 +39,9 @@ We can help you much quicker if you try the following
 * [submit a patch|Contributing] fixing the bug! (We also buy you beer when we meet you if you submit bug fixes :)
 * for memory leaks or performance related issues, if you can run a profiler on your test case and attach the output as a file (or zipped file if its huge) to the JIRA we can normally fix things much faster. e.g. run JProfiler or YourKit on your code and send us the output. To find memory leaks its quicker to resolve if you can tell us what classes are taking up all of the RAM; we can normally figure out whats wrong from that.
 
-h2. Commerical Support 
+h2. Commerical Support
+
+[Ameliant|http://ameliant.com] is a specialist consultancy based in London, UK that focuses on open source integration and messaging using the Apache integration stack (ServiceMix, Camel, CXF and ActiveMQ). Ameliant delivers consulting services around developing integrations using ServiceMix, through developer and operations training, development of prototypes and ongoing mentoring. The company also provides guidance around migrations and troubleshooting of operational issues.
 
 [FuseSource|http://fusesource.com/enterprise-support/] provides enterprise [subscriptions|http://fusesource.com/enterprise-support/support-offerings/], [training|http://fusesource.com/enterprise-support/training/] and [consulting|http://fusesource.com/enterprise-support/consulting/] for the enterprise version of ServiceMix, [Fuse ESB|http://fusesource.com/products/enterprise-servicemix]. Also, there is a growing wealth of information about ServiceMix and some of its sister projects ([Apache ActiveMQ|http://fusesource.com/products/enterprise-activemq/], [Apache Camel|http://fusesource.com/products/enterprise-camel/] and [Apache CXF|]http://fusesource.com/products/enterprise-cxf/) at the [FuseSource website|http://fusesource.com].
 
