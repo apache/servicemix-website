@@ -1,0 +1,56 @@
+---
+title: Board Report 2013-03-20
+--- pipeline:conf
+
+{warning}
+This is a work-in-progress - the board report has not yet been submitted.
+
+h2. March 20th, 2013
+
+{code}
+Apache ServiceMix is a flexible, open-source integration container that
+unifies the features and functionality of Apache ActiveMQ, Camel, CXF and
+Karaf to provide a complete, enterprise-ready ESB powered by OSGi.
+
+Project Status
+--------------
+While we continue to have an active community, we also have lost
+some of our momentum now that major parts of the functionality are being
+maintained in related projects like Apache Karaf and Apache Camel.
+
+Red Hat has offered to donate the code for Fuse Fabric to the Apache
+ServiceMix project (http://fuse.fusesource.org/fabric/) - while the
+paperwork is being sorted out, we did some preliminary research to
+see if the name "Apache Fabric" would be available for use for this
+sub-project.
+
+There are no outstanding issues requiring board attention.
+
+Community
+---------
+No changes since last report.
+
+Community Objectives
+--------------------
+Since our last board report, we have finished the long-awaited 4.5.0
+release.  We're preparing to release 4.5.1 later this month and have
+started working on Apache ServiceMix 5.0.0, in which we are dropping
+support for some older technology to allow for a more frequent release
+cycle.
+
+Documentation and website remain important working topics.
+
+Branding Status
+---------------
+- Project Naming And Descriptions : Compliant
+- Website Navigation Links : Compliant
+- Trademark Attributions : Compliant
+- Logos and Graphics : Current logo is not compliant
+- Project Metadata : Compliant
+
+Releases
+--------
+- A set of 49 OSGi bundles in January
+- Apache ServiceMix 4.5.0 in February
+- A set of 18 OSGi bundles in March
+{code}
