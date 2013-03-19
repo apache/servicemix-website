@@ -1,12 +1,6 @@
 ---
-title: ServiceMix 4.5.1-SNAPSHOT
+title: ServiceMix 4.5.1
 --- name:notes pipeline:conf
-
-h2. Helping us...
-
-You can help us by trying out this development snapshot and reporting any problems you encounter on the [mailing lists|/community/mailing-lists]
-
-An overview of outstanding JIRA issues for this release can be found at [https://issues.apache.org/jira/browse/SMX4/fixforversion/12324072]
 
 h2. OSGi components list
 OSGi/JBI components included in this release:
@@ -18,17 +12,44 @@ This release packages the following dependencies:
 * Version 2.2.10 of [Apache Karaf|http://karaf.apache.org/]
 * Version [5.7.0|http://activemq.apache.org/activemq-570-release.html] of [ActiveMQ|http://activemq.apache.org]
 * Version 2.10.4 of [Camel|http://camel.apache.org]
-* Version 2.6.4 of [CXF|http://cxf.apache.org]
+* Version 2.6.6 of [CXF|http://cxf.apache.org]
 
 You can use it together with
 * Version 4.5 of the Maven plugins
 * Version 2011.02 of the archetypes
 
+h2. Release notes
+
+h3. Bug
+* [SMX4-1286|http://issues.apache.org/active/browse/SMX4-1286] - Replace camel-activemq with activemq-camel
+* [SMX4-1380|http://issues.apache.org/active/browse/SMX4-1380] - Exception when using CXF/SAAJ in ServiceMix 4.5.0
+* [SMX4-1399|http://issues.apache.org/active/browse/SMX4-1399] - incorrect readme.txt files in cxf examples
+* [SMX4-1401|http://issues.apache.org/active/browse/SMX4-1401] - cxf-ws-security-blueprint log4j warning + wrong README info
+
+h3. Task
+* [SMX4-1318|http://issues.apache.org/active/browse/SMX4-1318] - upgrade to cxf 2.6.6
+* [SMX4-1388|http://issues.apache.org/active/browse/SMX4-1388] - Release Apache ServiceMix 4.5.1
+* [SMX4-1389|http://issues.apache.org/active/browse/SMX4-1389] - upgrade to Camel 2.10.4
+
+h2. SVN Tag Checkout
+
+{code}
+svn co http://svn.apache.org/repos/asf/servicemix/smx4/features/tags/features-4.5.1/
+{code}
+
+h2. Changelog
+
+For a more detailed view of new features and bug fixes, see the [changelog|https://issues.apache.org/jira/browse/SMX4/fixforversion/12321271]
+
 --- name:content pipeline:ssp
 <%@ val notes : String %>
 
-<h2>Downloads : Apache ServiceMix 4.5.1-SNAPSHOT</h2>
+<div class="warningPanel">
+This page contains information about a release that is currently under vote and that is not yet available for download.
+</div>
 
-<% render("/downloads/_servicemix4.scaml", Map("version" -> "4.5.1-SNAPSHOT")) %>
+<h2>Downloads : Apache ServiceMix 4.5.1</h2>
+
+<% render("/downloads/_servicemix4.scaml", Map("version" -> "4.5.1")) %>
 
 <%= unescape(notes) %>
