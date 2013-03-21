@@ -39,7 +39,7 @@ object Helper {
   def md5(specs: (ReleaseArtifact => ReleaseArtifact)*)(implicit release: Release) : String = _metafile(artifactFor(specs, release), "md5")
 
   /**
-   * Generate the URL fo the PGP signatur
+   * Generate the URL fo the PGP signature
    */
   def pgp(specs: (ReleaseArtifact => ReleaseArtifact)*)(implicit release: Release) : String = _metafile(artifactFor(specs, release), "asc")
 

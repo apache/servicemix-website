@@ -25,6 +25,7 @@ h3. Bug
 * [SMX4-1380|http://issues.apache.org/active/browse/SMX4-1380] - Exception when using CXF/SAAJ in ServiceMix 4.5.0
 * [SMX4-1399|http://issues.apache.org/active/browse/SMX4-1399] - incorrect readme.txt files in cxf examples
 * [SMX4-1401|http://issues.apache.org/active/browse/SMX4-1401] - cxf-ws-security-blueprint log4j warning + wrong README info
+* [SMX4-1405|http://issues.apache.org/active/browse/SMX4-1405] - Fix broken NMR example
 
 h3. Task
 * [SMX4-1318|http://issues.apache.org/active/browse/SMX4-1318] - upgrade to cxf 2.6.6
