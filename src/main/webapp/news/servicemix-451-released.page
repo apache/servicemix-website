@@ -1,0 +1,10 @@
+---
+title: ServiceMix 4.5.1 Released
+--- pipeline:conf
+
+h2. ServiceMix 4.5.1 released
+
+The ServiceMix team is pleased to announce the availability of ServiceMix 4.5.1.
+This is a minor release that fixes a few bugs and picks up new versions of Apache Camel and Apache CXF.
+
+For more information, please see the [release notes|/downloads/servicemix-4.5.1]
