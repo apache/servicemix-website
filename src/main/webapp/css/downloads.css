@@ -120,4 +120,13 @@ div#downloads p.title {
 
 div#downloads td.both {
     padding-left: 20%;
+    width: 100%;
+}
+
+div#downloads td.docs {
+    text-align: center;
+}
+
+div#downloads td.docs p.home {
+    font-weight: bold;
 }

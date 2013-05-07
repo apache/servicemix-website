@@ -49,6 +49,11 @@ object Helper {
   def sha1(specs: (ReleaseArtifact => ReleaseArtifact)*)(implicit release: Release) : String = _metafile(artifactFor(specs, release), "sha1")
 
   /**
+   * The version specific docs url for a page
+   */
+  def docs(page: String)(implicit release: Release) = s"http://servicemix.apache.org/docs/${release.majorMinorX}/${page}"
+
+  /**
    * Function to specify a -minimal assembly
    */
   val minimal : ReleaseArtifact => ReleaseArtifact = (artifact) => artifact match {
@@ -148,4 +153,11 @@ object Helper {
  * @param version the version
  * @param archived <code>true<code> if the version is no longer available on the download mirrors
  */
-case class Release(version: String, archived: Boolean = false)
+case class Release(version: String, archived: Boolean = false) {
+
+  lazy val majorMinorX = version.split("\\.").slice(0,2) match {
+    case Array(major, minor) => s"${major}.${minor}.x"
+    case _                   => throw new RuntimeException(s"Unable to convert ${version} to <major>.<minor>.x format")
+  }
+
+}
