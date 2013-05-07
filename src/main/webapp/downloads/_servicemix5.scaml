@@ -117,6 +117,18 @@
               %a(href="#{pgp(minimal,zip)}") [PGP]
               %a(href="#{sha1(minimal,zip)}") [SHA1]
               %a(href="#{md5(minimal,zip)}") [MD5]
+      %tr
+        %td.first
+          %p.title Documentation
+          %p Links to the documentation pages for this version
+        %td.docs(colspan=2)
+          %p.home
+            %a{:href => {docs("index.html")}}
+              Documentation for Apache ServiceMix #{release.majorMinorX}
+          %p
+            %a{:href => {docs("quickstart/index.html")}} [Quickstart]
+            %a{:href => {docs("activemq/index.html")}} [ActiveMQ]
+            %a{:href => {docs("camel/index.html")}} [Camel]
 
   %div.info
     %p.title The above URLs use redirection

@@ -71,4 +71,19 @@ class HelperTest {
                  download(full,zip))
   }
 
+  @Test
+  def testDocumentationForSnapshotRelease = {
+    implicit val release = Release("4.5.2-SNAPSHOT")
+    assertEquals("http://servicemix.apache.org/docs/4.5.x/index.html", docs("index.html"))
+    assertEquals("http://servicemix.apache.org/docs/4.5.x/quickstart/index.html", docs("quickstart/index.html"))
+  }
+
+  @Test
+  def testDocumentationForRelease = {
+    implicit val release = Release("4.4.2")
+    assertEquals("http://servicemix.apache.org/docs/4.4.x/index.html", docs("index.html"))
+    assertEquals("http://servicemix.apache.org/docs/4.4.x/quickstart/index.html", docs("quickstart/index.html"))
+  }
+
+
 }
