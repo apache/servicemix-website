@@ -1,7 +1,7 @@
 ---
 title: Users
 --- pipeline:conf
-This page lists the open source projects, people and companies using ServiceMix. Please add yourself to this list - click on the edit button on the bottom right of this page or get [more help|How does the website work].
+This page lists the open source projects, people and companies using ServiceMix.  If you would like to be added to the list, drop us a note on the users [mailing list|mailing-lists] or have a look at [this page|website-source] to learn about how we build the website and [contribute|contributing] a patch yourself.
 
 h3. Open Source Projects using ServiceMix
 
@@ -26,3 +26,12 @@ h3. People and Companies using ServiceMix
 | [Tecsisa|http://www.tecsisa.com/] | We are a Spanish IT consulting firm specialized in the automation of complex business processes using leading technology approaches such as BPM-SOA [BPM-SOA|http://www.tecsisa.com/index.igw?item=1555] | Enterprise SOA
 consulting and development |
 |[TouK|http://touk.pl/toukeu/rw/pages/index.en.do]|We are using Apache ServiceMix (both 3.x and 4.x) with [Apache Camel|http://camel.apache.org/], [Apache ODE|http://ode.apache.org/] and [Apache HISE|http://incubator.apache.org/hise/] as a middleware integration platform, with the biggest deployment for [Play|http://www.playmobile.pl/], mobile telco operator in Poland|Enterprise architecture & development|
+
+h3. Powered by
+
+If you're using Apache ServiceMix, feel free to use this 'Powered By' logo in your product or product documentation
+
+{div:id=powered-by}
+!/images/powered-by-servicemix-tm.png!
+{div}
+
