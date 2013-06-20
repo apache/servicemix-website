@@ -1596,3 +1596,11 @@ div.auto_complete ul strong.highlight {
 .leftnav li a:active {color:white;}
 .leftnav li a:visited {color:white;}
 .leftnav li a:hover {background-color: #003366; color:white;}
+
+/* background color to show the white letters of the powered-by loggo */
+#powered-by {
+    background-color: #3c78b5;
+    margin-left: 10px;
+    padding: 2px;
+    width: 375px;
+}
