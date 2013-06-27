@@ -1,34 +1,64 @@
 ---
-title: ServiceMix 4.5.2-SNAPSHOT
+title: ServiceMix 4.5.2
 --- name:notes pipeline:conf
-
-h2. Helping us...
-
-You can help us by trying out this development snapshot and reporting any problems you encounter on the [mailing lists|/community/mailing-lists]
-
-An overview of outstanding JIRA issues for this release can be found at [https://issues.apache.org/jira/browse/SMX4/fixforversion/12324246]
 
 h2. OSGi components list
 OSGi/JBI components included in this release:
 
 This release packages the following dependencies:
-* Version [1.6.0|/downloads/subprojects/servicemix-nmr-1.6.0.html] of ServiceMix NMR
+* Version [1.6.1|/downloads/subprojects/servicemix-nmr-1.6.1.html] of ServiceMix NMR
 * Version [2013.01|/downloads/subprojects/servicemix-components-2013.01.html] of the JBI components
 * Version [1.6.0|/downloads/subprojects/servicemix-utils-1.6.0.html] of ServiceMix Utils
-* Version 2.2.10 of [Apache Karaf|http://karaf.apache.org/]
+* Version 2.2.11 of [Apache Karaf|http://karaf.apache.org/]
 * Version [5.7.0|http://activemq.apache.org/activemq-570-release.html] of [ActiveMQ|http://activemq.apache.org]
-* Version 2.10.4 of [Camel|http://camel.apache.org]
-* Version 2.6.4 of [CXF|http://cxf.apache.org]
+* Version 2.10.5 of [Camel|http://camel.apache.org]
+* Version 2.6.6 of [CXF|http://cxf.apache.org]
 
 You can use it together with
 * Version 4.5 of the Maven plugins
 * Version 2011.02 of the archetypes
 
+h2. Release notes
+
+h3. Bug
+* [SMX4-1381|http://issues.apache.org/jira/browse/SMX4-1381] - cannot install servicemix-drools feature
+* [SMX4-1423|http://issues.apache.org/jira/browse/SMX4-1423] - No org.apache.cxf.jaxws.spi.ProviderImpl found
+* [SMX4-1424|http://issues.apache.org/jira/browse/SMX4-1424] - Use official org.jruby:jruby lib
+* [SMX4-1448|http://issues.apache.org/jira/browse/SMX4-1448] - Activiti repository URL missing in Pax URL Maven configuration
+* [SMX4-1451|http://issues.apache.org/jira/browse/SMX4-1451] - Upgrade to Karaf 2.2.11
+* [SMX4-1455|http://issues.apache.org/jira/browse/SMX4-1455] - drool install error
+* [SMX4-1472|http://issues.apache.org/jira/browse/SMX4-1472] - servicemix-camel component should hornor the synchronous option
+* [SMX4-1486|http://issues.apache.org/jira/browse/SMX4-1486] - Update to Camel 2.10.5
+
+h3. Improvement
+* [SMX4-1378|http://issues.apache.org/jira/browse/SMX4-1378] - cxf-nmr trasport should copy the message header  from CXF the Protocol Header
+* [SMX4-1452|http://issues.apache.org/jira/browse/SMX4-1452] - introduce a throwExceptionOnFailure parameter for camel-nmr producer endpoint
+
+h3. Task
+* [SMX4-1453|http://issues.apache.org/jira/browse/SMX4-1453] - Excessive logging in CXF NMR binding and transport
+* [SMX4-1487|http://issues.apache.org/jira/browse/SMX4-1487] - Release Apache ServiceMix 4.5.2
+
+h2. SVN Tag Checkout
+
+{code}
+svn co http://svn.apache.org/repos/asf/servicemix/smx4/features/tags/features-4.5.2/
+{code}
+
+h2. Changelog
+
+For a more detailed view of new features and bug fixes, see the [changelog|https://issues.apache.org/jira/browse/SMX4/fixforversion/12324246]
+
 --- name:content pipeline:ssp
 <%@ val notes : String %>
 
-<h2>Downloads : Apache ServiceMix 4.5.2-SNAPSHOT</h2>
+<h2>Downloads : Apache ServiceMix 4.5.2</h2>
 
-<% render("/downloads/_servicemix4.scaml", Map("version" -> "4.5.2-SNAPSHOT")) %>
+<div class="warningPanel">
+<p>Currently under vote!</p>
+<p>This release is currently under vote - the download links below won't work until the release vote finishes.</p>
+</div>
+
+
+<% render("/downloads/_servicemix4.scaml", Map("version" -> "4.5.2")) %>
 
 <%= unescape(notes) %>
