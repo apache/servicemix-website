@@ -1,0 +1,12 @@
+---
+title: ServiceMix NMR 1.6.1
+--- pipeline:conf
+
+h2. Release Notes - ServiceMix NMR - Version 1.6.1
+
+*Bug*
+* [SMX4NMR-307|http://issues.apache.org/jira/browse/SMX4NMR-307] - org.apache.servicemix.nmr.osgi can throw an exception when shutting down
+* [SMX4NMR-312|http://issues.apache.org/jira/browse/SMX4NMR-312] - Upgrade to Woodstox 4.2.0
+
+*Task*
+* [SMX4NMR-313|http://issues.apache.org/jira/browse/SMX4NMR-313] - Clean up old Spring references in NMR
