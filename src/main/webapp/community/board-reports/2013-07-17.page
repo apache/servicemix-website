@@ -31,13 +31,15 @@ Community Objectives
 Since our last board report, we have finished the 4.5.1 release and we
 are continuing to work on both a 4.5.2 and 5.0.0 release at the moment.
 
+It was raised on the dev@ list that we can no longer publish release
+artifacts larger than 100 MB without intervention from infra@.  Since
+some of our assemblies are larger than that, we pinged infra@ to figure
+out how to get that addressed for doing these next 2 releases.
+
 Branding Status
 ---------------
-- Project Naming And Descriptions : Compliant
-- Website Navigation Links : Compliant
-- Trademark Attributions : Compliant
-- Logos and Graphics : Current logo is not compliant
-- Project Metadata : Compliant
+Since our last board report, we have found a volunteer to add the TM
+to our logo. The new logo is now being used on the website.
 
 Releases
 --------
@@ -45,4 +47,5 @@ Releases
 - A set of 35 OSGi bundles in April
 - Another set of 20 OSGi bundles in April
 - A set of 24 OSGi bundles in May
+- A set of 23 OSGi bundle in July (vote in progress)
 {code}
