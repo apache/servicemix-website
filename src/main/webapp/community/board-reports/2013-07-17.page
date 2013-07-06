@@ -32,7 +32,7 @@ Since our last board report, we have finished the 4.5.1 release and we
 are continuing to work on both a 4.5.2 and 5.0.0 release at the moment.
 
 It was raised on the dev@ list that we can no longer publish release
-artifacts larger than 100 MB without intervention from infra@.  Since
+artifacts larger than 200 MB without intervention from infra@.  Since
 some of our assemblies are larger than that, we pinged infra@ to figure
 out how to get that addressed for doing these next 2 releases.
 
