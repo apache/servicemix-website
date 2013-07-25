@@ -11,8 +11,8 @@ This release packages the following dependencies:
 * Version [1.6.0|/downloads/subprojects/servicemix-utils-1.6.0.html] of ServiceMix Utils
 * Version 2.2.11 of [Apache Karaf|http://karaf.apache.org/]
 * Version [5.7.0|http://activemq.apache.org/activemq-570-release.html] of [ActiveMQ|http://activemq.apache.org]
-* Version 2.10.5 of [Camel|http://camel.apache.org]
-* Version 2.6.6 of [CXF|http://cxf.apache.org]
+* Version 2.10.6 of [Camel|http://camel.apache.org]
+* Version 2.6.8 of [CXF|http://cxf.apache.org]
 
 You can use it together with
 * Version 4.5 of the Maven plugins
