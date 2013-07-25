@@ -54,8 +54,7 @@ For a more detailed view of new features and bug fixes, see the [changelog|https
 <h2>Downloads : Apache ServiceMix 4.5.2</h2>
 
 <div class="warningPanel">
-<p>Currently under vote!</p>
-<p>This release is currently under vote - the download links below won't work until the release vote finishes.</p>
+<p>The full assemblies are not yet available on the Apache mirrors, but you can download them from the Maven repositories instead.</p>
 </div>
 
 
