@@ -1,0 +1,10 @@
+---
+title: ServiceMix 4.5.2 Released
+--- pipeline:conf
+
+h2. ServiceMix 4.5.2 released
+
+The ServiceMix team is pleased to announce the availability of ServiceMix 4.5.2.
+This is a minor release that fixes a few bugs and picks up new versions of Apache Camel, Apache CXF and Apache Karaf.
+
+For more information, please see the [release notes|/downloads/servicemix-4.5.2]
