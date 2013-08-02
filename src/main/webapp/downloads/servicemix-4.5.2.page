@@ -53,11 +53,6 @@ For a more detailed view of new features and bug fixes, see the [changelog|https
 
 <h2>Downloads : Apache ServiceMix 4.5.2</h2>
 
-<div class="warningPanel">
-<p>The full assemblies are not yet available on the Apache mirrors, but you can download them from the Maven repositories instead.</p>
-</div>
-
-
 <% render("/downloads/_servicemix4.scaml", Map("version" -> "4.5.2")) %>
 
 <%= unescape(notes) %>
