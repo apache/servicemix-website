@@ -1,0 +1,43 @@
+---
+title: Board Report 2013-09-18
+--- pipeline:conf
+
+{warning}
+This is a work-in-progress - the board report has not yet been submitted.
+{warning}
+
+h2. September 18th, 2013
+
+{code}
+Apache ServiceMix is a flexible, open-source integration container that
+unifies the features and functionality of Apache ActiveMQ, Camel, CXF and
+Karaf to provide a complete, enterprise-ready ESB powered by OSGi.
+
+Project Status
+--------------
+While we continue to have decent community activity, we also have lost
+a lot of our momentum now that major parts of the functionality are being
+maintained in related projects like Apache Karaf and Apache Camel.
+
+There are no outstanding issues requiring board attention.
+
+Community
+---------
+No changes since last report.  The last addition to the PMC dates back
+to September 2009.  The last committer was added in November 2011.
+
+Community Objectives
+--------------------
+Since our last board report, we have finished the 4.5.2 release and we
+are continuing to work on our 5.0.0 release.
+
+Thanks to the excellent support of the folks at infra@, we now have a
+setup in place that allows us to publish some of larger assembly
+artifacts ourselves again.
+
+Releases
+--------
+- Apache ServiceMix 4.5.2 in July
+- A set of 14 OSGi bundles in July
+- Another set of 35 OSGi bundles in September
+{code}
