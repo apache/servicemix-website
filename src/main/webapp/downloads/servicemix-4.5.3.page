@@ -1,12 +1,6 @@
 ---
-title: ServiceMix 4.5.3-SNAPSHOT
+title: ServiceMix 4.5.3
 --- name:notes pipeline:conf
-
-h2. Helping us...
-
-You can help us by trying out this development snapshot and reporting any problems you encounter on the [mailing lists|/community/mailing-lists]
-
-An overview of outstanding JIRA issues for this release can be found at [https://issues.apache.org/jira/browse/SMX4/fixforversion/12324246]
 
 h2. OSGi components list
 OSGi/JBI components included in this release:
@@ -17,18 +11,48 @@ This release packages the following dependencies:
 * Version [1.6.0|/downloads/subprojects/servicemix-utils-1.6.0.html] of ServiceMix Utils
 * Version 2.2.11 of [Apache Karaf|http://karaf.apache.org/]
 * Version [5.7.0|http://activemq.apache.org/activemq-570-release.html] of [ActiveMQ|http://activemq.apache.org]
-* Version 2.10.6 of [Camel|http://camel.apache.org]
-* Version 2.6.8 of [CXF|http://cxf.apache.org]
+* Version 2.10.7 of [Camel|http://camel.apache.org]
+* Version 2.6.9 of [CXF|http://cxf.apache.org]
 
 You can use it together with
 * Version 4.5 of the Maven plugins
 * Version 2011.02 of the archetypes
 
+h2. Release notes
+
+h3. Bug
+* [SMX4-1513|http://issues.apache.org/jira/browse/SMX4-1513] - add type check to avoid CCE in cxf nmr transport
+* [SMX4-1546|http://issues.apache.org/jira/browse/SMX4-1546] - The cxf nmr transport should provide a synchronous option
+* [SMX4-1577|http://issues.apache.org/jira/browse/SMX4-1577] - Release Apache ServiceMix 4.5.3
+* [SMX4-1579|http://issues.apache.org/jira/browse/SMX4-1579] - Upgrade to Camel 2.10.7
+* [SMX4-1580|http://issues.apache.org/jira/browse/SMX4-1580] - Upgrade to CXF 2.6.9
+* [SMX4-1585|http://issues.apache.org/jira/browse/SMX4-1585] - org.apache.servicemix.cxf.transport.nmr.NMRConduitOutputStream.commitOutputMessage() does not propagate exception.
+
+h3. Improvement
+* [SMX4-1547|http://issues.apache.org/jira/browse/SMX4-1547] - use EndpointName + ServiceName + InterfaceName as a Key to distinguish a NMR destination
+* [SMX4-1548|http://issues.apache.org/jira/browse/SMX4-1548] - add interfaceName|serviceName option for camel-nmr consumer endpoint
+
+
+h2. SVN Tag Checkout
+
+{code}
+svn co http://svn.apache.org/repos/asf/servicemix/smx4/features/tags/features-4.5.3/
+{code}
+
+h2. Changelog
+
+For a more detailed view of new features and bug fixes, see the [changelog|https://issues.apache.org/jira/browse/SMX4/fixforversion/12324650]
+
 --- name:content pipeline:ssp
 <%@ val notes : String %>
 
-<h2>Downloads : Apache ServiceMix 4.5.3-SNAPSHOT</h2>
+<h2>Downloads : Apache ServiceMix 4.5.3</h2>
 
-<% render("/downloads/_servicemix4.scaml", Map("version" -> "4.5.3-SNAPSHOT")) %>
+<div class="warningPanel">
+  <p class="title">Currently under vote!</p>
+  <p>This release is currently under vote - the download links below won't work until the release vote finishes.</p>
+</div>
+
+<% render("/downloads/_servicemix4.scaml", Map("version" -> "4.5.3")) %>
 
 <%= unescape(notes) %>
