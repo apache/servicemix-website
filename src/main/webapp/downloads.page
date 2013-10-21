@@ -3,7 +3,7 @@ title: Download
 --- name:intro pipeline:conf
 h1. Download
 
-The latest release is the [ServiceMix 4.5.2 Release|/downloads/servicemix-4.5.2.html].  We strongly encourage all users to use this release.
+The latest release is the [ServiceMix 4.5.3 Release|/downloads/servicemix-4.5.3.html].  We strongly encourage all users to use this release.
 
 --- name:previous pipeline:conf
 h2. Development snapshots
@@ -45,6 +45,8 @@ An archive of previous releases can be found [here|http://archive.apache.org/dis
 * [Apache ServiceMix 4.4.1|/downloads/servicemix-4.4.1.html]
 * [Apache ServiceMix 4.4.2|/downloads/servicemix-4.4.2.html]
 * [Apache ServiceMix 4.5.0|/downloads/servicemix-4.5.0.html]
+* [Apache ServiceMix 4.5.1|/downloads/servicemix-4.5.1.html]
+* [Apache ServiceMix 4.5.2|/downloads/servicemix-4.5.2.html]
 
 --- name:content pipeline:ssp
 <%@ val intro : String %>
@@ -52,6 +54,6 @@ An archive of previous releases can be found [here|http://archive.apache.org/dis
 
 <%= unescape(intro) %>
 
-<% render("/downloads/_servicemix4.scaml", Map("version" -> "4.5.2")) %>
+<% render("/downloads/_servicemix4.scaml", Map("version" -> "4.5.3")) %>
 
 <%= unescape(previous) %>

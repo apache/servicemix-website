@@ -48,11 +48,6 @@ For a more detailed view of new features and bug fixes, see the [changelog|https
 
 <h2>Downloads : Apache ServiceMix 4.5.3</h2>
 
-<div class="warningPanel">
-  <p class="title">Currently under vote!</p>
-  <p>This release is currently under vote - the download links below won't work until the release vote finishes.</p>
-</div>
-
 <% render("/downloads/_servicemix4.scaml", Map("version" -> "4.5.3")) %>
 
 <%= unescape(notes) %>
