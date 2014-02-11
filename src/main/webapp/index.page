@@ -3,7 +3,7 @@ title: Welcome to Apache ServiceMix!
 --- name:main pipeline:conf
 {section}
 {column}
-[Apache ServiceMix|http://servicemix.apache.org/] is a flexible, open-source integration container that unifies the features and functionality of Apache [ActiveMQ|http://activemq.apache.org], [Camel|http://camel.apache.org], [CXF|http://cxf.apache.org], [ODE|http://ode.apache.org], [Karaf|http://karaf.apache.org] into a powerful runtime platform you can use to build your own integrations solutions. It provides a complete, enterprise ready ESB exclusively powered by OSGi.
+[Apache ServiceMix|http://servicemix.apache.org/] is a flexible, open-source integration container that unifies the features and functionality of Apache [ActiveMQ|http://activemq.apache.org], [Camel|http://camel.apache.org], [CXF|http://cxf.apache.org], and [Karaf|http://karaf.apache.org] into a powerful runtime platform you can use to build your own integrations solutions. It provides a complete, enterprise ready ESB exclusively powered by OSGi.
 
 It is being released under [Apache License v2|license].
 
@@ -11,9 +11,19 @@ The main features are:
 * reliable messaging with [Apache ActiveMQ|http://activemq.apache.org]
 * messaging, routing and Enterprise Integration Patterns with [Apache Camel|http://camel.apache.org]
 * WS-\* and RESTful web services with [Apache CXF|http://cxf.apache.org]
-* loosely coupled integration between all the other components with Apache ServiceMix NMR including rich Event, Messaging and Audit API
-* complete WS-BPEL engine with [Apache ODE|http://ode.apache.org]
 * OSGi-based server runtime powered by [Apache Karaf|http://karaf.apache.org]
+
+Through additional installable features, ServiceMix also supports:
+* BPM engine via [Activiti|http://activiti.org]
+* full JPA support via [Apache OpenJPA|http://openjpa.apache.org/]
+* XA transaction management via JTA via [Apache Aries|http://aries.apache.org]
+* legacy support for the JBI standard (deprecated after the ServiceMix 3.x series) through the Apache ServiceMix NMR that includes a rich Event, Messaging and Audit API
+
+Applications for ServiceMix can be built using:
+* OSGi Blueprint
+* OSGi Declarative Services
+* Spring DM (legacy)
+
 
 {column}
 {column}
