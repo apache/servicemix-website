@@ -10,7 +10,7 @@ It is being released under [Apache License v2|license].
 The main features are:
 * reliable messaging with [Apache ActiveMQ|http://activemq.apache.org]
 * messaging, routing and Enterprise Integration Patterns with [Apache Camel|http://camel.apache.org]
-* WS-\* and RESTful web services with [Apache CXF|http://cxf.apache.org]
+* WS&hyphen;\* and RESTful web services with [Apache CXF|http://cxf.apache.org]
 * OSGi-based server runtime powered by [Apache Karaf|http://karaf.apache.org]
 
 Through additional installable features, ServiceMix also supports:
