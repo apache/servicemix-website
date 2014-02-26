@@ -51,72 +51,27 @@
               %a(href="#{pgp(zip)}") [PGP]
               %a(href="#{sha1(zip)}") [SHA1]
               %a(href="#{md5(zip)}") [MD5]
-      %tr
-        %td.first
-          %p.title Source assembly
-          %p Use this if you want to build Apache ServiceMix from source yourself
-        %td
-          %p.tar
-            %a(href="#{download(source,tarball)}")
-              Apache ServiceMix Sources #{version} (tar.gz)
-          - if (isRelease(release))
+      - if (isRelease(release))
+        %tr
+          %td.first
+            %p.title Source assembly
+            %p Use this if you want to build Apache ServiceMix from source yourself
+          %td
+            %p.tar
+              %a(href="#{download(source,tarball)}")
+                Apache ServiceMix Sources #{version} (tar.gz)
             %p.keys
               %a(href="#{pgp(source,tarball)}") [PGP]
               %a(href="#{sha1(source,tarball)}") [SHA1]
               %a(href="#{md5(source,tarball)}") [MD5]
-        %td
-          %p.zip
-            %a(href="#{download(source,zip)}")
-              Apache ServiceMix Sources #{version} (zip)
-          - if (isRelease(release))
+          %td
+            %p.zip
+              %a(href="#{download(source,zip)}")
+                Apache ServiceMix Sources #{version} (zip)
             %p.keys
               %a(href="#{pgp(source,zip)}") [PGP]
               %a(href="#{sha1(source,zip)}") [SHA1]
               %a(href="#{md5(source,zip)}") [MD5]
-      %tr
-        %td.first
-          %p.title Full assembly
-          %p Use this if you want to run Apache ServiceMix on a server that does not have an internet connection
-        %td
-          %p.tar
-            %a(href="#{download(full,tarball)}")
-              Apache ServiceMix Full #{version} (tar.gz)
-          - if (isRelease(release))
-            %p.keys
-              %a(href="#{pgp(full,tarball)}") [PGP]
-              %a(href="#{sha1(full,tarball)}") [SHA1]
-              %a(href="#{md5(full,tarball)}") [MD5]
-        %td
-          %p.zip
-            %a(href="#{download(full,zip)}")
-              Apache ServiceMix Full #{version} (zip)
-          - if (isRelease(release))
-            %p.keys
-              %a(href="#{pgp(full,zip)}") [PGP]
-              %a(href="#{sha1(full,zip)}") [SHA1]
-              %a(href="#{md5(full,zip)}") [MD5]
-      %tr
-        %td.first
-          %p.title Minimal assembly
-          %p Use this if you're an advanced user that wants to create your own edition of Apache ServiceMix at runtime
-        %td
-          %p.tar
-            %a(href="#{download(minimal,tarball)}")
-              Apache ServiceMix Minimal #{version} (tar.gz)
-          - if (isRelease(release))
-            %p.keys
-              %a(href="#{pgp(minimal,tarball)}") [PGP]
-              %a(href="#{sha1(minimal,tarball)}") [SHA1]
-              %a(href="#{md5(minimal,tarball)}") [MD5]
-        %td
-          %p.zip
-            %a(href="#{download(minimal,zip)}")
-              Apache ServiceMix Minimal #{version} (zip)
-          - if (isRelease(release))
-            %p.keys
-              %a(href="#{pgp(minimal,zip)}") [PGP]
-              %a(href="#{sha1(minimal,zip)}") [SHA1]
-              %a(href="#{md5(minimal,zip)}") [MD5]
       %tr
         %td.first
           %p.title Documentation
@@ -128,6 +83,7 @@
           %p
             %a{:href => {docs("quickstart/index.html")}} [Quickstart]
             %a{:href => {docs("activemq/index.html")}} [ActiveMQ]
+            %a{:href => {docs("activiti/index.html")}} [Activiti]
             %a{:href => {docs("camel/index.html")}} [Camel]
 
   %div.info
