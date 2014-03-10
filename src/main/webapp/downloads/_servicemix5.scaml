@@ -17,31 +17,11 @@
         instead
 
   %table
-    %thead
-      %tr
-        %th.first
-        %th
-          %p Linux/Mac OS X/Unix Downloads
-          %img{:src => {uri("/images/tux.png")}}
-          %img{:src => {uri("/images/freebsd.png")}}
-          %img{:src => {uri("/images/mac_logo.png")}}
-        %th
-          %p Windows Downloads
-          %img{:src => {uri("/images/xp.png")}}
     %tbody
       %tr.default
         %td.first
           %p.title Default assembly
           %p Our default assembly is the best way to get started with Apache ServiceMix.
-        %td
-          %p.tar
-            %a(href="#{download(tarball)}")
-              Apache ServiceMix #{version} (tar.gz)
-          - if (isRelease(release))
-            %p.keys
-              %a(href="#{pgp(tarball)}") [PGP]
-              %a(href="#{sha1(tarball)}") [SHA1]
-              %a(href="#{md5(tarball)}") [MD5]
         %td
           %p.zip
             %a(href="#{download(zip)}")
