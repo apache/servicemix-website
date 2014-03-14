@@ -1302,6 +1302,9 @@ table.blogcalendar {
 
 /* warning panel */
 .warningPanel { background: #FFFFCE; border:#F0C000 1px solid; padding: 8px; margin: 10px; }
+
+.warningPanel p.title { font-size: 105%; font-weight: bold; }
+
 /* alert panel */
 .alertPanel { background: #FFCCCC; border:#C00 1px solid; padding: 8px; margin: 10px; }
 
