@@ -22,8 +22,8 @@
         %td.first
           %p.title Default assembly
           %p Our default assembly is the best way to get started with Apache ServiceMix.
-        %td
-          %p.zip
+        %td.links
+          %p.title
             %a(href="#{download(zip)}")
               Apache ServiceMix #{version} (zip)
           - if (isRelease(release))
@@ -36,16 +36,8 @@
           %td.first
             %p.title Source assembly
             %p Use this if you want to build Apache ServiceMix from source yourself
-          %td
-            %p.tar
-              %a(href="#{download(source,tarball)}")
-                Apache ServiceMix Sources #{version} (tar.gz)
-            %p.keys
-              %a(href="#{pgp(source,tarball)}") [PGP]
-              %a(href="#{sha1(source,tarball)}") [SHA1]
-              %a(href="#{md5(source,tarball)}") [MD5]
-          %td
-            %p.zip
+          %td.links
+            %p.title
               %a(href="#{download(source,zip)}")
                 Apache ServiceMix Sources #{version} (zip)
             %p.keys
@@ -56,8 +48,8 @@
         %td.first
           %p.title Documentation
           %p Links to the documentation pages for this version
-        %td.docs(colspan=2)
-          %p.home
+        %td.links
+          %p.title
             %a{:href => {docs("index.html")}}
               Documentation for Apache ServiceMix #{release.majorMinorX}
           %p

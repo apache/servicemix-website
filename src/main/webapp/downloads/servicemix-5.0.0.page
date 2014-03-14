@@ -1,18 +1,117 @@
 ---
-title: ServiceMix 5.0.0-SNAPSHOT
+title: ServiceMix 5.0.0
 --- name:notes pipeline:conf
 
-h2. Helping us...
+h2. OSGi components list
+Components included in this release:
 
-You can help us by trying out this development snapshot and reporting any problems you encounter on the [mailing lists|/community/mailing-lists]
+This release packages the following dependencies:
+* Version [2.3.4|http://karaf.apache.org/index/community/download/karaf-2.3.4-release.html] of [Apache Karaf|http://karaf.apache.org/]
+* Version [5.9.0|http://activemq.apache.org/activemq-590-release.html] of [ActiveMQ|http://activemq.apache.org]
+* Version [2.12.3|http://camel.apache.org/camel-2123-release.html] of [Camel|http://camel.apache.org]
+* Version [2.7.10|https://cxf.apache.org/cxf-2710-release-notes.html] of [CXF|http://cxf.apache.org]
 
-An overview of outstanding JIRA issues for this release can be found at [https://issues.apache.org/jira/browse/SM/fixforversion/12324078]
+h2. Release notes
+
+h3. Sub-task
+* [SM-2259|http://issues.apache.org/jira/browse/SM-2259] - Improve development in Eclipse using m2 plugin
+* [SM-2260|http://issues.apache.org/jira/browse/SM-2260] - Refactor the plugin and dependency management
+
+h3. Bug
+* [SM-2175|http://issues.apache.org/jira/browse/SM-2175] - Replace camel-activemq with activemq-camel
+* [SM-2179|http://issues.apache.org/jira/browse/SM-2179] - can't install camel-cxf feature
+* [SM-2182|http://issues.apache.org/jira/browse/SM-2182] - can't install cxf-wsn feature
+* [SM-2187|http://issues.apache.org/jira/browse/SM-2187] - Increase default PermGen size to 256MB
+* [SM-2192|http://issues.apache.org/jira/browse/SM-2192] - features:install cxf-jaxrs error
+* [SM-2193|http://issues.apache.org/jira/browse/SM-2193] - Configfiles of jbi and nmr still included in assembly
+* [SM-2197|http://issues.apache.org/jira/browse/SM-2197] - Test failure building integration tests against a local maven repo
+* [SM-2202|http://issues.apache.org/jira/browse/SM-2202] - examples-activemq-camel-blueprint need to have camel-jms has feature dependency
+* [SM-2203|http://issues.apache.org/jira/browse/SM-2203] - Intermittent itest failures
+* [SM-2204|http://issues.apache.org/jira/browse/SM-2204] - jaxrs-example: service cannot be reached
+* [SM-2206|http://issues.apache.org/jira/browse/SM-2206] - An exception is thrown in the console
+* [SM-2210|http://issues.apache.org/jira/browse/SM-2210] - CXF WS-RM itest fails with NPE
+* [SM-2216|http://issues.apache.org/jira/browse/SM-2216] - add cxf-swagger feature/example
+* [SM-2219|http://issues.apache.org/jira/browse/SM-2219] - Compilation failure due to non-existing SNAPSHOT of servicemix bundles
+* [SM-2220|http://issues.apache.org/jira/browse/SM-2220] - Integration Tests - Feature named 'examples-cxf-jaxrs-blueprint' is not installed
+* [SM-2227|http://issues.apache.org/jira/browse/SM-2227] - Cxf jaxrs example don't compile at 1559008 or 13f79535-47bb-0310-9956-ffa450edef68
+* [SM-2231|http://issues.apache.org/jira/browse/SM-2231] - Logging error on startup
+* [SM-2232|http://issues.apache.org/jira/browse/SM-2232] - Hang in org.apache.servicemix.itests.CxfExamplesTest
+* [SM-2233|http://issues.apache.org/jira/browse/SM-2233] - Single assembly for Windows and other OS's
+* [SM-2234|http://issues.apache.org/jira/browse/SM-2234] - Activiti example itest fails with java.rmi.NoSuchObjectException
+* [SM-2237|http://issues.apache.org/jira/browse/SM-2237] - Problems with ServiceMix 5 after upgrade to Spring 3.2.x RELEASE
+* [SM-2239|http://issues.apache.org/jira/browse/SM-2239] - Error running integration tests on ASF CI machines
+* [SM-2243|http://issues.apache.org/jira/browse/SM-2243] - remove jbi related stuff from SMX5
+* [SM-2248|http://issues.apache.org/jira/browse/SM-2248] - log4j:WARN No appenders could be found for logger (org.apache.karaf.features.core).
+* [SM-2252|http://issues.apache.org/jira/browse/SM-2252] - Intermittent test failure in JMSAppenderTest
+* [SM-2258|http://issues.apache.org/jira/browse/SM-2258] - Upgrade to Drools 5.6.0.Final
+* [SM-2261|http://issues.apache.org/jira/browse/SM-2261] - antrun-plugin enable-obr runs multiple times
+* [SM-2265|http://issues.apache.org/jira/browse/SM-2265] - Remove unnecessary external repositories
+* [SM-2266|http://issues.apache.org/jira/browse/SM-2266] - Fix broken source assembly and add correct LICENSE/NOTICE files
+
+h3. Improvement
+* [SM-2171|http://issues.apache.org/jira/browse/SM-2171] - Add support for Akka
+* [SM-2173|http://issues.apache.org/jira/browse/SM-2173] - Upgrade to Karaf 2.3.1
+* [SM-2183|http://issues.apache.org/jira/browse/SM-2183] - Provide JMS ConnectionFactory in the OSGi Service Registry
+* [SM-2186|http://issues.apache.org/jira/browse/SM-2186] - Add a new example: drools-camel
+* [SM-2194|http://issues.apache.org/jira/browse/SM-2194] - Drools Camel Blueprint Example
+* [SM-2195|http://issues.apache.org/jira/browse/SM-2195] - rewrite features itests with pax-exam-karaf
+* [SM-2196|http://issues.apache.org/jira/browse/SM-2196] - need also endorse activation-api spec jar
+* [SM-2198|http://issues.apache.org/jira/browse/SM-2198] - Upgrade to Camel 2.11.0
+* [SM-2199|http://issues.apache.org/jira/browse/SM-2199] - Add a new example: cxf-wsn
+* [SM-2205|http://issues.apache.org/jira/browse/SM-2205] - add identifier for the org.ops4j.pax.url.mvn.repositories
+* [SM-2211|http://issues.apache.org/jira/browse/SM-2211] - Add support for container-wide Camel interceptors
+* [SM-2212|http://issues.apache.org/jira/browse/SM-2212] - Auditor to store exchanges into MongoDB
+* [SM-2236|http://issues.apache.org/jira/browse/SM-2236] - Some additional upgrades to latest releases
+* [SM-2247|http://issues.apache.org/jira/browse/SM-2247] - add @id for the org.ops4j.pax.url.mvn.repositories in etc/org.ops4j.pax.url.mvn.cfg
+* [SM-2257|http://issues.apache.org/jira/browse/SM-2257] - Delay console startup until bundles have been propertly started
+
+h3. New Feature
+* [SM-2189|http://issues.apache.org/jira/browse/SM-2189] - A Camel SQL example with JDBC connection pool
+* [SM-2190|http://issues.apache.org/jira/browse/SM-2190] - A REST example with camel-cxf
+
+h3. Task
+* [SM-2170|http://issues.apache.org/jira/browse/SM-2170] - Release Apache ServiceMix 5.0.0
+* [SM-2174|http://issues.apache.org/jira/browse/SM-2174] - Upgrade to ActiveMQ 5.8.0
+* [SM-2176|http://issues.apache.org/jira/browse/SM-2176] - upgrade to Karaf 2.3.1
+* [SM-2178|http://issues.apache.org/jira/browse/SM-2178] - Upgrade to Spring 3.2.x RELEASE
+* [SM-2180|http://issues.apache.org/jira/browse/SM-2180] - upgrade aries transaction version
+* [SM-2181|http://issues.apache.org/jira/browse/SM-2181] - Fix activemq reference in jms-appender
+* [SM-2184|http://issues.apache.org/jira/browse/SM-2184] - upgrade to cxf 2.7.4
+* [SM-2225|http://issues.apache.org/jira/browse/SM-2225] - Upgrade to cxf 2.7.6
+* [SM-2230|http://issues.apache.org/jira/browse/SM-2230] - Update to latest releases
+* [SM-2238|http://issues.apache.org/jira/browse/SM-2238] - Remove overwritten activemq features from ServiceMix features.xml
+* [SM-2240|http://issues.apache.org/jira/browse/SM-2240] - Some endorsed libraries are duplicated
+* [SM-2241|http://issues.apache.org/jira/browse/SM-2241] - Upgrade to Karaf 2.3.4
+* [SM-2242|http://issues.apache.org/jira/browse/SM-2242] - Remove minimal and full assembly
+* [SM-2246|http://issues.apache.org/jira/browse/SM-2246] - Merge apache-servicemix and shared into a single assembly module
+* [SM-2249|http://issues.apache.org/jira/browse/SM-2249] - Upgrade to Camel 2.12.3
+* [SM-2253|http://issues.apache.org/jira/browse/SM-2253] - Upgrade to Akka 2.2.3
+* [SM-2254|http://issues.apache.org/jira/browse/SM-2254] - Remove akka-osgi-aries from build
+* [SM-2262|http://issues.apache.org/jira/browse/SM-2262] - Split features file in multiple parts
+* [SM-2263|http://issues.apache.org/jira/browse/SM-2263] - Switch to org.apache:apache version 14
+* [SM-2264|http://issues.apache.org/jira/browse/SM-2264] - Decouple examples from our own parent POMs
+
+
+h2. SVN Tag Checkout
+
+{code}
+svn co http://svn.apache.org/repos/asf/servicemix/smx5/tags/servicemix-5.0.0
+{code}
+
+h2. Changelog
+
+For a more detailed view of new features and bug fixes, see the [changelog|https://issues.apache.org/jira/browse/SM/fixforversion/12324078]
 
 --- name:content pipeline:ssp
 <%@ val notes : String %>
 
-<h2>Downloads : Apache ServiceMix 5.0.0-SNAPSHOT</h2>
+<h2>Downloads : Apache ServiceMix 5.0.0</h2>
 
-<% render("/downloads/_servicemix5.scaml", Map("version" -> "5.0.0-SNAPSHOT")) %>
+<div class="warningPanel">
+  <p class="title">Currently under vote!</p>
+  <p>This release is currently under vote - the download links below won't work until the release vote finishes.</p>
+</div>
+
+<% render("/downloads/_servicemix5.scaml", Map("version" -> "5.0.0")) %>
 
 <%= unescape(notes) %>

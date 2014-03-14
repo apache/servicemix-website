@@ -127,6 +127,10 @@ div#downloads td.docs {
     text-align: center;
 }
 
+div#downloads td.links {
+    text-align: center;
+}
+
 div#downloads td.docs p.home {
     font-weight: bold;
 }
