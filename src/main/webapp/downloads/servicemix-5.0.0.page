@@ -47,6 +47,7 @@ h3. Bug
 * [SM-2261|http://issues.apache.org/jira/browse/SM-2261] - antrun-plugin enable-obr runs multiple times
 * [SM-2265|http://issues.apache.org/jira/browse/SM-2265] - Remove unnecessary external repositories
 * [SM-2266|http://issues.apache.org/jira/browse/SM-2266] - Fix broken source assembly and add correct LICENSE/NOTICE files
+* [SM-2268|http://issues.apache.org/jira/browse/SM-2268] - Error on startup: invalid run level for wrap bundle
 
 h3. Improvement
 * [SM-2171|http://issues.apache.org/jira/browse/SM-2171] - Add support for Akka
