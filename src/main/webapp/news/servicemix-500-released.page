@@ -1,0 +1,17 @@
+---
+title: ServiceMix 5.0.0 Released
+--- pipeline:conf
+
+h2. ServiceMix 5.0.0 released
+
+The ServiceMix team is pleased to announce the availability of Apache ServiceMix 5.0.0.
+In this new release, we dropped support for the NMR and JBI in order to focus on building
+a more lightweight integration container.
+
+This release comes with upgrades of all our major dependencies, including:
+* Apache ActiveMQ 5.9.0
+* Apache Camel 2.12.3
+* Apache CXF 2.7.10
+* Apache Karaf 2.3.4
+
+For more information, please see the [release notes|/downloads/servicemix-5.0.0]

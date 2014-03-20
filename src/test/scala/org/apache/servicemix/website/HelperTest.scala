@@ -72,6 +72,15 @@ class HelperTest {
   }
 
   @Test
+  def testDownloadsForCurrentVersion5Release() = {
+    implicit val release = Release("5.0.0")
+    assertEquals("http://www.apache.org/dyn/closer.cgi?path=servicemix/servicemix-5/5.0.0/apache-servicemix-5.0.0.zip",
+      download(zip))
+    assertEquals("http://www.apache.org/dyn/closer.cgi?path=servicemix/servicemix-5/5.0.0/apache-servicemix-5.0.0-src.zip",
+      download(source,zip))
+  }
+
+  @Test
   def testDocumentationForSnapshotRelease = {
     implicit val release = Release("4.5.2-SNAPSHOT")
     assertEquals("http://servicemix.apache.org/docs/4.5.x/index.html", docs("index.html"))
