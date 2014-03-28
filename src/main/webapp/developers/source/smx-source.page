@@ -1,0 +1,21 @@
+---
+title: ServiceMix 5 Source
+--- name:overview pipeline:conf
+
+h1. ServiceMix Project
+
+The ServiceMix project contains the codebase for all future ServiceMix releases, starting with Apache ServiceMix 5.0.0
+
+--- name:building pipeline:conf
+
+h2. Building
+
+This project is a normal Maven build.  Just use *{{mvn clean install}}* to build.
+
+--- name:content pipeline:ssp
+<%@ val overview : String %>
+<%@ val building : String %>
+
+<% render("/developers/source/_git-source.scaml", Map("overview" -> overview,
+                                                      "building" -> building,
+                                                      "git" -> "servicemix")) %>

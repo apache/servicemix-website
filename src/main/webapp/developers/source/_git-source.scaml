@@ -1,0 +1,42 @@
+-@ val overview: String
+-@ val building: String
+-@ val git: String
+
+= unescape(overview)
+
+%h2 Browsing the Source Tree
+
+%h3 Web Browsing of Git repository
+%p To browse the Git repo, use the following URL:
+%div.panel
+  %p
+    - var url = "https://git-wip-us.apache.org/repos/asf?p=%s.git".format(git)
+    %a{:href => url}= url
+
+%h3 Read-only mirror at git.apache.org
+%p There is a read-only mirror for this repository available at git.apache.org
+%div.panel
+  %p
+    - url = "git://git.apache.org/%s.git".format(git)
+    %a{:href => url}= url
+
+%h3 Read-only mirror at GitHub
+%p There is a read-only mirror for this repository available at GitHub
+%div.panel
+  %p
+    - url = "https://github.com/apache/%s".format(git)
+    %a{:href => url}= url
+
+%h2 Checking out the Source Tree
+
+%h3 Checkout from the ServiceMix Git Repo
+%P This project's Git repository can be checked out anonymously using the following command:
+%div.panel
+  %p
+    %strong
+      %tt= "git clone https://git-wip-us.apache.org/repos/asf?p=%s.git".format(git)
+
+%p
+  %strong Only project developers can commit to the Git repository via this method.
+
+= unescape(building)
