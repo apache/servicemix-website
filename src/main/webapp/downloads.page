@@ -3,14 +3,14 @@ title: Download
 --- name:intro pipeline:conf
 h1. Download
 
-The latest release is the [ServiceMix 5.0.0 Release|/downloads/servicemix-5.0.0.html].  We strongly encourage all users to use this release.
+The latest release is the [ServiceMix 5.0.1 Release|/downloads/servicemix-5.0.1.html].  We strongly encourage all users to use this release.
 
 --- name:previous pipeline:conf
 h2. Development snapshots
 
 We have development snapshots available for
 
-* [Apache ServiceMix 5.0.1-SNAPSHOT|/downloads/servicemix-5.0.1.html]
+* [Apache ServiceMix 5.0.2-SNAPSHOT|/downloads/servicemix-5.0.2.html]
 * [Apache ServiceMix 4.5.4-SNAPSHOT|/downloads/servicemix-4.5.4.html]
 * [Apache ServiceMix 4.4.3-SNAPSHOT|/downloads/servicemix-4.4.3.html]
 
@@ -48,6 +48,7 @@ An archive of previous releases can be found [here|http://archive.apache.org/dis
 * [Apache ServiceMix 4.5.1|/downloads/servicemix-4.5.1.html]
 * [Apache ServiceMix 4.5.2|/downloads/servicemix-4.5.2.html]
 * [Apache ServiceMix 4.5.3|/downloads/servicemix-4.5.3.html]
+* [Apache ServiceMix 4.5.3|/downloads/servicemix-5.0.0.html]
 
 --- name:content pipeline:ssp
 <%@ val intro : String %>
@@ -55,6 +56,6 @@ An archive of previous releases can be found [here|http://archive.apache.org/dis
 
 <%= unescape(intro) %>
 
-<% render("/downloads/_servicemix5.scaml", Map("version" -> "5.0.0")) %>
+<% render("/downloads/_servicemix5.scaml", Map("version" -> "5.0.1")) %>
 
 <%= unescape(previous) %>
