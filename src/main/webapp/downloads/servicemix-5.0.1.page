@@ -1,18 +1,60 @@
 ---
-title: ServiceMix 5.0.1-SNAPSHOT
+title: ServiceMix 5.0.1
 --- name:notes pipeline:conf
 
-h2. Helping us...
+h2. OSGi components list
+Components included in this release:
 
-You can help us by trying out this development snapshot and reporting any problems you encounter on the [mailing lists|/community/mailing-lists]
+This release packages the following dependencies:
+* Version [2.3.5|http://karaf.apache.org/index/community/download/karaf-2.3.5-release.html] of [Apache Karaf|http://karaf.apache.org/]
+* Version [5.9.0|http://activemq.apache.org/activemq-590-release.html] of [ActiveMQ|http://activemq.apache.org]
+* Version [2.12.3|http://camel.apache.org/camel-2123-release.html] of [Camel|http://camel.apache.org]
+* Version [2.7.10|https://cxf.apache.org/cxf-2710-release-notes.html] of [CXF|http://cxf.apache.org]
 
-An overview of outstanding JIRA issues for this release can be found at [https://issues.apache.org/jira/browse/SM/fixforversion/12326511]
+h2. Release notes
+
+h3. Sub-task
+* [SM-2297|http://issues.apache.org/jira/browse/SM-2297] - Recommend users to install Activiti through the boot features in the Activiti guide
+
+h3. Bug
+* [SM-2188|http://issues.apache.org/jira/browse/SM-2188] - Feature install triggers waterfall bundle refresh
+* [SM-2256|http://issues.apache.org/jira/browse/SM-2256] - Unable to shutdown container when JMS appender is configured
+* [SM-2267|http://issues.apache.org/jira/browse/SM-2267] - Provide working configuration for activemq-web-console
+* [SM-2269|http://issues.apache.org/jira/browse/SM-2269] - ActiveMQ quick start doesn't work due to the missing activemq component
+* [SM-2271|http://issues.apache.org/jira/browse/SM-2271] - Can't install hibernate-envers in SMX5
+* [SM-2277|http://issues.apache.org/jira/browse/SM-2277] - activiti-camel thrown ActivitiException when put document in delivery folder
+* [SM-2279|http://issues.apache.org/jira/browse/SM-2279] - The jndi feature can not be installed
+* [SM-2280|http://issues.apache.org/jira/browse/SM-2280] - Activiti test case fails after upgrade to 5.15.1
+* [SM-2282|http://issues.apache.org/jira/browse/SM-2282] - Installation of the eventadmin feature fails
+* [SM-2286|http://issues.apache.org/jira/browse/SM-2286] - Intermittent test failure in ActivitiExamplesTest.testActivitiCamelExample
+
+h3. Improvement
+* [SM-2299|http://issues.apache.org/jira/browse/SM-2299] - Add itest for cxf-wsn example
+
+h3. New Feature
+* [SM-2288|http://issues.apache.org/jira/browse/SM-2288] - Add drools feature
+
+h3. Task
+* [SM-2229|http://issues.apache.org/jira/browse/SM-2229] - Upgrade to activiti version 5.15.1
+* [SM-2272|http://issues.apache.org/jira/browse/SM-2272] - Release Apache ServiceMix 5.0.1
+* [SM-2281|http://issues.apache.org/jira/browse/SM-2281] - Upgrade to Karaf 2.3.5
+* [SM-2283|http://issues.apache.org/jira/browse/SM-2283] - Align some versions duplicated after the Activiti upgrade
+* [SM-2294|http://issues.apache.org/jira/browse/SM-2294] - Cleanup nonexisting cxf dependencies from dependency management
+* [SM-2296|http://issues.apache.org/jira/browse/SM-2296] - Add the boot features to the system repository
+
+h2. SCM tag
+
+Tag {{servicemix-5.0.1}} available in [Git|https://git-wip-us.apache.org/repos/asf/servicemix/?p=servicemix.git;a=commit;h=d1e31f863d27ad4735e91810ae3dd39bcd3f822c] (commit id d1e31f863d27ad4735e91810ae3dd39bcd3f822c)
+
+h2. Changelog
+
+For a more detailed view of new features and bug fixes, see the [changelog|https://issues.apache.org/jira/browse/SM/fixforversion/12326511]
 
 --- name:content pipeline:ssp
 <%@ val notes : String %>
 
-<h2>Downloads : Apache ServiceMix 5.0.1-SNAPSHOT</h2>
+<h2>Downloads : Apache ServiceMix 5.0.1</h2>
 
-<% render("/downloads/_servicemix5.scaml", Map("version" -> "5.0.1-SNAPSHOT")) %>
+<% render("/downloads/_servicemix5.scaml", Map("version" -> "5.0.1")) %>
 
 <%= unescape(notes) %>
