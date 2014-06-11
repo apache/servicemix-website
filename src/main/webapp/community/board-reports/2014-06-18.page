@@ -15,8 +15,9 @@ Karaf to provide a complete, enterprise-ready ESB powered by OSGi.
 
 Project Status
 --------------
-We have lost a lot of our momentum now that major parts of the functionality
-are being maintained in related projects like Apache Karaf and Apache Camel.
+The project focus of Apache ServiceMix is the assembly of the integration
+container, the actual functionality is being maintained in related projects
+like Apache Karaf, Apache CXF and Apache Camel.
 
 After the discussion about the future of ServiceMix a few months ago, we
 managed to get two new releases out. As a result, activity on the mailing
