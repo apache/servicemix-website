@@ -48,7 +48,7 @@ An archive of previous releases can be found [here|http://archive.apache.org/dis
 * [Apache ServiceMix 4.5.1|/downloads/servicemix-4.5.1.html]
 * [Apache ServiceMix 4.5.2|/downloads/servicemix-4.5.2.html]
 * [Apache ServiceMix 4.5.3|/downloads/servicemix-4.5.3.html]
-* [Apache ServiceMix 4.5.3|/downloads/servicemix-5.0.0.html]
+* [Apache ServiceMix 5.0.0|/downloads/servicemix-5.0.0.html]
 
 --- name:content pipeline:ssp
 <%@ val intro : String %>
