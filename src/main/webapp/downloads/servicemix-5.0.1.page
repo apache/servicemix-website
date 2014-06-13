@@ -57,7 +57,7 @@ For a more detailed view of new features and bug fixes, see the [changelog|https
 
 <div class="warningPanel">
   <p class="title">Warning! </p>
-  <p>Because of a problem in the 5.0.1 release, we recommend you to use the <a href="servicemix-5.0.0.html">5.0.0 release</a> instead</p>
+  <p>Due to a problem in Apache Karaf 2.3.5, you may experience problems using services that leverage the JAAS authentication mechanism.  We therefore recommend users to use <a href="servicemix-5.0.0.html">Apache ServiceMix 5.0.0</a> instead</p>
 </div>
 
 <% render("/downloads/_servicemix5.scaml", Map("version" -> "5.0.1")) %>
