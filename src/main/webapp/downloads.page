@@ -56,6 +56,6 @@ An archive of previous releases can be found [here|http://archive.apache.org/dis
 
 <%= unescape(intro) %>
 
-<% render("/downloads/_servicemix5.scaml", Map("version" -> "5.0.0")) %>
+<% render("/downloads/_servicemix5.scaml", Map("version" -> "5.0.0", "archive" -> true)) %>
 
 <%= unescape(previous) %>
