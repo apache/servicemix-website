@@ -36,7 +36,7 @@ h3. Task
 * [SM-2314|http://issues.apache.org/jira/browse/SM-2314] - Trying to get person with unknown end with error in camel-cxf-rest example
 * [SM-2316|http://issues.apache.org/jira/browse/SM-2316] - Problems when reinstalling the drools examples
 * [SM-2329|http://issues.apache.org/jira/browse/SM-2329] - Downgrade to Karaf 2.3.4
-* [SM-2331|http://issues.apache.org/jira/browse/SM-2331] - Release Apache ServiceMix 5.0.2s
+* [SM-2331|http://issues.apache.org/jira/browse/SM-2331] - Release Apache ServiceMix 5.0.2
 
 h2. SCM tag
 
