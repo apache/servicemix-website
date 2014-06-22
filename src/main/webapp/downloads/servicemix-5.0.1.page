@@ -60,6 +60,6 @@ For a more detailed view of new features and bug fixes, see the [changelog|https
   <p>Due to a problem in Apache Karaf 2.3.5, you may experience problems using services that leverage the JAAS authentication mechanism.  We therefore recommend users to use <a href="servicemix-5.0.0.html">Apache ServiceMix 5.0.0</a> instead</p>
 </div>
 
-<% render("/downloads/_servicemix5.scaml", Map("version" -> "5.0.1")) %>
+<% render("/downloads/_servicemix5.scaml", Map("version" -> "5.0.1", "archive" -> true)) %>
 
 <%= unescape(notes) %>
