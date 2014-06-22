@@ -1,0 +1,85 @@
+---
+title: ServiceMix 5.1.0
+--- name:notes pipeline:conf
+
+h2. OSGi components list
+Components included in this release:
+
+This release packages the following dependencies:
+* Version [2.3.4|http://karaf.apache.org/index/community/download/karaf-2.3.4-release.html] of [Apache Karaf|http://karaf.apache.org/]
+* Version [5.10.0|http://activemq.apache.org/activemq-5100-release.html] of [ActiveMQ|http://activemq.apache.org]
+* Version [2.13.1|http://camel.apache.org/camel-2131-release.html] of [Camel|http://camel.apache.org]
+* Version [2.7.11|https://cxf.apache.org/cxf-2711-release-notes.html] of [CXF|http://cxf.apache.org]
+
+h2. Release notes
+
+h3. Sub-task
+* [SM-2297|http://issues.apache.org/jira/browse/SM-2297] - Recommend users to install Activiti through the boot features in the Activiti guide
+* [SM-2301|http://issues.apache.org/jira/browse/SM-2301] - Problem installing activiti feature after upgrade to Camel 2.13.1
+* [SM-2303|http://issues.apache.org/jira/browse/SM-2303] - ActiveMQ web console not installable after upgrade to 5.9.1
+* [SM-2311|http://issues.apache.org/jira/browse/SM-2311] - Remove the shaded ActiveMQ web console
+
+h3. Bug
+* [SM-2244|http://issues.apache.org/jira/browse/SM-2244] - Uninstall activiti feature results in error
+* [SM-2256|http://issues.apache.org/jira/browse/SM-2256] - Unable to shutdown container when JMS appender is configured
+* [SM-2267|http://issues.apache.org/jira/browse/SM-2267] - Provide working configuration for activemq-web-console
+* [SM-2269|http://issues.apache.org/jira/browse/SM-2269] - ActiveMQ quick start doesn't work due to the missing activemq component
+* [SM-2277|http://issues.apache.org/jira/browse/SM-2277] - activiti-camel thrown ActivitiException when put document in delivery folder
+* [SM-2279|http://issues.apache.org/jira/browse/SM-2279] - The jndi feature can not be installed
+* [SM-2280|http://issues.apache.org/jira/browse/SM-2280] - Activiti test case fails after upgrade to 5.15.1
+* [SM-2282|http://issues.apache.org/jira/browse/SM-2282] - Installation of the eventadmin feature fails
+* [SM-2286|http://issues.apache.org/jira/browse/SM-2286] - Intermittent test failure in ActivitiExamplesTest.testActivitiCamelExample
+* [SM-2309|http://issues.apache.org/jira/browse/SM-2309] - Add itest for camel-cxf-rest example
+* [SM-2322|http://issues.apache.org/jira/browse/SM-2322] - !<history-number> executes wrong history entry
+
+h3. Improvement
+* [SM-2298|http://issues.apache.org/jira/browse/SM-2298] - Add a CXF SOAP with Camel example
+* [SM-2299|http://issues.apache.org/jira/browse/SM-2299] - Add itest for cxf-wsn example
+* [SM-2327|http://issues.apache.org/jira/browse/SM-2327] - Improve camel-cxf-rest example
+
+h3. New Feature
+* [SM-2288|http://issues.apache.org/jira/browse/SM-2288] - Add drools feature
+
+h3. Task
+* [SM-2229|http://issues.apache.org/jira/browse/SM-2229] - Upgrade to activiti version 5.15.1
+* [SM-2245|http://issues.apache.org/jira/browse/SM-2245] - Upgrade to Pax Exam 3.5.0
+* [SM-2270|http://issues.apache.org/jira/browse/SM-2270] - Merge ServiceMix archetypes with ServiceMix code base
+* [SM-2273|http://issues.apache.org/jira/browse/SM-2273] - Release Apache ServiceMix 5.1.0
+* [SM-2274|http://issues.apache.org/jira/browse/SM-2274] - Upgrade to Camel 2.13.0
+* [SM-2281|http://issues.apache.org/jira/browse/SM-2281] - Upgrade to Karaf 2.3.5
+* [SM-2283|http://issues.apache.org/jira/browse/SM-2283] - Align some versions duplicated after the Activiti upgrade
+* [SM-2289|http://issues.apache.org/jira/browse/SM-2289] - Update ActiveMQ quick start after ServiceMix 5.0.1/5.1.0 release
+* [SM-2292|http://issues.apache.org/jira/browse/SM-2292] - Upgrade to Camel 2.13.1
+* [SM-2294|http://issues.apache.org/jira/browse/SM-2294] - Cleanup nonexisting cxf dependencies from dependency management
+* [SM-2296|http://issues.apache.org/jira/browse/SM-2296] - Add the boot features to the system repository
+* [SM-2306|http://issues.apache.org/jira/browse/SM-2306] - Update the README file
+* [SM-2307|http://issues.apache.org/jira/browse/SM-2307] - Add itest for camel-cxf-soap example
+* [SM-2308|http://issues.apache.org/jira/browse/SM-2308] - Add itest for camel-drools-blueprint example
+* [SM-2312|http://issues.apache.org/jira/browse/SM-2312] - Remove placeholder configuration from the activemq-camel blueprint
+* [SM-2315|http://issues.apache.org/jira/browse/SM-2315] - activemq:dstat fails after any messagin operation is performed
+* [SM-2316|http://issues.apache.org/jira/browse/SM-2316] - Problems when reinstalling the drools examples
+* [SM-2328|http://issues.apache.org/jira/browse/SM-2328] - Upgrade to ActiveMQ 5.10.0
+* [SM-2329|http://issues.apache.org/jira/browse/SM-2329] - Downgrade to Karaf 2.3.4
+
+h2. SCM tag
+
+Tag {{servicemix-5.1.0}} available in [Git|https://git-wip-us.apache.org/repos/asf?p=servicemix.git;a=tag;h=04b527b8e01bf893eeefb9153555d182b77865bc] (commit id e20fc8d9edd0828b011d14ecb75e5cc6a70fce6a)
+
+h2. Changelog
+
+For a more detailed view of new features and bug fixes, see the [changelog|https://issues.apache.org/jira/browse/SM/fixforversion/12326660]
+
+--- name:content pipeline:ssp
+<%@ val notes : String %>
+
+<h2>Downloads : Apache ServiceMix 5.1.0</h2>
+
+<div class="warningPanel">
+  <p class="title">Currently under vote!</p>
+  <p>This release is currently under vote - the download links below won't work until the release vote has passed</p>
+</div>
+
+
+<% render("/downloads/_servicemix5.scaml", Map("version" -> "5.1.0")) %>
+
+<%= unescape(notes) %>
