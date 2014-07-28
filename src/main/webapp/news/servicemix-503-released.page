@@ -1,0 +1,18 @@
+---
+title: ServiceMix 5.0.3 Released
+--- pipeline:conf
+
+h2. ServiceMix 5.0.3 released
+
+The ServiceMix team is pleased to announce the availability of Apache ServiceMix 5.0.3.
+This is a fix release that includes a few bug fixes.  It also comes with new versions
+of Camel and CXF.
+
+Major dependency versions for this release:
+* Activiti 5.15.1
+* Apache ActiveMQ 5.9.0
+* Apache Camel 2.12.4
+* Apache CXF 2.7.11
+* Apache Karaf 2.3.4
+
+For more information, please see the [release notes|/downloads/servicemix-5.0.3]
