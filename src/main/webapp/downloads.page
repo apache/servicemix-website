@@ -12,8 +12,8 @@ We have development snapshots available for
 
 * [Apache ServiceMix 6.0.0-SNAPSHOT|/downloads/servicemix-6.0.0.html]
 * [Apache ServiceMix 5.2.0-SNAPSHOT|/downloads/servicemix-5.2.0.html]
-* [Apache ServiceMix 5.1.1-SNAPSHOT|/downloads/servicemix-5.1.1.html]
-* [Apache ServiceMix 5.0.3-SNAPSHOT|/downloads/servicemix-5.0.3.html]
+* [Apache ServiceMix 5.1.2-SNAPSHOT|/downloads/servicemix-5.1.2.html]
+* [Apache ServiceMix 5.0.4-SNAPSHOT|/downloads/servicemix-5.0.4.html]
 
 h2. Previous Releases
 
@@ -52,6 +52,8 @@ An archive of previous releases can be found [here|http://archive.apache.org/dis
 * [Apache ServiceMix 5.0.0|/downloads/servicemix-5.0.0.html]
 * [Apache ServiceMix 5.0.1|/downloads/servicemix-5.0.1.html]
 * [Apache ServiceMix 5.0.2|/downloads/servicemix-5.0.2.html]
+* [Apache ServiceMix 5.0.3|/downloads/servicemix-5.0.3.html]
+* [Apache ServiceMix 5.1.0|/downloads/servicemix-5.1.0.html]
 
 --- name:content pipeline:ssp
 <%@ val intro : String %>
