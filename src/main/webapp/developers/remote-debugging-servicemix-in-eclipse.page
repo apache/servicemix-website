@@ -4,46 +4,61 @@ title: Remote-debugging ServiceMix in Eclipse
 This page explains how to set up remote-debugging of ServiceMix using Eclipse.
 
 Basically, you have to perform the following steps:
-# [Enable remote debugging in {{servicemix.bat}}|Remote-debugging ServiceMix in Eclipse#Enabling Remote Debugging in ServiceMix]
-# [Specify a remote-debugging launch configuration|Remote-debugging ServiceMix in Eclipse#Specifying a Remote Debugging Launch Configuration] 
-# [Start SM and switch to Debug-Perspective|Remote-debugging ServiceMix in Eclipse#Performing Debugging]
+# [Enable remote debugging in {{servicemix.bat}}|#Enabling Remote Debugging in ServiceMix]
+# [Specify a remote-debugging launch configuration|#Specifying a Remote Debugging Launch Configuration] 
+# [Start SM and switch to Debug-Perspective|#Performing Debugging]
 
 h2. Enable remote debugging in ServiceMix
-The following section in {{servicemix.bat}} is the one that matters:
-{code}
-if "%SERVICEMIX_DEBUG%" == "" goto :SERVICEMIX_DEBUG_END
-    rem Use the defaults if JAVA_DEBUG_OPTS was not set
-    if "%JAVA_DEBUG_OPTS%" == "" set JAVA_DEBUG_OPTS=%DEFAULT_JAVA_DEBUG_OPTS%
-    
-    set "JAVA_OPTS=%JAVA_DEBUG_OPTS% %JAVA_OPTS%"
-    call :warn Enabling Java debug options: %JAVA_DEBUG_OPTS%
-:SERVICEMIX_DEBUG_END
-{code}
 
-In order to activate it, you need to set the environment variable {{SERVICEMIX_DEBUG}}.
+You can debug ServiceMix or any application deployed onto it using remote debugging. Remote debugging can be easily activated by using the {{debug}} parameter on the command line.
 
-For instance in Windows:
-{code}
-SET SERVICEMIX_DEBUG=TRUE
-{code}
+{noformat}
+> bin/servicemix debug
+{noformat}
+or on Windows
+{noformat}
+> bin\servicemix.bat debug
+{noformat}
 
-Or in Linux:
-{code}
-export SERVICEMIX_DEBUG=TRUE
-{code}
+Another option is to set the {{KARAF_DEBUG}} environment variable to {{TRUE}}.
 
-ServiceMix runs in debugging mode if you can see the following output when running it:
-{code}
-...
-servicemix.bat: Enabling Java debug options: -Xdebug -Xnoagent -Djava.compiler=NONE -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=5005
-...
-{code}
+This can be done using the following command on Unix systems:
+{noformat}
+export KARAF_DEBUG=true
+{noformat}
+
+On Windows, use the following command
+{noformat}
+set KARAF_DEBUG=true
+{noformat}
+
+Then, you can launch ServiceMix using the usual way:
+{noformat}
+bin/servicemix
+{noformat}
+or
+{noformat}
+bin\servicemix.bat
+{noformat}
 
 The debugging options can be modified in {{servicemix.bat}} via the {{DEFAULT_JAVA_DEBUG_OPTS}}. The default values are:
-{code}
+{noformat}
 set DEFAULT_JAVA_DEBUG_OPTS=-Xdebug -Xnoagent -Djava.compiler=NONE -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=5005
-{code}
+{noformat}
 
+This option works fine when it is needed to debug a project deployed top of Apache ServiceMix. Nervertheless, you will be blocked if you would like to debug the server ServiceMix. In this case, you can change the following parameter {{suspend=y}} in the {{servicemix}} script file: 
+
+{noformat}
+export DEFAULT_JAVA_DEBUG_OPTS='-Xdebug -Xnoagent -Djava.compiler=NONE -Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=5005'
+{noformat}
+
+and on Windows,
+
+{noformat}
+set DEFAULT_JAVA_DEBUG_OPTS='-Xdebug -Xnoagent -Djava.compiler=NONE -Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=5005'
+{noformat}
+
+That will cause the JVM to pause just before running {{main()}} until you attach a debugger then it will resume the execution. This way you can set your breakpoints anywhere in the code and you should hit them no matter how early in the startup they are.
 
 h2. Specifying a Remote Debugging Launch Configuration
 Specify an Eclipse Remote Java Application debug launch configuration on the project you want to monitor. 
@@ -51,7 +66,7 @@ Specify an Eclipse Remote Java Application debug launch configuration on the pro
 # Open {{Run - Debug}}
 # Mark {{Remote Java Application}}
 # Create a {{New Launch Configuration}}
-# Specify a name, the project you want to debug (e.g. {{servicemix-wsn2005}}) and the connection properties.
+# Specify a name, the project you want to debug (e.g. {{servicemix-wsn2005}}) and the connection properties; In connection properties please change port from 8000 to 5005.
 # {{Apply}}.
 
 See [http://www.onjava.com/lpt/a/6174] for details.
