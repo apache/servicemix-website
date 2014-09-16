@@ -1,5 +1,5 @@
 ---
-title: ServiceMix 5.1.0
+title: ServiceMix 5.1.1
 --- name:notes pipeline:conf
 
 h2. OSGi components list
@@ -44,6 +44,6 @@ For a more detailed view of new features and bug fixes, see the [changelog|https
 
 <h2>Downloads : Apache ServiceMix 5.1.1</h2>
 
-<% render("/downloads/_servicemix5.scaml", Map("version" -> "5.1.1")) %>
+<% render("/downloads/_servicemix5.scaml", Map("version" -> "5.1.1", "archive" -> true)) %>
 
 <%= unescape(notes) %>

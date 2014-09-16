@@ -1,18 +1,48 @@
 ---
-title: ServiceMix 5.0.4-SNAPSHOT
+title: ServiceMix 5.0.4
 --- name:notes pipeline:conf
 
-h2. Helping us...
+h2. OSGi components list
+Components included in this release:
 
-You can help us by trying out this development snapshot and reporting any problems you encounter on the [mailing lists|/community/mailing-lists]
+This release packages the following dependencies:
+* Version [2.3.7|http://karaf.apache.org/index/community/download/karaf-2.3.4-release.html] of [Apache Karaf|http://karaf.apache.org/]
+* Version [5.9.1|http://activemq.apache.org/activemq-591-release.html] of [ActiveMQ|http://activemq.apache.org]
+* Version [2.12.4|http://camel.apache.org/camel-2124-release.html] of [Camel|http://camel.apache.org]
+* Version [2.7.11|https://cxf.apache.org/cxf-2711-release-notes.html] of [CXF|http://cxf.apache.org]
 
-An overview of outstanding JIRA issues for this release can be found at [https://issues.apache.org/jira/browse/SM/fixforversion/12327146]
+h2. Release notes
+
+h3. Bug
+* [SM-2271|http://issues.apache.org/jira/browse/SM-2271] - Can't install hibernate-envers in SMX5
+* [SM-2301|http://issues.apache.org/jira/browse/SM-2301] - Problem installing activiti feature after upgrade to ActiveMQ 5.9.1
+* [SM-2318|http://issues.apache.org/jira/browse/SM-2318] - Can't install Hibernate 3
+* [SM-2319|http://issues.apache.org/jira/browse/SM-2319] - Connector feature not in sync with transaction
+* [SM-2325|http://issues.apache.org/jira/browse/SM-2325] - Blueprint bean loading multiple times
+* [SM-2351|http://issues.apache.org/jira/browse/SM-2351] - Release Apache ServiceMix 5.0.4
+* [SM-2356|http://issues.apache.org/jira/browse/SM-2356] - ActiveMQ web console not installable after upgrade to 5.9.1
+
+h3. Task
+* [SM-2223|http://issues.apache.org/jira/browse/SM-2223] - Incorrect Information on Remote-debugging ServiceMix in Eclipse
+* [SM-2320|http://issues.apache.org/jira/browse/SM-2320] - Upgrade to Karaf 2.3.6
+* [SM-2345|http://issues.apache.org/jira/browse/SM-2345] - Upgrade to ActiveMQ 5.9.1
+* [SM-2354|http://issues.apache.org/jira/browse/SM-2354] - Upgrade to maven-bundle-plugin 2.5.0
+* [SM-2363|http://issues.apache.org/jira/browse/SM-2363] - Require JDK 6 for build
+* [SM-2365|http://issues.apache.org/jira/browse/SM-2365] - Upgrade to Karaf 2.3.7
+
+h2. SCM tag
+
+Tag {{servicemix-5.0.4}} is available in [Git|https://git-wip-us.apache.org/repos/asf?p=servicemix.git;a=tag;h=refs/tags/servicemix-5.0.4] (commit id aa76d40a607a2bd0dc765d24f901bad564ee46af)
+
+h2. Changelog
+
+For a more detailed view of new features and bug fixes, see the [changelog|https://issues.apache.org/jira/browse/SM/fixforversion/12327146]
 
 --- name:content pipeline:ssp
 <%@ val notes : String %>
 
-<h2>Downloads : Apache ServiceMix 5.0.4-SNAPSHOT</h2>
+<h2>Downloads : Apache ServiceMix 5.0.4</h2>
 
-<% render("/downloads/_servicemix5.scaml", Map("version" -> "5.0.4-SNAPSHOT")) %>
+<% render("/downloads/_servicemix5.scaml", Map("version" -> "5.0.4")) %>
 
 <%= unescape(notes) %>
