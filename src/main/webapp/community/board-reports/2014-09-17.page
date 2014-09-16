@@ -2,10 +2,6 @@
 title: Board Report 2014-09-17
 --- pipeline:conf
 
-{warning}
-This is a work-in-progress - the board report has not yet been submitted.
-{warning}
-
 h2. September 17th, 2014
 
 {code}
@@ -31,7 +27,7 @@ There are no outstanding issues requiring board attention.
 Community
 ---------
 Since our last board report, we voted in 1 new committer, Wim Verreydt.
-We also invited Krzystof Sobkowiak to join the PMC.
+We also invited Krzysztof Sobkowiak to join the PMC.
 
 Community Objectives
 --------------------
