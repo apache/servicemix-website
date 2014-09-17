@@ -3,14 +3,15 @@ title: Release Guide
 --- pipeline:conf
 How to create and announce a ServiceMix release.
 
-h2. Prepare
+h2. Before you start
 
 To prepare and perform a release you must be at least at Apache ServiceMix Committer.
 
+A few other prerequisites:
 * each and every release must be [SIGNED|http://www.apache.org/dev/release-signing.html]
 * your public key should also be cross-signed by other Apache committers (not required, but suggested)
 * make sure you have all Apache servers defined in your [settings.xml|http://maven.apache.org/developers/committer-settings.html]
-* use Maven 2.0.x or 2.2..x
+* use Maven 3.0.5 or higher
 
 Your settings.xml should look like:
 
@@ -45,98 +46,74 @@ Your settings.xml should look like:
 
 {code}
 
-h2. Staging the Release Candidate
+h2. Prepare for release
 
-# grab the latest [Source]
-{code}
-svn co https://svn.apache.org/repos/asf/servicemix/$PART/trunk
-{code}
-where $PART is what you want to release. For example, it can be:
-** smx3
-** smx4
-** components
-** ...
-# prepare your POMs for release:
-## make sure there is no snapshots in the POMs to be released
-## make sure everything builds fine
-## check that your POMs will not lose content when they are rewritten during the release process:
-{code}
-mvn release:prepare -DdryRun
-{code} 
-and diff the original pom.xml with the one named pom.xml.tag to see if the license or any other info has been removed. This has been known to happen if the starting <project> tag is not a single line. The only things that should be different between these files are the <version> and <scm> elements. If there are any other changes, you must fix the original pom.xml file and commit before proceeding with the release. 
-## publish a snapshot
-{code}
-$ mvn deploy
-...
-[INFO] [deploy:deploy]
-[INFO] Retrieving previous build number from apache.snapshots.https
-...
-{code}
-** if you experience an error during deployment like a HTTP 401 check your settings for the required server entries as outlined in the *Prerequisites*
-** be sure that the generated artifacts respect the Apache release [rules|http://www.apache.org/dev/release.html]: NOTICE and LICENSE files should be present in the META-INF directory within the jar. For sources artifacts, be sure that your POM does not use the maven-source-plugin:2.0.3 which is broken. The recommended version at this time is 2.0.4 
-** you should verify the deployment under the [snapshot|https://repository.apache.org/content/groups/snapshots/org/apache/servicemix] repository on Apache
-# prepare the release
-{code}
-mvn release:clean
-mvn release:prepare
-{code}
-# stage the release for a vote
-Note: If you're on Mac OSX 10.5, for a  known  [issue|http://subversion.tigris.org/issues/show_bug.cgi?id=3059], you need provide your apache svn user/password 
-mvn release:prepare -Dusername=ffang -Dpassword=*******
-{code}
-mvn release:perform
-{code}
-** the release will automatically be inserted into a temporary staging repository for you, see the Nexus [staging documentation|http://www.sonatype.com/books/nexus-book/reference/staging.html] for full details
-** you can continue to use mvn release:prepare and mvn release:perform on other sub-projects as necessary on the same machine and they will be combined in the same staging repository
-# close the staging repository
-** login to [https://repository.apache.org] using your Apache SVN credentials. Click on Staging on the left. Then click on org.apache.servicemix in the list of repositories. In the panel below you should see an open repository that is linked to your username and IP. Right click on this repository and select Close. This will close the repository from future deployments and make it available for others to view. If you are staging multiple releases together, skip this step until you have staged everything
-!release_01.png|thumbnail! !release_02.png|thumbnail! !release_03.png|thumbnail! !release_04.png|thumbnail! !release_05.png|thumbnail! !release_06.png|thumbnail!
-# verify the staged artifacts
-** if you click on your repository, a tree view will appear below. You can then browse the contents to ensure the artifacts are as you expect them. Pay particular attention to the existence of *.asc (signature) files. If you don't like the content of the repository, right click your repository and choose Drop. You can then rollback your release (see Canceling the Release) and repeat the process
-** note the staging repository URL (especially the number at the end of the URL) you will need this in your vote email
+Before you can start the release process...
 
-h2. Starting the vote
+# Reach out to the community to ensure everyone is aware of the upcoming release and people have the time to commit their final changes
+# Check JIRA to ensure all issues scheduled to be resolved have been fixed.
+# In JIRA, generate text-based release notes (link available on version page or click [here|https://issues.apache.org/jira/secure/ConfigureReleaseNote.jspa?projectId=12311206]) and update the {{RELEASE-NOTES}} file with the new release information.
+# Make sure the project builds correctly and all tests are passing using a {{mvn clean install}}
 
-Propose a vote on the dev list with the closed issues, the issues left, and the staging repository - for example:
+h2. Perform the release
 
-{code}
-To: "ServiceMix Developers List" <dev@servicemix.apache.org>
-Subject: [VOTE] Release ServiceMix [Component] XXX version Y.Z
+To cut the actual release...
+# To ensure that all dependencies are available online and/or the necessary Maven repositories have been defined, it's highly recommended to move your local Maven repository aside ({{mv ~/.m2/repository ~/repository.old}}) or delete it.
+# Do a {{git pull --rebase}} and {{git status}} first to make sure your local checkout is completely up-to-date. If there are any untracked files around, do a {{git clean -df}} to remove those.
+# Now, run {{mvn release:prepare}}. It will:
+#* Ask you for the release version, tag name and next release version - usually, the default values will be OK
+#* Update the POMs with the release versions
+#* Build the project and run all the test
+#* Check in the release POMs, create the tag and then update to next release version
+# If the prepare build succeeded, run {{mvn release:perform}} to
+#* Check out the tag
+#* Build the project and upload all the artifacts to a staging repository on [https://repository.apache.org]
+# Once the build has finished, close the staging repository:
+#* Log onto [https://repository.apache.org] with your Apache user id and password
+#* In the left hand navigation panel, select {{Staging repositories}}
+#* Find the staging repository containing the release and close the repository. After the repository has been closed, make a note of the repository URL because you'll need it for the vote mail.
 
-Hi,
+h2. Vote
 
-We solved N issues in this release:
-http://issues.apache.org/jira/...
+For more background on the Apache voting process, check out [http://www.apache.org/foundation/voting.html]
 
-There are still some outstanding issues:
-http://issues.apache.org/jira/...
+# Start a vote by sending a mail to the dev@ list:
+{noformat}
+This is a vote to release Apache ServiceMix <version>.
 
-Staging repository:
-https://repository.apache.org/content/repositories/servicemix-staging-[YOUR REPOSITORY ID]/
+The staging area is available at
+  <link to staging repository>
+
+An overview of issues fixed in this release can be found in JIRA at
+  <link to version in JIRA>
+
+The scm tag is available on
+  <link to tag on git-wip-us.apache.org>
 
 Please vote to approve this release:
 
 [ ] +1 Approve the release
-[ ] -1 Veto the release (please provide specific comments)
+[ ] -1 Do not approve the release (please provide specific comments)
 
 This vote will be open for 72 hours.
-{code}
+{noformat}
+# For the next few days, just monitor the vote thread. If a blocking issue arises, it may be necessary to cancel the vote earlier, but otherwise you'll need to wait for at least 72 hours and at least 3 binding +1 votes.
 
-* to get the JIRA release notes link, browse to the ServiceMix [JIRA|http://issues.apache.org/jira/browse/ServiceMix] page, select Release Notes and choose the relevant sub-project release and format (HTML)
-* to get the list of issues left in JIRA, select the Open Issues tab on the main ServiceMix page, and select the relevant sub-project.
+h3. If the vote fails
 
-h2. Wait for the Results
+If the vote fails or if you decide to redo the release:
+# Send a mail to cancel the vote - add the {{\[CANCEL\]}} subject prefix when sending this mail
+# On [https://repository.apache.org], go back to the {{Staging repositories}}, select your staging repository and click the {{Drop}} button
+# Remove the tag from your local git repository ({{git tag -D <tag>}}) as well as from the remote git repository ({{git push origin :<tag>}})
+# After all the reported issues have been fixed, you can circle back to the *Prepare for release* section of this page and give things another go
 
-From [Votes on Package Releases|http://www.apache.org/foundation/voting.html]:
+h3. If the vote passes
 
-    Votes on whether a package is ready to be released follow a format similar to majority approval - except that the decision is officially determined solely by whether at least three +1 votes were registered. Releases may not be vetoed. Generally the community will table the vote to release if anyone identifies serious problems, but in most cases the ultimate decision, once three or more positive votes have been garnered, lies with the individual serving as release manager. The specifics of the process may vary from project to project, but the 'minimum of three +1 votes' rule is universal.
-
-The list of binding voters is available at [http://servicemix.apache.org/team.html].
-
-If the vote is successful, post the result to the dev list - for example:
-{code}
+If the vote passes
+# Post the result to the dev@ mailing list, adding the {{[RESULT]}} subject prefix
+{noformat}
 To: "ServiceMix Developers List" <dev@servicemix.apache.org>
-Subject: [RESULT] [VOTE] Release ServiceMix [Component] XXX version Y.Z
+Subject: [RESULT] [VOTE] Release Apache ServiceMix X.Y.Z
 
 Hi,
 
@@ -147,67 +124,34 @@ The vote has passed with the following result :
 
 I will copy this release to the ServiceMix dist directory and
 promote the artifacts to the central Maven repository.
-{code}
+{noformat}
 
-If the vote is unsuccessful, you need to fix the issues and restart the process - see *Canceling the Release*.
-If the vote is successful, you need to promote and distribute the release - see *Promoting the Release*.
+h2. Promoting the release and publish distributions
 
-h2. Canceling the Release
+After the vote has passed successfully...
+# On [https://repository.apache.org], go back to the {{Staging repositories}}, select your staging repository and click the {{Promote}} button. This will publish the artifacts into the [https://repository.apache.org/content/repositories/releases] repository, from where they will be synced into central repo.
+# To publish the distribution for download:
+#* Check out the distribution repository using Subversion from [https://dist.apache.org/repos/dist/release/servicemix/]
+#* You will need to copy the (source) distribution and the corresponding hash/signature files into the correct directory. There's a script called {{copy-release-distro.sh}} available in [http://svn.apache.org/repos/asf/servicemix/scripts/] to ease that task. Example:
+{noformat}
+$ cd servicemix-5
+$ <path-to-script>/copy-release-distro.sh <release-version>
+{noformat}
+#* Afterwards, do {{svn add <directory>}} and commit the new files. For now, just leave the previous version there as well. It will take about 24 hours for the distribution to reach most of the Apache download mirrors.
 
-If the vote fails, or you decide to redo the release:
+h2. Updating the website and announcing the release
 
-# remove the release tag from Subversion (svn del ...)
-# login to https://repository.apache.org using your Apache SVN credentials. Click on Staging on the left. Then click on org.apache.servicemix in the list of repositories. In the panel below you should see a closed repository that is linked to your username and IP (if it's not yet closed you need to right click and select Close). Right click on this repository and select Drop.
-# rollback the version in the pom.xml and commit any fixes you need to make
+About a day after you upload the distribution to {{dist.apache.org}}, you can update the website and send the release announcement
+# Edit the website (cfr. [website-source] for more information):
+#* Add a new download page for the release - just copy an existing page and update it accordingly. There's another helper script available (called {{release-note-to-wiki.rb}}) to convert release notes from text to wiki format. Don't forget to add link on the main {{downloads.page}}
+#* On the previous release page, add the {{"archive" -> true}} bit to indicate that that release will only be available from the archive
+#* Add an announcement news item and update the {{news/recent.page}} to show the item - move the oldest item to the website's {{news.page}}
+#* If this is the most recent release, also update the download link on the {{index.page}}
+# Send out the release annoucement mail to the dev@ and users@ mailing lists
 
-h2. Promoting the Release
+h2. Wrapping up
 
-If the vote passes:
-
-# copy the released artifacts to the ServiceMix dist directory (/x1/www/www.apache.org/dist/servicemix) on people.apache.org
-# delete the old release from the ServiceMix dist directory (it's archived)
-# login to https://repository.apache.org with your Apache SVN credentials. Click on Staging. Find your closed staging repository, right click on it and choose Promote. Select the Releases repository from the drop-down list and click Promote.
-# next click on Repositories, select the Releases repository and validate that your artifacts are all there
-# update the news section on the website at news
-# update the download page on the website at downloads to point to the new release.
-
-For the last two tasks, it's better to give the mirrors some time to distribute the uploaded artifacts (one day should be fine). This ensures that once the website (news and download page) is updated, people can actually download the artifacts.
-
-h2. Update XML schemas
-
-* Update the [Xml schemas] page with a link to the HTML and XSD
-
-h2. Update JIRA
-
-Go to Admin section on the ServiceMix JIRA and mark the Component/Y.Z version as released - create version Y.Z+1, if that hasn't already been done.
-
-h2. Announcing the ServiceMix Release
-
-{code}
-To: "ServiceMix Developers List" <dev@servicemix.apache.org>
-Subject: [ANN] ServiceMix XXX version Y.Z Released
-
-The ServiceMix team is pleased to announce the release of ServiceMix XXX version Y.Z
-
-<<insert short description of the sub-project>>
-
-  http://servicemix.apache.org/XXX.html
-
-This release is available from http://servicemix.apache.org/downloads and Maven:
-
-  <dependency>
-    <groupId>org.apache.servicemix</groupId>
-    <artifactId>org.apache.servicemix.XXX</artifactId>
-    <version>Y.Z</version>
-  </dependency>
-
-Release Notes:
-
-<<insert release notes in text format from JIRA>>
-
-Enjoy!
-
--The ServiceMix team
-{code}
-
-Remember to forward this announcement to users@servicemix.apache.org - try not to cross-post (CC:) announcements to both user and dev lists.
+You're nearly there now - just a few loose ends to tie up:
+# In JIRA, mark the version released. If the next two versions have not yet been created, this would be a good time to do that as well.
+# Go back to your checkout directory for [https://dist.apache.org/repos/dist/release/servicemix/] and remove the previous two version - after the update to the website in the previous step, people will now be downloading those from the archives instead.
+# If you haven't done so a few times along the way, now would be an excellent time to get yourself a drink to celebrate the new release ;)
