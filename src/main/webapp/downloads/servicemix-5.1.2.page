@@ -32,7 +32,7 @@ h3. Task
 
 h2. SCM tag
 
-Tag {{servicemix-5.1.2} is available in [Git|https://git-wip-us.apache.org/repos/asf?p=servicemix.git;a=tag;h=refs/tags/servicemix-5.1.2] (commit id f35e96c484e836643b1e66d6133e3c8d51c0cf4b)
+Tag {{servicemix-5.1.2}} is available in [Git|https://git-wip-us.apache.org/repos/asf?p=servicemix.git;a=tag;h=refs/tags/servicemix-5.1.2] (commit id f35e96c484e836643b1e66d6133e3c8d51c0cf4b)
 
 h2. Changelog
 
@@ -43,6 +43,6 @@ For a more detailed view of new features and bug fixes, see the [changelog|https
 
 <h2>Downloads : Apache ServiceMix 5.1.2</h2>
 
-<% render("/downloads/_servicemix5.scaml", Map("version" -> "5.1.2")) %>
+<% render("/downloads/_servicemix5.scaml", Map("version" -> "5.1.2", "archive" -> true)) %>
 
 <%= unescape(notes) %>
