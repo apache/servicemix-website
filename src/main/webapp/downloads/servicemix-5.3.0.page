@@ -15,7 +15,6 @@ h2. Release notes
 
 h3. Bug
 * [SM-2319|http://issues.apache.org/jira/browse/SM-2319] - Connector feature not in sync with transaction
-* [SM-2346|http://issues.apache.org/jira/browse/SM-2346] - Can not resolve feature: camel-avro
 * [SM-2376|http://issues.apache.org/jira/browse/SM-2376] - Incorrect javax.annotation version for java7
 * [SM-2377|http://issues.apache.org/jira/browse/SM-2377] - Java8 packages related to JavaFX are missing
 
