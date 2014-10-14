@@ -1,18 +1,47 @@
 ---
-title: ServiceMix 5.3.0-SNAPSHOT
+title: ServiceMix 5.3.0
 --- name:notes pipeline:conf
 
-h2. Helping us...
+h2. OSGi components list
+Components included in this release:
 
-You can help us by trying out this development snapshot and reporting any problems you encounter on the [mailing lists|/community/mailing-lists]
+This release packages the following dependencies:
+* Version [2.4.0|http://karaf.apache.org/index/community/download/karaf-2.4.0-release.html] of [Apache Karaf|http://karaf.apache.org/]
+* Version [5.10.0|http://activemq.apache.org/activemq-5100-release.html] of [ActiveMQ|http://activemq.apache.org]
+* Version [2.13.2|http://camel.apache.org/camel-2132-release.html] of [Camel|http://camel.apache.org]
+* Version [2.7.11|https://cxf.apache.org/cxf-2711-release-notes.html] of [CXF|http://cxf.apache.org]
 
-An overview of outstanding JIRA issues for this release can be found at [https://issues.apache.org/jira/browse/SM/fixforversion/12328553]
+h2. Release notes
+
+h3. Bug
+* [SM-2319|http://issues.apache.org/jira/browse/SM-2319] - Connector feature not in sync with transaction
+* [SM-2346|http://issues.apache.org/jira/browse/SM-2346] - Can not resolve feature: camel-avro
+* [SM-2376|http://issues.apache.org/jira/browse/SM-2376] - Incorrect javax.annotation version for java7
+* [SM-2377|http://issues.apache.org/jira/browse/SM-2377] - Java8 packages related to JavaFX are missing
+
+h3. New Feature
+* [SM-2381|http://issues.apache.org/jira/browse/SM-2381] - Web Script Console Plugin
+
+h3. Task
+* [SM-2350|http://issues.apache.org/jira/browse/SM-2350] - Upgrade to Karaf 2.4.0
+* [SM-2366|http://issues.apache.org/jira/browse/SM-2366] - Release Apache ServiceMix 5.3.0
+* [SM-2367|http://issues.apache.org/jira/browse/SM-2367] - Upgrade to Felix BundleRepository 2.0.2 
+* [SM-2372|http://issues.apache.org/jira/browse/SM-2372] - Upgrade to Pax Exam 4.2.0
+* [SM-2380|http://issues.apache.org/jira/browse/SM-2380] - Create a overview page with servicemix roadmap
+
+h2. SCM tag
+
+Tag {{servicemix-5.3.0}} is available in [Git|https://git-wip-us.apache.org/repos/asf?p=servicemix.git;a=commit;h=0c688e71cec823c7fdda7182ec04f330374a5001] (commit id 0c688e71cec823c7fdda7182ec04f330374a5001)
+
+h2. Changelog
+
+For a more detailed view of new features and bug fixes, see the [changelog|https://issues.apache.org/jira/browse/SM/fixforversion/12328553]
 
 --- name:content pipeline:ssp
 <%@ val notes : String %>
 
-<h2>Downloads : Apache ServiceMix 5.3.0-SNAPSHOT</h2>
+<h2>Downloads : Apache ServiceMix 5.3.0</h2>
 
-<% render("/downloads/_servicemix5.scaml", Map("version" -> "5.3.0-SNAPSHOT")) %>
+<% render("/downloads/_servicemix5.scaml", Map("version" -> "5.3.0")) %>
 
 <%= unescape(notes) %>
