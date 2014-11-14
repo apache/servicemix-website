@@ -1,18 +1,50 @@
 ---
-title: ServiceMix 5.0.6-SNAPSHOT
+title: ServiceMix 5.0.6
 --- name:notes pipeline:conf
 
-h2. Helping us...
+h2. OSGi components list
+Components included in this release:
 
-You can help us by trying out this development snapshot and reporting any problems you encounter on the [mailing lists|/community/mailing-lists]
+This release packages the following dependencies:
+* Version [2.3.9|http://karaf.apache.org/index/community/download/karaf-2.3.9-release.html] of [Apache Karaf|http://karaf.apache.org/]
+* Version [5.9.1|http://activemq.apache.org/activemq-591-release.html] of [ActiveMQ|http://activemq.apache.org]
+* Version [2.12.5|http://camel.apache.org/camel-2125-release.html] of [Camel|http://camel.apache.org]
+* Version [2.7.13|https://cxf.apache.org/cxf-2713-release-notes.html] of [CXF|http://cxf.apache.org]
 
-An overview of outstanding JIRA issues for this release can be found at [https://issues.apache.org/jira/browse/SM/fixforversion/12328669]
+h2. Release notes
+
+h3. Bug
+* [SM-2396|http://issues.apache.org/jira/browse/SM-2396] - CXF WSN sample installation fails
+
+h3. Improvement
+* [SM-2388|http://issues.apache.org/jira/browse/SM-2388] - Add "update-strategy" to camel-blueprint example
+
+h3. Task
+* [SM-2333|http://issues.apache.org/jira/browse/SM-2333] - activemq:dstat fails after any messagin operation is performed
+* [SM-2357|http://issues.apache.org/jira/browse/SM-2357] - Upgrade to ActiveMQ 5.9.2
+* [SM-2380|http://issues.apache.org/jira/browse/SM-2380] - Create a overview page with servicemix roadmap
+* [SM-2383|http://issues.apache.org/jira/browse/SM-2383] - Upgrade to Camel 2.12.5 and CXF 2.7.13
+* [SM-2384|http://issues.apache.org/jira/browse/SM-2384] - Release Apache ServiceMix 5.0.6
+* [SM-2397|http://issues.apache.org/jira/browse/SM-2397] - Upgrade to Karaf 2.3.9
+* [SM-2398|http://issues.apache.org/jira/browse/SM-2398] - Upgrade maven plugins
+* [SM-2399|http://issues.apache.org/jira/browse/SM-2399] - Upgrade to Apache POM 15
+* [SM-2400|http://issues.apache.org/jira/browse/SM-2400] - Upgrade to Felix maven-bundle-plugin 2.5.3
+* [SM-2402|http://issues.apache.org/jira/browse/SM-2402] - Use correct cxf.codegen-plugin version
+* [SM-2403|http://issues.apache.org/jira/browse/SM-2403] - Upgrade to maven-surefire-plugin 2.18
+
+h2. SCM tag
+
+Tag {{servicemix-5.0.6}} is available in [Git|https://git-wip-us.apache.org/repos/asf?p=servicemix.git;a=tag;h=refs/tags/servicemix-5.0.6] (commit id 4d1ccabb728e395a1d545a6c2062f0bf7e6e1e8d)
+
+h2. Changelog
+
+For a more detailed view of new features and bug fixes, see the [changelog|https://issues.apache.org/jira/browse/SM/fixforversion/12328669]
 
 --- name:content pipeline:ssp
 <%@ val notes : String %>
 
-<h2>Downloads : Apache ServiceMix 5.0.6-SNAPSHOT</h2>
+<h2>Downloads : Apache ServiceMix 5.0.6</h2>
 
-<% render("/downloads/_servicemix5.scaml", Map("version" -> "5.0.6-SNAPSHOT")) %>
+<% render("/downloads/_servicemix5.scaml", Map("version" -> "5.0.6")) %>
 
 <%= unescape(notes) %>
