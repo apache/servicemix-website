@@ -1,0 +1,55 @@
+---
+title: Board Report 2014-12-17
+--- pipeline:conf
+
+{warning}
+This is a work-in-progress - the board report has not yet been submitted.
+{warning}
+
+h2. December 17th, 2014
+
+{code}
+Apache ServiceMix is a flexible, open-source integration container that
+unifies the features and functionality of Apache ActiveMQ, Camel, CXF and
+Karaf to provide a complete, enterprise-ready ESB powered by OSGi.
+
+Project Status
+--------------
+The project focus of Apache ServiceMix is the assembly of the integration
+container, the actual functionality is being maintained in related projects
+like Apache Karaf, Apache CXF and Apache Camel.
+
+Activity on the mailing lists and in JIRA has been a bit slow, but we did
+manage to stick to a steady release schedule and get a few new releases out.
+Apart from the maintenance releases on the 5.0.x and 5.1.x branches, we also
+released a new 5.3.0 version.
+
+There are no outstanding issues requiring board attention.
+
+Community
+---------
+No changes since the last board report. Last committer (Wim Verreydt) and
+PMC member (Krzysztof Sobkowiak) additions were in July 2014.
+
+Community Objectives
+--------------------
+We're not expecting any more dependency updates to become available for
+the 5.0.x branch, but we do plan to keep our release schedule going with
+the 5.1.x and 5.3.x releases.
+
+We're also working towards further 5.x releases and a 6.0.0 release to
+provide our users with major version upgrades of Karaf, Camel, CXF, ...
+
+Releases
+--------
+- A set of 128 bundles in September
+- Apache ServiceMix 5.0.4 in September
+- Apache ServiceMix 5.1.2 in September
+- Apache ServiceMix 5.0.5 in October
+- Apache ServiceMix 5.1.3 in October
+- Apache ServiceMix 5.3.0 in October
+- A set of 65 bundles in October
+- Apache ServiceMix 5.0.6 in November
+- Apache ServiceMix 5.1.4 in November
+- A set of 282 bundles in November
+{code}
