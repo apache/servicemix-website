@@ -15,7 +15,7 @@ that in a project or a company, it's sometimes preferable to take things one ste
 
 That's why we added two more intermediate releases to our roadmap:
 - ServiceMix 5.2.0 comes with Camel 2.14, but uses Karaf 2.3.9
-- ServiceMix 5.3.0 is based on Karaf 2.4.0, but comes with Camel 2.14
+- ServiceMix 5.3.0 is based on Karaf 2.4.0, but comes with Camel 2.13.2
 
 That way, you can choose your own upgrade path: upgrade Camel first using ServiceMix 5.2.0,
 upgrade Karaf first using ServiceMix 5.3.0 or go straight to the latest versions using ServiceMix 5.4.0.
