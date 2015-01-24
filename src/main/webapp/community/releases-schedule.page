@@ -12,8 +12,8 @@ h2. ServiceMix
 | servicemix-5.0.x | 2.3.9 | 2.12.5 | 5.9.1  | 2.7.13 | 5 / 6 / 7 | EOL/NotActive | 5.0.6 |  |  |
 | servicemix-5.1.x | 2.3.9 | 2.13.3 | 5.10.0 | 2.7.13 | 5 / 6 / 7 | Current Stable/In Maintenance | 5.1.4 | 5.1.5 |  |
 | servicemix-5.2.x | 2.3.9 | 2.14.1 | 5.10.0 | 3.0.2 | 5 / 6 / 7 | Transition Stable between 5.1.x and 5.4.x/In Maintenance | 5.2.0 | 5.2.1 |  |
-| servicemix-5.3.x | 2.4.1 | 2.13.3 | 5.10.0 | 2.7.13 | 7 / 8 | Transition Stable between 5.1.x and 5.4.x/In Maintenance | 5.3.0 | 5.3.1 | 2015/01/18 |
-| servicemix-5.4.x | 2.4.1 | 2.14.1 | 5.10.0 | 3.0.2 | 7 / 8 | Development |  | 5.4.0 | 2015/01/18 |
+| servicemix-5.3.x | 2.4.1 | 2.13.3 | 5.10.0 | 2.7.13 | 7 / 8 | Transition Stable between 5.1.x and 5.4.x/In Maintenance | 5.3.1 | 5.3.2 |  |
+| servicemix-5.4.x | 2.4.1 | 2.14.1 | 5.10.0 | 3.0.2 | 7 / 8 | Development | 5.4.0 | 5.4.1 |  |
 | master (6.0.x) | 3.0.3 | 2.14.1 | 5.10.0 | 3.0.2 | 6 / 7 / 8| Development |  | 6.0.0 |  |
 
 Please refer the [Karaf Releases Schedule|http://karaf.apache.org/index/community/releases-schedule.html] for more details.

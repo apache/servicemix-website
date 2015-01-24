@@ -1,18 +1,56 @@
 ---
-title: ServiceMix 5.3.1-SNAPSHOT
+title: ServiceMix 5.3.1
 --- name:notes pipeline:conf
 
-h2. Helping us...
+h2. OSGi components list
+Components included in this release:
 
-You can help us by trying out this development snapshot and reporting any problems you encounter on the [mailing lists|/community/mailing-lists]
+This release packages the following dependencies:
+* Version [2.4.1|http://karaf.apache.org/index/community/download/karaf-2.4.1-release.html] of [Apache Karaf|http://karaf.apache.org/]
+* Version [5.10.0|http://activemq.apache.org/activemq-5100-release.html] of [ActiveMQ|http://activemq.apache.org]
+* Version [2.13.3|http://camel.apache.org/camel-2133-release.html] of [Camel|http://camel.apache.org]
+* Version [2.7.13|https://cxf.apache.org/cxf-2713-release-notes.html] of [CXF|http://cxf.apache.org]
 
-An overview of outstanding JIRA issues for this release can be found at [https://issues.apache.org/jira/browse/SM/fixforversion/12328554]
+h2. Release notes
+
+h3. Sub-task
+* [SM-2415|http://issues.apache.org/jira/browse/SM-2415] - Add missing Spring Deployer bundle into startup.properties
+
+h3. Bug
+* [SM-2346|http://issues.apache.org/jira/browse/SM-2346] - Can not resolve feature: camel-avro
+* [SM-2396|http://issues.apache.org/jira/browse/SM-2396] - CXF WSN sample installation fails
+* [SM-2408|http://issues.apache.org/jira/browse/SM-2408] - JVM options ignored on Windows
+
+h3. Improvement
+* [SM-2388|http://issues.apache.org/jira/browse/SM-2388] - Add "update-strategy" to camel-blueprint example
+
+h3. Task
+* [SM-2385|http://issues.apache.org/jira/browse/SM-2385] - Upgrade to Camel 2.13.3  and CXF 2.7.13
+* [SM-2391|http://issues.apache.org/jira/browse/SM-2391] - Release Apache ServiceMix 5.3.1
+* [SM-2392|http://issues.apache.org/jira/browse/SM-2392] - Upgrade to Pax Exam 4.3.0
+* [SM-2393|http://issues.apache.org/jira/browse/SM-2393] - Upgrade to Activiti 5.16.4
+* [SM-2398|http://issues.apache.org/jira/browse/SM-2398] - Upgrade maven plugins
+* [SM-2399|http://issues.apache.org/jira/browse/SM-2399] - Upgrade to Apache POM 15 
+* [SM-2400|http://issues.apache.org/jira/browse/SM-2400] - Upgrade to Felix maven-bundle-plugin 2.5.3
+* [SM-2401|http://issues.apache.org/jira/browse/SM-2401] - Upgrade to Pax Logging 1.8.1 (log4j v2 support)
+* [SM-2402|http://issues.apache.org/jira/browse/SM-2402] - Use correct cxf.codegen-plugin version
+* [SM-2403|http://issues.apache.org/jira/browse/SM-2403] - Upgrade to maven-surefire-plugin 2.18
+* [SM-2404|http://issues.apache.org/jira/browse/SM-2404] - Upgrade to Karaf 2.4.1
+* [SM-2409|http://issues.apache.org/jira/browse/SM-2409] - Upgrade to Pax Exam 4.4.0
+
+h2. SCM tag
+
+Tag {{servicemix-5.3.1}} is available in [Git|https://git-wip-us.apache.org/repos/asf?p=servicemix.git;a=tag;h=refs/tags/servicemix-5.3.1] (commit id eb29cc850d984145cf51987eb2eb1faccd37e2dc)
+
+h2. Changelog
+
+For a more detailed view of new features and bug fixes, see the [changelog|https://issues.apache.org/jira/browse/SM/fixforversion/12328554]
 
 --- name:content pipeline:ssp
 <%@ val notes : String %>
 
-<h2>Downloads : Apache ServiceMix 5.3.1-SNAPSHOT</h2>
+<h2>Downloads : Apache ServiceMix 5.3.1</h2>
 
-<% render("/downloads/_servicemix5.scaml", Map("version" -> "5.3.1-SNAPSHOT")) %>
+<% render("/downloads/_servicemix5.scaml", Map("version" -> "5.3.1")) %>
 
 <%= unescape(notes) %>
