@@ -13,6 +13,6 @@ An overview of outstanding JIRA issues for this release can be found at [https:/
 
 <h2>Downloads : Apache ServiceMix 6.0.0-SNAPSHOT</h2>
 
-<% render("/downloads/_servicemix5.scaml", Map("version" -> "6.0.0-SNAPSHOT")) %>
+<% render("/downloads/_servicemix6.scaml", Map("version" -> "6.0.0-SNAPSHOT")) %>
 
 <%= unescape(notes) %>
