@@ -114,7 +114,8 @@ object Helper {
   val location : ReleaseArtifact => String = _ match {
     case ReleaseArtifact(Release(version, _), _, _, _) if version.startsWith("3") => "servicemix-3"
     case ReleaseArtifact(Release(version, _), _, _, _) if version.startsWith("4") => "servicemix-4"
-    case _ => "servicemix-5"
+    case ReleaseArtifact(Release(version, _), _, _, _) if version.startsWith("5") => "servicemix-5"
+    case _ => "servicemix-6"
   }
 
   val versionOf : ReleaseArtifact => String = _.release.version

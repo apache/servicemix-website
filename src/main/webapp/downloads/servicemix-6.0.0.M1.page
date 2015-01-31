@@ -1,0 +1,121 @@
+---
+title: ServiceMix 6.0.0.M1
+--- name:notes pipeline:conf
+
+h2. OSGi components list
+Components included in this release:
+
+This release packages the following dependencies:
+* Version [3.0.2|http://karaf.apache.org/index/community/download/karaf-3.0.2-release.html] of [Apache Karaf|http://karaf.apache.org/]
+* Version [5.10.0|http://activemq.apache.org/activemq-5100-release.html] of [ActiveMQ|http://activemq.apache.org]
+* Version [2.14.1|http://camel.apache.org/camel-2141-release.html] of [Camel|http://camel.apache.org]
+* Version [3.0.2|https://cxf.apache.org/cxf-302-release-notes.html] of [CXF|http://cxf.apache.org]
+
+h2. Release notes
+
+h3. Sub-task
+    * [SM-2303|http://issues.apache.org/jira/browse/SM-2303] - ActiveMQ web console not installable after upgrade to 5.9.1 
+
+h3. Bug
+    * [SM-2244|http://issues.apache.org/jira/browse/SM-2244] - Uninstall activiti feature results in error
+    * [SM-2256|http://issues.apache.org/jira/browse/SM-2256] - Unable to shutdown container when JMS appender is configured
+    * [SM-2267|http://issues.apache.org/jira/browse/SM-2267] - Provide working configuration for activemq-web-console
+    * [SM-2269|http://issues.apache.org/jira/browse/SM-2269] - ActiveMQ quick start doesn't work due to the missing activemq component
+    * [SM-2271|http://issues.apache.org/jira/browse/SM-2271] - Can't install hibernate-envers in SMX5
+    * [SM-2277|http://issues.apache.org/jira/browse/SM-2277] - activiti-camel thrown ActivitiException when put document in delivery folder
+    * [SM-2279|http://issues.apache.org/jira/browse/SM-2279] - The jndi feature can not be installed
+    * [SM-2280|http://issues.apache.org/jira/browse/SM-2280] - Activiti test case fails after upgrade to 5.15.1
+    * [SM-2282|http://issues.apache.org/jira/browse/SM-2282] - Installation of the eventadmin feature fails
+    * [SM-2286|http://issues.apache.org/jira/browse/SM-2286] - Intermittent test failure in ActivitiExamplesTest.testActivitiCamelExample
+    * [SM-2304|http://issues.apache.org/jira/browse/SM-2304] - activemq:bstat fails with error "Attribute Uptime can not be found"
+    * [SM-2305|http://issues.apache.org/jira/browse/SM-2305] - Access to ActiveMQ web console fails
+    * [SM-2309|http://issues.apache.org/jira/browse/SM-2309] - Add itest for camel-cxf-rest example
+    * [SM-2317|http://issues.apache.org/jira/browse/SM-2317] - activemq:browse no more working
+    * [SM-2318|http://issues.apache.org/jira/browse/SM-2318] - Can't install Hibernate 3
+    * [SM-2319|http://issues.apache.org/jira/browse/SM-2319] - Connector feature not in sync with transaction
+    * [SM-2322|http://issues.apache.org/jira/browse/SM-2322] - !<history-number> executes wrong history entry
+    * [SM-2324|http://issues.apache.org/jira/browse/SM-2324] - Use JcaPooledConnectionFactory instead of XaPooledConnectionFactory
+    * [SM-2326|http://issues.apache.org/jira/browse/SM-2326] - Route deployed in deploy directory using activemq does not start after ServiceMix restart 
+    * [SM-2337|http://issues.apache.org/jira/browse/SM-2337] - Can't install release bundles from a custom repository
+    * [SM-2346|http://issues.apache.org/jira/browse/SM-2346] - Can not resolve feature: camel-avro
+    * [SM-2361|http://issues.apache.org/jira/browse/SM-2361] - cxf feature should be present as a boot feature
+    * [SM-2376|http://issues.apache.org/jira/browse/SM-2376] - Incorrect javax.annotation version for java7
+    * [SM-2377|http://issues.apache.org/jira/browse/SM-2377] - Java8 packages related to JavaFX are missing
+    * [SM-2396|http://issues.apache.org/jira/browse/SM-2396] - CXF WSN sample installation fails
+    * [SM-2422|http://issues.apache.org/jira/browse/SM-2422] - Multiple JMS connection factories found for amq-broker
+
+h3. Improvement
+    * [SM-2293|http://issues.apache.org/jira/browse/SM-2293] - Enable optional imports OBR resolution
+    * [SM-2298|http://issues.apache.org/jira/browse/SM-2298] - Add a CXF SOAP with Camel example
+    * [SM-2299|http://issues.apache.org/jira/browse/SM-2299] - Add itest for cxf-wsn example
+    * [SM-2327|http://issues.apache.org/jira/browse/SM-2327] - Improve camel-cxf-rest example
+    * [SM-2341|http://issues.apache.org/jira/browse/SM-2341] - Improve WS-Security demos
+    * [SM-2388|http://issues.apache.org/jira/browse/SM-2388] - Add "update-strategy" to camel-blueprint example
+
+h3. New Feature
+    * [SM-2288|http://issues.apache.org/jira/browse/SM-2288] - Add drools feature
+    * [SM-2381|http://issues.apache.org/jira/browse/SM-2381] - Web Script Console Plugin
+
+h3. Task
+    * [SM-2223|http://issues.apache.org/jira/browse/SM-2223] - Incorrect Information on Remote-debugging ServiceMix in Eclipse
+    * [SM-2229|http://issues.apache.org/jira/browse/SM-2229] - Upgrade to activiti version 5.15.1
+    * [SM-2245|http://issues.apache.org/jira/browse/SM-2245] - Upgrade to Pax Exam 3.5.0
+    * [SM-2270|http://issues.apache.org/jira/browse/SM-2270] - Merge ServiceMix archetypes with ServiceMix code base
+    * [SM-2274|http://issues.apache.org/jira/browse/SM-2274] - Upgrade to Camel 2.13.0
+    * [SM-2276|http://issues.apache.org/jira/browse/SM-2276] - Upgrade to Karaf 3.0.1
+    * [SM-2281|http://issues.apache.org/jira/browse/SM-2281] - Upgrade to Karaf 2.3.5
+    * [SM-2283|http://issues.apache.org/jira/browse/SM-2283] - Align some versions duplicated after the Activiti upgrade
+    * [SM-2292|http://issues.apache.org/jira/browse/SM-2292] - Upgrade to Camel 2.13.1
+    * [SM-2294|http://issues.apache.org/jira/browse/SM-2294] - Cleanup nonexisting cxf dependencies from dependency management
+    * [SM-2295|http://issues.apache.org/jira/browse/SM-2295] - Change the target/source level in compiler plugin to 1.6
+    * [SM-2296|http://issues.apache.org/jira/browse/SM-2296] - Add the boot features to the system repository
+    * [SM-2306|http://issues.apache.org/jira/browse/SM-2306] - Update the README file
+    * [SM-2307|http://issues.apache.org/jira/browse/SM-2307] - Add itest for camel-cxf-soap example
+    * [SM-2308|http://issues.apache.org/jira/browse/SM-2308] - Add itest for camel-drools-blueprint example
+    * [SM-2312|http://issues.apache.org/jira/browse/SM-2312] - Remove placeholder configuration from the activemq-camel blueprint 
+    * [SM-2313|http://issues.apache.org/jira/browse/SM-2313] - Trying to get person with unknown end with error in camel-cxf-soap example
+    * [SM-2314|http://issues.apache.org/jira/browse/SM-2314] - Trying to get person with unknown end with error in camel-cxf-rest example
+    * [SM-2315|http://issues.apache.org/jira/browse/SM-2315] - activemq:dstat fails after any messagin operation is performed
+    * [SM-2316|http://issues.apache.org/jira/browse/SM-2316] - Problems when reinstalling the drools examples
+    * [SM-2321|http://issues.apache.org/jira/browse/SM-2321] - Upgrade to Karaf 3.0.2
+    * [SM-2328|http://issues.apache.org/jira/browse/SM-2328] - Upgrade to ActiveMQ 5.10.0
+    * [SM-2332|http://issues.apache.org/jira/browse/SM-2332] - Remove Alfresco repository from org.ops4j.pax.url.mvn.cfg
+    * [SM-2340|http://issues.apache.org/jira/browse/SM-2340] - Upgrade to Camel 2.13.2
+    * [SM-2354|http://issues.apache.org/jira/browse/SM-2354] - Upgrade to maven-bundle-plugin 2.5.0
+    * [SM-2359|http://issues.apache.org/jira/browse/SM-2359] - Upgrade to Pax Exam 4.1.0
+    * [SM-2362|http://issues.apache.org/jira/browse/SM-2362] - Require JDK 7 for build
+    * [SM-2367|http://issues.apache.org/jira/browse/SM-2367] - Upgrade to Felix BundleRepository 2.0.2 
+    * [SM-2368|http://issues.apache.org/jira/browse/SM-2368] - Upgrade to Camel 2.14.0 and CXF 3.0.2
+    * [SM-2372|http://issues.apache.org/jira/browse/SM-2372] - Upgrade to Pax Exam 4.2.0
+    * [SM-2380|http://issues.apache.org/jira/browse/SM-2380] - Create a overview page with servicemix roadmap
+    * [SM-2392|http://issues.apache.org/jira/browse/SM-2392] - Upgrade to Pax Exam 4.3.0
+    * [SM-2393|http://issues.apache.org/jira/browse/SM-2393] - Upgrade to Activiti 5.16.4
+    * [SM-2398|http://issues.apache.org/jira/browse/SM-2398] - Upgrade maven plugins
+    * [SM-2399|http://issues.apache.org/jira/browse/SM-2399] - Upgrade to Apache POM 15 
+    * [SM-2400|http://issues.apache.org/jira/browse/SM-2400] - Upgrade to Felix maven-bundle-plugin 2.5.3
+    * [SM-2402|http://issues.apache.org/jira/browse/SM-2402] - Use correct cxf.codegen-plugin version
+    * [SM-2403|http://issues.apache.org/jira/browse/SM-2403] - Upgrade to maven-surefire-plugin 2.18
+    * [SM-2409|http://issues.apache.org/jira/browse/SM-2409] - Upgrade to Pax Exam 4.4.0
+    * [SM-2411|http://issues.apache.org/jira/browse/SM-2411] - Upgrade to Camel 2.14.1
+    * [SM-2421|http://issues.apache.org/jira/browse/SM-2421] - Upgrade to ActiveMQ 5.10.1
+    * [SM-2424|http://issues.apache.org/jira/browse/SM-2424] - Release Apache ServiceMix 6.0.0.M1
+
+h3. Test
+    * [SM-2255|http://issues.apache.org/jira/browse/SM-2255] - Intermittent test failure in StatsTest
+
+h2. SCM tag
+
+Tag {{servicemix-6.0.0.M1}} is available in [Git|https://git-wip-us.apache.org/repos/asf?p=servicemix.git;a=tag;h=refs/tags/servicemix-6.0.0.M1] (commit id d65fb6093df416228e020da69d7337be4993f99f)
+
+h2. Changelog
+
+For a more detailed view of new features and bug fixes, see the [changelog|https://issues.apache.org/jira/browse/SM/fixforversion/12326661]
+
+--- name:content pipeline:ssp
+<%@ val notes : String %>
+
+<h2>Downloads : Apache ServiceMix 6.0.0.M1</h2>
+
+<% render("/downloads/_servicemix6.scaml", Map("version" -> "6.0.0.M1")) %>
+
+<%= unescape(notes) %>
