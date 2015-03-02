@@ -4,7 +4,7 @@ title: ServiceMix Bundles Source
 
 h1. ServiceMix Bundles Project
 
-The Bundles project contains OSGi-fied versions of popular Java JARs that we use for building ServiceMix 4.
+The Bundles project contains OSGi-fied versions of popular Java JARs that we use for building ServiceMix.
 
 --- name:building pipeline:conf
 
@@ -25,7 +25,7 @@ Jenkins CI build has been set up at [https://builds.apache.org/job/ServiceMix-Bu
 <%@ val overview : String %>
 <%@ val building : String %>
 
-<% render("/developers/source/_source.scaml", Map("overview" -> overview,
-                                                  "building" -> building,
-                                                  "svn" -> "smx4/bundles",
-                                                  "git" -> "servicemix4-bundles")) %>
+<% render("/developers/source/_git-source.scaml", Map("overview" -> overview,
+                                                      "building" -> building,
+                                                      "git" -> "servicemix-bundles")) %>
+

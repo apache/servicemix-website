@@ -9,7 +9,20 @@ h2. [ServiceMix|smx-source]
 
 For ServiceMix 5 and higher, we have switched back to a single code repository that contains the entire project codebase.
 
-* [ServiceMix|smx-source]: ServiceMix 5 container based on Apache Karaf
+* [ServiceMix|smx-source]: ServiceMix container based on Apache Karaf
+
+h2. [ServiceMix Bundles|bundles-source]
+
+The Bundles project contains OSGi-fied versions of popular Java JARs that we use for building ServiceMix.
+
+* [ServiceMix Bundles|bundles-source]: a set of OSGi bundles for all kinds of dependency JARs
+
+h2. [ServiceMix Specs|specs-source]
+
+The servicemix-specs project contains OSGi-fied versions of popular JSR-* specifications.
+It also contains helper classes to allow these specifications to lookup suitable implementations more efficiently in an OSGi environment.
+
+* [ServiceMix Specs|specs-source]: a set of OSGi-fied and -enhanced versions for Java specifications like JAXB, JAX-RS, ...
 
 h2. [ServiceMix 3.x|smx3-source]
 
@@ -24,8 +37,6 @@ h2. [ServiceMix 4.x|smx4-features-source]
 ServiceMix 4.x consists of a number of different subprojects that need to be built independently:
 * [ServiceMix Utils|utils-source]: a set of utility classes, shared between ServiceMix 3, ServiceMix 4 and the JBI components
 * [ServiceMix Components|components-source]: the JBI component set shipped with ServiceMix 4
-* [ServiceMix Bundles|bundles-source]: a set of OSGi bundles for all kinds of dependency JARs
-* [ServiceMix Specs|specs-source]: a set of OSGi-fied and -enhanced versions for Java specifications like JAXB, JAX-RS, ...
 * [ServiceMix 4 NMR|smx4-nmr-source]: NMR and JBI implementation of ServiceMix 4
 * [ServiceMix 4 Features|smx4-features-source]: ServiceMix 4 container based on Apache Karaf
 * [ServiceMix Archetypes|archetypes-source]: a set of Maven archetypes
