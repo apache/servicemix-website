@@ -1,5 +1,5 @@
 ---
-title: ServiceMix 5 Source
+title: ServiceMix Source
 --- name:overview pipeline:conf
 
 h1. ServiceMix Project
@@ -11,6 +11,10 @@ The ServiceMix project contains the codebase for all future ServiceMix releases,
 h2. Building
 
 This project is a normal Maven build.  Just use *{{mvn clean install}}* to build.
+
+h2. Jenkins
+
+Jenkins CI build has been set up at [https://builds.apache.org/job/ServiceMix/]
 
 --- name:content pipeline:ssp
 <%@ val overview : String %>
