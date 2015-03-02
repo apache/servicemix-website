@@ -1,0 +1,40 @@
+---
+title: Board Report 2015-03-18
+--- pipeline:conf
+
+{warning}
+This is a work-in-progress - the board report has not yet been submitted.
+{warning}
+
+h2. March 18th, 2015
+
+{code}
+Apache ServiceMix is a flexible, open-source integration container that
+unifies the features and functionality of Apache ActiveMQ, Camel, CXF and
+Karaf to provide a complete, enterprise-ready ESB powered by OSGi.
+
+Project Status
+--------------
+TBD
+
+There are no outstanding issues requiring board attention.
+
+Community
+---------
+Since the last board report Krzysztof Sobkowiak has been approved by the board as a new PMC chair (Ferbruary 18, 2015)
+ 
+Last committers addition (Wim Verreydt): July 05, 2014
+Last PMC addition (Krzysztof Sobkowiak): July 05, 2014
+
+
+Community Objectives
+--------------------
+
+TBD
+
+Releases
+--------
+
+TBD
+
+{code}
