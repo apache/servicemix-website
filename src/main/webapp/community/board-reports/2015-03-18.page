@@ -34,7 +34,7 @@ Karaf 3.0.x and includes numerous new features.
 
 We have decided to decouple ServiceMix Bundles and ServiceMix Specs from 
 ServiceMix 4 code and maintain them a separate subprojects. We have also migrated
-the source code form svn to git repositries. 
+the source code from svn to git repositries. 
 
 There are no outstanding issues requiring board attention.
 
@@ -45,7 +45,6 @@ Since the last board report Krzysztof Sobkowiak has been approved by the board
 as a new PMC chair (February 18 2015). No new PMC members nor committers were 
 added in the last 3 months. Last committer addition was Wim Verreydt on July 05 2014.
 Last PMC addition was Krzysztof Sobkowiak on July 05 2014. 
-
 
 Community Objectives
 --------------------
