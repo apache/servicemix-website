@@ -34,7 +34,7 @@ Karaf 3.0.x and includes numerous new features.
 
 We have decided to decouple ServiceMix Bundles and ServiceMix Specs from 
 ServiceMix 4 code and maintain them a separate subprojects. We have also migrated
-the source code from svn to git repositries. 
+the source code from svn to git repositories. 
 
 There are no outstanding issues requiring board attention.
 
@@ -56,16 +56,16 @@ releases of our dependency projects.
 We're also working towards further 5.x releases and a 6.0.0 release to
 provide our users with major version upgrades of Karaf, Camel, CXF. 
 
-At the same time, wi plan to do some work in order to update the documentation
-and mmigrate it to Asciidoc.
+At the same time, we plan to do some work in order to update the documentation
+and migrate it to Asciidoc.
 
 Releases
 --------
 
  - A set of 106 OSGi bundles on December 18 2014 
- - Apache ServiceMix 6.0.0.M1 on January 31 2015 
- - Apache ServiceMix 5.4.0 on January 24 2015 
- - Apache ServiceMix 5.2.0 on January 13 2015 
+ - Apache ServiceMix 5.2.0 on January 13 2015
  - Apache ServiceMix 5.3.1 on January 24 2015 
+ - Apache ServiceMix 5.4.0 on January 24 2015 
+ - Apache ServiceMix 6.0.0.M1 on January 31 2015 
  - A set of 78 OSGi bundles on February 09 2015
 {code}
