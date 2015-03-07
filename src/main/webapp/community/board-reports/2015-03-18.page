@@ -2,10 +2,6 @@
 title: Board Report 2015-03-18
 --- pipeline:conf
 
-{warning}
-This is a work-in-progress - the board report has not yet been submitted.
-{warning}
-
 h2. March 18th, 2015
 
 {code}
@@ -15,7 +11,6 @@ Karaf to provide a complete, enterprise-ready ESB powered by OSGi.
 
 Project Status
 --------------
-
 The project focus of Apache ServiceMix is the assembly of the integration
 container, the actual functionality is being maintained in related projects
 like Apache Karaf, Apache CXF, Apache Camel and Apache ActiveMQ.
@@ -40,7 +35,6 @@ There are no outstanding issues requiring board attention.
 
 Community
 ---------
-
 Since the last board report Krzysztof Sobkowiak has been approved by the board 
 as a new PMC chair (February 18 2015). No new PMC members nor committers were 
 added in the last 3 months. Last committer addition was Wim Verreydt on July 05 2014.
@@ -48,7 +42,6 @@ Last PMC addition was Krzysztof Sobkowiak on July 05 2014.
 
 Community Objectives
 --------------------
-
 After the 5.4.0 release, the goal is to make the branch 5.4.x as a new stable line 
 of ServiceMix. We plan to keep a steady release schedule and keep up with new fix 
 releases of our dependency projects.  
@@ -61,7 +54,6 @@ and migrate it to Asciidoc.
 
 Releases
 --------
-
  - A set of 106 OSGi bundles on December 18 2014 
  - Apache ServiceMix 5.2.0 on January 13 2015
  - Apache ServiceMix 5.3.1 on January 24 2015 
