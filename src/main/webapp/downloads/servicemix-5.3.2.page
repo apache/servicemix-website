@@ -1,5 +1,5 @@
 ---
-title: ServiceMix 5.3.2-SNAPSHOT
+title: ServiceMix 5.3.2
 --- name:notes pipeline:conf
 
 h2. OSGi components list
@@ -37,7 +37,7 @@ h3. Task
 
 h2. SCM tag
 
-Tag {{servicemix-5.3.1}} is available in [Git|https://git-wip-us.apache.org/repos/asf?p=servicemix.git;a=tag;h=refs/tags/servicemix-5.3.2] (commit id ee07d02ee550f7400a970b475c1d9e0183f500fc)
+Tag {{servicemix-5.3.2}} is available in [Git|https://git-wip-us.apache.org/repos/asf?p=servicemix.git;a=tag;h=refs/tags/servicemix-5.3.2] (commit id ee07d02ee550f7400a970b475c1d9e0183f500fc)
 
 h2. Changelog
 
@@ -46,8 +46,8 @@ For a more detailed view of new features and bug fixes, see the [changelog|https
 --- name:content pipeline:ssp
 <%@ val notes : String %>
 
-<h2>Downloads : Apache ServiceMix 5.3.2-SNAPSHOT</h2>
+<h2>Downloads : Apache ServiceMix 5.3.2</h2>
 
-<% render("/downloads/_servicemix5.scaml", Map("version" -> "5.3.2-SNAPSHOT")) %>
+<% render("/downloads/_servicemix5.scaml", Map("version" -> "5.3.2")) %>
 
 <%= unescape(notes) %>
