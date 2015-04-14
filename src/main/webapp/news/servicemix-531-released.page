@@ -4,7 +4,7 @@ title: ServiceMix 5.3.1 Released
 
 h2. ServiceMix 5.3.1 released
 
-The ServiceMix team is pleased to announce the availability of Apache ServiceMix 5.3.0.
+The ServiceMix team is pleased to announce the availability of Apache ServiceMix 5.3.1.
 This new minor release includes a few bug fixes and picks up  new versions of Apache Karaf, 
 Apache Camel and Apache CXF.
 

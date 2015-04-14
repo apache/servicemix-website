@@ -1,18 +1,53 @@
 ---
-title: ServiceMix 5.2.1-SNAPSHOT
+title: ServiceMix 5.2.1
 --- name:notes pipeline:conf
 
-h2. Helping us...
+h2. OSGi components list
+Components included in this release:
 
-You can help us by trying out this development snapshot and reporting any problems you encounter on the [mailing lists|/community/mailing-lists]
+This release packages the following dependencies:
+* Version [2.3.10|http://karaf.apache.org/index/community/download/karaf-2.3.10-release.html] of [Apache Karaf|http://karaf.apache.org/]
+* Version [5.10.2|http://activemq.apache.org/activemq-5102-release.html] of [ActiveMQ|http://activemq.apache.org]
+* Version [2.14.2|http://camel.apache.org/camel-2142-release.html] of [Camel|http://camel.apache.org]
+* Version [3.0.4|https://cxf.apache.org/cxf-304-release-notes.html] of [CXF|http://cxf.apache.org]
 
-An overview of outstanding JIRA issues for this release can be found at [https://issues.apache.org/jira/browse/SM/fixforversion/12327444]
+h2. Release notes
+
+h3. Bug
+    * [SM-2317|http://issues.apache.org/jira/browse/SM-2317] - activemq:browse no more working
+    * [SM-2335|http://issues.apache.org/jira/browse/SM-2335] - installing both webconsole and activemq-web-console causes hang
+    * [SM-2422|http://issues.apache.org/jira/browse/SM-2422] - Multiple JMS connection factories found for amq-broker
+    * [SM-2425|http://issues.apache.org/jira/browse/SM-2425] - Compilation of examples included in distribution fails
+    * [SM-2464|http://issues.apache.org/jira/browse/SM-2464] - Unable to install the bundle created using the servicemix-cxf-code-first-osgi-bundle and servicemix-cxf-wsdl-first-osgi-bundle archetype
+    * [SM-2492|http://issues.apache.org/jira/browse/SM-2492] - Wrong sample keystore format in examples contained in the assembly
+
+h3. Task
+    * [SM-2413|http://issues.apache.org/jira/browse/SM-2413] - Release Apache ServiceMix 5.2.1
+    * [SM-2421|http://issues.apache.org/jira/browse/SM-2421] - Upgrade to ActiveMQ 5.10.1
+    * [SM-2426|http://issues.apache.org/jira/browse/SM-2426] - Add missing maven plugin versions to examples parent pom in the distribution
+    * [SM-2431|http://issues.apache.org/jira/browse/SM-2431] - Upgrade to Karaf 2.3.10
+    * [SM-2432|http://issues.apache.org/jira/browse/SM-2432] - Upgrade to ActiveMQ 5.10.2
+    * [SM-2438|http://issues.apache.org/jira/browse/SM-2438] - Upgrade to Camel 2.14.2
+    * [SM-2473|http://issues.apache.org/jira/browse/SM-2473] - Consistent usage of joda-time bundle
+    * [SM-2474|http://issues.apache.org/jira/browse/SM-2474] - Consistent usage of scala bundle
+    * [SM-2487|http://issues.apache.org/jira/browse/SM-2487] - Upgrade to Scala 2.10.4
+    * [SM-2488|http://issues.apache.org/jira/browse/SM-2488] - Upgrade to Jackson 2.3.3
+    * [SM-2490|http://issues.apache.org/jira/browse/SM-2490] - Upgrade to CXF 3.0.4
+
+
+h2. SCM tag
+
+Tag {{servicemix-5.2.1}} is available in [Git|https://git-wip-us.apache.org/repos/asf?p=servicemix.git;a=tag;h=refs/tags/servicemix-5.2.1] (commit id 79e15f65cf5cd94dce2cb22bf8e9826f3fffb6f1)
+
+h2. Changelog
+
+For a more detailed view of new features and bug fixes, see the [changelog|https://issues.apache.org/jira/browse/SM/fixforversion/12327444].
 
 --- name:content pipeline:ssp
 <%@ val notes : String %>
 
-<h2>Downloads : Apache ServiceMix 5.2.1-SNAPSHOT</h2>
+<h2>Downloads : Apache ServiceMix 5.2.1</h2>
 
-<% render("/downloads/_servicemix5.scaml", Map("version" -> "5.2.1-SNAPSHOT")) %>
+<% render("/downloads/_servicemix5.scaml", Map("version" -> "5.2.1")) %>
 
 <%= unescape(notes) %>
