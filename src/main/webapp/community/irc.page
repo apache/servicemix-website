@@ -4,23 +4,21 @@ title: IRC
 
 # IRC
 
-Although the preferred means of communication regarding ServiceMix is always the [mailing lists](/community/mailing-lists.html), you can also find most of us hanging out on the [#servicemix channel](irc://irc.codehaus.org/servicemix) on the Codehaus IRC server. Many of us hang out there while we're working because it's a good place to have quick chats.
+Although the preferred means of communication regarding ServiceMix is always the [mailing lists](/community/mailing-lists.html), you can also find most of us hanging out on the [#apache-servicemix channel](irc://irc.freenode.org/#apache-servicemix) on the Codehaus IRC server. Many of us hang out there while we're working because it's a good place to have quick chats.
 
 ## Connecting to IRC
 
 Below is the connection information:
 
-* **server**: `irc.codehaus.org`
+* **server**: `irc.freenode.org`
 * **port**: `6667`
-* **channel**: `#servicemix
+* **channel**: `#apache-servicemix`
 
-### Use the Mibbit IRC Client
+Note the IRC channel on codehaus is deprecated as of April 2015; please refrain from using that room.
 
-If you aren't a habitual IRC user, feel free to take a hit off the Mibbit IRC client by entering an optional nick and clicking the connect button below, or you can
-<a href='#servicemix' onclick='window.open("http://embed.mibbit.com/?server=irc.codehaus.org&channel=%23servicemix&nick=wiki_user&chatOutputShowTimes=true","","width=640,height=480")'>open a popout IRC client</a>
+### Use the KiwiIRC Client
 
-<iframe width="600" height="380" scrolling="no" frameborder="0" src="http://embed.mibbit.com/?server=irc.codehaus.org&channel=%23servicemix&nick=wiki_user&chatOutputShowTimes=true">
-</iframe>
+<iframe width="600" height="380" scrolling="no" frameborder="0" src="https://kiwiirc.com/client/irc.freenode.org/?nick=wiki_user|?&theme=basic#apache-servicemix" style="border:0; width:100%; height:450px;"></iframe>
 
 ### Other IRC Clients
 
@@ -28,4 +26,6 @@ To connect to the Codehaus IRC server, you'll need an IRC client. There's a dece
 
 ## IRC Log
 
-The IRC log is [publicly available for browsing](http://irclogs.dankulp.com/logs/irclogger_logs/servicemix).
+The IRC log is [publicly available for browsing](http://irclogs.dankulp.com/logs/irclogger_logs/apache-servicemix). 
+
+The IRC log from the old [#servicemix channel](irc://irc.codehaus.org/#servicemix) is [publicly available for browsing](http://irclogs.dankulp.com/logs/irclogger_logs/servicemix). 
