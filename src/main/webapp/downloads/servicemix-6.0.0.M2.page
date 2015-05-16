@@ -1,0 +1,65 @@
+---
+title: ServiceMix 6.0.0.M2
+--- name:notes pipeline:conf
+
+h2. OSGi components list
+Components included in this release:
+
+This release packages the following dependencies:
+* Version [3.0.3|http://karaf.apache.org/index/community/download/karaf-3.0.3-release.html] of [Apache Karaf|http://karaf.apache.org/]
+* Version [5.11.1|http://activemq.apache.org/activemq-5111-release.html] of [ActiveMQ|http://activemq.apache.org]
+* Version [2.15.2|http://camel.apache.org/camel-2152-release.html] of [Camel|http://camel.apache.org]
+* Version [3.0.4|https://cxf.apache.org/cxf-304-release-notes.html] of [CXF|http://cxf.apache.org]
+
+h2. Release notes
+
+h3. Sub-task
+    * [SM-2303|http://issues.apache.org/jira/browse/SM-2303] - ActiveMQ web console not installable after upgrade to 5.9.1 
+
+h3. Bug
+    * [SM-2330|http://issues.apache.org/jira/browse/SM-2330] - Remove joda-time from startup.properties
+    * [SM-2425|http://issues.apache.org/jira/browse/SM-2425] - Compilation of examples included in distribution fails
+    * [SM-2464|http://issues.apache.org/jira/browse/SM-2464] - Unable to install the bundle created using the servicemix-cxf-code-first-osgi-bundle and servicemix-cxf-wsdl-first-osgi-bundle archetype
+    * [SM-2481|http://issues.apache.org/jira/browse/SM-2481] - activemq-service blueprint uses dash in persistent id: config file is never loaded nor read
+    * [SM-2492|http://issues.apache.org/jira/browse/SM-2492] - Wrong sample keystore format in examples contained in the assembly
+    * [SM-2535|http://issues.apache.org/jira/browse/SM-2535] - Upgrade to Apache Camel 2.15.2
+
+h3. New Feature
+    * [SM-2550|http://issues.apache.org/jira/browse/SM-2550] - Provide Drools Camel example
+
+h3. Task
+    * [SM-2412|http://issues.apache.org/jira/browse/SM-2412] - Upgrade to Karaf 3.0.3
+    * [SM-2426|http://issues.apache.org/jira/browse/SM-2426] - Add missing maven plugin versions to examples parent pom in the distribution
+    * [SM-2428|http://issues.apache.org/jira/browse/SM-2428] - Upgrade to ActiveMQ 5.11.1
+    * [SM-2429|http://issues.apache.org/jira/browse/SM-2429] - Release Apache ServiceMix 6.0.0.M2
+    * [SM-2432|http://issues.apache.org/jira/browse/SM-2432] - Upgrade to ActiveMQ 5.10.2
+    * [SM-2438|http://issues.apache.org/jira/browse/SM-2438] - Upgrade to Camel 2.14.2
+    * [SM-2468|http://issues.apache.org/jira/browse/SM-2468] - Upgrade to Camel 2.15.1
+    * [SM-2469|http://issues.apache.org/jira/browse/SM-2469] - Upgrade to Activiti 5.17.0
+    * [SM-2471|http://issues.apache.org/jira/browse/SM-2471] - Upgrade to Swagger 1.3.11
+    * [SM-2472|http://issues.apache.org/jira/browse/SM-2472] - Upgrade to Scala 2.11
+    * [SM-2473|http://issues.apache.org/jira/browse/SM-2473] - Consistent usage of joda-time bundle
+    * [SM-2474|http://issues.apache.org/jira/browse/SM-2474] - Consistent usage of scala bundle
+    * [SM-2475|http://issues.apache.org/jira/browse/SM-2475] - Upgrade to Akka 2.3.9
+    * [SM-2490|http://issues.apache.org/jira/browse/SM-2490] - Upgrade to CXF 3.0.4
+    * [SM-2506|http://issues.apache.org/jira/browse/SM-2506] - Upgrade to Felix maven-bundle-plugin 2.5.4
+    * [SM-2507|http://issues.apache.org/jira/browse/SM-2507] - Upgrade to Pax Exam 4.5.0
+    * [SM-2536|http://issues.apache.org/jira/browse/SM-2536] - Provide simple sample for Drools 6 
+    * [SM-2547|http://issues.apache.org/jira/browse/SM-2547] - Perform some housekeeping in poms
+
+h2. SCM tag
+
+Tag {{servicemix-6.0.0.M2}} is available in [Git|https://git-wip-us.apache.org/repos/asf?p=servicemix.git;a=tag;h=refs/tags/servicemix-6.0.0.M2] (commit id bad51bd3389d287b489c1c50d2997f6ece6ce754)
+
+h2. Changelog
+
+For a more detailed view of new features and bug fixes, see the [changelog|https://issues.apache.org/jira/browse/SM/fixforversion/12329338]
+
+--- name:content pipeline:ssp
+<%@ val notes : String %>
+
+<h2>Downloads : Apache ServiceMix 6.0.0.M2</h2>
+
+<% render("/downloads/_servicemix6.scaml", Map("version" -> "6.0.0.M2")) %>
+
+<%= unescape(notes) %>

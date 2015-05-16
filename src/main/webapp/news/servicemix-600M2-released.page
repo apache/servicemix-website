@@ -1,0 +1,22 @@
+---
+title: ServiceMix 6.0.0.M2 Released
+--- pipeline:conf
+
+h2. ServiceMix 6.0.0.M2 released
+
+The ServiceMix team is pleased to announce the availability of Apache ServiceMix 6.0.0.M2.
+
+!! This is a technology preview release of Apache ServiceMix, and should NOT be considered production ready !!
+
+Apache ServiceMix 6.0.0 will be the first release based on Karaf 3.0.x, which includes numerous new features.
+Apache ServiceMix 6.0.0.M2 is the second preview release of the new 6.0.x line. We ask that users provide the 
+community with their feed back so that the full Apache ServiceMix 6.0.0 release can be as feature complete and stable as possible.
+
+Major dependency versions for this release:
+* Activiti 5.17.0
+* Apache ActiveMQ 5.11.1
+* Apache Camel 2.15.2
+* Apache CXF 3.0.4
+* Apache Karaf 3.0.3
+
+For more information, please see the [release notes|/downloads/servicemix-6.0.0.M2]
