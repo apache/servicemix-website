@@ -26,9 +26,8 @@ an Open Source Day conference in Warsaw.
 
 We have released the second preview of ServiceMix 6.0.0, which is based on 
 Karaf 3.0.x and includes numerous new features. We have also released the next 
-stable release 5.4.1, the next maintenance release 5.1.5 and the transition releases
-between 5.1.x and 5.4.x line. We have also provided 2 sets of OSGi bundles and 1 set 
-of OSGi-fied specs.
+maintenance release 5.1.5 and the transition releases between 5.1.x and 5.4.x 
+line. We have also provided 2 sets of OSGi bundles and 1 set  of OSGi-fied specs.
 
 There are no outstanding issues requiring board attention.
 
@@ -44,7 +43,7 @@ We plan to release the final version of ServiceMix 6 for the beginning of June.
 After the 6.0.0 release, the goal will be to make the branch 6.0.x as a new stable line 
 of ServiceMix. 
 
-For the beginning of June we also plan the next stable release 5.4.2 containing minor depenecy 
+For the beginning of June we also plan the next stable release 5.4.1 containing minor depenecy 
 upgrades and bug fixes, and the next release 5.5.0 based on Karaf 2.4.x containing upgrades 
 to the newest dependencies and some new features. We plan to keep a steady release schedule and 
 keep up with new fix releases of our dependency projects.  
