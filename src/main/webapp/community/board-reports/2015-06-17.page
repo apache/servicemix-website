@@ -1,0 +1,89 @@
+---
+title: Board Report 2015-06-19
+--- pipeline:conf
+
+{warning}
+This is a work-in-progress - the board report has not yet been submitted.
+{warning}
+
+h2. June 19th, 2015
+
+{code}
+Apache ServiceMix is a flexible, open-source integration container that
+unifies the features and functionality of Apache ActiveMQ, Camel, CXF and
+Karaf to provide a complete, enterprise-ready ESB powered by OSGi.
+
+Project Status
+--------------
+The project focus of Apache ServiceMix is the assembly of the integration
+container, the actual functionality is being maintained in related projects
+like Apache Karaf, Apache CXF, Apache Camel and Apache ActiveMQ.
+
+Activity on the mailing lists and in JIRA is picking up. We had some new 
+controbutions and one new contributor filed iCLAs specifically for contributing 
+to Apache ServiceMix. We also have been giving a talk about ServiceMix during 
+an Open Source Day conference in Warsaw.
+
+We have released the second preview of ServiceMix 6.0.0, which is based on 
+Karaf 3.0.x and includes numerous new features. We have also released the next 
+stable release 5.4.1, the next maintenance release 5.1.5 and the transition releases
+between 5.1.x and 5.4.x line. We have also provided 2 sets of OSGi bundles and 1 set 
+of OSGi-fied specs.
+
+There are no outstanding issues requiring board attention.
+
+Community
+---------
+Currently 49 committers and 22 PMC members in the project. No new PMC members nor 
+committers were added in the last 3 months. Last committer addition was Wim Verreydt
+on July 05 2014. Last PMC addition was Krzysztof Sobkowiak on July 05 2014. 
+
+Community Objectives
+--------------------
+We plan to release the final version of ServiceMix 6 for the beginning of June.
+After the 6.0.0 release, the goal will be to make the branch 6.0.x as a new stable line 
+of ServiceMix. 
+
+For the beginning of June we also plan the next stable release 5.4.2 containing minor depenecy 
+upgrades and bug fixes, and the next release 5.5.0 based on Karaf 2.4.x containing upgrades 
+to the newest dependencies and some new features. We plan to keep a steady release schedule and 
+keep up with new fix releases of our dependency projects.  
+
+Our goal for the next months is to improve the documentation and website.
+
+Releases
+--------
+
+ - Apache ServiceMix 5.1.5 on March 31 2015
+ - A set of 76 OSGi bundles on April 02 2015
+ - A set of 33 OSGi specs on April 11 2015
+ - Apache ServiceMix 5.2.1 on April 14 2015
+ - Apache ServiceMix 5.3.2 on April 14 2015
+ - A set of 61 OSGi bundles on May 09 2015 
+ - Apache ServiceMix 6.0.0.M2 on May 16 2015
+
+Mailing list activity
+--------------------- 
+   
+ - users@servicemix.apache.org:  
+    - 422 subscribers (down -1 in the last 3 months): 
+    - 123 emails sent to list (95 in previous quarter) 
+   
+ - dev@servicemix.apache.org:  
+    - 204 subscribers (down -3 in the last 3 months): 
+    - 162 emails sent to list (134 in previous quarter) 
+   
+ - issues@servicemix.apache.org:  
+    - 7 subscribers (up 0 in the last 3 months): 
+    - 702 emails sent to list (440 in previous quarter) 
+
+ - commits@servicemix.apache.org:  
+    - 53 subscribers (up 0 in the last 3 months): 
+    - 1409 emails sent to list (1338 in previous period)    
+   
+JIRA activity
+------------- 
+   
+ - 116 JIRA tickets created in the last 3 months 
+ - 121 JIRA tickets closed/resolved in the last 3 months  
+{code}
