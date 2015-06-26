@@ -1,18 +1,41 @@
 ---
-title: ServiceMix 5.2.2-SNAPSHOT
+title: ServiceMix 5.2.2
 --- name:notes pipeline:conf
 
-h2. Helping us...
+h2. OSGi components list
+Components included in this release:
 
-You can help us by trying out this development snapshot and reporting any problems you encounter on the [mailing lists|/community/mailing-lists]
+This release packages the following dependencies:
+* Version [2.3.11|http://karaf.apache.org/index/community/download/karaf-2.3.11-release.html] of [Apache Karaf|http://karaf.apache.org/]
+* Version [5.10.2|http://activemq.apache.org/activemq-5102-release.html] of [ActiveMQ|http://activemq.apache.org]
+* Version [2.14.3|http://camel.apache.org/camel-2143-release.html] of [Camel|http://camel.apache.org]
+* Version [3.0.5|https://cxf.apache.org/cxf-305-release-notes.html] of [CXF|http://cxf.apache.org]
 
-An overview of outstanding JIRA issues for this release can be found at [https://issues.apache.org/jira/browse/SM/fixforversion/12329279]
+h2. Release notes
+
+h3. Bug
+    * [SM-2551|http://issues.apache.org/jira/browse/SM-2551] - Drools6ExamplesTest fails on Jenkins
+
+h3. Task
+    * [SM-2405|http://issues.apache.org/jira/browse/SM-2405] - Remove workaround for SM-2396
+    * [SM-2495|http://issues.apache.org/jira/browse/SM-2495] - Upgrade to Karaf 2.3.11
+    * [SM-2572|http://issues.apache.org/jira/browse/SM-2572] - Upgrade to Apache Camel 2.14.3 and CXF 3.0.5
+    * [SM-2594|http://issues.apache.org/jira/browse/SM-2594] - Release Apache ServiceMix 5.2.2
+
+
+h2. SCM tag
+
+Tag {{servicemix-5.2.2}} is available in [Git|https://git-wip-us.apache.org/repos/asf?p=servicemix.git;a=tag;h=refs/tags/servicemix-5.2.2] (commit id 79e15f65cf5cd94dce2cb22bf8e9826f3fffb6f1)
+
+h2. Changelog
+
+For a more detailed view of new features and bug fixes, see the [changelog|https://issues.apache.org/jira/browse/SM/fixforversion/12329279].
 
 --- name:content pipeline:ssp
 <%@ val notes : String %>
 
-<h2>Downloads : Apache ServiceMix 5.2.2-SNAPSHOT</h2>
+<h2>Downloads : Apache ServiceMix 5.2.2</h2>
 
-<% render("/downloads/_servicemix5.scaml", Map("version" -> "5.2.2-SNAPSHOT")) %>
+<% render("/downloads/_servicemix5.scaml", Map("version" -> "5.2.2")) %>
 
 <%= unescape(notes) %>
