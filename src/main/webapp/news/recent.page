@@ -2,7 +2,6 @@
 title: Apache ServiceMix Recent News
 --- pipeline:conf
 
+{include:servicemix-600-released}
 {include:servicemix-522-released}
 {include:servicemix-516-released}
-{include:servicemix-600M2-released}
-{include:servicemix-532-released}
