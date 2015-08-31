@@ -137,7 +137,7 @@ object Helper {
   }
 
   private def _mirror(artifact: ReleaseArtifact) : String =
-    s"http://www.apache.org/dyn/closer.cgi?path=servicemix/${location(artifact)}/${artifact.release.version}/${filename(artifact)}"
+    s"http://www.apache.org/dyn/closer.lua/servicemix/${location(artifact)}/${artifact.release.version}/${filename(artifact)}"
 
   private def _snapshot(artifact: ReleaseArtifact) : String =
     s"http://repository.apache.org/service/local/artifact/maven/redirect?r=snapshots&g=org.apache.servicemix&a=${artifact.artifact}&v=${versionOf(artifact)}&p=${artifact.packaging}"
