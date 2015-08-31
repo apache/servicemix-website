@@ -30,11 +30,11 @@ class HelperTest {
   @Test
   def testDownloadsForRelease() = {
     implicit val release = Release("4.5.0")
-    assertEquals("http://www.apache.org/dyn/closer.cgi?path=servicemix/servicemix-4/4.5.0/apache-servicemix-jbi-4.5.0.tar.gz",
+    assertEquals("http://www.apache.org/dyn/closer.lua/servicemix/servicemix-4/4.5.0/apache-servicemix-jbi-4.5.0.tar.gz",
                  download(jbi, tarball))
-    assertEquals("http://www.apache.org/dyn/closer.cgi?path=servicemix/servicemix-4/4.5.0/apache-servicemix-full-4.5.0.zip",
+    assertEquals("http://www.apache.org/dyn/closer.lua/servicemix/servicemix-4/4.5.0/apache-servicemix-full-4.5.0.zip",
                  download(full,zip))
-    assertEquals("http://www.apache.org/dyn/closer.cgi?path=servicemix/servicemix-4/4.5.0/apache-servicemix-4.5.0-src.zip",
+    assertEquals("http://www.apache.org/dyn/closer.lua/servicemix/servicemix-4/4.5.0/apache-servicemix-4.5.0-src.zip",
                  download(source,zip))
     assertEquals("http://www.apache.org/dist/servicemix/servicemix-4/4.5.0/apache-servicemix-minimal-4.5.0.zip.asc",
                  pgp(minimal,zip))
@@ -74,9 +74,9 @@ class HelperTest {
   @Test
   def testDownloadsForCurrentVersion5Release() = {
     implicit val release = Release("5.0.0")
-    assertEquals("http://www.apache.org/dyn/closer.cgi?path=servicemix/servicemix-5/5.0.0/apache-servicemix-5.0.0.zip",
+    assertEquals("http://www.apache.org/dyn/closer.lua/servicemix/servicemix-5/5.0.0/apache-servicemix-5.0.0.zip",
       download(zip))
-    assertEquals("http://www.apache.org/dyn/closer.cgi?path=servicemix/servicemix-5/5.0.0/apache-servicemix-5.0.0-src.zip",
+    assertEquals("http://www.apache.org/dyn/closer.lua/servicemix/servicemix-5/5.0.0/apache-servicemix-5.0.0-src.zip",
       download(source,zip))
   }
 
