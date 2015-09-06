@@ -19,7 +19,14 @@ The project focus of Apache ServiceMix is the assembly of the integration
 container, the actual functionality is being maintained in related projects
 like Apache Karaf, Apache CXF, Apache Camel and Apache ActiveMQ.
 
-TBD
+Activity on the mailing lists and in JIRA has been a bit slow over the
+summer, but is picking up again now that we're planning to do new releases.
+
+We have released the first release from the new 6.0.x, which is based on 
+Karaf 3.0.x and includes numerous new features. We have also provided the 
+users with a new release 5.5.0, based on Karaf 2.4.x and containing upgrades 
+to the newest dependencies and some new features. We have also released the 
+next maintenance releases 5.4.1 and 5.1.6 and 3 sets of OSGi bundles.
 
 There are no outstanding issues requiring board attention.
 
@@ -31,35 +38,51 @@ on July 05 2014. Last PMC addition was Krzysztof Sobkowiak on July 05 2014.
 
 Community Objectives
 --------------------
-TBS
+After the 6.0.0 release, our goal for the next period is to make the branch 6.0.x as 
+a new stable line of ServiceMix. We're not expecting too much dependency updates to 
+become available for the 5.1.x, 5.2.x and 5.3.x branches, but we do plan to keep our 
+release schedule going with the 5.4.x and 5.5.x releases. We plan to keep a steady 
+release schedule and keep up with new fix releases of our dependency projects. 
+
+We also plan to start the work on the new ServiceMix 7.x line, which should be based 
+on Karaf 4.x and will include numerous new features and dependency upgrades. 
+
+Our goal for the next months is to improve the documentation and website.
 
 Releases
 --------
 
- - TBD
+ - A set of 77 OSGi bundles on June 19 2015
+ - Apache ServiceMix 5.1.6 on June 26 2015
+ - Apache ServiceMix 5.2.2 on June 27 2015
+ - Apache ServiceMix 6.0.0 on July 08 2015
+ - A set of 67 OSGi bundles on July 13 2015
+ - Apache ServiceMix 5.4.1 on July 17 2015
+ - Apache ServiceMix 5.5.0 on July 18 2015
+ - A set of 42 OSGi bundles on August 09 2015
 
 Mailing list activity
 --------------------- 
    
  - users@servicemix.apache.org:  
-    - 422 subscribers (down -1 in the last 3 months): 
-    - 123 emails sent to list (95 in previous quarter) 
+    - 410 subscribers (down -9 in the last 3 months): 
+    - 114 emails sent to list (105 in previous quarter) 
    
  - dev@servicemix.apache.org:  
-    - 204 subscribers (down -3 in the last 3 months): 
-    - 162 emails sent to list (134 in previous quarter) 
+    - 204 subscribers (up 0 in the last 3 months): 
+    - 110 emails sent to list (163 in previous quarter) 
    
  - issues@servicemix.apache.org:  
     - 7 subscribers (up 0 in the last 3 months): 
-    - 702 emails sent to list (440 in previous quarter) 
+    - 374 emails sent to list (676 in previous quarter) 
 
  - commits@servicemix.apache.org:  
     - 53 subscribers (up 0 in the last 3 months): 
-    - 1409 emails sent to list (1338 in previous period)    
+    - 1623 emails sent to list (1409 in previous period)    
    
 JIRA activity
 ------------- 
    
- - 116 JIRA tickets created in the last 3 months 
- - 121 JIRA tickets closed/resolved in the last 3 months  
+ - 84 JIRA tickets created in the last 3 months 
+ - 88 JIRA tickets closed/resolved in the last 3 months  
 {code}
