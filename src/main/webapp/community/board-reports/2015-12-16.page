@@ -1,8 +1,12 @@
 ---
-title: Board Report 2015-09-16
+title: Board Report 2015-12-16
 --- pipeline:conf
 
-h2. September 16th, 2015
+{warning}
+This is a work-in-progress - the board report has not yet been submitted.
+{warning}
+
+h2. December 16th, 2015
 
 {code}
 Apache ServiceMix is a flexible, open-source integration container that
@@ -15,14 +19,7 @@ The project focus of Apache ServiceMix is the assembly of the integration
 container, the actual functionality is being maintained in related projects
 like Apache Karaf, Apache CXF, Apache Camel and Apache ActiveMQ.
 
-Activity on the mailing lists and in JIRA has been a bit slow over the
-summer, but is picking up again now that we're planning to do new releases.
-
-We have released the first release from the new 6.0.x, which is based on 
-Karaf 3.0.x and includes numerous new features. We have also provided the 
-users with a new release 5.5.0, based on Karaf 2.4.x and containing upgrades 
-to the newest dependencies and some new features. We have also released the 
-next maintenance releases 5.4.1 and 5.1.6 and 3 sets of OSGi bundles.
+TODO
 
 There are no outstanding issues requiring board attention.
 
@@ -35,29 +32,12 @@ July 05 2014.
 
 Community Objectives
 --------------------
-After the 6.0.0 release, our goal for the next period is to make the branch 
-6.0.x as a new stable line of ServiceMix. We're not expecting too much 
-dependency updates to become available for the 5.1.x, 5.2.x and 5.3.x branches,
-but we do plan to keep our release schedule going with the 5.4.x and 5.5.x 
-releases. We plan to keep a steady release schedule and keep up with new fix 
-releases of our dependency projects. 
-
-We also plan to start the work on the new ServiceMix 7.x line, which should be 
-based on Karaf 4.x and will include numerous new features and dependency upgrades. 
-
-Our goal for the next months is to improve the documentation and website.
+TODO
 
 Releases
 --------
 
- - A set of 77 OSGi bundles on June 19 2015
- - Apache ServiceMix 5.1.6 on June 26 2015
- - Apache ServiceMix 5.2.2 on June 27 2015
- - Apache ServiceMix 6.0.0 on July 08 2015
- - A set of 67 OSGi bundles on July 13 2015
- - Apache ServiceMix 5.4.1 on July 17 2015
- - Apache ServiceMix 5.5.0 on July 18 2015
- - A set of 42 OSGi bundles on August 09 2015
+TODO
 
 Mailing list activity
 --------------------- 
