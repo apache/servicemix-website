@@ -3,12 +3,13 @@ title: Download
 --- name:intro pipeline:conf
 h1. Download
 
-The latest release is the [ServiceMix 6.0.1 Release|/downloads/servicemix-6.0.1.html].  We strongly encourage all users to use this release.
+The latest release is the [ServiceMix 6.1.0 Release|/downloads/servicemix-6.1.0.html].  We strongly encourage all users to use this release.
 
 --- name:previous pipeline:conf
 
 h2. Other Releases
 
+* [Apache ServiceMix 6.0.1|/downloads/servicemix-6.0.1.html] 
 * [Apache ServiceMix 5.5.1|/downloads/servicemix-5.5.1.html] 
 * [Apache ServiceMix 5.4.2|/downloads/servicemix-5.4.2.html] 
 
@@ -16,7 +17,7 @@ h2. Development snapshots
 
 We have development snapshots available for
 
-* [Apache ServiceMix 6.1.0-SNAPSHOT|/downloads/servicemix-6.1.0.html]
+* [Apache ServiceMix 6.1.1-SNAPSHOT|/downloads/servicemix-6.1.1.html]
 * [Apache ServiceMix 6.0.2-SNAPSHOT|/downloads/servicemix-6.0.2.html]
 * [Apache ServiceMix 5.5.2-SNAPSHOT|/downloads/servicemix-5.5.2.html]
 * [Apache ServiceMix 5.4.3-SNAPSHOT|/downloads/servicemix-5.4.3.html]
@@ -88,6 +89,6 @@ An archive of previous releases can be found [here|http://archive.apache.org/dis
 
 <%= unescape(intro) %>
 
-<% render("/downloads/_servicemix5.scaml", Map("version" -> "6.0.1")) %>
+<% render("/downloads/_servicemix6.scaml", Map("version" -> "6.1.0")) %>
 
 <%= unescape(previous) %>
