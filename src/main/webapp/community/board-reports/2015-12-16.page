@@ -19,7 +19,22 @@ The project focus of Apache ServiceMix is the assembly of the integration
 container, the actual functionality is being maintained in related projects
 like Apache Karaf, Apache CXF, Apache Camel and Apache ActiveMQ.
 
-TODO
+Activity on the mailing lists and in JIRA is picking up. We had some new 
+contributions. We also have been giving a talk about ServiceMix during 
+an 33rd Degree 4charity conference in Wroclaw (Poland).
+
+We have achieved the stability of he ServiceMix 6. The new fix version 6.0.1
+has been released. We have also released a new version 6.1.0 containing 
+upgrades to the newest dependencies and some new features.
+
+During the last period the new maintenance version 5.4.2 and the new stable 
+version 5.5.1 have been released. We have also decided to stop further 
+development on the old branches 5.1.x, 5.2.x and 5.3.x. 
+
+We have decided to decouple ServiceMix Plugins from ServiceMix 4 code and 
+maintain them a separate subproject. The source code has been migrated
+from svn to git repositoriy. A new fix version 1.3.1 of Maven Depend Plugin
+has been released. We have also released 3 sets of OSGi bundles.
 
 There are no outstanding issues requiring board attention.
 
@@ -32,35 +47,54 @@ July 05 2014.
 
 Community Objectives
 --------------------
-TODO
+We're not expecting too much dependency updates to become available for the 
+5.4.x, but we do plan to keep our release schedule going with the 5.4.x, 
+5.5.x and 5.6.x (the new development branch) releases. We plan to keep a 
+steady release schedule and keep up with new fix releases of our dependency 
+projects. 
+
+In the new period we are going to focus on the further development, stability 
+and maintenance of ServiceMix 6.
+
+Our goal for the next period is to start the development of the new ServiceMix 
+7.x line and release the first stable version from it.  
 
 Releases
 --------
 
-TODO
+ - Apache ServiceMix Bundles 2015.08 on September 15 2015
+ - Depends Maven Plugin 1.3.0 on September 27 2015
+ - Apache ServiceMix 5.5.1 on October 28 2015
+ - Apache ServiceMix 6.0.1 on October 28 2015
+ - Depends Maven Plugin 1.3.1 on November 02 2015
+ - Apache ServiceMix Bundles 2015.10 on November 06 2015
+ - Apache ServiceMix 5.4.2 on November 25 2015
+ - Apache ServiceMix 6.1.0 on December 01 2015
+ - Apache ServiceMix Bundles 2015.11 on December 03 2015
+
 
 Mailing list activity
 --------------------- 
    
  - users@servicemix.apache.org:  
-    - 410 subscribers (down -9 in the last 3 months): 
-    - 114 emails sent to list (105 in previous quarter) 
+    - 416 subscribers (up 5 in the last 3 months): 
+    - 109 emails sent to list (95 in previous quarter) 
    
  - dev@servicemix.apache.org:  
-    - 204 subscribers (up 0 in the last 3 months): 
-    - 110 emails sent to list (163 in previous quarter) 
+    - 205 subscribers (up 1 in the last 3 months): 
+    - 194 emails sent to list (112 in previous quarter) 
    
  - issues@servicemix.apache.org:  
     - 7 subscribers (up 0 in the last 3 months): 
-    - 374 emails sent to list (676 in previous quarter) 
+    - 549 emails sent to list (441 in previous quarter) 
 
  - commits@servicemix.apache.org:  
-    - 53 subscribers (up 0 in the last 3 months): 
-    - 1623 emails sent to list (1409 in previous period)    
+    - 54 subscribers (up 1 in the last 3 months): 
+    - 1838 emails sent to list (1623 in previous period)    
    
 JIRA activity
 ------------- 
    
- - 84 JIRA tickets created in the last 3 months 
- - 88 JIRA tickets closed/resolved in the last 3 months  
+ - 87 JIRA tickets created in the last 3 months 
+ - 86 JIRA tickets closed/resolved in the last 3 months   
 {code}
