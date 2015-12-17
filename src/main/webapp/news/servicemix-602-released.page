@@ -1,0 +1,20 @@
+---
+title: ServiceMix 6.0.2 Released
+--- pipeline:conf
+
+h2. ServiceMix 6.0.2 released
+
+The ServiceMix team is pleased to announce the availability of Apache ServiceMix 6.0.2.
+This new patch release contains a few bug fixes and picks up new versions of Apache Camel.
+
+The new Apache Camel version included in this release also updates the Apache Commons 
+Collections library to version 3.2.2 that contains a patch for a reported [object de-serialization vulnerability|https://blogs.apache.org/foundation/entry/apache_commons_statement_to_widespread].
+
+Major dependency versions for this release:
+* Activiti 5.17.0
+* Apache ActiveMQ 5.12.1
+* Apache Camel 2.15.5
+* Apache CXF 3.0.6
+* Apache Karaf 3.0.5
+
+For more information, please see the [release notes|/downloads/servicemix-6.0.2]
