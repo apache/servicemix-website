@@ -49,9 +49,13 @@ object Helper {
   def sha1(specs: (ReleaseArtifact => ReleaseArtifact)*)(implicit release: Release) : String = _metafile(artifactFor(specs, release), "sha1")
 
   /**
-   * The version specific docs url for a page
-   */
-  def docs(page: String)(implicit release: Release) = s"http://servicemix.apache.org/docs/${release.majorMinorX}/${page}"
+    * The version specific docs url for a page
+    */
+  def docs(page: String)(implicit release: Release) = release match {
+    case Release(version, _) if version.startsWith("3") => s"http://servicemix.apache.org/docs/${release.majorMinorX}/${page}"
+    case Release(version, _) if version.startsWith("4") => s"http://servicemix.apache.org/docs/${release.majorMinorX}/${page}"
+    case _ => s"http://servicemix.apache.org/docs/${release.majorX}/${page}"
+  }
 
   /**
    * Function to specify a -minimal assembly
@@ -115,7 +119,8 @@ object Helper {
     case ReleaseArtifact(Release(version, _), _, _, _) if version.startsWith("3") => "servicemix-3"
     case ReleaseArtifact(Release(version, _), _, _, _) if version.startsWith("4") => "servicemix-4"
     case ReleaseArtifact(Release(version, _), _, _, _) if version.startsWith("5") => "servicemix-5"
-    case _ => "servicemix-6"
+    case ReleaseArtifact(Release(version, _), _, _, _) if version.startsWith("6") => "servicemix-6"
+    case _ => "servicemix-7"
   }
 
   val versionOf : ReleaseArtifact => String = _.release.version
@@ -160,6 +165,11 @@ case class Release(version: String, archived: Boolean = false) {
   lazy val majorMinorX = version.split("\\.").slice(0,2) match {
     case Array(major, minor) => s"${major}.${minor}.x"
     case _                   => throw new RuntimeException(s"Unable to convert ${version} to <major>.<minor>.x format")
+  }
+
+  lazy val majorX = version.split("\\.").slice(0,1) match {
+    case Array(major) => s"${major}.x"
+    case _            => throw new RuntimeException(s"Unable to convert ${version} to <major>.<minor>.x format")
   }
 
 }
