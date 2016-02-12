@@ -81,18 +81,43 @@ class HelperTest {
   }
 
   @Test
-  def testDocumentationForSnapshotRelease = {
+  def testDocumentationForSnapshotReleaseOld = {
     implicit val release = Release("4.5.2-SNAPSHOT")
     assertEquals("http://servicemix.apache.org/docs/4.5.x/index.html", docs("index.html"))
     assertEquals("http://servicemix.apache.org/docs/4.5.x/quickstart/index.html", docs("quickstart/index.html"))
   }
 
   @Test
-  def testDocumentationForRelease = {
+  def testDocumentationForSnapshotRelease = {
+    implicit val release = Release("5.5.2-SNAPSHOT")
+    assertEquals("http://servicemix.apache.org/docs/5.x/index.html", docs("index.html"))
+    assertEquals("http://servicemix.apache.org/docs/5.x/quickstart/index.html", docs("quickstart/index.html"))
+  }
+
+  @Test
+  def testDocumentationForReleaseOld = {
     implicit val release = Release("4.4.2")
     assertEquals("http://servicemix.apache.org/docs/4.4.x/index.html", docs("index.html"))
     assertEquals("http://servicemix.apache.org/docs/4.4.x/quickstart/index.html", docs("quickstart/index.html"))
   }
 
+  @Test
+  def testDocumentationForRelease = {
+    implicit val release = Release("5.4.2")
+    assertEquals("http://servicemix.apache.org/docs/5.x/index.html", docs("index.html"))
+    assertEquals("http://servicemix.apache.org/docs/5.x/quickstart/index.html", docs("quickstart/index.html"))
+  }
+
+  @Test
+  def testMajorMinorX = {
+    implicit val release = Release("6.1.0")
+    assertEquals("6.1.x", release.majorMinorX)
+  }
+
+  @Test
+  def testMajorX = {
+    implicit val release = Release("6.1.0")
+    assertEquals("6.x", release.majorX)
+  }
 
 }
