@@ -1,0 +1,76 @@
+---
+title: ServiceMix 7.0.0.M1
+--- name:notes pipeline:conf
+
+h2. OSGi components list
+Components included in this release:
+
+This release packages the following dependencies:
+* Version [4.0.4|http://karaf.apache.org/index/community/download/karaf-4.0.4-release.html] of [Apache Karaf|http://karaf.apache.org/]
+* Version [5.13.0|http://activemq.apache.org/activemq-5130-release.html] of [ActiveMQ|http://activemq.apache.org]
+* Version [2.16.2|http://camel.apache.org/camel-2162-release.html] of [Camel|http://camel.apache.org]
+* Version [3.1.4|https://cxf.apache.org/cxf-314-release-notes.html] of [CXF|http://cxf.apache.org]
+
+h2. Release notes
+
+h3. Bug
+    * [SM-2251] - Intermittent test failure in JMSAppenderTest
+    * [SM-2698] - ActiveMQ web console fails on J8
+    * [SM-2786] - Drools 5 examples fail due to missing Eclipse JDT
+    * [SM-2787] - Test failures in CxfWsnExamplesTest
+    * [SM-2813] - Drools6CamelServiceExamplesTest fails with error
+    * [SM-2814] - Drools6ExamplesTest fails with error
+    * [SM-2818] - ServiceMix installs randomly spring 3.1.4.RELEASE feature
+    * [SM-2823] - ActivitiExamplesTest fails accidentally
+    * [SM-2824] - Missing dependencies in system folder
+    * [SM-2825] - Installation of CXF WSN sample fails
+    * [SM-2845] - Installation of the cxf-wsn feature fails accidentally
+    * [SM-2848] - cxf-wsn-client client fails due to wrong slf4j version
+    * [SM-2851] - Some itests fail accidentally with NPE
+    * [SM-2854] - Doclint for Javadoc fails on JDK 8
+
+h3. Task
+    * [SM-2355] - Remove the workaround jaxrs-api feature
+    * [SM-2759] - Upgrade to Apache ActiveMQ 5.13.0
+    * [SM-2763] - Upgrade to Activiti 5.19.0.1
+    * [SM-2768] - Upgrade to Apache Karaf 4
+    * [SM-2778] - Upgrade to Apache ActiveMQ 5.12.2
+    * [SM-2803] - Refactor the assembly creation
+    * [SM-2806] - Ensure ServiceMix uses Apache Commons Collections 3.2.2
+    * [SM-2807] - Upgrade to Apache POM 17
+    * [SM-2808] - Avoid warnings about 'parent.relativePath' during the maven build
+    * [SM-2819] - Upgrade to Pax Exam 4.8.0
+    * [SM-2820] - Upgrade to Apache Karaf 4.0.4
+    * [SM-2821] - Upgrade to Apache Camel 2.16.2
+    * [SM-2822] - Upgrade Maven-bundle-plugin to version 3.0.1
+    * [SM-2826] - Upgrade to ServiceMix Specs 2.6.0
+    * [SM-2844] - Upgrade to Activiti 5.19.0.2
+    * [SM-2846] - Upgrade maven-compiler-plugin to 3.3
+    * [SM-2847] - Upgrade maven-eclipse-plugin to 2.10
+    * [SM-2849] - Upgrade to Jackson 2.6.3
+    * [SM-2853] - Release Apache ServiceMix 7.0.0.M1
+
+{tip}
+This release affects applications using ObjectMessages. Please refer to [this page|http://activemq.apache.org/objectmessage.html] for more information.
+{tip}
+
+{tip}
+This release affects applications using Java object de-serialisation with Apache Camel's XStream. Please refer to [this page|http://camel.apache.org/xstream] for more information.
+{tip}
+
+h2. SCM tag
+
+Tag {{servicemix-7.0.0.M1}} is available in [Git|https://git-wip-us.apache.org/repos/asf?p=servicemix.git;a=tag;h=refs/tags/servicemix-7.0.0.M1] (commit id c66b391cf8c7f63d63063e9b6d32a0fab1dc3325)
+
+h2. Changelog
+
+For a more detailed view of new features and bug fixes, see the [changelog|https://issues.apache.org/jira/browse/SM/fixforversion/12333026]
+
+--- name:content pipeline:ssp
+<%@ val notes : String %>
+
+<h2>Downloads : Apache ServiceMix 7.0.0.M1</h2>
+
+<% render("/downloads/_servicemix7.scaml", Map("version" -> "7.0.0.M1")) %>
+
+<%= unescape(notes) %>

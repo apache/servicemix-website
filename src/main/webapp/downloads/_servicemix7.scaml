@@ -1,0 +1,65 @@
+-@ val version: String
+-@ val archive: Boolean = false
+
+-
+  import org.apache.servicemix.website.Release
+  import org.apache.servicemix.website.Helper._
+  implicit val release = Release(version, archive)
+
+%div#downloads
+  - if (isSnapshot(release))
+    %div.alert
+      %p.title
+        This is a development snapshot for an upcoming Apache ServiceMix release.
+        Feel free to use it for testing purposes or to get a sneak preview of new features.
+        For production use, you should download
+        %a{:href => {uri("/downloads.html")}} our latest release
+        instead
+
+  %table
+    %tbody
+      %tr.default
+        %td.first
+          %p.title Default assembly
+          %p Our default assembly is the best way to get started with Apache ServiceMix.
+        %td.links
+          %p.title
+            %a(href="#{download(zip)}")
+              Apache ServiceMix #{version} (zip)
+          - if (isRelease(release))
+            %p.keys
+              %a(href="#{pgp(zip)}") [PGP]
+              %a(href="#{sha1(zip)}") [SHA1]
+              %a(href="#{md5(zip)}") [MD5]
+      - if (isRelease(release))
+        %tr
+          %td.first
+            %p.title Source assembly
+            %p Use this if you want to build Apache ServiceMix from source yourself
+          %td.links
+            %p.title
+              %a(href="#{download(source,zip)}")
+                Apache ServiceMix Sources #{version} (zip)
+            %p.keys
+              %a(href="#{pgp(source,zip)}") [PGP]
+              %a(href="#{sha1(source,zip)}") [SHA1]
+              %a(href="#{md5(source,zip)}") [MD5]
+      %tr
+        %td.first
+          %p.title Documentation
+          %p Links to the documentation pages for this version
+        %td.links
+          %p.title
+            %a{:href => {docs("index.html")}}
+              Documentation for Apache ServiceMix #{release.majorMinorX}
+          %p
+            %a{:href => {docs("quickstart/index.html")}} [Quickstart]
+            %a{:href => {docs("activemq/index.html")}} [ActiveMQ]
+            %a{:href => {docs("activiti/index.html")}} [Activiti]
+            %a{:href => {docs("camel/index.html")}} [Camel]
+
+  %div.info
+    %p.title The above URLs use redirection
+    %p
+      The above URLs use the Apache Mirror system to redirect you to a suitable downloads for your download. Some users have experienced issues with some versions of browsers (e.g. some Safari browsers). If the download doesn't seem to work for you from the above URL then try using
+      %a(href="http://www.mozilla.com/en-US/firefox/") FireFox
