@@ -1,18 +1,45 @@
 ---
-title: ServiceMix 5.5.3-SNAPSHOT
+title: ServiceMix 5.5.3
 --- name:notes pipeline:conf
 
-h2. Helping us...
+h2. OSGi components list
+Components included in this release:
 
-You can help us by trying out this development snapshot and reporting any problems you encounter on the [mailing lists|/community/mailing-lists]
+This release packages the following dependencies:
+* Version [2.4.4|http://karaf.apache.org/index/community/download/karaf-2.4.4-release.html] of [Apache Karaf|http://karaf.apache.org/]
+* Version [5.12.3|http://activemq.apache.org/activemq-5123-release.html] of [ActiveMQ|http://activemq.apache.org]
+* Version [2.15.5|http://camel.apache.org/camel-2155-release.html] of [Camel|http://camel.apache.org]
+* Version [3.0.6|https://cxf.apache.org/cxf-306-release-notes.html] of [CXF|http://cxf.apache.org]
 
-An overview of outstanding JIRA issues for this release can be found at [https://issues.apache.org/jira/browse/SM/fixforversion/12333988]
+h2. Release notes
+
+h3. Bug
+    * [SM-2848|http://issues.apache.org/jira/browse/SM-2848] - cxf-wsn-client client fails due to wrong slf4j version
+
+h3. Improvement
+    * [SM-2395|http://issues.apache.org/jira/browse/SM-2395] - Download pages should correctly refer the documentation pages
+
+h3. Task
+    * [SM-2778|http://issues.apache.org/jira/browse/SM-2778] - Upgrade to Apache ActiveMQ 5.12.2
+    * [SM-2780|http://issues.apache.org/jira/browse/SM-2780] - Release Apache ServiceMix 5.5.3
+    * [SM-2806|http://issues.apache.org/jira/browse/SM-2806] - Ensure ServiceMix uses Apache Commons Collections 3.2.2
+    * [SM-2808|http://issues.apache.org/jira/browse/SM-2808] - Avoid warnings about 'parent.relativePath' during the maven build
+    * [SM-2816|http://issues.apache.org/jira/browse/SM-2816] - Upgrade to Apache Karaf 2.4.4
+    * [SM-2858|http://issues.apache.org/jira/browse/SM-2858] - Upgrade to Apache ActiveMQ 5.12.3
+
+h2. SCM tag
+
+Tag {{servicemix-5.5.3}} is available in [Git|https://git-wip-us.apache.org/repos/asf?p=servicemix.git;a=tag;h=refs/tags/servicemix-5.5.3] (commit id 4bde788820a63665f0e61459e254b9237377e1e9)
+
+h2. Changelog
+
+For a more detailed view of new features and bug fixes, see the [changelog|https://issues.apache.org/jira/browse/SM/fixforversion/12333988]
 
 --- name:content pipeline:ssp
 <%@ val notes : String %>
 
-<h2>Downloads : Apache ServiceMix 5.5.3-SNAPSHOT</h2>
+<h2>Downloads : Apache ServiceMix 5.5.3</h2>
 
-<% render("/downloads/_servicemix5.scaml", Map("version" -> "5.5.3-SNAPSHOT")) %>
+<% render("/downloads/_servicemix5.scaml", Map("version" -> "5.5.3")) %>
 
 <%= unescape(notes) %>
