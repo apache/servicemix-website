@@ -13,13 +13,37 @@ Apache ServiceMix is a flexible, open-source integration container that
 unifies the features and functionality of Apache ActiveMQ, Camel, CXF and
 Karaf to provide a complete, enterprise-ready ESB powered by OSGi.
 
+
 Project Status
 ==============
+
 The project focus of Apache ServiceMix is the assembly of the integration
 container, the actual functionality is being maintained in related projects
 like Apache Karaf, Apache CXF, Apache Camel and Apache ActiveMQ.
 
-TODO
+Activity on the mailing lists and in JIRA has been a bit slow over the year
+change, but is picking up again now that we're planning to do new releases.
+We had also some new contributions.
+
+We have focused on providing users with latest and greatest technology and
+worked on upgrade of Apache Karaf, ActiveMQ, Camel and CXF versions.
+
+During the last period the last maintenance version 5.4.3 has been released.
+We have decided to stop further development on the branch 5.4.x. We have also
+released the stable releases 5.5.2, 5.5.3 and 6.0.2 and the new release 5.6.0
+from the development branch. During this period 4 sets of OSGi bundles and new
+Specs has been released too.
+
+We have focused on the development of ServiceMix 7 and released the first preview
+of 7.0.0 which is based on Karaf 4.0.0 and includes numerous new features. We are
+working now towards a 7.0.0 release. We are fixing first issues reported by users
+for the preview release. In the new period we are going to focus on the further
+development and stability of ServiceMix 7 to be able to provide the community the
+first stable release.
+
+We do plan to keep our release schedule going with the 5.5.x, 5.6.x, 6.0.x and
+6.1.x releases. We plan to keep a steady release schedule and keep up with new
+fix releases of our dependency projects.
 
 There are no outstanding issues requiring board attention.
 
@@ -30,38 +54,44 @@ nor committers were added in the last 3 months. Last committer addition was
 Wim Verreydt on July 05 2014. Last PMC addition was Krzysztof Sobkowiak on 
 July 05 2014. 
 
-Community Objectives
-====================
-TODO
-
 Releases
 ========
 
-TODO
+ - Apache ServiceMix Bundles 2015.11 on December 03 2015
+ - Apache ServiceMix 5.5.2 on December 17 2015
+ - Apache ServiceMix 6.0.2 on December 17 2015
+ - Apache ServiceMix Bundles 2015.12 on January 07 2016
+ - Apache ServiceMix Specs 2.6.0 on January 25 2016
+ - Apache ServiceMix Bundles 2016.01 on February 06 2016
+ - Apache ServiceMix 7.0.0.M1 on February 12 2016
+ - Apache ServiceMix Bundles on February 18 2016
+ - Apache ServiceMix 5.4.3 on February 21 2016
+ - Apache ServiceMix 5.5.3 on February 21 2016
+ - Apache ServiceMix 5.6.0 on February 21 2016
 
 
 Mailing list activity
 ===================== 
    
  - users@servicemix.apache.org:  
-    - 416 subscribers (up 5 in the last 3 months): 
-    - 109 emails sent to list (95 in previous quarter) 
-   
- - dev@servicemix.apache.org:  
-    - 205 subscribers (up 1 in the last 3 months): 
-    - 194 emails sent to list (112 in previous quarter) 
-   
- - issues@servicemix.apache.org:  
-    - 7 subscribers (up 0 in the last 3 months): 
-    - 549 emails sent to list (441 in previous quarter) 
+    - 420 subscribers (up 4 in the last 3 months):
+    - 55 emails sent to list (86 in previous quarter)
+
+ - dev@servicemix.apache.org:
+    - 208 subscribers (up 3 in the last 3 months):
+    - 241 emails sent to list (168 in previous quarter)
+
+ - issues@servicemix.apache.org:
+    - 8 subscribers (up 1 in the last 3 months):
+    - 766 emails sent to list (483 in previous quarter)
 
  - commits@servicemix.apache.org:  
-    - 54 subscribers (up 1 in the last 3 months): 
-    - 1838 emails sent to list (1623 in previous period)    
+    - 56 subscribers (up 2 in the last 3 months):
+    - 1018 emails sent to list (1415 in previous period)
    
 JIRA activity
 ============= 
    
- - 87 JIRA tickets created in the last 3 months 
- - 86 JIRA tickets closed/resolved in the last 3 months   
+ - 140 JIRA tickets created in the last 3 months
+ - 127 JIRA tickets closed/resolved in the last 3 months
 {code}
