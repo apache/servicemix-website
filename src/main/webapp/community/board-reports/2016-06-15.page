@@ -1,54 +1,52 @@
 ---
-title: Board Report 2016-03-16
+title: Board Report 2016-06-15
 --- pipeline:conf
 
-h2. March 16th, 2016
+{warning}
+This is a work-in-progress - the board report has not yet been submitted.
+{warning}
+
+h2. June 15th, 2016
 
 {code}
 Apache ServiceMix is a flexible, open-source integration container that
 unifies the features and functionality of Apache ActiveMQ, Camel, CXF and
 Karaf to provide a complete, enterprise-ready ESB powered by OSGi.
 
+Issues
+======
 
-Project Status
-==============
+There are no outstanding issues requiring board attention.
+
+Activity
+========
 
 The project focus of Apache ServiceMix is the assembly of the integration
 container, the actual functionality is being maintained in related projects
 like Apache Karaf, Apache CXF, Apache Camel and Apache ActiveMQ.
 
-Activity on the mailing lists and in JIRA has been a bit slow over the year
-change, but is picking up again now that we're planning to do new releases.
-We had also some new contributions.
+ - TODO - the PMC MUST provide this information
 
-We have focused on providing users with latest and greatest technology and
-worked on upgrade of Apache Karaf, ActiveMQ, Camel and CXF versions.
+Health report
+=============
 
-During the last period the last maintenance version 5.4.3 has been released.
-We have decided to stop further development on the branch 5.4.x. We have also
-released the stable releases 5.5.2, 5.5.3 and 6.0.2 and the new release 5.6.0
-from the development branch. During this period 4 sets of OSGi bundles and new
-Specs has been released too.
+ - TODO - Please use this paragraph to elaborate on why
+   the current project activity (mails, commits, bugs etc) is at its current
+   level - Maybe fluffy kittens took over and are now controlling the project?
 
-We have focused on the development of ServiceMix 7 and released the first preview
-of 7.0.0 which is based on Karaf 4.0.0 and includes numerous new features. We are
-working now towards a 7.0.0 release. We are fixing first issues reported by users
-for the preview release. In the new period we are going to focus on the further
-development and stability of ServiceMix 7 to be able to provide the community the
-first stable release.
+PMC changes
+===========
 
-We do plan to keep our release schedule going with the 5.5.x, 5.6.x, 6.0.x and
-6.1.x releases. We plan to keep a steady release schedule and keep up with new
-fix releases of our dependency projects.
+ - Currently 22 PMC members.
+ - No new PMC members added in the last 3 months
+ - Last PMC addition was Krzysztof Sobkowiak on Sat Jul 05 2014
 
-There are no outstanding issues requiring board attention.
+Committer base changes
+======================
 
-Community
-=========
-Currently 49 committers and 22 PMC members in the project. No new PMC members
-nor committers were added in the last 3 months. Last committer addition was 
-Wim Verreydt on July 05 2014. Last PMC addition was Krzysztof Sobkowiak on 
-July 05 2014. 
+ - Currently 49 committers.
+ - No new committers added in the last 3 months
+ - Last committer addition was Wim Verreydt at Tue Jul 01 2014
 
 Releases
 ========
