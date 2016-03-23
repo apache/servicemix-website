@@ -36,6 +36,6 @@ For a more detailed view of new features and bug fixes, see the [changelog|https
 
 <h2>Downloads : Apache ServiceMix 6.1.0</h2>
 
-<% render("/downloads/_servicemix6.scaml", Map("version" -> "6.1.0")) %>
+<% render("/downloads/_servicemix6.scaml", Map("version" -> "6.1.0", "archive" -> true)) %>
 
 <%= unescape(notes) %>
