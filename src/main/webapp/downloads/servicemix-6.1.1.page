@@ -1,18 +1,71 @@
 ---
-title: ServiceMix 6.1.1-SNAPSHOT
+title: ServiceMix 6.1.1
 --- name:notes pipeline:conf
 
-h2. Helping us...
+h2. OSGi components list
+Components included in this release:
 
-You can help us by trying out this development snapshot and reporting any problems you encounter on the [mailing lists|/community/mailing-lists]
+This release packages the following dependencies:
+* Version [3.0.6|http://karaf.apache.org/index/community/download/karaf-3.0.6-release.html] of [Apache Karaf|http://karaf.apache.org/]
+* Version [5.12.3|http://activemq.apache.org/activemq-5123-release.html] of [ActiveMQ|http://activemq.apache.org]
+* Version [2.16.2|http://camel.apache.org/camel-2162-release.html] of [Camel|http://camel.apache.org]
+* Version [3.1.4|https://cxf.apache.org/cxf-314-release-notes.html] of [CXF|http://cxf.apache.org]
 
-An overview of outstanding JIRA issues for this release can be found at [https://issues.apache.org/jira/browse/SM/fixforversion/12333877]
+h2. Release notes
+
+h3. Bug
+    * [SM-2251|http://issues.apache.org/jira/browse/SM-2251] - Intermittent test failure in JMSAppenderTest
+    * [SM-2824|http://issues.apache.org/jira/browse/SM-2824] - Missing dependencies in system folder
+    * [SM-2848|http://issues.apache.org/jira/browse/SM-2848] - cxf-wsn-client client fails due to wrong slf4j version
+    * [SM-2850|http://issues.apache.org/jira/browse/SM-2850] -  JMSAppenderTest.testReconnectToBroker fails
+    * [SM-2851|http://issues.apache.org/jira/browse/SM-2851] - Some itests fail accidentally with NPE
+    * [SM-2854|http://issues.apache.org/jira/browse/SM-2854] - Doclint for Javadoc fails on JDK 8
+    * [SM-2864|http://issues.apache.org/jira/browse/SM-2864] - Update example README.txt files for new Karaf commands
+
+h3. Improvement
+    * [SM-2395|http://issues.apache.org/jira/browse/SM-2395] - Download pages should correctly refer the documentation pages
+
+h3. Task
+    * [SM-2751|http://issues.apache.org/jira/browse/SM-2751] - Release Apache ServiceMix 6.1.1
+    * [SM-2752|http://issues.apache.org/jira/browse/SM-2752] - Upgrade to depends-maven-plugin 1.3.1
+    * [SM-2753|http://issues.apache.org/jira/browse/SM-2753] - Use maven properties like `${project.build.outputDirectory}` instead of `target/classes`
+    * [SM-2763|http://issues.apache.org/jira/browse/SM-2763] - Upgrade to Activiti 5.19.0.1
+    * [SM-2778|http://issues.apache.org/jira/browse/SM-2778] - Upgrade to Apache ActiveMQ 5.12.2
+    * [SM-2803|http://issues.apache.org/jira/browse/SM-2803] - Refactor the assembly creation
+    * [SM-2806|http://issues.apache.org/jira/browse/SM-2806] - Ensure ServiceMix uses Apache Commons Collections 3.2.2
+    * [SM-2807|http://issues.apache.org/jira/browse/SM-2807] - Upgrade to Apache POM 17
+    * [SM-2808|http://issues.apache.org/jira/browse/SM-2808] - Avoid warnings about 'parent.relativePath' during the maven build
+    * [SM-2819|http://issues.apache.org/jira/browse/SM-2819] - Upgrade to Pax Exam 4.8.0
+    * [SM-2821|http://issues.apache.org/jira/browse/SM-2821] - Upgrade to Apache Camel 2.16.2
+    * [SM-2822|http://issues.apache.org/jira/browse/SM-2822] - Upgrade Maven-bundle-plugin to version 3.0.1
+    * [SM-2826|http://issues.apache.org/jira/browse/SM-2826] - Upgrade to ServiceMix Specs 2.6.0
+    * [SM-2844|http://issues.apache.org/jira/browse/SM-2844] - Upgrade to Activiti 5.19.0.2
+    * [SM-2849|http://issues.apache.org/jira/browse/SM-2849] - Upgrade to Jackson 2.6.3
+    * [SM-2858|http://issues.apache.org/jira/browse/SM-2858] - Upgrade to Apache ActiveMQ 5.12.3
+    * [SM-2861|http://issues.apache.org/jira/browse/SM-2861] - Upgrade to Apache Karaf 3.0.6
+
+{tip}
+This release affects applications using ObjectMessages. Please refer to [this page|http://activemq.apache.org/objectmessage.html] for more information.
+{tip}
+
+{tip}
+This release affects applications using Java object de-serialisation with Apache Camel's XStream. Please refer to [this page|http://camel.apache.org/xstream] for more information.
+{tip}
+
+h2. SCM tag
+
+Tag {{servicemix-6.1.1}} is available in [Git|https://git-wip-us.apache.org/repos/asf?p=servicemix.git;a=tag;h=refs/tags/servicemix-6.1.1] (commit id a5a22f10387df8fd3e8e253e6cf31d3f0f19b239)
+
+h2. Changelog
+
+For a more detailed view of new features and bug fixes, see the [changelog|https://issues.apache.org/jira/browse/SM/fixforversion/12333877]
+
 
 --- name:content pipeline:ssp
 <%@ val notes : String %>
 
-<h2>Downloads : Apache ServiceMix 6.1.1-SNAPSHOT</h2>
+<h2>Downloads : Apache ServiceMix 6.1.1</h2>
 
-<% render("/downloads/_servicemix6.scaml", Map("version" -> "6.1.1-SNAPSHOT")) %>
+<% render("/downloads/_servicemix6.scaml", Map("version" -> "6.1.1")) %>
 
 <%= unescape(notes) %>
