@@ -10,8 +10,10 @@ h3. [Overview|index]
 h3. [Documentation]
 {html}
 <ul>
-<li><a href="http://servicemix.apache.org/docs/5.0.x/quickstart/index.html" target="quickstart">Quickstart Guide</a></li>
-<li><a href="http://servicemix.apache.org/docs/5.0.x/index.html" target="documentation">Documentation: 5.0.x</a></li>
+<li><a href="http://servicemix.apache.org/docs/7.x/quickstart/index.html" target="quickstart">Quickstart Guide</a></li>
+<li><a href="http://servicemix.apache.org/docs/7.x/index.html" target="documentation">Documentation: 7.x</a></li>
+<li><a href="http://servicemix.apache.org/docs/6.x/index.html" target="documentation">Documentation: 6.x</a></li>
+<li><a href="http://servicemix.apache.org/docs/5.x/index.html" target="documentation">Documentation: 5.x</a></li>
 </ul>
 {html}
 
