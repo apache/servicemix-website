@@ -6,7 +6,7 @@ h2. OSGi components list
 Components included in this release:
 
 This release packages the following dependencies:
-* Version [2.3.9|http://karaf.apache.org/index/community/download/karaf-2.3.9-release.html] of [Apache Karaf|http://karaf.apache.org/]
+* Version [2.3.9|http://karaf.apache.org/archives.html#container-239] of [Apache Karaf|http://karaf.apache.org/]
 * Version [5.10.0|http://activemq.apache.org/activemq-5100-release.html] of [ActiveMQ|http://activemq.apache.org]
 * Version [2.14.1|http://camel.apache.org/camel-2141-release.html] of [Camel|http://camel.apache.org]
 * Version [3.0.2|https://cxf.apache.org/cxf-302-release-notes.html] of [CXF|http://cxf.apache.org]
