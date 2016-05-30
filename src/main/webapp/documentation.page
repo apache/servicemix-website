@@ -3,7 +3,40 @@ title: Navigation
 --- pipeline:conf
 h1. Documentation
 
-h2. Latest version (4.4.x)
+h2. Latest version (7.x)
+Quickly navigate to one of the guides below...
+* [Quickstart Guide|http://servicemix.apache.org/docs/7.x/quickstart/index.html] ([pdf|http://servicemix.apache.org/docs/7.x/quickstart/quickstart.pdf])
+* [User Guide|http://servicemix.apache.org/docs/7.x/user/index.html]
+* [ActiveMQ Guide|http://servicemix.apache.org/docs/7.x/activemq/index.html]
+* [Activiti Guide|http://servicemix.apache.org/docs/7.x/activiti/index.html]
+* [Camel Guide|http://servicemix.apache.org/docs/7.x/camel/index.html] ([pdf|http://servicemix.apache.org/docs/7.x/camel/camel-guide.pdf])
+* [Karaf Guide|http://servicemix.apache.org/docs/7.x/karaf/index.html]
+
+... or browse the [7.x documentation site | http://servicemix.apache.org/docs/7.x/]
+
+h2. Apache ServiceMix 6.x
+Quickly navigate to one of the guides below...
+* [Quickstart Guide|http://servicemix.apache.org/docs/6.x/quickstart/index.html] ([pdf|http://servicemix.apache.org/docs/6.x/quickstart/quickstart.pdf])
+* [User Guide|http://servicemix.apache.org/docs/6.x/user/index.html]
+* [ActiveMQ Guide|http://servicemix.apache.org/docs/6.x/activemq/index.html]
+* [Activiti Guide|http://servicemix.apache.org/docs/6.x/activiti/index.html]
+* [Camel Guide|http://servicemix.apache.org/docs/6.x/camel/index.html] ([pdf|http://servicemix.apache.org/docs/6.x/camel/camel-guide.pdf])
+* [Karaf Guide|http://servicemix.apache.org/docs/6.x/karaf/index.html]
+
+... or browse the [6.x documentation site | http://servicemix.apache.org/docs/6.x/]
+
+h2. Apache ServiceMix 5.x
+Quickly navigate to one of the guides below...
+* [Quickstart Guide|http://servicemix.apache.org/docs/5.x/quickstart/index.html] ([pdf|http://servicemix.apache.org/docs/5.x/quickstart/quickstart.pdf])
+* [User Guide|http://servicemix.apache.org/docs/5.x/user/index.html]
+* [ActiveMQ Guide|http://servicemix.apache.org/docs/5.x/activemq/index.html]
+* [Activiti Guide|http://servicemix.apache.org/docs/5.x/activiti/index.html]
+* [Camel Guide|http://servicemix.apache.org/docs/5.x/camel/index.html] ([pdf|http://servicemix.apache.org/docs/5.x/camel/camel-guide.pdf])
+* [Karaf Guide|http://servicemix.apache.org/docs/5.x/karaf/index.html]
+
+... or browse the [5.x documentation site | http://servicemix.apache.org/docs/5.x/]
+
+h2. Apache ServiceMix 4.x
 Quickly navigate to one of the guides below...
 * [Quickstart Guide|http://servicemix.apache.org/docs/4.4.x/quickstart/index.html] ([pdf|http://servicemix.apache.org/docs/4.4.x/quickstart/quickstart.pdf])
 * [Camel Guide|http://servicemix.apache.org/docs/4.4.x/camel/index.html] ([pdf|http://servicemix.apache.org/docs/4.4.x/camel/camel-guide.pdf])
@@ -12,7 +45,3 @@ Quickly navigate to one of the guides below...
 * [Karaf Guide|http://servicemix.apache.org/docs/4.4.x/karaf/index.html]
 
 ... or browse the [4.4.x documentation site | http://servicemix.apache.org/docs/4.4.x/]
-
-h2. Other versions
-Nothing here yet - let's get the latest version documented first ;-)
-We might want to include a link to the original wiki exported pages though
