@@ -25,14 +25,30 @@ The project focus of Apache ServiceMix is the assembly of the integration
 container, the actual functionality is being maintained in related projects
 like Apache Karaf, Apache CXF, Apache Camel and Apache ActiveMQ.
 
- - TODO - the PMC MUST provide this information
+During the las period we have provided the users with new maintenance releases
+(5.5.4, 6.0.3) and new updates 5.6.1 and 6.1.1 from the development branches.
+We have also released new OSGi bundle sets and ServiceMix Specs.
+
+We can observe decreasing activity on dependency version used by the 5.5.x and
+5.6.x versions, so we expect decreasing activity on ServiceMix 5 next months and
+transiting it in 'end of life' state soon.
+
+We plan to focus on ServiceMix 6 and ServiceMix 7 instead, to provide users with
+latest and greatest technology and upgrades of Apache Karaf, ActiveMQ, Camel and
+CXF versions. We plan to release new versions of ServiceMix 6 next weeks.
+
+We are working on the new ServiceMix 7.0.0.M2 which should be released next days.
+During the next period we plan to release the final version of ServiceMix 7 and return to
+the work on migration of the documentation.
+
 
 Health report
 =============
 
- - TODO - Please use this paragraph to elaborate on why
-   the current project activity (mails, commits, bugs etc) is at its current
-   level - Maybe fluffy kittens took over and are now controlling the project?
+Activity on the mailing lists and in JIRA has been a bit slow during the last period,
+but is picking up again now.
+
+Since our last board report, we voted in 1 new committer, Andrea Cosentino.
 
 PMC changes
 ===========
@@ -55,6 +71,9 @@ Releases
  - Apache ServiceMix Bundles 2016.03 on March 30 2016
  - Apache ServiceMix Specs 2.7.0 on April 17 2016
  - Apache ServiceMix Bundles 2016.04 on May 03 2016
+ - Apache ServiceMix 5.5.4 on June 06 2016
+ - Apache ServiceMix 5.6.1 on June 06 2016
+ - Apache ServiceMix Bundles 2016.05 on June 07 2016
 
 Mailing list activity
 ===================== 
