@@ -1,18 +1,48 @@
 ---
-title: ServiceMix 6.1.2-SNAPSHOT
+title: ServiceMix 6.1.2
 --- name:notes pipeline:conf
 
-h2. Helping us...
+h2. OSGi components list
+Components included in this release:
 
-You can help us by trying out this development snapshot and reporting any problems you encounter on the [mailing lists|/community/mailing-lists]
+This release packages the following dependencies:
+* Version [3.0.7|http://karaf.apache.org/download.html#container-307] of [Apache Karaf|http://karaf.apache.org/]
+* Version [5.12.3|http://activemq.apache.org/activemq-5123-release.html] of [ActiveMQ|http://activemq.apache.org]
+* Version [2.16.3|http://camel.apache.org/camel-2163-release.html] of [Camel|http://camel.apache.org]
+* Version [3.1.5|https://cxf.apache.org/cxf-315-release-notes.html] of [CXF|http://cxf.apache.org]
 
-An overview of outstanding JIRA issues for this release can be found at [https://issues.apache.org/jira/browse/SM/fixforversion/12334244]
+h2. Release notes
+
+h3. Bug
+    * [SM-2729|http://issues.apache.org/jira/browse/SM-2729] - Broken link to docs for 6.x.
+    * [SM-2805|http://issues.apache.org/jira/browse/SM-2805] - Vulnerable Apache Commons Collection still installed?
+    * [SM-2976|http://issues.apache.org/jira/browse/SM-2976] - stax-ex-1.7.6.jar is under CDDL+GPL  license
+    * [SM-2984|http://issues.apache.org/jira/browse/SM-2984] - Correct the shutdown command in branding.properties
+    * [SM-2991|http://issues.apache.org/jira/browse/SM-2991] - ServiceMix doesn't start in offline environment
+
+h3. Task
+    * [SM-2924|http://issues.apache.org/jira/browse/SM-2924] - Release Apache ServiceMix 6.1.2
+    * [SM-2934|http://issues.apache.org/jira/browse/SM-2934] - Upgrade to Apache Camel 2.16.3 and Apache CXF 3.1.5
+    * [SM-2937|http://issues.apache.org/jira/browse/SM-2937] - Upgrade Xalan bundle to 2.7.2_3
+    * [SM-2946|http://issues.apache.org/jira/browse/SM-2946] - Upgrade to Pax Exam 4.9.0
+    * [SM-2953|http://issues.apache.org/jira/browse/SM-2953] - Upgrade to Pax Exam 4.9.1
+    * [SM-2989|http://issues.apache.org/jira/browse/SM-2989] - Upgrade maven-remote-resources-plugin configuration
+    * [SM-2990|http://issues.apache.org/jira/browse/SM-2990] - Update maven plugins
+    * [SM-3019|http://issues.apache.org/jira/browse/SM-3019] - Upgrade to Apache Karaf 3.0.7
+
+h2. SCM tag
+
+Tag {{servicemix-6.1.2}} is available in [Git|https://git-wip-us.apache.org/repos/asf?p=servicemix.git;a=tag;h=refs/tags/servicemix-6.1.2] (commit id fbd6c015a2d3988e98cea0deafd37a3bb4e93324)
+
+h2. Changelog
+
+For a more detailed view of new features and bug fixes, see the [changelog|https://issues.apache.org/jira/browse/SM/fixforversion/12334244]
 
 --- name:content pipeline:ssp
 <%@ val notes : String %>
 
-<h2>Downloads : Apache ServiceMix 6.1.2-SNAPSHOT</h2>
+<h2>Downloads : Apache ServiceMix 6.1.2</h2>
 
-<% render("/downloads/_servicemix6.scaml", Map("version" -> "6.1.2-SNAPSHOT")) %>
+<% render("/downloads/_servicemix6.scaml", Map("version" -> "6.1.2")) %>
 
 <%= unescape(notes) %>
