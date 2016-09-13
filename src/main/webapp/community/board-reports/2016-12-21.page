@@ -1,8 +1,12 @@
 ---
-title: Board Report 2016-09-21
+title: Board Report 2016-12-21
 --- pipeline:conf
 
-h2. September 21th, 2016
+{warning}
+This is a work-in-progress - the board report has not yet been submitted.
+{warning}
+
+h2. December 21th, 2016
 
 {code}
 Apache ServiceMix is a flexible, open-source integration container that
@@ -17,29 +21,12 @@ There are no outstanding issues requiring board attention.
 Activity
 ========
 
-The project focus of Apache ServiceMix is the assembly of the integration
-container, the actual functionality is being maintained in related projects
-like Apache Karaf, Apache CXF, Apache Camel and Apache ActiveMQ.
-
-During the las period we have provided the users with new maintenance releases
-(5.5.4, 6.0.4) and new updates 5.6.1 and 6.1.2 from the development branches.
-We have also released 3 new OSGi bundle sets.
-
-We have also released the next preview release of ServiceMix 7 (7.0.0.M2). Due to
-the lower activity during the last period the final release has been delayed and
-we plan to finalize it in this period. We are currently working on upgrades of the
-dependencies and fixing issues reported by users for the release 7.0.0.M2.
-
-In the next period we plan to focus on ServiceMix 6 and ServiceMix 7, but we also
-expect to provide the maintenance releases for ServiceMix, as long new dependencies
-will be available.
-
+TODO
 
 Health report
 =============
 
-Due to summer vacation the activity of the community (mailing lists, JIRA, releases)
-has been a bit slower than during the last period.
+TODO
 
 PMC changes
 ===========
@@ -66,6 +53,26 @@ Releases
  - Apache ServiceMix 6.1.2 on July 09 2016
  - Apache ServiceMix Bundles 2016.07 on August 05 2016
  - Apache ServiceMix Bundles 2016.08 on August 08 2016
+
+
+Mailing list activity
+=====================
+
+ - users@servicemix.apache.org:
+    - 418 subscribers (down -2 in the last 3 months):
+    - 66 emails sent to list (84 in previous quarter)
+
+ - dev@servicemix.apache.org:
+    - 207 subscribers (up 0 in the last 3 months):
+    - 144 emails sent to list (120 in previous quarter)
+
+ - issues@servicemix.apache.org:
+    - 9 subscribers (up 0 in the last 3 months):
+    - 337 emails sent to list (508 in previous quarter)
+
+ - commits@servicemix.apache.org:
+    - 56 subscribers (down -1 in the last 3 months):
+    - 660 emails sent to list (584 in previous period)
 
 JIRA activity
 ============= 
