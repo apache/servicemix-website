@@ -1,18 +1,35 @@
 ---
-title: ServiceMix 5.6.2-SNAPSHOT
+title: ServiceMix 5.6.2
 --- name:notes pipeline:conf
 
-h2. Helping us...
+h2. OSGi components list
+Components included in this release:
 
-You can help us by trying out this development snapshot and reporting any problems you encounter on the [mailing lists|/community/mailing-lists]
+This release packages the following dependencies:
+* Version [2.4.4|http://karaf.apache.org/archives.html#container-244] of [Apache Karaf|http://karaf.apache.org/]
+* Version [5.12.3|http://activemq.apache.org/activemq-5123-release.html] of [ActiveMQ|http://activemq.apache.org]
+* Version [2.16.4|http://camel.apache.org/camel-2164-release.html] of [Camel|http://camel.apache.org]
+* Version [3.1.5|https://cxf.apache.org/cxf-315-release-notes.html] of [CXF|http://cxf.apache.org]
 
-An overview of outstanding JIRA issues for this release can be found at [https://issues.apache.org/jira/browse/SM/fixforversion/12334254]
+h2. Release notes
+
+h3. Task
+     * [SM-3018|http://issues.apache.org/jira/browse/SM-3018] - Release Apache ServiceMix 5.6.2
+     * [SM-3110|http://issues.apache.org/jira/browse/SM-3110] - Upgrade to Apache Camel 2.16.4
+
+h2. SCM tag
+
+Tag {{servicemix-5.6.2}} is available in [Git|https://git-wip-us.apache.org/repos/asf?p=servicemix.git;a=tag;h=refs/tags/servicemix-5.6.2] (commit id b9aefc81bf98542b2d49fd91d8a3029d6d965959)
+
+h2. Changelog
+
+For a more detailed view of new features and bug fixes, see the [changelog|https://issues.apache.org/jira/browse/SM/fixforversion/12334254]
 
 --- name:content pipeline:ssp
 <%@ val notes : String %>
 
-<h2>Downloads : Apache ServiceMix 5.6.2-SNAPSHOT</h2>
+<h2>Downloads : Apache ServiceMix 5.6.2</h2>
 
-<% render("/downloads/_servicemix5.scaml", Map("version" -> "5.6.2-SNAPSHOT")) %>
+<% render("/downloads/_servicemix5.scaml", Map("version" -> "5.6.2")) %>
 
 <%= unescape(notes) %>

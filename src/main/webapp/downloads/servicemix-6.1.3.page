@@ -1,18 +1,42 @@
 ---
-title: ServiceMix 6.1.3-SNAPSHOT
+title: ServiceMix 6.1.3
 --- name:notes pipeline:conf
 
-h2. Helping us...
+h2. OSGi components list
+Components included in this release:
 
-You can help us by trying out this development snapshot and reporting any problems you encounter on the [mailing lists|/community/mailing-lists]
+This release packages the following dependencies:
+* Version [3.0.8|http://karaf.apache.org/download.html#container-308] of [Apache Karaf|http://karaf.apache.org/]
+* Version [5.12.3|http://activemq.apache.org/activemq-5123-release.html] of [ActiveMQ|http://activemq.apache.org]
+* Version [2.16.4|http://camel.apache.org/camel-2164-release.html] of [Camel|http://camel.apache.org]
+* Version [3.1.5|https://cxf.apache.org/cxf-315-release-notes.html] of [CXF|http://cxf.apache.org]
 
-An overview of outstanding JIRA issues for this release can be found at [https://issues.apache.org/jira/browse/SM/fixforversion/12335457]
+h2. Release notes
+
+h3. Bug
+     * [SM-3045|http://issues.apache.org/jira/browse/SM-3045] - Assembly descriptor contains a *nix-specific root-relative-reference
+     * [SM-3093|http://issues.apache.org/jira/browse/SM-3093] - Examples compile error
+     * [SM-3106|http://issues.apache.org/jira/browse/SM-3106] - exec-maven-plugin.version is not set in examples pom.xml
+
+h3. Task
+     * [SM-3043|http://issues.apache.org/jira/browse/SM-3043] - Release Apache ServiceMix 6.1.3
+     * [SM-3074|http://issues.apache.org/jira/browse/SM-3074] - Upgrade to Apache Karaf 3.0.8
+     * [SM-3110|http://issues.apache.org/jira/browse/SM-3110] - Upgrade to Apache Camel 2.16.4
+     * [SM-3123|http://issues.apache.org/jira/browse/SM-3123] - Use values from system.properties in several ActiveMQ configurartion files
+
+h2. SCM tag
+
+Tag {{servicemix-6.1.3}} is available in [Git|https://git-wip-us.apache.org/repos/asf?p=servicemix.git;a=tag;h=refs/tags/servicemix-6.1.3] (commit id d19819c7ea7337f2df42ee1817bd8f7eb46d7aef)
+
+h2. Changelog
+
+For a more detailed view of new features and bug fixes, see the [changelog|https://issues.apache.org/jira/browse/SM/fixforversion/12335457]
 
 --- name:content pipeline:ssp
 <%@ val notes : String %>
 
-<h2>Downloads : Apache ServiceMix 6.1.3-SNAPSHOT</h2>
+<h2>Downloads : Apache ServiceMix 6.1.3</h2>
 
-<% render("/downloads/_servicemix6.scaml", Map("version" -> "6.1.3-SNAPSHOT")) %>
+<% render("/downloads/_servicemix6.scaml", Map("version" -> "6.1.3")) %>
 
 <%= unescape(notes) %>

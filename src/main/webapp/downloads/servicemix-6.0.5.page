@@ -1,18 +1,35 @@
 ---
-title: ServiceMix 6.0.5-SNAPSHOT
+title: ServiceMix 6.0.5
 --- name:notes pipeline:conf
 
-h2. Helping us...
+h2. OSGi components list
+Components included in this release:
 
-You can help us by trying out this development snapshot and reporting any problems you encounter on the [mailing lists|/community/mailing-lists]
+This release packages the following dependencies:
+* Version [3.0.8|http://karaf.apache.org/download.html#container-308] of [Apache Karaf|http://karaf.apache.org/]
+* Version [5.12.3|http://activemq.apache.org/activemq-5123-release.html] of [ActiveMQ|http://activemq.apache.org]
+* Version [2.15.6|http://camel.apache.org/camel-2156-release.html] of [Camel|http://camel.apache.org]
+* Version [3.0.6|https://cxf.apache.org/cxf-306-release-notes.html] of [CXF|http://cxf.apache.org]
 
-An overview of outstanding JIRA issues for this release can be found at [https://issues.apache.org/jira/browse/SM/fixforversion/12335456]
+h2. Release notes
+
+h3. Task
+    * [SM-3044|http://issues.apache.org/jira/browse/SM-3044] - Release Apache ServiceMix 6.0.5
+    * [SM-3074|http://issues.apache.org/jira/browse/SM-3074] - Upgrade to Apache Karaf 3.0.8
+
+h2. SCM tag
+
+Tag {{servicemix-6.0.5}} is available in [Git|https://git-wip-us.apache.org/repos/asf?p=servicemix.git;a=tag;h=refs/tags/servicemix-6.0.5] (commit id 34fe787d15bcb9095e88f2f30d03198b3ab09a45)
+
+h2. Changelog
+
+For a more detailed view of new features and bug fixes, see the [changelog|https://issues.apache.org/jira/browse/SM/fixforversion/12335456]
 
 --- name:content pipeline:ssp
 <%@ val notes : String %>
 
-<h2>Downloads : Apache ServiceMix 6.0.5-SNAPSHOT</h2>
+<h2>Downloads : Apache ServiceMix 6.0.5</h2>
 
-<% render("/downloads/_servicemix6.scaml", Map("version" -> "6.0.5-SNAPSHOT")) %>
+<% render("/downloads/_servicemix6.scaml", Map("version" -> "6.0.5")) %>
 
 <%= unescape(notes) %>
