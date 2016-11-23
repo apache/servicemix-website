@@ -1,0 +1,18 @@
+---
+title: ServiceMix 5.6.3-SNAPSHOT
+--- name:notes pipeline:conf
+
+h2. Helping us...
+
+You can help us by trying out this development snapshot and reporting any problems you encounter on the [mailing lists|/community/mailing-lists]
+
+An overview of outstanding JIRA issues for this release can be found at [https://issues.apache.org/jira/browse/SM/fixforversion/12336045]
+
+--- name:content pipeline:ssp
+<%@ val notes : String %>
+
+<h2>Downloads : Apache ServiceMix 5.6.3-SNAPSHOT</h2>
+
+<% render("/downloads/_servicemix5.scaml", Map("version" -> "5.6.3-SNAPSHOT")) %>
+
+<%= unescape(notes) %>
