@@ -3,7 +3,7 @@ title: Download
 --- name:intro pipeline:conf
 h1. Download
 
-The latest release is the [ServiceMix 7.0.0.M2 Release|/downloads/servicemix-7.0.0.M2.html].  We strongly encourage all users to use this release.
+The latest release is the [ServiceMix 7.0.0.M3 Release|/downloads/servicemix-7.0.0.M3.html].  We strongly encourage all users to use this release.
 
 --- name:previous pipeline:conf
 
@@ -26,6 +26,7 @@ h2. Previous Releases
 
 An archive of previous releases can be found [here|http://archive.apache.org/dist/servicemix/].
 
+* [Apache ServiceMix 7.0.0.M2|/downloads/servicemix-7.0.0.M2.html]
 * [Apache ServiceMix 7.0.0.M1|/downloads/servicemix-7.0.0.M1.html]
 * [Apache ServiceMix 6.1.2|/downloads/servicemix-6.1.2.html]
 * [Apache ServiceMix 6.1.1|/downloads/servicemix-6.1.1.html]
@@ -105,6 +106,6 @@ An archive of previous releases can be found [here|http://archive.apache.org/dis
 
 <%= unescape(intro) %>
 
-<% render("/downloads/_servicemix7.scaml", Map("version" -> "7.0.0.M2")) %>
+<% render("/downloads/_servicemix7.scaml", Map("version" -> "7.0.0.M3")) %>
 
 <%= unescape(previous) %>
