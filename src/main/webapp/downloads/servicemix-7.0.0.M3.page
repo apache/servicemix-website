@@ -1,0 +1,47 @@
+---
+title: ServiceMix 7.0.0.M3
+--- name:notes pipeline:conf
+
+h2. OSGi components list
+Components included in this release:
+
+This release packages the following dependencies:
+* Version [4.0.7|http://karaf.apache.org/download.html#container-407] of [Apache Karaf|http://karaf.apache.org/]
+* Version [5.14.1|http://activemq.apache.org/activemq-5141-release.html] of [ActiveMQ|http://activemq.apache.org]
+* Version [2.16.4|http://camel.apache.org/camel-2164-release.html] of [Camel|http://camel.apache.org]
+* Version [3.1.5|https://cxf.apache.org/cxf-315-release-notes.html] of [CXF|http://cxf.apache.org]
+
+h2. Release notes
+
+h3. Bug
+    * [SM-3040|http://issues.apache.org/jira/browse/SM-3040] - Multiple staging repositories while releasing ServiceMix
+    * [SM-3045|http://issues.apache.org/jira/browse/SM-3045] - Assembly descriptor contains a *nix-specific root-relative-reference
+    * [SM-3093|http://issues.apache.org/jira/browse/SM-3093] - Examples compile error
+    * [SM-3106|http://issues.apache.org/jira/browse/SM-3106] - exec-maven-plugin.version is not set in examples pom.xml
+
+h3. Task
+    * [SM-3067|http://issues.apache.org/jira/browse/SM-3067] - Upgrade to Apache ActiveMQ 5.13.4
+    * [SM-3081|http://issues.apache.org/jira/browse/SM-3081] - Upgrade to Apache Karaf 4.0.6
+    * [SM-3082|http://issues.apache.org/jira/browse/SM-3082] - Update Exec Maven Plugin to version 1.5.0
+    * [SM-3083|http://issues.apache.org/jira/browse/SM-3083] - Upgrade to Apache ActiveMQ 5.14.x
+    * [SM-3103|http://issues.apache.org/jira/browse/SM-3103] - Upgrade to Apache Karaf 4.0.7
+    * [SM-3110|http://issues.apache.org/jira/browse/SM-3110] - Upgrade to Apache Camel 2.16.4
+    * [SM-3123|http://issues.apache.org/jira/browse/SM-3123] - Use values from system.properties in several ActiveMQ configurartion files
+    * [SM-3167|http://issues.apache.org/jira/browse/SM-3167] - Release Apache ServiceMix 7.0.0.M3
+
+h2. SCM tag
+
+Tag {{servicemix-7.0.0.M3}} is available in [Git|https://git-wip-us.apache.org/repos/asf?p=servicemix.git;a=tag;h=refs/tags/servicemix-7.0.0.M3] (commit id b7c19d5b52e2ba9411899496baa816ca211687c4)
+
+h2. Changelog
+
+For a more detailed view of new features and bug fixes, see the [changelog|https://issues.apache.org/jira/browse/SM/fixforversion/12333028]
+
+--- name:content pipeline:ssp
+<%@ val notes : String %>
+
+<h2>Downloads : Apache ServiceMix 7.0.0.M3</h2>
+
+<% render("/downloads/_servicemix7.scaml", Map("version" -> "7.0.0.M3")) %>
+
+<%= unescape(notes) %>
