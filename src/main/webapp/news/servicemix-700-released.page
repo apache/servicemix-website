@@ -1,0 +1,19 @@
+---
+title: ServiceMix 7.0.0 Released
+--- pipeline:conf
+
+h2. ServiceMix 7.0.0 released
+
+The ServiceMix team is pleased to announce the availability of Apache ServiceMix 7.0.0.
+
+Apache ServiceMix 7.0.0 is the first production ready release based on Karaf 4.0.x, which includes numerous
+new features, improvements, and bug fixes.
+
+Major dependency versions for this release:
+* Activiti 5.19.0.2
+* Apache ActiveMQ 5.14.3
+* Apache Camel 2.16.4
+* Apache CXF 3.1.5
+* Apache Karaf 4.0.8
+
+For more information, please see the [release notes|/downloads/servicemix-7.0.0]

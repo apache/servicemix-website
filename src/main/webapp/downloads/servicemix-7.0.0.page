@@ -1,18 +1,45 @@
 ---
-title: ServiceMix 7.0.0-SNAPSHOT
+title: ServiceMix 7.0.0
 --- name:notes pipeline:conf
 
-h2. Helping us...
+h2. OSGi components list
+Components included in this release:
 
-You can help us by trying out this development snapshot and reporting any problems you encounter on the [mailing lists|/community/mailing-lists]
+This release packages the following dependencies:
+* Version [4.0.8|http://karaf.apache.org/download.html#container-408] of [Apache Karaf|http://karaf.apache.org/]
+* Version [5.14.3|http://activemq.apache.org/activemq-5143-release.html] of [ActiveMQ|http://activemq.apache.org]
+* Version [2.16.4|http://camel.apache.org/camel-2164-release.html] of [Camel|http://camel.apache.org]
+* Version [3.1.5|https://cxf.apache.org/cxf-315-release-notes.html] of [CXF|http://cxf.apache.org]
 
-An overview of outstanding JIRA issues for this release can be found at [https://issues.apache.org/jira/browse/SM/fixforversion/12333029]
+h2. Release notes
+
+h3. Sub-task
+    * [SM-3223|http://issues.apache.org/jira/browse/SM-3223] - Add notice about usage of non-free json library
+
+h3. Bug
+    * [SM-3170|http://issues.apache.org/jira/browse/SM-3170] - Small bug in example feature file
+
+h3. Task
+    * [SM-3025|http://issues.apache.org/jira/browse/SM-3025] - Release Apache ServiceMix 7.0.0
+    * [SM-3177|http://issues.apache.org/jira/browse/SM-3177] - Upgrade to Apache ActiveMQ 5.14.3
+    * [SM-3213|http://issues.apache.org/jira/browse/SM-3213] - Upgrade to Apache karaf 4.0.8
+
+h3.  Known issues
+    * [SM-3225|http://issues.apache.org/jira/browse/SM-3225] - Examples compile error
+
+h2. SCM tag
+
+Tag {{servicemix-7.0.0}} is available in [Git|https://git-wip-us.apache.org/repos/asf?p=servicemix.git;a=tag;h=refs/tags/servicemix-7.0.0] (commit id b764ccd7fc4d97650bc2010a055a3aa2a2399fb9)
+
+h2. Changelog
+
+For a more detailed view of new features and bug fixes, see the [changelog|https://issues.apache.org/jira/browse/SM/fixforversion/12333029]
 
 --- name:content pipeline:ssp
 <%@ val notes : String %>
 
-<h2>Downloads : Apache ServiceMix 7.0.0-SNAPSHOT</h2>
+<h2>Downloads : Apache ServiceMix 7.0.0</h2>
 
-<% render("/downloads/_servicemix7.scaml", Map("version" -> "7.0.0-SNAPSHOT")) %>
+<% render("/downloads/_servicemix7.scaml", Map("version" -> "7.0.0")) %>
 
 <%= unescape(notes) %>
