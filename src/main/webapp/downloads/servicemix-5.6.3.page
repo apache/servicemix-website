@@ -1,18 +1,45 @@
 ---
-title: ServiceMix 5.6.3-SNAPSHOT
+title: ServiceMix 5.6.3
 --- name:notes pipeline:conf
 
-h2. Helping us...
+h2. OSGi components list
+Components included in this release:
 
-You can help us by trying out this development snapshot and reporting any problems you encounter on the [mailing lists|/community/mailing-lists]
+This release packages the following dependencies:
+* Version [2.4.4|http://karaf.apache.org/archives.html#container-244] of [Apache Karaf|http://karaf.apache.org/]
+* Version [5.12.3|http://activemq.apache.org/activemq-5123-release.html] of [ActiveMQ|http://activemq.apache.org]
+* Version [2.16.5|http://camel.apache.org/camel-2165-release.html] of [Camel|http://camel.apache.org]
+* Version [3.1.9|https://cxf.apache.org/cxf-319-release-notes.html] of [CXF|http://cxf.apache.org]
 
-An overview of outstanding JIRA issues for this release can be found at [https://issues.apache.org/jira/browse/SM/fixforversion/12336045]
+h2. Release notes
+
+h3. Sub-task
+    * [SM-3223|http://issues.apache.org/jira/browse/SM-3223] - Add notice about usage of non-free json library
+
+h3. Bug
+    * [SM-2300|http://issues.apache.org/jira/browse/SM-2300] - Failed to query stty columns
+    * [SM-2302|http://issues.apache.org/jira/browse/SM-2302] - BndUtils - Bundle cannot be generated
+    * [SM-2323|http://issues.apache.org/jira/browse/SM-2323] - ServiceMix freezes if bundled is refreshed after feature install
+    * [SM-2338|http://issues.apache.org/jira/browse/SM-2338] - cm:property-placeholder and camelContext conflict with each other on redeploy
+    * [SM-2416|http://issues.apache.org/jira/browse/SM-2416] - Missing HttpWagon while upgrading to Karaf 2.4.1
+
+h3. Task
+    * [SM-3164|http://issues.apache.org/jira/browse/SM-3164] - Release Apache ServiceMix 5.6.3
+    * [SM-3228|http://issues.apache.org/jira/browse/SM-3228] - Upgrade to Apache Camel 2.16.5 and Apache CXF 3.1.9
+
+h2. SCM tag
+
+Tag {{servicemix-5.6.3}} is available in [Git|https://git-wip-us.apache.org/repos/asf?p=servicemix.git;a=tag;h=refs/tags/servicemix-5.6.3] (commit id 94f5c14d5607514b7aae0be59668ecf8a6a85eef)
+
+h2. Changelog
+
+For a more detailed view of new features and bug fixes, see the [changelog|https://issues.apache.org/jira/browse/SM/fixforversion/12336045]
 
 --- name:content pipeline:ssp
 <%@ val notes : String %>
 
-<h2>Downloads : Apache ServiceMix 5.6.3-SNAPSHOT</h2>
+<h2>Downloads : Apache ServiceMix 5.6.3</h2>
 
-<% render("/downloads/_servicemix5.scaml", Map("version" -> "5.6.3-SNAPSHOT")) %>
+<% render("/downloads/_servicemix5.scaml", Map("version" -> "5.6.3")) %>
 
 <%= unescape(notes) %>
