@@ -1,0 +1,85 @@
+---
+title: Board Report 2017-03-15
+--- pipeline:conf
+
+{warning}
+This is a work-in-progress - the board report has not yet been submitted.
+{warning}
+
+h2. March 15th, 2017
+
+{code}
+Apache ServiceMix is a flexible, open-source integration container that
+unifies the features and functionality of Apache ActiveMQ, Camel, CXF and
+Karaf to provide a complete, enterprise-ready ESB powered by OSGi.
+
+Issues
+======
+
+There are no outstanding issues requiring board attention.
+
+Activity
+========
+
+The project focus of Apache ServiceMix is the assembly of the integration
+container, the actual functionality is being maintained in related projects
+like Apache Karaf, Apache CXF, Apache Camel and Apache ActiveMQ.
+
+During the last period we have released the final release 7.0.0 of ServiceMix 7,
+which is based on Karaf 4.0.x and includes numerous new features. In the new
+period we are going to focus on the further development, stability and maintenance
+of ServiceMix 7.
+
+We have also released the version 5.6.3, which was the last scheduled version of
+ServiceMix 5, which has been transited to EOL.
+
+We're not expecting too much dependency updates to become available for the 6.1.x,
+which is currently the only active branch of ServiceMix 6, but we do plan to keep
+our release schedule going with the 6.1.x releases.
+
+During the past period we have also released 4 sets of OSGi bundles and a new release
+of Depends Maven Plugin.
+
+We plan to keep a steady release schedule and keep up with new fix releases of our
+dependency projects.
+
+Our goal for the next months is also to improve the documentation and examples, which
+is our still outstanding theme.
+
+Health report
+=============
+
+Activity on the mailing lists and in JIRA is picking up. We had some new
+contributions.
+
+PMC changes
+===========
+
+ - Currently 22 PMC members.
+ - No new PMC members added in the last 3 months
+ - Last PMC addition was Krzysztof Sobkowiak on Sat Jul 05 2014
+
+Committer base changes
+======================
+
+ - Currently 50 committers.
+ - No new committers added in the last 3 months
+ - Last committer addition was Andrea Cosentino at Sun Mar 13 2016
+
+Releases
+========
+
+ - Apache ServiceMix Bundles 2016.11 on December 09 2016
+ - Apache ServiceMix Bundles 2016.12 on January 05 2017
+ - Apache ServiceMix Bundles 2017.01 on January 21 2017
+ - Apache ServiceMix 7.0.0 on January 21 2017
+ - Apache ServiceMix Bundles 2017.02 on February 28 2017
+ - Apache ServiceMix 5.6.3 on March 01 2017
+ - Apache ServiceMix Depends Maven Plugin 1.4.0 on March 01 2017
+
+JIRA activity
+============= 
+   
+ - 96 JIRA tickets created in the last 3 months
+ - 95 JIRA tickets closed/resolved in the last 3 months
+{code}
