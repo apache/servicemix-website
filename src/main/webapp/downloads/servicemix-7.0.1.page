@@ -1,18 +1,47 @@
 ---
-title: ServiceMix 7.0.1-SNAPSHOT
+title: ServiceMix 7.0.1
 --- name:notes pipeline:conf
 
-h2. Helping us...
+h2. OSGi components list
+Components included in this release:
 
-You can help us by trying out this development snapshot and reporting any problems you encounter on the [mailing lists|/community/mailing-lists]
+This release packages the following dependencies:
+* Version [4.0.9|http://karaf.apache.org/download.html#container-409] of [Apache Karaf|http://karaf.apache.org/]
+* Version [5.14.5|http://activemq.apache.org/activemq-5145-release.html] of [ActiveMQ|http://activemq.apache.org]
+* Version [2.16.5|http://camel.apache.org/camel-2165-release.html] of [Camel|http://camel.apache.org]
+* Version [3.1.9|https://cxf.apache.org/cxf-319-release-notes.html] of [CXF|http://cxf.apache.org]
 
-An overview of outstanding JIRA issues for this release can be found at [https://issues.apache.org/jira/browse/SM/fixforversion/12333030]
+h2. Release notes
+
+h3. Bug
+    * [SM-3225|http://issues.apache.org/jira/browse/SM-3225] - Examples compile error
+    * [SM-3264|http://issues.apache.org/jira/browse/SM-3264] - Upgrade to Apache Karaf 4.0.9
+
+h3. Improvement
+    * [SM-3303|http://issues.apache.org/jira/browse/SM-3303] - Expose proces configuration to cfg file
+
+h3. Task
+    * [SM-3222|http://issues.apache.org/jira/browse/SM-3222] - ServiceMix should not use non-free json.org
+    * [SM-3226|http://issues.apache.org/jira/browse/SM-3226] - Release Apache ServiceMix 7.0.1
+    * [SM-3228|http://issues.apache.org/jira/browse/SM-3228] - Upgrade to Apache Camel 2.16.5 and Apache CXF 3.1.9
+    * [SM-3268|http://issues.apache.org/jira/browse/SM-3268] - Upgrade to Apache ActiveMQ 5.14.5
+    * [SM-3357|http://issues.apache.org/jira/browse/SM-3357] - Upgrade to depends-maven-plugin 1.4.0
+    * [SM-3358|http://issues.apache.org/jira/browse/SM-3358] - Upgrade to maven-bundle-plugin 3.3.0
+    * [SM-3359|http://issues.apache.org/jira/browse/SM-3359] - Upgrade maven plugin versions and parent pom
+
+h2. SCM tag
+
+Tag {{servicemix-7.0.1}} is available in [Git|https://git-wip-us.apache.org/repos/asf?p=servicemix.git;a=tag;h=refs/tags/servicemix-7.0.1] (commit id d938a2d00cdc301c59146c05d3503a2f1e045ee5)
+
+h2. Changelog
+
+For a more detailed view of new features and bug fixes, see the [changelog|https://issues.apache.org/jira/browse/SM/fixforversion/12333030]
 
 --- name:content pipeline:ssp
 <%@ val notes : String %>
 
-<h2>Downloads : Apache ServiceMix 7.0.1-SNAPSHOT</h2>
+<h2>Downloads : Apache ServiceMix 7.0.1</h2>
 
-<% render("/downloads/_servicemix7.scaml", Map("version" -> "7.0.1-SNAPSHOT")) %>
+<% render("/downloads/_servicemix7.scaml", Map("version" -> "7.0.1")) %>
 
 <%= unescape(notes) %>

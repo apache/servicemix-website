@@ -1,18 +1,42 @@
 ---
-title: ServiceMix 6.1.4-SNAPSHOT
+title: ServiceMix 6.1.4
 --- name:notes pipeline:conf
 
-h2. Helping us...
+h2. OSGi components list
+Components included in this release:
 
-You can help us by trying out this development snapshot and reporting any problems you encounter on the [mailing lists|/community/mailing-lists]
+This release packages the following dependencies:
+* Version [3.0.8|http://karaf.apache.org/download.html#container-308] of [Apache Karaf|http://karaf.apache.org/]
+* Version [5.12.3|http://activemq.apache.org/activemq-5123-release.html] of [ActiveMQ|http://activemq.apache.org]
+* Version [2.16.5|http://camel.apache.org/camel-2165-release.html] of [Camel|http://camel.apache.org]
+* Version [3.1.9|https://cxf.apache.org/cxf-319-release-notes.html] of [CXF|http://cxf.apache.org]
 
-An overview of outstanding JIRA issues for this release can be found at [https://issues.apache.org/jira/browse/SM/fixforversion/12337883]
+h2. Release notes
+
+h3. Sub-task
+    * [SM-3223|http://issues.apache.org/jira/browse/SM-3223] - Add notice about usage of non-free json library
+
+h3. Bug
+    * [SM-2493|http://issues.apache.org/jira/browse/SM-2493] - ServiceMix shuts down automatically
+
+h3. Task
+    * [SM-3166|http://issues.apache.org/jira/browse/SM-3166] - Release Apache ServiceMix 6.1.4
+    * [SM-3222|http://issues.apache.org/jira/browse/SM-3222] - ServiceMix should not use non-free json.org
+    * [SM-3228|http://issues.apache.org/jira/browse/SM-3228] - Upgrade to Apache Camel 2.16.5 and Apache CXF 3.1.9
+
+h2. SCM tag
+
+Tag {{servicemix-6.1.4}} is available in [Git|https://git-wip-us.apache.org/repos/asf?p=servicemix.git;a=tag;h=refs/tags/servicemix-6.1.4] (commit id 8407f4eb0cf84369c8674a04813248bd26133f0d)
+
+h2. Changelog
+
+For a more detailed view of new features and bug fixes, see the [changelog|https://issues.apache.org/jira/browse/SM/fixforversion/12337883]
 
 --- name:content pipeline:ssp
 <%@ val notes : String %>
 
-<h2>Downloads : Apache ServiceMix 6.1.4-SNAPSHOT</h2>
+<h2>Downloads : Apache ServiceMix 6.1.4</h2>
 
-<% render("/downloads/_servicemix6.scaml", Map("version" -> "6.1.4-SNAPSHOT")) %>
+<% render("/downloads/_servicemix6.scaml", Map("version" -> "6.1.4")) %>
 
 <%= unescape(notes) %>

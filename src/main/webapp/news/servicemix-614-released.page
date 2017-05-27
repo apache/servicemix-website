@@ -1,0 +1,21 @@
+---
+title: ServiceMix 6.1.4 Released
+--- pipeline:conf
+
+h2. ServiceMix 6.1.4 released
+
+The ServiceMix team is pleased to announce the availability of Apache ServiceMix 6.1.4.
+This new patch release includes few bug fixes and picks up new versions of Apache Camel
+and Apache CXF.
+
+WARNING: this is probably the last scheduled release of ServiceMix 6.x. We encourage users
+to upgrade to more recent ServiceMix versions.
+
+Major dependency versions for this release:
+* Activiti 5.19.0.2
+* Apache ActiveMQ 5.12.3
+* Apache Camel 2.16.5
+* Apache CXF 3.1.9
+* Apache Karaf 3.0.8
+
+For more information, please see the [release notes|/downloads/servicemix-6.1.4]
