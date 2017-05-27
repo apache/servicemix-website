@@ -1,0 +1,19 @@
+---
+title: ServiceMix 7.0.1 Released
+--- pipeline:conf
+
+h2. ServiceMix 7.0.1 released
+
+The ServiceMix team is pleased to announce the availability of Apache ServiceMix 7.0.1.
+
+This new patch release includes few bug fixes and picks up new versions of Apache Camel,
+Apache CXF, Apache ActiveMQ and Apache Karaf.
+
+Major dependency versions for this release:
+* Activiti 5.19.0.2
+* Apache ActiveMQ 5.14.5
+* Apache Camel 2.16.5
+* Apache CXF 3.1.9
+* Apache Karaf 4.0.9
+
+For more information, please see the [release notes|/downloads/servicemix-7.0.1]
