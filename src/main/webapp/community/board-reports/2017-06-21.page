@@ -9,6 +9,9 @@ This is a work-in-progress - the board report has not yet been submitted.
 h2. June 21th, 2017
 
 {code}
+Description
+===========
+
 Apache ServiceMix is a flexible, open-source integration container that
 unifies the features and functionality of Apache ActiveMQ, Camel, CXF and
 Karaf to provide a complete, enterprise-ready ESB powered by OSGi.
@@ -25,19 +28,38 @@ The project focus of Apache ServiceMix is the assembly of the integration
 container, the actual functionality is being maintained in related projects
 like Apache Karaf, Apache CXF, Apache Camel and Apache ActiveMQ.
 
-TODO
+- We have prepared 2 releases of Apache ServiceMix: maintenance release 6.1.4
+and next development release 7.0.1. We don't expect too much activiti on ServceMix 6
+and we plan to transit in into EOL soon. In the new period we are going to focus on
+the further development, stability and maintenance of ServiceMix 7. We are working on
+new releases of ServiceMix 7 upgraded to the new dependency versions, especially
+Apache Karaf 4.1.x and new Apache Camel versions.
+- We have also released 2 sets of OSGi bundles and a new release of ServiceMix Specs.
+We are currently working on new Bundles and Specs releases.
+- Thanks to a contribution we did a big step in documentation improvement. The documentation
+has been migrated into Asciidoc format and updated with the actual state of ServiceMix.
+It should be integrated soon in our website.
+- We are going to make a small refactoring of ServiceMix features to give them a separate
+lifecycle (as ServiceMix Features) and provide better modularity and maintainability of
+ServiceMix.
+- Jean-Baptiste Onofré has submitted a new feature proposal. The new feature should extend
+ServiceMix with ability to manage APIs. We are going to accept the initial contribution
+and work on the new feature to provide it in one of the next releases.
+
 
 Health report
 =============
 
-TODO
+- Activity on the mailing lists and in JIRA is on the same level like in the last
+period. We had some contributions.
+- We have invited Andrea Cosentino to become a new PMC member
+- We are still watching potential new PMC members and committers
 
 PMC changes
 ===========
 
- - Currently 22 PMC members.
- - No new PMC members added in the last 3 months
- - Last PMC addition was Krzysztof Sobkowiak on Sat Jul 05 2014
+ - Currently 23 PMC members.
+ - Andrea Cosentino was added to the PMC on Wed Mar 15 2017
 
 Committer base changes
 ======================
@@ -49,10 +71,15 @@ Committer base changes
 Releases
 ========
 
-TODO
+ - Apache ServiceMix Specs 2.8.0 on Mar 24 2016
+ - Apache ServiceMix Bundles 2017.03 on April 06 2017
+ - Apache ServiceMix Bundles 2017.04 on May 07 2017
+ - Apache ServiceMix 6.1.4 on May 27 2017
+ - Apache ServiceMix 7.0.1 on May 27 2017
 
 JIRA activity
 ============= 
    
-TODO
+ - 105 JIRA tickets created in the last 3 months
+ - 107 JIRA tickets closed/resolved in the last 3 months
 {code}
