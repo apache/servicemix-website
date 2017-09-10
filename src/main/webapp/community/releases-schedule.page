@@ -11,9 +11,8 @@ h2. ServiceMix
 h3. Active
 
 || Release Branch || Karaf || Camel || ActiveMQ || CXF || OSGi || Java || Status || Latest Version || Next Version || ETA ||
-| servicemix-6.1.x | 3.0.8 | 2.16.5 | 5.12.3 | 3.1.9 | 5 | 7 / 8 | Current Stable/In Maintenance | 6.1.4 | 6.1.5 |  |
 | servicemix-7.0.x | 4.0.9 | 2.16.5 | 5.14.5 | 3.1.9 | 5 | 7 / 8 | Current Stable/In Maintenance | 7.0.1 | 7.0.2 |  |
-| master (7.1.x) | 4.0.9 | 2.17.5 | 5.14.5 | 3.1.9 | 5 | 7 / 8 | Development |  | 7.1.0 | 10.06.2017 |
+| master (7.1.x) | 4.1.2 | 2.19.2 | 5.15.0 | 3.1.9 | 6 | 8 / 9 | Development |  | 7.1.0 | 30.09.2017 |
 
 h3. EOL/Not active
 
@@ -26,5 +25,6 @@ h3. EOL/Not active
 | servicemix-5.5.x | 2.4.4 | 2.15.6 | 5.12.3 | 3.0.6 | 5 | 7 / 8 | EOL/NotActive | 5.5.4 |
 | servicemix-5.6.x | 2.4.4 | 2.16.5 | 5.12.3 | 3.1.9 | 5 | 7 / 8 | EOL/NotActive | 5.6.3 |
 | servicemix-6.0.x | 3.0.8 | 2.15.6 | 5.12.3 | 3.0.6 | 5 | 7 / 8 | EOL/NotActive | 6.0.5 |
+| servicemix-6.1.x | 3.0.8 | 2.16.5 | 5.12.3 | 3.1.9 | 5 | 7 / 8 | EOL/NotActive | 6.1.4 |
 
 Please refer the [Karaf Releases Schedule|http://karaf.apache.org/download.html#container-schedule] for more details.
