@@ -28,12 +28,23 @@ The project focus of Apache ServiceMix is the assembly of the integration
 container, the actual functionality is being maintained in related projects
 like Apache Karaf, Apache CXF, Apache Camel and Apache ActiveMQ.
 
-TBD
+- We don't expect any new releases in for dependencies of ServiceMix 6 and
+we have transited it in EOL.
+- We want currently focus on ServiceMix 7 and upgrading preparing the new
+release containing the newest versions of Apache Karaf and Apache Camel.
+- We have released 4 sets of OSGi bundles and a new release of ServiceMix Specs.
+- We are going to make a small refactoring of ServiceMix features to give them a separate
+lifecycle (as ServiceMix Features) and provide better modularity and maintainability of
+ServiceMix.
+- We are going to focus more on improvement of the documentation (which was migrated lately
+into the Asciidoc format) and improvement of the examples to give people easier start into
+integration with ServiceMix.
 
 Health report
 =============
 
-TBD
+- Due to summer vacation the activity of the community (mailing lists, JIRA, releases)
+  has been a bit slower than during the last period.
 
 PMC changes
 ===========
@@ -51,10 +62,15 @@ Committer base changes
 Releases
 ========
 
-TBD
+ - Apache ServiceMix Specs 2.9.0 on June 06 2016
+ - Apache ServiceMix Bundles 2017.05 on June 06 2017
+ - Apache ServiceMix Bundles 2017.06 on July 09 2017
+ - Apache ServiceMix Bundles 2017.07 on August 01 2017
+ - Apache ServiceMix Bundles 2017.08 on September 07 2017
 
 JIRA activity
 ============= 
    
- TBD
+ - 106 JIRA tickets created in the last 3 months
+ - 105 JIRA tickets closed/resolved in the last 3 months
  {code}
