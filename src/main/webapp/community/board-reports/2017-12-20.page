@@ -1,0 +1,60 @@
+---
+title: Board Report 2017-12-20
+--- pipeline:conf
+
+{warning}
+This is a work-in-progress - the board report has not yet been submitted.
+{warning}
+
+h2. November 20th, 2017
+
+{code}
+Description
+===========
+
+Apache ServiceMix is a flexible, open-source integration container that
+unifies the features and functionality of Apache ActiveMQ, Camel, CXF and
+Karaf to provide a complete, enterprise-ready ESB powered by OSGi.
+
+Issues
+======
+
+There are no outstanding issues requiring board attention.
+
+Activity
+========
+
+The project focus of Apache ServiceMix is the assembly of the integration
+container, the actual functionality is being maintained in related projects
+like Apache Karaf, Apache CXF, Apache Camel and Apache ActiveMQ.
+
+TBD
+
+Health report
+=============
+
+TBD
+
+PMC changes
+===========
+
+ - Currently 23 PMC members.
+ - Andrea Cosentino was added to the PMC on Wed Mar 15 2017
+
+Committer base changes
+======================
+
+ - Currently 50 committers.
+ - No new committers added in the last 3 months
+ - Last committer addition was Andrea Cosentino at Sun Mar 13 2016
+
+Releases
+========
+
+TBD
+
+JIRA activity
+============= 
+   
+TBD
+ {code}
