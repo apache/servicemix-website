@@ -1,8 +1,12 @@
 ---
-title: Board Report 2017-12-20
+title: Board Report 2018-03-21
 --- pipeline:conf
 
-h2. December 20th, 2017
+{warning}
+This is a work-in-progress - the board report has not yet been submitted.
+{warning}
+
+h2. March 21th, 2018
 
 {code}
 Description
@@ -24,20 +28,13 @@ The project focus of Apache ServiceMix is the assembly of the integration
 container, the actual functionality is being maintained in related projects
 like Apache Karaf, Apache CXF, Apache Camel and Apache ActiveMQ.
 
-- As we have transited the older ServiceMix branches to EOL, we can focus on
-further development of ServiceMix 7 and development of new features.
-- We have released 3 sets of OSGi bundles
-- In the next period we are going to focus on documentation and examples
-improvement as it's still outstanding theme.
+TBD
 
 
 Health report
 =============
 
-- Activity on the mailing lists and in JIRA is on the same level like in the last
-period. We have lost a lot of our momentum now that major parts of the functionality
-are being maintained in related projects like Apache Karaf and Apache Camel.
-- We have some new feature proposals.
+TBD
 
 PMC changes
 ===========
@@ -55,14 +52,11 @@ Committer base changes
 Releases
 ========
 
- - Apache ServiceMix Bundles 2017.08 on September 07 2017
- - Apache ServiceMix Bundles 2017.10 on October 26 2017
- - Apache ServiceMix Bundles 2017.11 on December 05 2017
+TBD
 
 
 JIRA activity
 ============= 
    
- - 60 JIRA tickets created in the last 3 months
- - 62 JIRA tickets closed/resolved in the last 3 months
+TBD
  {code}
