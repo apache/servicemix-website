@@ -49,8 +49,8 @@
         <scalate.workdir>${project.build.directory}/scalateWorkDir</scalate.workdir>
 
         <logback.version>1.0.9</logback.version>
-        <scala.version>2.10.0</scala.version>
-        <scalate.version>1.6.1</scalate.version>
+        <scala.version>2.11.0</scala.version>
+        <scalate.version>1.7.1</scalate.version>
         <slf4j.version>1.6.1</slf4j.version>
         <wikitext.version>1.4</wikitext.version>
 
@@ -73,8 +73,8 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.fusesource.scalate</groupId>
-            <artifactId>scalate-wikitext_2.10</artifactId>
+            <groupId>org.scalatra.scalate</groupId>
+            <artifactId>scalate-wikitext_2.11</artifactId>
             <version>${scalate.version}</version>
         </dependency>
         <dependency>
@@ -88,8 +88,8 @@
             <version>${wikitext.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.fusesource.scalate</groupId>
-            <artifactId>scalate-page_2.10</artifactId>
+            <groupId>org.scalatra.scalate</groupId>
+            <artifactId>scalate-page_2.11</artifactId>
             <version>${scalate.version}</version>
         </dependency>
         <dependency>
@@ -181,8 +181,8 @@
                 </executions>
             </plugin>
             <plugin>
-                <groupId>org.fusesource.scalate</groupId>
-                <artifactId>maven-scalate-plugin_2.10</artifactId>
+                <groupId>org.scalatra.scalate</groupId>
+                <artifactId>maven-scalate-plugin_2.11</artifactId>
                 <version>${scalate.version}</version>
                 <executions>
                     <execution>
