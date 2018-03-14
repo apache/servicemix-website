@@ -2,10 +2,6 @@
 title: Board Report 2018-03-21
 --- pipeline:conf
 
-{warning}
-This is a work-in-progress - the board report has not yet been submitted.
-{warning}
-
 h2. March 21th, 2018
 
 {code}
@@ -42,7 +38,8 @@ Health report
 =============
 
 Due to winter vacation and over the year change the activity of the community
-(mailing lists, JIRA, releases) has been a bit slower than during the last period.
+(mailing lists, JIRA, releases) has been a bit slower than during the last
+period.
 
 PMC changes
 ===========
