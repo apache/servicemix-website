@@ -19,7 +19,7 @@ Karaf to provide a complete, enterprise-ready ESB powered by OSGi.
 Issues
 ======
 
-TBD
+There are no outstanding issues requiring board attention.
 
 Activity
 ========
@@ -28,13 +28,18 @@ The project focus of Apache ServiceMix is the assembly of the integration
 container, the actual functionality is being maintained in related projects
 like Apache Karaf, Apache CXF, Apache Camel and Apache ActiveMQ.
 
-TBD
+- We have released 3 sets of OSGi bundles and 1 set of Specs.
+- We focus currently on ServiceMix 7 and upgrading preparing the new release
+containing the newest versions of Apache Karaf and Apache Camel.
+- Our goal for the next months is also to improve the documentation and examples,
+which is our still outstanding theme.
 
 
 Health report
 =============
 
-TBD
+- Activity on the mailing lists and in JIRA is on the same level like in the last
+period. We had some contributions.
 
 PMC changes
 ===========
@@ -52,11 +57,15 @@ Committer base changes
 Releases
 ========
 
-TBD
+ - Apache ServiceMix Specs 2017.12 on April 03 2018
+ - Apache ServiceMix Bundles 2018.03 on April 03 2018
+ - Apache ServiceMix Bundles 2018.04 on May 09 2018
+ - Apache ServiceMix Bundles 2018.05 on June 07 2018
 
 
 JIRA activity
 ============= 
    
-TBD
+ - 85 JIRA tickets created in the last 3 months
+ - 85 JIRA tickets closed/resolved in the last 3 months
  {code}
