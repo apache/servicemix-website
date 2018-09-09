@@ -2,9 +2,9 @@
 title: Board reports
 --- pipeline:conf
 h1. Board reports
-As every ASF project, Apache ServiceMix regularly reports to the Apache board about the status of the project. Our latest report (March 21th, 2018) is shown below, links to previous reports are available at the bottom of the page.
+As every ASF project, Apache ServiceMix regularly reports to the Apache board about the status of the project. Our latest report (June 20th, 2018) is shown below, links to previous reports are available at the bottom of the page.
 
-{include:2018-03-21}
+{include:2018-06-20}
 
 h2. All board reports
 {children}

@@ -1,0 +1,75 @@
+---
+title: Board Report 2018-09-19
+--- pipeline:conf
+
+{warning}
+This is a work-in-progress - the board report has not yet been submitted.
+{warning}
+
+h2. September 19th, 2018
+
+{code}
+Description
+===========
+
+Apache ServiceMix is a flexible, open-source integration container that
+unifies the features and functionality of Apache ActiveMQ, Camel, CXF and
+Karaf to provide a complete, enterprise-ready ESB powered by OSGi.
+
+Issues
+======
+
+There are no outstanding issues requiring board attention.
+
+Activity
+========
+
+The project focus of Apache ServiceMix is the assembly of the integration
+container, the actual functionality is being maintained in related projects
+like Apache Karaf, Apache CXF, Apache Camel and Apache ActiveMQ.
+
+- We have released 3 sets of OSGi bundles.
+- Our users are asking for the new ServiceMix release, so we should focus on
+preparing the new ServiceMix 7 (or maybe 8) based on the newest versions of
+Apache Karaf and Apache Camel.
+- We are going to focus more on improvement of the documentation and improvement
+of the examples to give people easier start into integration with ServiceMix.
+- We should focus during the next perdios on cloud and devops themes to make the
+ServiceMix distribution more attractive for users.
+
+
+Health report
+=============
+
+- Activity on the mailing lists and in JIRA is on the same level like in the last
+period. We had some contributions.
+- Our 2 PMC members have stepped down from PMC, because they have been inactive for
+a longer time and tehy didn't expect any further contribution from their side.  We
+acttually don't see any new candidates to be invited to join PMC.
+
+PMC changes
+===========
+
+ - Currently 22 PMC members.
+ - Andrea Cosentino was added to the PMC on Wed Mar 15 2017
+
+Committer base changes
+======================
+
+ - Currently 50 committers.
+ - No new committers added in the last 3 months
+ - Last committer addition was Andrea Cosentino at Sun Mar 13 2016
+
+Releases
+========
+
+ - Apache ServiceMix Bundles 2018.06 on July 10 2018
+ - Apache ServiceMix Bundles 2018.07 on August 12 2018
+ - Apache ServiceMix Bundles 2018.08 on September 06 2018
+
+JIRA activity
+============= 
+   
+ - 51 JIRA tickets created in the last 3 months
+ - 50 JIRA tickets closed/resolved in the last 3 months
+ {code}
