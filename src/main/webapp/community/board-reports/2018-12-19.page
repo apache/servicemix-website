@@ -1,0 +1,73 @@
+---
+title: Board Report 2018-12-19
+--- pipeline:conf
+
+{warning}
+This is a work-in-progress - the board report has not yet been submitted.
+{warning}
+
+h2. December 19th, 2018
+
+{code}
+Description
+===========
+
+Apache ServiceMix is a flexible, open-source integration container that
+unifies the features and functionality of Apache ActiveMQ, Camel, CXF and
+Karaf to provide a complete, enterprise-ready ESB powered by OSGi.
+
+Issues
+======
+
+There are no outstanding issues requiring board attention.
+
+Activity
+========
+
+The project focus of Apache ServiceMix is the assembly of the integration
+container, the actual functionality is being maintained in related projects
+like Apache Karaf, Apache CXF, Apache Camel and Apache ActiveMQ.
+
+- We have released 3 sets of OSGi bundles and some Specs bundles.
+- We plan to migrate our repositories to gitbox during the next weeks.
+- We should focus more intensively on ServiceMix assembly based on the
+newest Apache Camel and Apache Karaf, what was a bit outstanding last months.
+- We should focus on documentation and samples improvement.
+
+
+Health report
+=============
+
+- Activity on the mailing lists and in JIRA is on the same level like in the last
+period. We had some contributions.
+
+
+PMC changes
+===========
+
+ - Currently 21 PMC members.
+ - No new PMC members added in the last 3 months
+ - Last PMC addition was Andrea Cosentino on Wed Mar 15 2017
+
+Committer base changes
+======================
+
+ - Currently 50 committers.
+ - No new committers added in the last 3 months
+ - Last committer addition was Andrea Cosentino at Sun Mar 13 2016
+
+Releases
+========
+
+ - Apache ServiceMix Bundles 2018.09 on September 23 2018
+ - Apache ServiceMix Bundles 2018.10 on November 06 2018
+ - Apache ServiceMix Specs (jaxb-api, jaxws-api) on November 19 2018
+ - Apache ServiceMix Bundles 2018.11 on December 06 2018
+
+
+JIRA activity
+============= 
+   
+ - 94 JIRA tickets created in the last 3 months
+ - 94 JIRA tickets closed/resolved in the last 3 months
+ {code}
