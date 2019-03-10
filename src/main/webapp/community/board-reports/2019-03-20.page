@@ -1,8 +1,12 @@
 ---
-title: Board Report 2018-12-19
+title: Board Report 2019-03-20
 --- pipeline:conf
 
-h2. December 19th, 2018
+{warning}
+This is a work-in-progress - the board report has not yet been submitted.
+{warning}
+
+h2. March 20th, 2019
 
 {code}
 Description
@@ -24,18 +28,19 @@ The project focus of Apache ServiceMix is the assembly of the integration
 container, the actual functionality is being maintained in related projects
 like Apache Karaf, Apache CXF, Apache Camel and Apache ActiveMQ.
 
-- We have released 3 sets of OSGi bundles and some Specs bundles.
-- We plan to migrate our repositories to gitbox during the next weeks.
-- We should focus more intensively on ServiceMix assembly based on the newest
-  Apache Camel and Apache Karaf, what was a bit outstanding last months.
-- We should focus on documentation and samples improvement.
-
+- We have released 2 sets of OSGi bundles and the next set is on vote.
+- We have migrated our repositories to gitbox.
+- The work on ServiceMix Assembly and documentation was outstanding last
+  months. I'd like to start discussion in the community about the next steps
+  to provide a new assembly (probably new ServiceMix 8.x line), how can we
+  focus more on cloud capabilities and how can we make the community more
+  attractive for new people.
 
 Health report
 =============
 
-- Activity on the mailing lists and in JIRA is on the same level like in the
-  last period. We had some contributions.
+- The activity of the community (mailing lists, JIRA, releases) has been a bit
+  slower than during the last period.
 
 
 PMC changes
@@ -55,15 +60,12 @@ Committer base changes
 Releases
 ========
 
- - Apache ServiceMix Bundles 2018.09 on September 23 2018
- - Apache ServiceMix Bundles 2018.10 on November 06 2018
- - Apache ServiceMix Specs (jaxb-api, jaxws-api) on November 19 2018
- - Apache ServiceMix Bundles 2018.11 on December 06 2018
-
+ - Apache ServiceMix Bundles 2018.12 on December 30 2018
+ - Apache ServiceMix Bundles 2019.01 on February 05 2019
 
 JIRA activity
 =============
 
- - 94 JIRA tickets created in the last 3 months
- - 94 JIRA tickets closed/resolved in the last 3 months
+ - 111 JIRA tickets created in the last 3 months
+ - 91 JIRA tickets closed/resolved in the last 3 months
  {code}
