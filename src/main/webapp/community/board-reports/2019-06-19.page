@@ -1,8 +1,12 @@
 ---
-title: Board Report 2019-03-20
+title: Board Report 2019-06-19
 --- pipeline:conf
 
-h2. March 20th, 2019
+{warning}
+This is a work-in-progress - the board report has not yet been submitted.
+{warning}
+
+h2. June 19th, 2019
 
 {code}
 Description
@@ -24,20 +28,19 @@ The project focus of Apache ServiceMix is the assembly of the integration
 container, the actual functionality is being maintained in related projects
 like Apache Karaf, Apache CXF, Apache Camel and Apache ActiveMQ.
 
-- We have released 2 sets of OSGi bundles and the next set is on vote.
-- We have migrated our repositories to gitbox.
-- The work on ServiceMix Assembly and documentation was outstanding last
-  months. I'd like to start discussion in the community about the next steps
-  to provide a new assembly (probably new ServiceMix 8.x line), how can we
-  focus more on cloud capabilities and how can we make the community more
-  attractive for new people.
+- We have released 5 sets of OSGi bundles.
+- The work on ServiceMix Assembly was outstanding for a longer time. There was
+  a lot of stuff implemented in the main components of the Assembly (Apache
+  Karaf, Apache Camel,...). I hope we manage to discuss the future versions of
+  the Assembly (and the themes around it, like documentation and samples)
+  during the next period.
+
 
 Health report
 =============
 
 - The activity of the community (mailing lists, JIRA, releases) has been a bit
   slower than during the last period.
-
 
 PMC changes
 ===========
@@ -56,12 +59,15 @@ Committer base changes
 Releases
 ========
 
- - Apache ServiceMix Bundles 2018.12 on December 30 2018
- - Apache ServiceMix Bundles 2019.01 on February 05 2019
+ - Apache ServiceMix Bundles 2019.02 on March 12 2019
+ - Apache ServiceMix Bundles 2019.03 on April 01 2019
+ - Apache ServiceMix Bundles 2019.04 on May 09 2019
+ - Apache ServiceMix Bundles 2019.05 on June 04 2019
+
 
 JIRA activity
 =============
 
- - 111 JIRA tickets created in the last 3 months
- - 91 JIRA tickets closed/resolved in the last 3 months
+ - 84 JIRA tickets created in the last 3 months
+ - 84 JIRA tickets closed/resolved in the last 3 months
  {code}
