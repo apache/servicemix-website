@@ -1,0 +1,60 @@
+---
+title: Board Report 2019-09-18
+--- pipeline:conf
+
+{warning}
+This is a work-in-progress - the board report has not yet been submitted.
+{warning}
+
+h2. September 18th, 2019
+
+{code}
+## Description:
+
+Apache ServiceMix is a flexible, open-source integration container that
+unifies the features and functionality of Apache ActiveMQ, Camel, CXF and
+Karaf to provide a complete, enterprise-ready ESB powered by OSGi.
+
+## Issues:
+
+There are no outstanding issues requiring board attention.
+
+## Membership Data:
+
+Apache ServiceMix was founded 2007-09-19 (12 years ago)
+There are currently 50 committers and 21 PMC members in this project.
+The Committer-to-PMC ratio is roughly 7:3.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Andrea Cosentino on 2017-03-15.
+- No new committers. Last addition was Andrea Cosentino on 2016-03-13.
+
+## Project Activity:
+
+- During the last period we have released 3 sets of OSGi bundles:
+  - Apache ServiceMix Bundles 2019.06 on June 28 2019
+  - Apache ServiceMix Bundles 2019.07 on August 04 2019
+  - Apache ServiceMix Bundles 2019.08 on September 05 2019
+- We should focus more intensively on ServiceMix assembly based on the
+  newestApache Camel and Apache Karaf, what was a bit outstanding last
+  months.
+- We should focus on documentation and samples improvement.
+
+## Community Health:
+
+Due to summer vacation the activity of the community (mailing lists, JIRA,
+releases) has been a bit slower than during the last period.
+
+- dev@servicemix.apache.org had a 44% increase in traffic in the past quarter
+  (49 emails compared to 34)
+- issues@servicemix.apache.org had a 39% decrease in traffic in the past
+  quarter (191 emails compared to 309)
+- users@servicemix.apache.org had a 366% increase in traffic in the past
+  quarter (14 emails compared to 3)
+- 75 issues opened in JIRA, past quarter (-8% decrease)
+- 72 issues closed in JIRA, past quarter (-13% decrease)
+- 459 commits in the past quarter (-21% decrease)
+- 6 code contributors in the past quarter (no change)
+- 1 PR opened on GitHub, past quarter (-75% decrease)
+- 1 PR closed on GitHub, past quarter (-75% decrease)
+ {code}
