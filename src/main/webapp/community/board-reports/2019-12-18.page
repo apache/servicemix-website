@@ -1,0 +1,40 @@
+---
+title: Board Report 2019-12-18
+--- pipeline:conf
+
+{warning}
+This is a work-in-progress - the board report has not yet been submitted.
+{warning}
+
+h2. December 18th, 2019
+
+{code}
+## Description:
+
+Apache ServiceMix is a flexible, open-source integration container that
+unifies the features and functionality of Apache ActiveMQ, Camel, CXF and
+Karaf to provide a complete, enterprise-ready ESB powered by OSGi.
+
+## Issues:
+
+TBD
+
+## Membership Data:
+
+Apache ServiceMix was founded 2007-09-19 (12 years ago)
+There are currently 50 committers and 21 PMC members in this project.
+The Committer-to-PMC ratio is roughly 7:3.
+
+TBD
+
+## Project Activity:
+
+TBD
+
+## Community Health:
+
+Due to summer vacation the activity of the community (mailing lists, JIRA,
+releases) has been a bit slower than during the last period.
+
+TBD
+{code}
