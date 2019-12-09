@@ -10,31 +10,37 @@ h2. December 18th, 2019
 
 {code}
 ## Description:
-
 Apache ServiceMix is a flexible, open-source integration container that
 unifies the features and functionality of Apache ActiveMQ, Camel, CXF and
 Karaf to provide a complete, enterprise-ready ESB powered by OSGi.
 
 ## Issues:
-
-TBD
+There are no outstanding issues requiring board attention.
 
 ## Membership Data:
-
 Apache ServiceMix was founded 2007-09-19 (12 years ago)
 There are currently 50 committers and 21 PMC members in this project.
 The Committer-to-PMC ratio is roughly 7:3.
 
-TBD
+Community changes, past quarter:
+- No new PMC members. Last addition was Andrea Cosentino on 2017-03-15.
+- No new committers. Last addition was Andrea Cosentino on 2016-03-13.
 
 ## Project Activity:
 
-TBD
+- During the last period we have released 3 sets of OSGi bundles:
+  - Apache ServiceMix Bundles 2019.09 on October 03 2019
+  - Apache ServiceMix Bundles 2019.10 on November 01 2019
+  - Apache ServiceMix Bundles 2019.11 on November 29 2019
+- After the first release of Apache Camel 3.x we would like
+  to work on a new line of ServiceMix based on the newest version
+  of Apache Camel and Apache Karaf
 
 ## Community Health:
 
-Due to summer vacation the activity of the community (mailing lists, JIRA,
-releases) has been a bit slower than during the last period.
-
-TBD
+- During the last period the activity of the community (mailing lists, JIRA,
+  releases) has been slower than during the last period.
+- As the most work is done in the dependency projects and the activity
+  in ServiceMix project is slower, we actually observe no potential
+  candidates to be invited as committer or PMC member
 {code}
