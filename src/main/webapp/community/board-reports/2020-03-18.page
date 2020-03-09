@@ -1,0 +1,56 @@
+---
+title: Board Report 2020-03-18
+--- pipeline:conf
+
+{warning}
+This is a work-in-progress - the board report has not yet been submitted.
+{warning}
+
+h2. March 18th, 2020
+
+{code}
+## Description:
+Apache ServiceMix is a flexible, open-source integration container that
+unifies the features and functionality of Apache ActiveMQ, Camel, CXF and
+Karaf to provide a complete, enterprise-ready ESB powered by OSGi.
+
+## Issues:
+There are no outstanding issues requiring board attention.
+
+## Membership Data:
+Apache ServiceMix was founded 2007-09-19 (12 years ago)
+There are currently 50 committers and 21 PMC members in this project.
+The Committer-to-PMC ratio is roughly 7:3.
+
+Community changes, past quarter:
+- No new PMC members. Last addition was Andrea Cosentino on 2017-03-15.
+- No new committers. Last addition was Andrea Cosentino on 2016-03-13.
+
+## Project Activity:
+
+- During the last period we have released 3 sets of OSGi bundles and Specs
+  - Apache ServiceMix Specs (jaxb-api, jaxws-api, saaj-api) on January 08 2020
+  - Apache ServiceMix Bundles 2019.12 on January 08 2020
+  - Apache ServiceMix Bundles 2020.01 on February 03 2020
+- During the next period we are going to provide
+  - the next Bundles and Specs releases
+  - the ServiceMix 8.x assembly with updates to the new releases of
+the dependency projects
+
+## Community Health:
+
+Due to a low activity in the project and low interest to provide further
+releases of ServiceMix Assembly we are currently discussing about the future
+of the ServiceMix project. Our draft plan is to:
+- move the Bundles and Specs to Apache Karaf or provide in Apache Karaf
+a descriptor mechanism which lets us to avoid to provide a bundle for each
+Java library
+ - provide the ServiceMix 8 assembly which is built on the newest releases
+of Apache Karaf, Apache Camel and other dependency projects
+- provide a documentation explaining how to "migrate" from ServiceMix
+to Karaf "ecosystem". The purpose is to provide smooth path to ServiceMix users.
+- maybe provide an Integration distribution of Apache Karaf
+- provide in Apache Camel or Apache Karaf project a documentation about running
+integration in the Karaf "ecosystem"
+- move the ServiceMix project to attic
+{code}
