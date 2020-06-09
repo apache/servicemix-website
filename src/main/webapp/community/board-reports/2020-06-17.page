@@ -47,5 +47,5 @@ Community changes, past quarter:
   - We are going to move the Bundles and Specs to Apache Karaf or provide
     there another mechanism to consume Java libraries as OSGi bundles. Until we
     achieve this we are going to provide next releases for the required bundles
-    and specs.
+    and specs. 
 {code}
