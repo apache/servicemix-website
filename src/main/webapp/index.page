@@ -3,6 +3,15 @@ title: Welcome to Apache ServiceMix!
 --- name:main pipeline:conf
 {section}
 {column}
+Servicemix no longer comes down to an assembly of karaf, camel, and activemq.
+Maintenance of this assembly is suspended.
+Please refer to apache camel karaf and apache activemq osgi integration
+    [Apache Camel Karaf|https://camel.apache.org/camel-karaf/latest/index.html]
+    [Apache ActiveMQ OSGI Integration|https://activemq.apache.org/osgi-integration.html]
+
+
+{section}
+{column}
 [Apache ServiceMix|http://servicemix.apache.org/] is a flexible, open-source integration container that unifies the features and functionality of Apache [ActiveMQ|http://activemq.apache.org], [Camel|http://camel.apache.org], [CXF|http://cxf.apache.org], and [Karaf|http://karaf.apache.org] into a powerful runtime platform you can use to build your own integrations solutions. It provides a complete, enterprise ready ESB exclusively powered by OSGi.
 
 It is being released under [Apache License v2|license].
