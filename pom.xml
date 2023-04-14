@@ -49,7 +49,7 @@
         <scalate.workdir>${project.build.directory}/scalateWorkDir</scalate.workdir>
 
         <logback.version>1.0.9</logback.version>
-        <scala.version>2.11.0</scala.version>
+        <scala.version>2.11.12</scala.version>
         <scalate.version>1.7.1</scalate.version>
         <slf4j.version>1.6.1</slf4j.version>
         <wikitext.version>1.4</wikitext.version>
